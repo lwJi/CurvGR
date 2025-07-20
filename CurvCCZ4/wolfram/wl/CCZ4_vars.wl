@@ -75,6 +75,7 @@ TetradVarlist =
     {eOSvt[i, -j],                         PrintAs -> "eV"},
     {eOSco[-i, j],                         PrintAs -> "eC"},
     {gamh[-i, -j], Symmetric[{-i, -j}],    PrintAs -> "\!\(\*OverscriptBox[\(\[Gamma]\), \(^\)]\)"},
+    {detgamh[],                            PrintAs -> "\!\(\*OverscriptBox[\(\[Gamma]\), \(^\)]\)"},
     {Gamh[k, -i, -j], Symmetric[{-i, -j}], PrintAs -> "\!\(\*OverscriptBox[\(\[CapitalGamma]\), \(^\)]\)"}
   ];
 
