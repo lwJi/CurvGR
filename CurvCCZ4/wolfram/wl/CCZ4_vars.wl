@@ -25,14 +25,15 @@ dtEvolVarlist =
 
 EvolVarlist =
   GridTensors[
-    {W[], PrintAs -> "W"},
-    {gamt[-i, -j], Symmetric[{-i, -j}], PrintAs -> "\!\(\*OverscriptBox[\(\[Gamma]\), \(~\)]\)"},
-    {exKh[], PrintAs -> "\!\(\*OverscriptBox[\(K\), \(^\)]\)"},
-    {exAt[-i, -j], Symmetric[{-i, -j}], PrintAs -> "\!\(\*OverscriptBox[\(A\), \(~\)]\)"},
-    {trGt[i], PrintAs -> "\!\(\*OverscriptBox[\(\[CapitalGamma]\), \(~\)]\)"},
-    {Theta[], PrintAs -> "\[CapitalTheta]"},
-    {alpha[], PrintAs -> "\[Alpha]"},
-    {beta[i], PrintAs -> "\[Beta]"}
+    {phi[],                              PrintAs -> "\[Phi]"},
+    {gambO[-i, -j], Symmetric[{-i, -j}], PrintAs -> "O\!\(\*OverscriptBox[\(\[Gamma]\), \(_\)]\)"},
+    {trK[],                              PrintAs -> "K"},
+    {exAbO[-i, -j], Symmetric[{-i, -j}], PrintAs -> "O\!\(\*OverscriptBox[\(A\), \(_\)]\)"},
+    {trLtO[i],                           PrintAs -> "O\!\(\*OverscriptBox[\(\[CapitalLambda]\), \(~\)]\)"},
+    {Theta[],                            PrintAs -> "\[CapitalTheta]"},
+    {alpha[],                            PrintAs -> "\[Alpha]"},
+    {betaO[i],                           PrintAs -> "O\[Beta]"},
+    {BO[i],                              PrintAs -> "OB"}
   ];
 
 (*************************)
