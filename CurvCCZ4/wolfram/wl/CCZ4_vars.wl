@@ -95,8 +95,8 @@ TempdEvolVarlist =
     {dbeta[-k, i],                           PrintAs -> "\[PartialD]\[Beta]"},
     {dB[-k, i],                              PrintAs -> "\[PartialD]B"},
     (* second *)
-    {ddgamb[-l, -m, -i, -j], GenSet[Cycles[{1, 2}], Cycles[{3, 4}]], PrintAs -> "\[PartialD]\[PartialD]\!\(\*OverscriptBox[\(\[Gamma]\), \(_\)]\)"},
-    {ddbeta[-i, -j, k], Symmetric[{-i, -j}],                         PrintAs -> "\[PartialD]\[PartialD]\[Beta]"}
+    {ddeps[-l, -m, -i, -j], GenSet[Cycles[{1, 2}], Cycles[{3, 4}]], PrintAs -> "\[PartialD]\[PartialD]\[Epsilon]"},
+    {ddbeta[-i, -j, k], Symmetric[{-i, -j}],                        PrintAs -> "\[PartialD]\[PartialD]\[Beta]"}
   ];
 
 TetradVarlist =
