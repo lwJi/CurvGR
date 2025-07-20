@@ -99,6 +99,7 @@ dTetradVarlist =
 
 TempEvolVarlist =
   TempTensors[
+    {psim4[],                           PrintAs -> "\!\(\*SuperscriptBox[\(\[Psi]\), \(-4\)]\)"},
     {eps[-i, -j], Symmetric[{-i, -j}],  PrintAs -> "\[Epsilon]"},
     {gamb[-i, -j], Symmetric[{-i, -j}], PrintAs -> "\!\(\*OverscriptBox[\(\[Gamma]\), \(_\)]\)"},
     {exAb[-i, -j], Symmetric[{-i, -j}], PrintAs -> "\!\(\*OverscriptBox[\(A\), \(_\)]\)"},
