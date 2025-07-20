@@ -89,7 +89,7 @@ TempEvolVarlist =
 TempdEvolVarlist =
   TempTensors[
     (* first *)
-    {deps[-k, -i, -j], Symmetric[{-i, -j}],  PrintAs -> "\[PartialD]\[Epsilon])"},
+    {deps[-k, -i, -j], Symmetric[{-i, -j}],  PrintAs -> "\[PartialD]\[Epsilon]"},
     {dgamb[-k, -i, -j], Symmetric[{-i, -j}], PrintAs -> "\[PartialD]\!\(\*OverscriptBox[\(\[Gamma]\), \(_\)]\)"},
     {dexAb[-k, -i, -j], Symmetric[{-i, -j}], PrintAs -> "\[PartialD]\!\(\*OverscriptBox[\(A\), \(_\)]\)"},
     {dtrLt[-k, i],                           PrintAs -> "\[PartialD]\!\(\*OverscriptBox[\(\[CapitalLambda]\), \(~\)]\)"},
