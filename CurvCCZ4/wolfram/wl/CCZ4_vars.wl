@@ -43,15 +43,16 @@ EvolVarlist =
 (*************************)
 
 dEvolVarlist =
-  TileTensors[
-    {dW[-k], PrintAs -> "\[PartialD]W"},
-    {dgamt[-k, -i, -j], Symmetric[{-i, -j}], PrintAs -> "\[PartialD]\!\(\*OverscriptBox[\(\[Gamma]\), \(~\)]\)"},
-    {dexKh[-k], PrintAs -> "\[PartialD]\!\(\*OverscriptBox[\(K\), \(^\)]\)"},
-    {dexAt[-k, -i, -j], Symmetric[{-i, -j}], PrintAs -> "\[PartialD]\!\(\*OverscriptBox[\(A\), \(~\)]\)"},
-    {dtrGt[-k, i], PrintAs -> "\[PartialD]\!\(\*OverscriptBox[\(\[CapitalGamma]\), \(~\)]\)"},
-    {dTheta[-k], PrintAs -> "\[PartialD]\[CapitalTheta]"},
-    {dalpha[-k], PrintAs -> "\[PartialD]\[Alpha]"},
-    {dbeta[-k, i], PrintAs -> "\[PartialD]\[Beta]"}
+  GridTensors[
+    {dphi[-k],                                PrintAs -> "\[PartialD]\[Phi]"},
+    {dgambO[-k, -i, -j], Symmetric[{-i, -j}], PrintAs -> "\[PartialD]O\!\(\*OverscriptBox[\(\[Gamma]\), \(_\)]\)"},
+    {dtrK[-k],                                PrintAs -> "\[PartialD]K"},
+    {dexAbO[-k, -i, -j], Symmetric[{-i, -j}], PrintAs -> "\[PartialD]O\!\(\*OverscriptBox[\(A\), \(_\)]\)"},
+    {dtrLtO[-k, i],                           PrintAs -> "\[PartialD]O\!\(\*OverscriptBox[\(\[CapitalLambda]\), \(~\)]\)"},
+    {dTheta[-k],                              PrintAs -> "\[PartialD]\[CapitalTheta]"},
+    {dalpha[-k],                              PrintAs -> "\[PartialD]\[Alpha]"},
+    {dbetaO[-k, i],                           PrintAs -> "\[PartialD]O\[Beta]"},
+    {dBO[-k, i],                              PrintAs -> "\[PartialD]OB"}
   ];
 
 ddEvolVarlist =
