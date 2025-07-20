@@ -76,6 +76,18 @@ TmunuVarlist =
 
 (**************************)
 
+TetradVarlist =
+  TempTensors[
+    {eOSvt[i, -j], PrintAs -> "eV"},
+    {eOSco[-i, j], PrintAs -> "eC"}
+  ];
+
+dTetradVarlist =
+  TempTensors[
+    {deOSvt[-k, i, -j], PrintAs -> "\[PartialD]eV"},
+    {deOSco[-k, -i, j], PrintAs -> "\[PartialD]eC"}
+  ];
+
 IntermediateVarlist =
   TempTensors[
     {dlnW[-k], PrintAs -> "\[PartialD]lnW"},
