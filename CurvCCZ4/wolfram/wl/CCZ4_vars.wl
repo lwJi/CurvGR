@@ -65,8 +65,8 @@ ddEvolVarlist =
 
 TmunuVarlist =
   GridTensors[
-    {eTtt[], PrintAs -> "\!\(\*SubscriptBox[\(T\), \(tt\)]\)"},
-    {eTt[-i], PrintAs -> "\!\(\*SubscriptBox[\(T\), \(t\)]\)"},
+    {eTtt[],                          PrintAs -> "\!\(\*SubscriptBox[\(T\), \(tt\)]\)"},
+    {eTt[-i],                         PrintAs -> "\!\(\*SubscriptBox[\(T\), \(t\)]\)"},
     {eT[-i, -j], Symmetric[{-i, -j}], PrintAs -> "T"}
   ];
 
