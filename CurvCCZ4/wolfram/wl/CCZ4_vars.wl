@@ -87,6 +87,7 @@ dTetradVarlist =
     {deeOSco[-k, -i, m, -j, n],                           PrintAs -> "\[PartialD]eCeC"},
     {ddeeOSco[-k, -l, -i, m, -j, n], Symmetric[{-k, -l}], PrintAs -> "\[PartialD]\[PartialD]eCeC"},
     {dgamh[-k, -i, -j], Symmetric[{-i, -j}],              PrintAs -> "\[PartialD]\!\(\*OverscriptBox[\(\[Gamma]\), \(^\)]\)"},
+    {ddetgamh[-k],                                        PrintAs -> "\[PartialD]\!\(\*OverscriptBox[\(\[Gamma]\), \(^\)]\)"},
     {dGamh[-k, l, -i, -j], Symmetric[{-i, -j}],           PrintAs -> "\[PartialD]\!\(\*OverscriptBox[\(\[CapitalGamma]\), \(^\)]\)"}
   ];
 
