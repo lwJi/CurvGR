@@ -12,6 +12,8 @@
 
 (****************)
 
+SetEQN[psim4[], Exp[-4 phi[]]];
+
 SetEQN[eps[i_, j_], eOSco[i, k] eOSco[j, l] epsO[-k, -l]];
 
 SetEQN[gamb[i_, j_], gamh[i, j] + eps[i, j]];
