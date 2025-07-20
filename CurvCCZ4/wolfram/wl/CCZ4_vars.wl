@@ -78,6 +78,7 @@ TmunuVarlist =
 
 TempEvolVarlist =
   TempTensors[
+    {eps[-i, -j], Symmetric[{-i, -j}],  PrintAs -> "\[Epsilon]"},
     {gamb[-i, -j], Symmetric[{-i, -j}], PrintAs -> "\!\(\*OverscriptBox[\(\[Gamma]\), \(_\)]\)"},
     {exAb[-i, -j], Symmetric[{-i, -j}], PrintAs -> "\!\(\*OverscriptBox[\(A\), \(_\)]\)"},
     {trLt[i],                           PrintAs -> "\!\(\*OverscriptBox[\(\[CapitalLambda]\), \(~\)]\)"},
@@ -88,12 +89,14 @@ TempEvolVarlist =
 TempdEvolVarlist =
   TempTensors[
     (* first *)
+    {deps[-k, -i, -j], Symmetric[{-i, -j}],  PrintAs -> "\[PartialD]\[Epsilon]"},
     {dgamb[-k, -i, -j], Symmetric[{-i, -j}], PrintAs -> "\[PartialD]\!\(\*OverscriptBox[\(\[Gamma]\), \(_\)]\)"},
     {dexAb[-k, -i, -j], Symmetric[{-i, -j}], PrintAs -> "\[PartialD]\!\(\*OverscriptBox[\(A\), \(_\)]\)"},
     {dtrLt[-k, i],                           PrintAs -> "\[PartialD]\!\(\*OverscriptBox[\(\[CapitalLambda]\), \(~\)]\)"},
     {dbeta[-k, i],                           PrintAs -> "\[PartialD]\[Beta]"},
     {dB[-k, i],                              PrintAs -> "\[PartialD]B"},
     (* second *)
+    {ddeps[-l, -m, -i, -j], GenSet[Cycles[{1, 2}], Cycles[{3, 4}]],  PrintAs -> "\[PartialD]\[PartialD]\[Epsilon]"},
     {ddgamb[-l, -m, -i, -j], GenSet[Cycles[{1, 2}], Cycles[{3, 4}]], PrintAs -> "\[PartialD]\[PartialD]\!\(\*OverscriptBox[\(\[Gamma]\), \(_\)]\)"},
     {ddbeta[-i, -j, k], Symmetric[{-i, -j}],                         PrintAs -> "\[PartialD]\[PartialD]\[Beta]"}
   ];
