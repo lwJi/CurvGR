@@ -102,6 +102,7 @@ TetradVarlist =
   TempTensors[
     {eOSvt[i, -j],                         PrintAs -> "eV"},
     {eOSco[-i, j],                         PrintAs -> "eC"},
+    {gamh[-i, -j], Symmetric[{-i, -j}],    PrintAs -> "\!\(\*OverscriptBox[\(\[Gamma]\), \(^\)]\)"},
     {Gamh[k, -i, -j], Symmetric[{-i, -j}], PrintAs -> "\!\(\*OverscriptBox[\(\[CapitalGamma]\), \(^\)]\)"}
   ];
 
@@ -109,6 +110,7 @@ dTetradVarlist =
   TempTensors[
     {deOSvt[-k, i, -j],                         PrintAs -> "\[PartialD]eV"},
     {deOSco[-k, -i, j],                         PrintAs -> "\[PartialD]eC"},
+    {dgamh[-k, -i, -j], Symmetric[{-i, -j}],    PrintAs -> "\[PartialD]\!\(\*OverscriptBox[\(\[Gamma]\), \(^\)]\)"},
     {dGamh[-k, l, -i, -j], Symmetric[{-i, -j}], PrintAs -> "\[PartialD]\!\(\*OverscriptBox[\(\[CapitalGamma]\), \(^\)]\)"}
   ];
 
