@@ -76,6 +76,15 @@ TmunuVarlist =
 
 (**************************)
 
+TempEvolVarlist =
+  TempTensors[
+    {gamb[-i, -j], Symmetric[{-i, -j}], PrintAs -> "\!\(\*OverscriptBox[\(\[Gamma]\), \(_\)]\)"},
+    {exAb[-i, -j], Symmetric[{-i, -j}], PrintAs -> "\!\(\*OverscriptBox[\(A\), \(_\)]\)"},
+    {trLt[i],                           PrintAs -> "\!\(\*OverscriptBox[\(\[CapitalLambda]\), \(~\)]\)"},
+    {beta[i],                           PrintAs -> "\[Beta]"},
+    {B[i],                              PrintAs -> "B"}
+  ];
+
 TempdEvolVarlist =
   TempTensors[
     (* first *)
