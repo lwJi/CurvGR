@@ -121,6 +121,17 @@ TempdEvolVarlist =
     {ddbeta[-i, -j, k], Symmetric[{-i, -j}],                        PrintAs -> "\[PartialD]\[PartialD]\[Beta]"}
   ];
 
+IntermediateVarlist =
+  TempTensors[
+    {invgamb[i, j], Symmetric[{i, j}],          PrintAs -> "\!\(\*OverscriptBox[\(\[Gamma]\), \(_\)]\)"},
+    {invgam[i, j], Symmetric[{i, j}],           PrintAs -> "\[Gamma]"},
+    {gam[-i, -j], Symmetric[{-i, -j}],          PrintAs -> "\[Gamma]"},
+    {GamDDD[-k, -i, -j], Symmetric[{-i, -j}],   PrintAs -> "\[CapitalGamma]"},
+    {Gam[k, -i, -j], Symmetric[{-i, -j}],       PrintAs -> "\[CapitalGamma]"},
+    {DGamDDD[-k, -i, -j], Symmetric[{-i, -j}],  PrintAs -> "\[CapitalDelta]\[CapitalGamma]"},
+    {DGam[k, -i, -j], Symmetric[{-i, -j}],      PrintAs -> "\[CapitalDelta]\[CapitalGamma]"}
+  ];
+
 bDVarlist =
   TempTensors[
     {trbDbeta[], PrintAs -> "\!\(\*OverscriptBox[\(D\), \(_\)]\)\[Beta]"}
@@ -143,17 +154,6 @@ hDhDVarlist =
   TempTensors[
     {hDhDgamb[-l, -m, -i, -j], GenSet[Cycles[{1, 2}], Cycles[{3, 4}]], PrintAs -> "\!\(\*OverscriptBox[\(D\), \(^\)]\)\!\(\*OverscriptBox[\(D\), \(^\)]\)\!\(\*OverscriptBox[\(\[Gamma]\), \(_\)]\)"},
     {hDhDbeta[-i, -j, k], Symmetric[{-i, -j}],                         PrintAs -> "\!\(\*OverscriptBox[\(D\), \(^\)]\)\!\(\*OverscriptBox[\(D\), \(^\)]\)\[Beta]"}
-  ];
-
-IntermediateVarlist =
-  TempTensors[
-    {invgamb[i, j], Symmetric[{i, j}],          PrintAs -> "\!\(\*OverscriptBox[\(\[Gamma]\), \(_\)]\)"},
-    {invgam[i, j], Symmetric[{i, j}],           PrintAs -> "\[Gamma]"},
-    {gam[-i, -j], Symmetric[{-i, -j}],          PrintAs -> "\[Gamma]"},
-    {GamDDD[-k, -i, -j], Symmetric[{-i, -j}],   PrintAs -> "\[CapitalGamma]"},
-    {Gam[k, -i, -j], Symmetric[{-i, -j}],       PrintAs -> "\[CapitalGamma]"},
-    {DGamDDD[-k, -i, -j], Symmetric[{-i, -j}],  PrintAs -> "\[CapitalDelta]\[CapitalGamma]"},
-    {DGam[k, -i, -j], Symmetric[{-i, -j}],      PrintAs -> "\[CapitalDelta]\[CapitalGamma]"}
   ];
 
 RVarlist =
