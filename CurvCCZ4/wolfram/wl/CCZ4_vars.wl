@@ -43,7 +43,7 @@ EvolVarlist =
 (*************************)
 
 dEvolVarlist =
-  GridTensors[
+  TileTensors[
     {dphi[-k],                                PrintAs -> "\[PartialD]\[Phi]"},
     {dgambO[-k, -i, -j], Symmetric[{-i, -j}], PrintAs -> "\[PartialD]O\!\(\*OverscriptBox[\(\[Gamma]\), \(_\)]\)"},
     {dtrK[-k],                                PrintAs -> "\[PartialD]K"},
@@ -57,10 +57,10 @@ dEvolVarlist =
 
 ddEvolVarlist =
   TileTensors[
-    {ddW[-i, -j], Symmetric[{-i, -j}], PrintAs -> "\[PartialD]\[PartialD]W"},
-    {ddgamt[-l, -m, -i, -j], GenSet[Cycles[{1, 2}], Cycles[{3, 4}]], PrintAs -> "\[PartialD]\[PartialD]\!\(\*OverscriptBox[\(\[Gamma]\), \(~\)]\)"},
-    {ddalpha[-i, -j], Symmetric[{-i, -j}], PrintAs -> "\[PartialD]\[PartialD]\[Alpha]"},
-    {ddbeta[-i, -j, k], Symmetric[{-i, -j}], PrintAs -> "\[PartialD]\[PartialD]\[Beta]"}
+    {ddphi[-i, -j], Symmetric[{-i, -j}],                              PrintAs -> "\[PartialD]\[PartialD]\[Phi]"},
+    {ddgambO[-l, -m, -i, -j], GenSet[Cycles[{1, 2}], Cycles[{3, 4}]], PrintAs -> "\[PartialD]\[PartialD]O\!\(\*OverscriptBox[\(\[Gamma]\), \(_\)]\)"},
+    {ddalpha[-i, -j], Symmetric[{-i, -j}],                            PrintAs -> "\[PartialD]\[PartialD]\[Alpha]"},
+    {ddbetaO[-i, -j, k], Symmetric[{-i, -j}],                         PrintAs -> "\[PartialD]\[PartialD]O\[Beta]"}
   ];
 
 TmunuVarlist =
