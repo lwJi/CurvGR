@@ -78,14 +78,16 @@ TmunuVarlist =
 
 TetradVarlist =
   TempTensors[
-    {eOSvt[i, -j], PrintAs -> "eV"},
-    {eOSco[-i, j], PrintAs -> "eC"}
+    {eOSvt[i, -j],                         PrintAs -> "eV"},
+    {eOSco[-i, j],                         PrintAs -> "eC"},
+    {Gamh[k, -i, -j], Symmetric[{-i, -j}], PrintAs -> "\!\(\*OverscriptBox[\(\[CapitalGamma]\), \(^\)]\)"}
   ];
 
 dTetradVarlist =
   TempTensors[
-    {deOSvt[-k, i, -j], PrintAs -> "\[PartialD]eV"},
-    {deOSco[-k, -i, j], PrintAs -> "\[PartialD]eC"}
+    {deOSvt[-k, i, -j],                         PrintAs -> "\[PartialD]eV"},
+    {deOSco[-k, -i, j],                         PrintAs -> "\[PartialD]eC"},
+    {dGamh[-k, l, -i, -j], Symmetric[{-i, -j}], PrintAs -> "\[PartialD]\!\(\*OverscriptBox[\(\[CapitalGamma]\), \(^\)]\)"}
   ];
 
 bDVarlist =
@@ -114,19 +116,13 @@ hDhDVarlist =
 
 IntermediateVarlist =
   TempTensors[
-    {dlnW[-k], PrintAs -> "\[PartialD]lnW"},
-    (* {detinvgamt[], PrintAs -> "1/\!\(\*OverscriptBox[\(\[Gamma]\), \(~\)]\)"}, *)
-    {invgamt[i, j], Symmetric[{i, j}], PrintAs -> "\!\(\*OverscriptBox[\(\[Gamma]\), \(~\)]\)"},
-    {invgam[i, j], Symmetric[{i, j}], PrintAs -> "\[Gamma]"},
-    {gam[-i, -j], Symmetric[{-i, -j}], PrintAs -> "\[Gamma]"},
-    {GtDDD[-k, -i, -j], Symmetric[{-i, -j}], PrintAs -> "\!\(\*OverscriptBox[\(\[CapitalGamma]\), \(~\)]\)"},
-    {GtDDU[-k, -i, j], PrintAs -> "\!\(\*OverscriptBox[\(\[CapitalGamma]\), \(~\)]\)"},
-    {Gt[k, -i, -j], Symmetric[{-i, -j}], PrintAs -> "\!\(\*OverscriptBox[\(\[CapitalGamma]\), \(~\)]\)"},
-    {trGtd[i], PrintAs -> "(\!\(\*SubscriptBox[OverscriptBox[\(\[CapitalGamma]\), \(~\)], \(d\)]\))"},
-    {dgam[-k, -i, -j], Symmetric[{-i, -j}], PrintAs -> "\[PartialD]\[Gamma]"},
-    {GamDDD[-k, -i, -j], Symmetric[{-i, -j}], PrintAs -> "\[CapitalGamma]"},
-    {Gam[k, -i, -j], Symmetric[{-i, -j}], PrintAs -> "\[CapitalGamma]"},
-    {exAtUU[i, j], Symmetric[{i, j}], PrintAs -> "\!\(\*OverscriptBox[\(A\), \(~\)]\)"}
+    {invgamb[i, j], Symmetric[{i, j}],          PrintAs -> "\!\(\*OverscriptBox[\(\[Gamma]\), \(_\)]\)"},
+    {invgam[i, j], Symmetric[{i, j}],           PrintAs -> "\[Gamma]"},
+    {gam[-i, -j], Symmetric[{-i, -j}],          PrintAs -> "\[Gamma]"},
+    {GamDDD[-k, -i, -j], Symmetric[{-i, -j}],   PrintAs -> "\[CapitalGamma]"},
+    {Gam[k, -i, -j], Symmetric[{-i, -j}],       PrintAs -> "\[CapitalGamma]"},
+    {DGamDDD[-k, -i, -j], Symmetric[{-i, -j}],  PrintAs -> "\[CapitalDelta]\[CapitalGamma]"},
+    {DGam[k, -i, -j], Symmetric[{-i, -j}],      PrintAs -> "\[CapitalDelta]\[CapitalGamma]"}
   ];
 
 RVarlist =
