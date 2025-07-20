@@ -70,6 +70,25 @@ TmunuVarlist =
     {eT[-i, -j], Symmetric[{-i, -j}], PrintAs -> "T"}
   ];
 
+TetradVarlist =
+  TempTensors[
+    {eOSvt[i, -j],                         PrintAs -> "eV"},
+    {eOSco[-i, j],                         PrintAs -> "eC"},
+    {gamh[-i, -j], Symmetric[{-i, -j}],    PrintAs -> "\!\(\*OverscriptBox[\(\[Gamma]\), \(^\)]\)"},
+    {Gamh[k, -i, -j], Symmetric[{-i, -j}], PrintAs -> "\!\(\*OverscriptBox[\(\[CapitalGamma]\), \(^\)]\)"}
+  ];
+
+dTetradVarlist =
+  TempTensors[
+    {deOSvt[-k, i, -j],                                   PrintAs -> "\[PartialD]eV"},
+    {deOSco[-k, -i, j],                                   PrintAs -> "\[PartialD]eC"},
+    {ddeOSvt[-k, -l, i, -j], Symmetric[{-k, -l}],         PrintAs -> "\[PartialD]\[PartialD]eV"},
+    {deeOSco[-k, -i, m, -j, n],                           PrintAs -> "\[PartialD]eCeC"},
+    {ddeeOSco[-k, -l, -i, m, -j, n], Symmetric[{-k, -l}], PrintAs -> "\[PartialD]\[PartialD]eCeC"},
+    {dgamh[-k, -i, -j], Symmetric[{-i, -j}],              PrintAs -> "\[PartialD]\!\(\*OverscriptBox[\(\[Gamma]\), \(^\)]\)"},
+    {dGamh[-k, l, -i, -j], Symmetric[{-i, -j}],           PrintAs -> "\[PartialD]\!\(\*OverscriptBox[\(\[CapitalGamma]\), \(^\)]\)"}
+  ];
+
 (**************************)
 
 (* Intermediate Variables *)
@@ -98,25 +117,6 @@ TempdEvolVarlist =
     (* second *)
     {ddeps[-l, -m, -i, -j], GenSet[Cycles[{1, 2}], Cycles[{3, 4}]], PrintAs -> "\[PartialD]\[PartialD]\[Epsilon]"},
     {ddbeta[-i, -j, k], Symmetric[{-i, -j}],                        PrintAs -> "\[PartialD]\[PartialD]\[Beta]"}
-  ];
-
-TetradVarlist =
-  TempTensors[
-    {eOSvt[i, -j],                         PrintAs -> "eV"},
-    {eOSco[-i, j],                         PrintAs -> "eC"},
-    {gamh[-i, -j], Symmetric[{-i, -j}],    PrintAs -> "\!\(\*OverscriptBox[\(\[Gamma]\), \(^\)]\)"},
-    {Gamh[k, -i, -j], Symmetric[{-i, -j}], PrintAs -> "\!\(\*OverscriptBox[\(\[CapitalGamma]\), \(^\)]\)"}
-  ];
-
-dTetradVarlist =
-  TempTensors[
-    {deOSvt[-k, i, -j],                                   PrintAs -> "\[PartialD]eV"},
-    {deOSco[-k, -i, j],                                   PrintAs -> "\[PartialD]eC"},
-    {ddeOSvt[-k, -l, i, -j], Symmetric[{-k, -l}],         PrintAs -> "\[PartialD]\[PartialD]eV"},
-    {deeOSco[-k, -i, m, -j, n],                           PrintAs -> "\[PartialD]eCeC"},
-    {ddeeOSco[-k, -l, -i, m, -j, n], Symmetric[{-k, -l}], PrintAs -> "\[PartialD]\[PartialD]eCeC"},
-    {dgamh[-k, -i, -j], Symmetric[{-i, -j}],              PrintAs -> "\[PartialD]\!\(\*OverscriptBox[\(\[Gamma]\), \(^\)]\)"},
-    {dGamh[-k, l, -i, -j], Symmetric[{-i, -j}],           PrintAs -> "\[PartialD]\!\(\*OverscriptBox[\(\[CapitalGamma]\), \(^\)]\)"}
   ];
 
 bDVarlist =
