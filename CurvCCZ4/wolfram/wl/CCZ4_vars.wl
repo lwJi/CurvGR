@@ -76,6 +76,19 @@ TmunuVarlist =
 
 (**************************)
 
+TempdEvolVarlist =
+  TempTensors[
+    (* first *)
+    {dgamb[-k, -i, -j], Symmetric[{-i, -j}], PrintAs -> "\[PartialD]\!\(\*OverscriptBox[\(\[Gamma]\), \(_\)]\)"},
+    {dexAb[-k, -i, -j], Symmetric[{-i, -j}], PrintAs -> "\[PartialD]\!\(\*OverscriptBox[\(A\), \(_\)]\)"},
+    {dtrLt[-k, i],                           PrintAs -> "\[PartialD]\!\(\*OverscriptBox[\(\[CapitalLambda]\), \(~\)]\)"},
+    {dbeta[-k, i],                           PrintAs -> "\[PartialD]\[Beta]"},
+    {dB[-k, i],                              PrintAs -> "\[PartialD]B"},
+    (* second *)
+    {ddgamb[-l, -m, -i, -j], GenSet[Cycles[{1, 2}], Cycles[{3, 4}]], PrintAs -> "\[PartialD]\[PartialD]\!\(\*OverscriptBox[\(\[Gamma]\), \(_\)]\)"},
+    {ddbeta[-i, -j, k], Symmetric[{-i, -j}],                         PrintAs -> "\[PartialD]\[PartialD]\[Beta]"}
+  ];
+
 TetradVarlist =
   TempTensors[
     {eOSvt[i, -j],                         PrintAs -> "eV"},
