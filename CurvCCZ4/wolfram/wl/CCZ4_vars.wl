@@ -88,6 +88,30 @@ dTetradVarlist =
     {deOSco[-k, -i, j], PrintAs -> "\[PartialD]eC"}
   ];
 
+bDVarlist =
+  TempTensors[
+    {trbDbeta[], PrintAs -> "\!\(\*OverscriptBox[\(D\), \(_\)]\)\[Beta]"}
+  ];
+
+bDbDVarlist =
+  TempTensors[
+    {bDbDphi[-i, -j], Symmetric[{-i, -j}],   PrintAs -> "\!\(\*OverscriptBox[\(D\), \(_\)]\)\!\(\*OverscriptBox[\(D\), \(_\)]\)\[Phi]"},
+    {bDbDalpha[-i, -j], Symmetric[{-i, -j}], PrintAs -> "\!\(\*OverscriptBox[\(D\), \(_\)]\)\!\(\*OverscriptBox[\(D\), \(_\)]\)\[Alpha]"}
+  ];
+
+hDVarlist =
+  TempTensors[
+    {hDgamb[-k, -i, -j], Symmetric[{-i, -j}], PrintAs -> "\!\(\*OverscriptBox[\(D\), \(^\)]\)\!\(\*OverscriptBox[\(\[Gamma]\), \(_\)]\)"},
+    {hDtrLt[-k, i],                           PrintAs -> "\!\(\*OverscriptBox[\(D\), \(^\)]\)\!\(\*OverscriptBox[\(\[CapitalLambda]\), \(~\)]\)"},
+    {hDbeta[-k, i],                           PrintAs -> "\!\(\*OverscriptBox[\(D\), \(^\)]\)\[Beta]"}
+  ];
+
+hDhDVarlist =
+  TempTensors[
+    {hDhDgamb[-l, -m, -i, -j], GenSet[Cycles[{1, 2}], Cycles[{3, 4}]], PrintAs -> "\!\(\*OverscriptBox[\(D\), \(^\)]\)\!\(\*OverscriptBox[\(D\), \(^\)]\)\!\(\*OverscriptBox[\(\[Gamma]\), \(_\)]\)"},
+    {hDhDbeta[-i, -j, k], Symmetric[{-i, -j}],                         PrintAs -> "\!\(\*OverscriptBox[\(D\), \(^\)]\)\!\(\*OverscriptBox[\(D\), \(^\)]\)\[Beta]"}
+  ];
+
 IntermediateVarlist =
   TempTensors[
     {dlnW[-k], PrintAs -> "\[PartialD]lnW"},
@@ -103,12 +127,6 @@ IntermediateVarlist =
     {GamDDD[-k, -i, -j], Symmetric[{-i, -j}], PrintAs -> "\[CapitalGamma]"},
     {Gam[k, -i, -j], Symmetric[{-i, -j}], PrintAs -> "\[CapitalGamma]"},
     {exAtUU[i, j], Symmetric[{i, j}], PrintAs -> "\!\(\*OverscriptBox[\(A\), \(~\)]\)"}
-  ];
-
-DDVarlist =
-  TempTensors[
-    {tDtDW[-i, -j], Symmetric[{-i, -j}], PrintAs -> "\!\(\*OverscriptBox[\(D\), \(~\)]\)\!\(\*OverscriptBox[\(D\), \(~\)]\)W"},
-    {DDalpha[-i, -j], Symmetric[{-i, -j}], PrintAs -> "DD\[Alpha]"}
   ];
 
 RVarlist =
