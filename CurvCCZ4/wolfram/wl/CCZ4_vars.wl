@@ -164,7 +164,9 @@ DGamVarlist =
   TempTensors[
     {DGamDDD[-k, -i, -j], Symmetric[{-i, -j}],  PrintAs -> "\[CapitalDelta]\[CapitalGamma]"},
     {DGam[k, -i, -j], Symmetric[{-i, -j}],      PrintAs -> "\[CapitalDelta]\[CapitalGamma]"},
-    {trDGam[k],                                 PrintAs -> "\[CapitalDelta]\[CapitalGamma]"}
+    {trDGam[k],                                 PrintAs -> "\[CapitalDelta]\[CapitalGamma]"},
+    {ZU[i],                                     PrintAs -> "Z"},
+    {ZD[-i],                                    PrintAs -> "Z"}
   ];
 
 RVarlist =
