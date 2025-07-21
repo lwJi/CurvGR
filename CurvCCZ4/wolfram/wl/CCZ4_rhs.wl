@@ -12,8 +12,6 @@
 
 (****************)
 
-SetEQN[psim4[], Exp[-4 phi[]]];
-
 SetEQN[eps[i_, j_], eOSco[i, k] eOSco[j, l] epsO[-k, -l]];
 
 SetEQN[gamb[i_, j_], gamh[i, j] + eps[i, j]];
@@ -41,6 +39,8 @@ SetEQN[dB[k_, i_], eOSvt[i, -m] dBO[k, m] + deOSvt[k, i, -m] BO[m]];
 SetEQN[ddeps[k_, l_, i_, j_], eOSco[i, m] eOSco[j, n] ddepsO[k, l, -m, -n] + deeOSco[k, i, m, j, n] depsO[l, -m, -n] + deeOSco[l, i, m, j, n] depsO[k, -m, -n] + ddeeOSco[k, l, i, m, j, n] epsO[-m, -n]];
 
 SetEQN[ddbeta[k_, l_, i_], eOSvt[i, -j] ddbetaO[k, l, j] + deOSvt[k, i, -j] dbetaO[l, j] + deOSvt[l, i, -j] dbetaO[k, j] + ddeOSvt[k, l, i, -j] betaO[j]];
+
+SetEQN[psim4[], Exp[-4 phi[]]];
 
 (*******)
 

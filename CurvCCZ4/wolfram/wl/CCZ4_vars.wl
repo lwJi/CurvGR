@@ -132,9 +132,7 @@ IntermediateVarlist =
     {GambDDD[-k, -i, -j], Symmetric[{-i, -j}],  PrintAs -> "\!\(\*OverscriptBox[\(\[CapitalGamma]\), \(_\)]\)"},
     {Gamb[k, -i, -j], Symmetric[{-i, -j}],      PrintAs -> "\!\(\*OverscriptBox[\(\[CapitalGamma]\), \(_\)]\)"},
     {GamDDD[-k, -i, -j], Symmetric[{-i, -j}],   PrintAs -> "\[CapitalGamma]"},
-    {Gam[k, -i, -j], Symmetric[{-i, -j}],       PrintAs -> "\[CapitalGamma]"},
-    {DGamDDD[-k, -i, -j], Symmetric[{-i, -j}],  PrintAs -> "\[CapitalDelta]\[CapitalGamma]"},
-    {DGam[k, -i, -j], Symmetric[{-i, -j}],      PrintAs -> "\[CapitalDelta]\[CapitalGamma]"}
+    {Gam[k, -i, -j], Symmetric[{-i, -j}],       PrintAs -> "\[CapitalGamma]"}
   ];
 
 bDVarlist =
@@ -159,6 +157,12 @@ hDhDVarlist =
   TempTensors[
     {hDhDgamb[-l, -m, -i, -j], GenSet[Cycles[{1, 2}], Cycles[{3, 4}]], PrintAs -> "\!\(\*OverscriptBox[\(D\), \(^\)]\)\!\(\*OverscriptBox[\(D\), \(^\)]\)\!\(\*OverscriptBox[\(\[Gamma]\), \(_\)]\)"},
     {hDhDbeta[-i, -j, k], Symmetric[{-i, -j}],                         PrintAs -> "\!\(\*OverscriptBox[\(D\), \(^\)]\)\!\(\*OverscriptBox[\(D\), \(^\)]\)\[Beta]"}
+  ];
+
+DGamVarlist =
+  TempTensors[
+    {DGamDDD[-k, -i, -j], Symmetric[{-i, -j}],  PrintAs -> "\[CapitalDelta]\[CapitalGamma]"},
+    {DGam[k, -i, -j], Symmetric[{-i, -j}],      PrintAs -> "\[CapitalDelta]\[CapitalGamma]"}
   ];
 
 RVarlist =
