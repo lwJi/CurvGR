@@ -80,6 +80,8 @@ SetEQN[DGamDDD[k_, i_, j_], (hDgamb[i, j, k] + hDgamb[j, k, i] - hDgamb[k, i, j]
 
 SetEQN[DGam[k_, i_, j_], gamb[k, l] DGamDDD[-l, i, j]];
 
+SetEQN[trDGam[k_], gamb[i, j] DGam[k, -i, -j]];
+
 (*******)
 
 (* EOM *)
