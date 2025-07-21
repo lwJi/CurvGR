@@ -97,6 +97,15 @@ dTetradVarlist =
 
 (**************************)
 
+TempdtEvolVarlist =
+  TempTensors[
+    {dteps[-i, -j], Symmetric[{-i, -j}],  PrintAs -> "\!\(\*SubscriptBox[\(\[PartialD]\), \(t\)]\)\[Epsilon]"},
+    {dtexAb[-i, -j], Symmetric[{-i, -j}], PrintAs -> "\!\(\*SubscriptBox[\(\[PartialD]\), \(t\)]\)\!\(\*OverscriptBox[\(A\), \(_\)]\)"},
+    {dtLt[i],                             PrintAs -> "\!\(\*SubscriptBox[\(\[PartialD]\), \(t\)]\)\!\(\*OverscriptBox[\(\[CapitalLambda]\), \(~\)]\)"},
+    {dtbeta[i],                           PrintAs -> "\!\(\*SubscriptBox[\(\[PartialD]\), \(t\)]\)\[Beta]"},
+    {dtB[i],                              PrintAs -> "\!\(\*SubscriptBox[\(\[PartialD]\), \(t\)]\)B"}
+  ];
+
 TempEvolVarlist =
   TempTensors[
     {eps[-i, -j], Symmetric[{-i, -j}],  PrintAs -> "\[Epsilon]"},
