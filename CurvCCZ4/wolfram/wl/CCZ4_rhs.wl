@@ -42,6 +42,22 @@ SetEQN[ddbeta[k_, l_, i_], eOSvt[i, -j] ddbetaO[k, l, j] + deOSvt[k, i, -j] dbet
 
 SetEQN[psim4[], Exp[-4 phi[]]];
 
+SetEQN[psi4[], 1 / psim4[]];
+
+SetEQN[dgam[k_, i_, j_], psi4[] (4 dphi[k] gamb[i, j] + dgamb[k, i, j])];
+
+SetEQN[invgam[i_, j_], psim4[] invgamb[i, j]];
+
+SetEQN[gam[i_, j_], psi4[] gamb[i, j]];
+
+SetEQN[GambDDD[k_, i_, j_], 1/2 (dgamb[i, j, k] + dgamb[j, k, i] - dgamb[k, i, j])];
+
+SetEQN[Gamb[k_, i_, j_], invgamb[k, l] GambDDD[-l, i, j]];
+
+SetEQN[GamDDD[k_, i_, j_], 1/2 (dgam[i, j, k] + dgam[j, k, i] - dgam[k, i, j])];
+
+SetEQN[Gam[k_, i_, j_], invgam[k, l] GamDDD[-l, i, j]];
+
 (*******)
 
 (* EOM *)
