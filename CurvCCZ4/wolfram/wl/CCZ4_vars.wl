@@ -169,10 +169,13 @@ DGamVarlist =
 
 RVarlist =
   TempTensors[
-    {RtW[-i, -j], Symmetric[{-i, -j}], PrintAs -> "\!\(\*SuperscriptBox[OverscriptBox[\(R\), \(~\)], \(W\)]\)"},
-    {Rt[-i, -j], Symmetric[{-i, -j}], PrintAs -> "\!\(\*OverscriptBox[\(R\), \(~\)]\)"},
-    {R[-i, -j], Symmetric[{-i, -j}]},
-    {trR[], PrintAs -> "R"}
+    {RZ[-i, -j], Symmetric[{-i, -j}],       PrintAs -> "\!\(\*SuperscriptBox[\(R\), \(Z4\)]\)"},
+    {Rb[-i, -j], Symmetric[{-i, -j}],       PrintAs -> "\!\(\*OverscriptBox[\(R\), \(_\)]\)"},
+    {RbTF[-i, -j], Symmetric[{-i, -j}],     PrintAs -> "\!\(\*SuperscriptBox[OverscriptBox[\(R\), \(_\)], \(TF\)]\)"},
+    {Rphi[-i, -j], Symmetric[{-i, -j}],     PrintAs -> "\!\(\*SuperscriptBox[\(R\), \(\[Phi]\)]\)"},
+    {RphiTF[-i, -j], Symmetric[{-i, -j}],   PrintAs -> "\!\(\*SuperscriptBox[\(R\), \(\[Phi]TF\)]\)"},
+    {Ralpha[-i, -j], Symmetric[{-i, -j}],   PrintAs -> "\!\(\*SuperscriptBox[\(R\), \(\[Alpha]\)]\)"},
+    {RalphaTF[-i, -j], Symmetric[{-i, -j}], PrintAs -> "\!\(\*SuperscriptBox[\(R\), \(\[Alpha]TF\)]\)"}
   ];
 
 (* Matter *)
