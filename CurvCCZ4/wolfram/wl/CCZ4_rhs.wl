@@ -147,3 +147,15 @@ SetEQN[dttrK[], LbetatrK[] + psim4[] (alpha[] (trRb[] - 8 trbDbDphi[] - 8 trbDph
 SetEQN[dtexAb[i_, j_], LbetaexAb[i, j] - 2/3 exAb[i, j] trbDbeta[] - 2 alpha[] invgamb[k, l] exAb[i, -k] exAb[j, -l] + alpha[] exAb[i, j] (trK[] - 2 Theta[]) + psim4[] (RphiTF[i, j] + RalphaTF[i, j] + alpha[] RbTF[i, j] - 8 cpi alpha[] (Ss[i, j] - 1/3 gamb[i, j] invgamb[k, l] Ss[-k, -l]))];
 
 SetEQN[dtLt[i_], LbetaLt[i] + invgamb[k, l] hDhDbeta[-k, -l, i] + 1/3 invgamb[i, j] bDtrbDbeta[-j] - 2 exAbUU[i, l] (dalpha[-l] - 6 alpha[] dphi[-l]) + 2 alpha[] exAbUU[k, l] DGam[i, -k, -l] - (4/3 alpha[] trK[] - 2 ckappa1) psi4[] ZU[i] + 2 invgamb[i, k] (alpha[] dTheta[-k] - Theta[] dalpha[-k]) - 4/3 alpha[] invgamb[i, k] dtrK[-k] - 16 cpi alpha[] invgamb[i, k] Sm[-k] + 2 ckappa3 (1/3 Lt[i] trbDbeta[] - psi4[] ZU[k] hDbeta[-k, i]) + 2/3 (1 - ckappa3) trDGam[i] trbDbeta[]];
+
+(********************)
+
+(* Gauge Conditions *)
+
+(********************)
+
+SetEQN[dtalpha[], Lbetaalpha[] - 2 alpha[] (trK[] - 2 Theta[])];
+
+SetEQN[dtbeta[i_], B[i] + beta[k] hDbeta[-k, i]];
+
+SetEQN[dtB[i_], 3/4 (dtLt[i] - beta[k] hDLt[-k, i]) + beta[k] hDB[-k, i] - ceta B[i]];
