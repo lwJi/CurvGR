@@ -150,7 +150,8 @@ trVarlist =
   TempTensors[
     {trexAb[],       PrintAs -> "\!\(\*OverscriptBox[\(A\), \(_\)]\)"},
     {trbDbDphi[],    PrintAs -> "\!\(\*OverscriptBox[\(D\), \(_\)]\)\!\(\*OverscriptBox[\(D\), \(_\)]\)\[Phi]"},
-    {trbDphibDphi[], PrintAs -> "\!\(\*OverscriptBox[\(D\), \(_\)]\)\[Phi]\!\(\*OverscriptBox[\(D\), \(_\)]\)\[Phi]"}
+    {trbDphibDphi[], PrintAs -> "\!\(\*OverscriptBox[\(D\), \(_\)]\)\[Phi]\!\(\*OverscriptBox[\(D\), \(_\)]\)\[Phi]"},
+    {trbDbDalpha[],  PrintAs -> "\!\(\*OverscriptBox[\(D\), \(_\)]\)\!\(\*OverscriptBox[\(D\), \(_\)]\)\[Alpha]"}
   ];
 
 hDVarlist =
@@ -180,6 +181,7 @@ RVarlist =
   TempTensors[
     {RZ[-i, -j], Symmetric[{-i, -j}],       PrintAs -> "\!\(\*SuperscriptBox[\(R\), \(Z4\)]\)"},
     {Rb[-i, -j], Symmetric[{-i, -j}],       PrintAs -> "\!\(\*OverscriptBox[\(R\), \(_\)]\)"},
+    {trRb[],                                PrintAs -> "\!\(\*OverscriptBox[\(R\), \(_\)]\)"},
     {RbTF[-i, -j], Symmetric[{-i, -j}],     PrintAs -> "\!\(\*SuperscriptBox[OverscriptBox[\(R\), \(_\)], \(TF\)]\)"},
     {Rphi[-i, -j], Symmetric[{-i, -j}],     PrintAs -> "\!\(\*SuperscriptBox[\(R\), \(\[Phi]\)]\)"},
     {RphiTF[-i, -j], Symmetric[{-i, -j}],   PrintAs -> "\!\(\*SuperscriptBox[\(R\), \(\[Phi]TF\)]\)"},
