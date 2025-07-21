@@ -171,7 +171,7 @@ hDVarlist =
     {hDgamb[-k, -i, -j], Symmetric[{-i, -j}], PrintAs -> "\!\(\*OverscriptBox[\(D\), \(^\)]\)\!\(\*OverscriptBox[\(\[Gamma]\), \(_\)]\)"},
     {hDLt[-k, i],                             PrintAs -> "\!\(\*OverscriptBox[\(D\), \(^\)]\)\!\(\*OverscriptBox[\(\[CapitalLambda]\), \(~\)]\)"},
     {hDbeta[-k, i],                           PrintAs -> "\!\(\*OverscriptBox[\(D\), \(^\)]\)\[Beta]"},
-    {hDB-k, i],                               PrintAs -> "\!\(\*OverscriptBox[\(D\), \(^\)]\)B"}
+    {hDB[-k, i],                              PrintAs -> "\!\(\*OverscriptBox[\(D\), \(^\)]\)B"}
   ];
 
 hDhDVarlist =
