@@ -99,7 +99,6 @@ dTetradVarlist =
 
 TempEvolVarlist =
   TempTensors[
-    {psim4[],                           PrintAs -> "\!\(\*SuperscriptBox[\(\[Psi]\), \(-4\)]\)"},
     {eps[-i, -j], Symmetric[{-i, -j}],  PrintAs -> "\[Epsilon]"},
     {gamb[-i, -j], Symmetric[{-i, -j}], PrintAs -> "\!\(\*OverscriptBox[\(\[Gamma]\), \(_\)]\)"},
     {exAb[-i, -j], Symmetric[{-i, -j}], PrintAs -> "\!\(\*OverscriptBox[\(A\), \(_\)]\)"},
@@ -113,7 +112,6 @@ TempdEvolVarlist =
     (* first *)
     {deps[-k, -i, -j], Symmetric[{-i, -j}],  PrintAs -> "\[PartialD]\[Epsilon]"},
     {dgamb[-k, -i, -j], Symmetric[{-i, -j}], PrintAs -> "\[PartialD]\!\(\*OverscriptBox[\(\[Gamma]\), \(_\)]\)"},
-    {dgam[-k, -i, -j], Symmetric[{-i, -j}],  PrintAs -> "\[PartialD]\[Gamma]"},
     {dexAb[-k, -i, -j], Symmetric[{-i, -j}], PrintAs -> "\[PartialD]\!\(\*OverscriptBox[\(A\), \(_\)]\)"},
     {dtrLt[-k, i],                           PrintAs -> "\[PartialD]\!\(\*OverscriptBox[\(\[CapitalLambda]\), \(~\)]\)"},
     {dbeta[-k, i],                           PrintAs -> "\[PartialD]\[Beta]"},
@@ -125,6 +123,9 @@ TempdEvolVarlist =
 
 IntermediateVarlist =
   TempTensors[
+    {psim4[],                                   PrintAs -> "\!\(\*SuperscriptBox[\(\[Psi]\), \(-4\)]\)"},
+    {psi4[],                                    PrintAs -> "\!\(\*SuperscriptBox[\(\[Psi]\), \(4\)]\)"},
+    {dgam[-k, -i, -j], Symmetric[{-i, -j}],     PrintAs -> "\[PartialD]\[Gamma]"},
     {invgamb[i, j], Symmetric[{i, j}],          PrintAs -> "\!\(\*OverscriptBox[\(\[Gamma]\), \(_\)]\)"},
     {invgam[i, j], Symmetric[{i, j}],           PrintAs -> "\[Gamma]"},
     {gam[-i, -j], Symmetric[{-i, -j}],          PrintAs -> "\[Gamma]"},
