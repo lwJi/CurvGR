@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    173512,       4877]
-NotebookOptionsPosition[    159181,       4652]
-NotebookOutlinePosition[    159576,       4668]
-CellTagsIndexPosition[    159533,       4665]
+NotebookDataLength[    244883,       6949]
+NotebookOptionsPosition[    228016,       6685]
+NotebookOutlinePosition[    228412,       6701]
+CellTagsIndexPosition[    228369,       6698]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -39,18 +39,18 @@ Cell[CellGroupData[{
 Cell[BoxData["\<\"------------------------------------------------------------\
 \"\>"], "Print",
  CellChangeTimes->CompressedData["
-1:eJxTTMoPSmVkYGDQA2Leixq+va5vHU+X2DZMANJJE5aeAdFbrj/+B6LZZ6iL
-TQTSn1YsNwPREbqHLCcD6TaLZfYgWmP1kmQQrXY4ZCmIrjj/+yaIfibG/BRE
-r9o54SOI7jrbfGkKkF7u2DlpKpC+GMtxYgGQFrHbyLcQSBczPhBbBKR/vOGy
-XAWk3VyTJ1wC0leeappcBtKPtB4Hg2gD+975IPrU0myNxTFvHeVa+x1XAGmt
-VQuug+iar3vYVwJpierzcw8C6bh9nP9/trx1fBUXV/ULSM8yqugG0S49TotA
-9FPNn19A9Ivnr/N/A+kl76x/g2gdIS3PP0B6j9KvYBB9yUsk4i+QnnTf4AqI
-vrDdXO0fkDawli0F0XJndNaB6A5Wwz0gWmDSjt8gWq3vgvF/ID2h0aSEpfWt
-IwB73sc/
+1:eJwVxU0ogwEYAOAtZiiSreVixWG2NbWxsBbbJ1OUkjmssMOWk7SDqTUOxORv
+fIaSYj82mymlFGopXMS0H6vlRNYQpoiyjc37Hp6eCo2uq59KoVBEoCjE7TAr
+EsSVvnGMhDWky48fRGMZnL5WxVqCPz3uOlxVfSZZhqcatmU4d9epxTnn3S7c
+EEjf4o+snDjuPSY/8NnrifAK7CZmLKtwqC//wgYzm/aL7fAQ9Z7lgH/eCiVe
+uFWhJcNwJM4T38AP/JgSF8rMVvzSNcDd6k0QbNMi4YH5XlsUH/320XfgspHA
+ximsPinIJicTxItabUzB6zWGObxlvtmBx3nJL/z56VWXhp3v0jQuKOW3/cK+
+ypQSD7czVX+w5U4YwYOH9ZwMLJSWD+Nsv2APn6aJfHiJ5SiNcxaCtVmYHBfr
+c00JQi5n2GmwddPIyIP5gz2d+D+hetCs
   "],
  CellLabel->
   "During evaluation of \
-In[1]:=",ExpressionUUID->"166e0526-d5c0-4074-b83a-b30e898976cb"],
+In[1]:=",ExpressionUUID->"344accc6-1134-4549-b8f2-3e36857b2ddc"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -62,80 +62,80 @@ Cell[BoxData[
   
   Editable->False]], "Print",
  CellChangeTimes->CompressedData["
-1:eJxTTMoPSmVkYGDQA2Leixq+va5vHU+X2DZMANJJE5aeAdFbrj/+B6LZZ6iL
-TQTSn1YsNwPREbqHLCcD6TaLZfYgWmP1kmQQrXY4ZCmIrjj/+yaIfibG/BRE
-r9o54SOI7jrbfGkKkF7u2DlpKpC+GMtxYgGQFrHbyLcQSBczPhBbBKR/vOGy
-XAWk3VyTJ1wC0leeappcBtKPtB4Hg2gD+975IPrU0myNxTFvHeVa+x1XAGmt
-VQuug+iar3vYVwJpierzcw8C6bh9nP9/trx1fBUXV/ULSM8yqugG0S49TotA
-9FPNn19A9Ivnr/N/A+kl76x/g2gdIS3PP0B6j9KvYBB9yUsk4i+QnnTf4AqI
-vrDdXO0fkDawli0F0XJndNaB6A5Wwz0gWmDSjt8gWq3vgvF/IO05waSEpfWt
-IwB6D8cH
+1:eJwVxU0ogwEYAOAtZiiSreVixWG2NbWxsBbbJ1OUkjmssMOWk8MOptbsQEz+
+xmcoKfZjs5lSSqGWwkVM+7FaTmQNYYoo29i87+HpqdLoegapFApFBErC3C6L
+Iklc6ZvHSFhDugP4QSyexelrNawl+NPracBVtWeSZXiqaVuGc3ddWpxz3uvG
+DcHMLf7IykvgvmPyA5+9noiswB5ixroKhwcKL+wws2W/1AEPU+9ZTvjnrVji
+g9sVWjICRxM88Q38wI8rcaHMYsMv3UPcrf4kwTYvEl6Y77PHcNO3n74DV4wG
+N05h9UlRLjWZJF7UamMaXq8zzOFt861OPMFLfeHPT6+6DOx6l2ZwQTm/4xf2
+V6eVeKSTqfqDrXfCKB46bORkYaG0cgRnBwR7+DRN5MfLrEcZnLMQqs/B5LhY
+n29OEnI5w0GDbZtGRgGcNvV14/+oY9GL
   "],
  CellLabel->
   "During evaluation of \
-In[1]:=",ExpressionUUID->"b91805e6-8cb8-4b6f-9cb3-47340dfb1595"],
+In[1]:=",ExpressionUUID->"ed41757b-44a0-43f9-aa49-e6e98dd733c3"],
 
 Cell[BoxData["\<\"CopyRight (C) 2003-2020, Jose M. Martin-Garcia, under the \
 General Public License.\"\>"], "Print",
  CellChangeTimes->CompressedData["
-1:eJxTTMoPSmVkYGDQA2Leixq+va5vHU+X2DZMANJJE5aeAdFbrj/+B6LZZ6iL
+1:eJxTTMoPSmVkYGAwBGLeixq+va5vHU+X2DZMANJJE5aeAdFbrj/+B6LZZ6iL
 TQTSn1YsNwPREbqHLCcD6TaLZfYgWmP1kmQQrXY4ZCmIrjj/+yaIfibG/BRE
 r9o54SOI7jrbfGkKkF7u2DlpKpC+GMtxYgGQFrHbyLcQSBczPhBbBKR/vOGy
 XAWk3VyTJ1wC0leeappcBtKPtB4Hg2gD+975IPrU0myNxTFvHeVa+x1XAGmt
 VQuug+iar3vYVwJpierzcw8C6bh9nP9/trx1fBUXV/ULSM8yqugG0S49TotA
 9FPNn19A9Ivnr/N/A+kl76x/g2gdIS3PP0B6j9KvYBB9yUsk4i+QnnTf4AqI
-vrDdXO0fkDawli0F0XJndNaB6A5Wwz0gWmDSjt8gWq3vgvF/IP1uo0kJS+tb
-RwCAHsfN
+vrDdXO0fkDawli0F0XJndNaB6A5Wwz0gWmDSjt8gWq3vgvF/ID2h0aSEpfWt
+o4OD8EJWID1/XpUwG5AumRYdAKIBpOnRHw==
   "],
  CellLabel->
   "During evaluation of \
-In[1]:=",ExpressionUUID->"ee0db50d-a1a6-423f-98dd-668de4008696"],
+In[1]:=",ExpressionUUID->"318d5a98-c9b5-4c65-910a-820adcfadacf"],
 
 Cell[BoxData["\<\"Connecting to external mac executable...\"\>"], "Print",
  CellChangeTimes->CompressedData["
-1:eJxTTMoPSmVkYGDQA2Leixq+va5vHU+X2DZMANJJE5aeAdFbrj/+B6LZZ6iL
+1:eJxTTMoPSmVkYGAwBGLeixq+va5vHU+X2DZMANJJE5aeAdFbrj/+B6LZZ6iL
 TQTSn1YsNwPREbqHLCcD6TaLZfYgWmP1kmQQrXY4ZCmIrjj/+yaIfibG/BRE
 r9o54SOI7jrbfGkKkF7u2DlpKpC+GMtxYgGQFrHbyLcQSBczPhBbBKR/vOGy
 XAWk3VyTJ1wC0leeappcBtKPtB4Hg2gD+975IPrU0myNxTFvHeVa+x1XAGmt
 VQuug+iar3vYVwJpierzcw8C6bh9nP9/trx1fBUXV/ULSM8yqugG0S49TotA
 9FPNn19A9Ivnr/N/A+kl76x/g2gdIS3PP0B6j9KvYBB9yUsk4i+QnnTf4AqI
-vrDdXO0fkDawli0F0XJndNaB6A5Wwz0gWmDSjt8gWq3vgvF/IP0r3LyEpfWt
-IwB+GseC
+vrDdXO0fkDawli0F0XJndNaB6A5Wwz0gWmDSjt8gWq3vgvF/ID2h0aSEpfWt
+o4OD8EJWID1/XpUwG5D+xh0XAKIBpT7RGQ==
   "],
  CellLabel->
   "During evaluation of \
-In[1]:=",ExpressionUUID->"6e24fe6b-da4f-4233-8c4f-036671427a1e"],
+In[1]:=",ExpressionUUID->"c79cd58f-86a6-4231-beb9-dfa1a055a568"],
 
 Cell[BoxData["\<\"Connection established.\"\>"], "Print",
  CellChangeTimes->CompressedData["
-1:eJxTTMoPSmVkYGDQA2Leixq+va5vHU+X2DZMANJJE5aeAdFbrj/+B6LZZ6iL
+1:eJxTTMoPSmVkYGAwBGLeixq+va5vHU+X2DZMANJJE5aeAdFbrj/+B6LZZ6iL
 TQTSn1YsNwPREbqHLCcD6TaLZfYgWmP1kmQQrXY4ZCmIrjj/+yaIfibG/BRE
 r9o54SOI7jrbfGkKkF7u2DlpKpC+GMtxYgGQFrHbyLcQSBczPhBbBKR/vOGy
 XAWk3VyTJ1wC0leeappcBtKPtB4Hg2gD+975IPrU0myNxTFvHeVa+x1XAGmt
 VQuug+iar3vYVwJpierzcw8C6bh9nP9/trx1fBUXV/ULSM8yqugG0S49TotA
 9FPNn19A9Ivnr/N/A+kl76x/g2gdIS3PP0B6j9KvYBB9yUsk4i+QnnTf4AqI
-vrDdXO0fkDawli0F0XJndNaB6A5Wwz0gWmDSjt8gWq3vgvF/IC3VYlXC0vrW
-EQB4Z8bS
+vrDdXO0fkDawli0F0XJndNaB6A5Wwz0gWmDSjt8gWq3vgvF/ID2h0aSEpfWt
+o4OD8EJWID1/XpUwG5D+w58YAKIBpZzRJg==
   "],
  CellLabel->
   "During evaluation of \
-In[1]:=",ExpressionUUID->"cd33dfa4-656d-4bb5-805c-01f7eed82c9b"],
+In[1]:=",ExpressionUUID->"a31644eb-fb07-4219-8b90-a7d2e187e40e"],
 
 Cell[BoxData["\<\"------------------------------------------------------------\
 \"\>"], "Print",
  CellChangeTimes->CompressedData["
-1:eJxTTMoPSmVkYGDQA2Leixq+va5vHU+X2DZMANJJE5aeAdFbrj/+B6LZZ6iL
+1:eJxTTMoPSmVkYGAwBGLeixq+va5vHU+X2DZMANJJE5aeAdFbrj/+B6LZZ6iL
 TQTSn1YsNwPREbqHLCcD6TaLZfYgWmP1kmQQrXY4ZCmIrjj/+yaIfibG/BRE
 r9o54SOI7jrbfGkKkF7u2DlpKpC+GMtxYgGQFrHbyLcQSBczPhBbBKR/vOGy
 XAWk3VyTJ1wC0leeappcBtKPtB4Hg2gD+975IPrU0myNxTFvHeVa+x1XAGmt
 VQuug+iar3vYVwJpierzcw8C6bh9nP9/trx1fBUXV/ULSM8yqugG0S49TotA
 9FPNn19A9Ivnr/N/A+kl76x/g2gdIS3PP0B6j9KvYBB9yUsk4i+QnnTf4AqI
-vrDdXO0fkDawli0F0XJndNaB6A5Wwz0gWmDSjt8gWq3vgvF/IJ3Za1XC0vrW
-EQB7Hscq
+vrDdXO0fkDawli0F0XJndNaB6A5Wwz0gWmDSjt8gWq3vgvF/ID2h0aSEpfWt
+o4OD8EJWID1/XpUwG5B+LpkYAKIBpTrRGw==
   "],
  CellLabel->
   "During evaluation of \
-In[1]:=",ExpressionUUID->"bd3e53bf-fb3d-41e7-9cb1-d7bd330a4c53"],
+In[1]:=",ExpressionUUID->"192ea9a1-2785-4585-b3bb-4e4b959fc448"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -147,100 +147,100 @@ Cell[BoxData[
   "Package xAct`xTensor`  version ", "1.2.0", ", ", {2021, 10, 17}],
   Editable->False]], "Print",
  CellChangeTimes->CompressedData["
-1:eJxTTMoPSmVkYGDQA2Leixq+va5vHU+X2DZMANJJE5aeAdFbrj/+B6LZZ6iL
-TQTSn1YsNwPREbqHLCcD6TaLZfYgWmP1kmQQrXY4ZCmIrjj/+yaIfibG/BRE
-r9o54SOI7jrbfGkKkF7u2DlpKpC+GMtxYgGQFrHbyLcQSBczPhBbBKR/vOGy
-XAWk3VyTJ1wC0leeappcBtKPtB4Hg2gD+975IPrU0myNxTFvHeVa+x1XAGmt
-VQuug+iar3vYVwJpierzcw8C6bh9nP9/trx1fBUXV/ULSM8yqugG0S49TotA
-9FPNn19A9Ivnr/N/A+kl76x/g2gdIS3PP0B6j9KvYBB9yUsk4i+QnnTf4AqI
-vrDdXO0fkDawli0F0XJndNaB6A5Wwz0gWmDSjt8gWq3vgvF/IN0zxaqEpfWt
-IwB8Z8dU
+1:eJwVxU0ogwEYAOAtZiiSreViNYfZ1tTGwhLbJ1OUkjnswMqWk8MOptY4EJO/
+8RlKiv3YbKaUUqilcBHTfms5kTWEKaJsY/O+h6eHo9H1DFIpFIoYlIR4XWZF
+krjWN4+TsIZ0+fHDWDyL09erWcvwp8ddj6tqzqUr8HTjjgzn7Tm1OPei14Ub
+Aplb/JGVl8C9J+QHPnczGV6F3cSsZQ0O9Rde2mBmy0GpHR6m3rMc8M9bsdQL
+tyu0ZBiOJviSCPwgiCtxkcxsxa9cQ7ztviTBNi0RHljgtcXwsW8ffReuGA1s
+nsHq06JcaipJvKjVxjS8UWuYx9sWWh14gp/6wp+fXnUZ2PnelMGF5YKOX9hX
+lVbi4U6m6g+23ImiePCogZuFRU2VIzjbL9zHZ2hiH15mOc7g3MVgXQ4mJyT6
+fFOSkMsZdhps3TIyCuAIZ6Ab/wek0tEP
   "],
  CellLabel->
   "During evaluation of \
-In[1]:=",ExpressionUUID->"69a13947-6f7e-4eeb-8610-273a2f13b7f2"],
+In[1]:=",ExpressionUUID->"c23b9631-4d02-4a03-87d8-7582e0cc732f"],
 
 Cell[BoxData["\<\"CopyRight (C) 2002-2021, Jose M. Martin-Garcia, under the \
 General Public License.\"\>"], "Print",
  CellChangeTimes->CompressedData["
-1:eJxTTMoPSmVkYGDQA2Leixq+va5vHU+X2DZMANJJE5aeAdFbrj/+B6LZZ6iL
-TQTSn1YsNwPREbqHLCcD6TaLZfYgWmP1kmQQrXY4ZCmIrjj/+yaIfibG/BRE
-r9o54SOI7jrbfGkKkF7u2DlpKpC+GMtxYgGQFrHbyLcQSBczPhBbBKR/vOGy
-XAWk3VyTJ1wC0leeappcBtKPtB4Hg2gD+975IPrU0myNxTFvHeVa+x1XAGmt
-VQuug+iar3vYVwJpierzcw8C6bh9nP9/trx1fBUXV/ULSM8yqugG0S49TotA
-9FPNn19A9Ivnr/N/A+kl76x/g2gdIS3PP0B6j9KvYBB9yUsk4i+QnnTf4AqI
-vrDdXO0fkDawli0F0XJndNaB6A5Wwz0gWmDSjt8gWq3vgvF/kLmzrUpYWt86
-AgB9WMdz
+1:eJwVxU0ogwEYAOAtZiiSreVixWG2NbWxsBbbJ1NWSuawAytbTg47mFrjQEz+
+xmcoKfZjs5lSSqGWwkVM+7FaTmQNYYoo29i87+HpqdLquweoFApFBErC3E6L
+IklcGZrHSFhLugP4QSyexelrNawl+NPracDVtWeSZXiqaVuGc3ddOpxz3uPG
+jcHMLf7IykvgvmPyA5+9noiswB5ixroKh/sKL+wws2W/1AEPUe9ZTvjnrVji
+g9sVOjICRxM88Q38wI+rcKHMYsMv3YPcrd4kwTYvEl6Y77PH8NFvP30HrhgJ
+bpzCmpOiXGoySbxoNKY0vF5nnMPb5ludeIKX+sKfn171Gdj1Ls3ggnJ+xy/s
+r06r8IiSqf6DrXfCKB46bORkYaG0chhnBwR7+DRN5MfLrEcZnLMQqs/B5LjY
+kG9OEnI5w0GDbZsmRgGs5PV34f+gwtCO
   "],
  CellLabel->
   "During evaluation of \
-In[1]:=",ExpressionUUID->"8f13dd57-3661-4ab7-996c-9af527caa32f"],
+In[1]:=",ExpressionUUID->"e2fc8461-8c96-4ef0-b17a-ffa21685e086"],
 
 Cell[BoxData["\<\"------------------------------------------------------------\
 \"\>"], "Print",
  CellChangeTimes->CompressedData["
-1:eJxTTMoPSmVkYGDQA2Leixq+va5vHU+X2DZMANJJE5aeAdFbrj/+B6LZZ6iL
-TQTSn1YsNwPREbqHLCcD6TaLZfYgWmP1kmQQrXY4ZCmIrjj/+yaIfibG/BRE
-r9o54SOI7jrbfGkKkF7u2DlpKpC+GMtxYgGQFrHbyLcQSBczPhBbBKR/vOGy
-XAWk3VyTJ1wC0leeappcBtKPtB4Hg2gD+975IPrU0myNxTFvHeVa+x1XAGmt
-VQuug+iar3vYVwJpierzcw8C6bh9nP9/trx1fBUXV/ULSM8yqugG0S49TotA
-9FPNn19A9Ivnr/N/A+kl76x/g2gdIS3PP0B6j9KvYBB9yUsk4i+QnnTf4AqI
-vrDdXO0fkDawli0F0XJndNaB6A5Wwz0gWmDSjt8gWq3vgvF/IF1mZl3C0vrW
-EQB5K8bh
+1:eJwVxU0ogwEYAOAtZiiSreVixWG2NbWxsBbbJ1OUkik7sLLl5LCDqTUOxORv
+fIaSYj82mymlFGoRLmLaj9VyImsIU0TZxnjfw9NTptF19FEpFIoIFIS4bWZF
+grjU14+QsIZ0+fG9aCyD01cqWAvwh8ddg6sqTyWL8ETdpgznbju1OOes04Ub
+Aukb/IGVFce9h+Q7Pn01Fl6C3cSUZRkO9eSe22Bmw26hHR6g3rEc8PdrvsQL
+Nyu0ZBiOxHnia/ieH1PiQpnZil+4+rkb3QmCbZonPDDfa4viw18++hZcMhRY
+O4HVR3l/yfEE8axWG1PwapVhBm+abXTgcV7yE396fNGlYeebNI0LivktP7Cv
+PKXEw61M1S9suRVG8OB+LScDC6WlgzjbL9jBJ2kiH15kOUjjnLlg9R9Mjor1
+2aYEIZcz7DTYum5k5MBdx73t+D+lRNEx
   "],
  CellLabel->
   "During evaluation of \
-In[1]:=",ExpressionUUID->"b355b7c3-a91e-4370-abf4-d880eade00fa"],
+In[1]:=",ExpressionUUID->"f297a3ee-525d-4e63-88dd-cf998247ec1f"],
 
 Cell[BoxData["\<\"These packages come with ABSOLUTELY NO WARRANTY; for \
 details type Disclaimer[]. This is free software, and you are welcome to \
 redistribute it under certain conditions. See the General Public License for \
 details.\"\>"], "Print",
  CellChangeTimes->CompressedData["
-1:eJxTTMoPSmVkYGDQA2Leixq+va5vHU+X2DZMANJJE5aeAdFbrj/+B6LZZ6iL
+1:eJxTTMoPSmVkYGAwBGLeixq+va5vHU+X2DZMANJJE5aeAdFbrj/+B6LZZ6iL
 TQTSn1YsNwPREbqHLCcD6TaLZfYgWmP1kmQQrXY4ZCmIrjj/+yaIfibG/BRE
 r9o54SOI7jrbfGkKkF7u2DlpKpC+GMtxYgGQFrHbyLcQSBczPhBbBKR/vOGy
 XAWk3VyTJ1wC0leeappcBtKPtB4Hg2gD+975IPrU0myNxTFvHeVa+x1XAGmt
 VQuug+iar3vYVwJpierzcw8C6bh9nP9/trx1fBUXV/ULSM8yqugG0S49TotA
 9FPNn19A9Ivnr/N/A+kl76x/g2gdIS3PP0B6j9KvYBB9yUsk4i+QnnTf4AqI
-vrDdXO0fkDawli0F0XJndNaB6A5Wwz0gWmDSjt8gWq3vgvF/IL3U3rqEpfWt
-IwB64scZ
+vrDdXO0fkDawli0F0XJndNaB6A5Wwz0gWmDSjt8gWq3vgvF/ID2h0aSEpfWt
+o4OD8EJWID1/XpUwG5C2OpkYAKIBpKLRHg==
   "],
  CellLabel->
   "During evaluation of \
-In[1]:=",ExpressionUUID->"49525803-0239-4edc-b812-e34e3adb620c"],
+In[1]:=",ExpressionUUID->"a503cb21-d321-4efe-81de-1fed64bca5bf"],
 
 Cell[BoxData["\<\"------------------------------------------------------------\
 \"\>"], "Print",
  CellChangeTimes->CompressedData["
-1:eJxTTMoPSmVkYGDQA2Leixq+va5vHU+X2DZMANJJE5aeAdFbrj/+B6LZZ6iL
-TQTSn1YsNwPREbqHLCcD6TaLZfYgWmP1kmQQrXY4ZCmIrjj/+yaIfibG/BRE
-r9o54SOI7jrbfGkKkF7u2DlpKpC+GMtxYgGQFrHbyLcQSBczPhBbBKR/vOGy
-XAWk3VyTJ1wC0leeappcBtKPtB4Hg2gD+975IPrU0myNxTFvHeVa+x1XAGmt
-VQuug+iar3vYVwJpierzcw8C6bh9nP9/trx1fBUXV/ULSM8yqugG0S49TotA
-9FPNn19A9Ivnr/N/A+kl76x/g2gdIS3PP0B6j9KvYBB9yUsk4i+QnnTf4AqI
-vrDdXO0fkDawli0F0XJndNaB6A5Wwz0gWmDSjt8gWq3vgvF/IL3Gw7qEpfWt
-IwB7Wccp
+1:eJwVxU0ogwEYAOAtZiiSreVixWG2NbWxsBbbJ1OUkjnswMqWk8MOptY4EJO/
+8W0oKfZjs5lSSqGWwkVM+7FaTmQNYYoo29i87+HpqdLoegapFApFBErC3C6z
+Iklc6ZvHSVhDugP4QSyexelrNSwL/On1NOCq2jPJMjzdtC3DubsuLc4573Xj
+hmDmFn9k5SVw3zH5gc9dT0ZWYA8xa12Fw/2FF3aY2bJf6oCHqfcsJ/zzVizx
+we0KLRmBowme+AZ+4MeVuFBmtuGX7iHuVl+SYJuWCC/M99lj+Ni3n74DV4wG
+N05h9UlRLjWVJF7UamMaXq8zzONtC61OPMFLfeHPT6+6DOx6l2ZwQTm/4xf2
+V6eVeKSTqfqDrXfCKB46bORkYaG0cgRnBwR7+AxN5MfLrEcZnLMYqs/B5IRY
+n29KEnI5w0GDbZtGRgFsiQx04/+nmdF+
   "],
  CellLabel->
   "During evaluation of \
-In[1]:=",ExpressionUUID->"ea71a3b9-a53b-409c-8a6d-fcbda42ce46f"],
+In[1]:=",ExpressionUUID->"44bb40c2-be23-44e5-bf12-77facdbaedb8"],
 
 Cell[BoxData["\<\"------------------------------------------------------------\
 \"\>"], "Print",
  CellChangeTimes->CompressedData["
-1:eJxTTMoPSmVkYGDQA2Leixq+va5vHU+X2DZMANJJE5aeAdFbrj/+B6LZZ6iL
+1:eJxTTMoPSmVkYGAwBGLeixq+va5vHU+X2DZMANJJE5aeAdFbrj/+B6LZZ6iL
 TQTSn1YsNwPREbqHLCcD6TaLZfYgWmP1kmQQrXY4ZCmIrjj/+yaIfibG/BRE
 r9o54SOI7jrbfGkKkF7u2DlpKpC+GMtxYgGQFrHbyLcQSBczPhBbBKR/vOGy
 XAWk3VyTJ1wC0leeappcBtKPtB4Hg2gD+975IPrU0myNxTFvHeVa+x1XAGmt
 VQuug+iar3vYVwJpierzcw8C6bh9nP9/trx1fBUXV/ULSM8yqugG0S49TotA
 9FPNn19A9Ivnr/N/A+kl76x/g2gdIS3PP0B6j9KvYBB9yUsk4i+QnnTf4AqI
-vrDdXO0fkDawli0F0XJndNaB6A5Wwz0gWmDSjt8gWq3vgvF/IF2S71jC0vrW
-EQB6zsce
+vrDdXO0fkDawli0F0XJndNaB6A5Wwz0gWmDSjt8gWq3vgvF/ID2h0aSEpfWt
+o4OD8EJWID1/XpUwG5D2a0gPANEAo2fQ7w==
   "],
  CellLabel->
   "During evaluation of \
-In[1]:=",ExpressionUUID->"076a5312-c5d6-4c92-bf0f-b02046fa292c"],
+In[1]:=",ExpressionUUID->"cbe94a97-5597-433b-9ad8-c6fdc40c0858"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -252,476 +252,476 @@ Cell[BoxData[
   
   Editable->False]], "Print",
  CellChangeTimes->CompressedData["
-1:eJxTTMoPSmVkYGDQA2Leixq+va5vHU+X2DZMANJJE5aeAdFbrj/+B6LZZ6iL
+1:eJxTTMoPSmVkYGAwBGLeixq+va5vHU+X2DZMANJJE5aeAdFbrj/+B6LZZ6iL
 TQTSn1YsNwPREbqHLCcD6TaLZfYgWmP1kmQQrXY4ZCmIrjj/+yaIfibG/BRE
 r9o54SOI7jrbfGkKkF7u2DlpKpC+GMtxYgGQFrHbyLcQSBczPhBbBKR/vOGy
 XAWk3VyTJ1wC0leeappcBtKPtB4Hg2gD+975IPrU0myNxTFvHeVa+x1XAGmt
 VQuug+iar3vYVwJpierzcw8C6bh9nP9/trx1fBUXV/ULSM8yqugG0S49TotA
 9FPNn19A9Ivnr/N/A+kl76x/g2gdIS3PP0B6j9KvYBB9yUsk4i+QnnTf4AqI
-vrDdXO0fkDawli0F0XJndNaB6A5Wwz0gWmDSjt8gWq3vgvF/IL212rGEpfWt
-IwB9Ksdr
+vrDdXO0fkDawli0F0XJndNaB6A5Wwz0gWmDSjt8gWq3vgvF/ID2h0aSEpfWt
+o4OD8EJWID1/XpUwG5De3Z0eAKIBpxzRZw==
   "],
  CellLabel->
   "During evaluation of \
-In[1]:=",ExpressionUUID->"07166dd4-9985-4441-a09f-ff9b11f19ec9"],
+In[1]:=",ExpressionUUID->"07d3318e-bf79-481e-b9fa-a5ce7811932e"],
 
 Cell[BoxData["\<\"CopyRight (C) 2005-2021, David Yllanes and Jose M. \
 Martin-Garcia, under the General Public License.\"\>"], "Print",
  CellChangeTimes->CompressedData["
-1:eJxTTMoPSmVkYGDQA2Leixq+va5vHU+X2DZMANJJE5aeAdFbrj/+B6LZZ6iL
+1:eJxTTMoPSmVkYGAwBGLeixq+va5vHU+X2DZMANJJE5aeAdFbrj/+B6LZZ6iL
 TQTSn1YsNwPREbqHLCcD6TaLZfYgWmP1kmQQrXY4ZCmIrjj/+yaIfibG/BRE
 r9o54SOI7jrbfGkKkF7u2DlpKpC+GMtxYgGQFrHbyLcQSBczPhBbBKR/vOGy
 XAWk3VyTJ1wC0leeappcBtKPtB4Hg2gD+975IPrU0myNxTFvHeVa+x1XAGmt
 VQuug+iar3vYVwJpierzcw8C6bh9nP9/trx1fBUXV/ULSM8yqugG0S49TotA
 9FPNn19A9Ivnr/N/A+kl76x/g2gdIS3PP0B6j9KvYBB9yUsk4i+QnnTf4AqI
-vrDdXO0fkDawli0F0XJndNaB6A5Wwz0gWmDSjt8gWq3vgvF/IL2mxbGEpfWt
-IwB9Icdr
+vrDdXO0fkDawli0F0XJndNaB6A5Wwz0gWmDSjt8gWq3vgvF/ID2h0aSEpfWt
+o4OD8EJWID1/XpUwG5AOn5IeAKIBpDvRDA==
   "],
  CellLabel->
   "During evaluation of \
-In[1]:=",ExpressionUUID->"5902349d-ab4e-448e-8303-cfc7d5278575"],
+In[1]:=",ExpressionUUID->"b7f77674-f620-4782-8d83-90f86a6c9a3e"],
 
 Cell[BoxData["\<\"------------------------------------------------------------\
 \"\>"], "Print",
  CellChangeTimes->CompressedData["
-1:eJxTTMoPSmVkYGDQA2Leixq+va5vHU+X2DZMANJJE5aeAdFbrj/+B6LZZ6iL
+1:eJxTTMoPSmVkYGAwBGLeixq+va5vHU+X2DZMANJJE5aeAdFbrj/+B6LZZ6iL
 TQTSn1YsNwPREbqHLCcD6TaLZfYgWmP1kmQQrXY4ZCmIrjj/+yaIfibG/BRE
 r9o54SOI7jrbfGkKkF7u2DlpKpC+GMtxYgGQFrHbyLcQSBczPhBbBKR/vOGy
 XAWk3VyTJ1wC0leeappcBtKPtB4Hg2gD+975IPrU0myNxTFvHeVa+x1XAGmt
 VQuug+iar3vYVwJpierzcw8C6bh9nP9/trx1fBUXV/ULSM8yqugG0S49TotA
 9FPNn19A9Ivnr/N/A+kl76x/g2gdIS3PP0B6j9KvYBB9yUsk4i+QnnTf4AqI
-vrDdXO0fkDawli0F0XJndNaB6A5Wwz0gWmDSjt8gWq3vgvF/IP0t1qmEpfWt
-IwB+ZseP
+vrDdXO0fkDawli0F0XJndNaB6A5Wwz0gWmDSjt8gWq3vgvF/ID2h0aSEpfWt
+o4OD8EJWID1/XpUwG5AOSM4IANEAorLQ1Q==
   "],
  CellLabel->
   "During evaluation of \
-In[1]:=",ExpressionUUID->"8be2f933-6431-409f-9c46-d2eca92b5471"],
+In[1]:=",ExpressionUUID->"9b63fbec-680b-482e-9d7e-74c3882accbd"],
 
 Cell[BoxData["\<\"These packages come with ABSOLUTELY NO WARRANTY; for \
 details type Disclaimer[]. This is free software, and you are welcome to \
 redistribute it under certain conditions. See the General Public License for \
 details.\"\>"], "Print",
  CellChangeTimes->CompressedData["
-1:eJxTTMoPSmVkYGDQA2Leixq+va5vHU+X2DZMANJJE5aeAdFbrj/+B6LZZ6iL
+1:eJxTTMoPSmVkYGAwBGLeixq+va5vHU+X2DZMANJJE5aeAdFbrj/+B6LZZ6iL
 TQTSn1YsNwPREbqHLCcD6TaLZfYgWmP1kmQQrXY4ZCmIrjj/+yaIfibG/BRE
 r9o54SOI7jrbfGkKkF7u2DlpKpC+GMtxYgGQFrHbyLcQSBczPhBbBKR/vOGy
 XAWk3VyTJ1wC0leeappcBtKPtB4Hg2gD+975IPrU0myNxTFvHeVa+x1XAGmt
 VQuug+iar3vYVwJpierzcw8C6bh9nP9/trx1fBUXV/ULSM8yqugG0S49TotA
 9FPNn19A9Ivnr/N/A+kl76x/g2gdIS3PP0B6j9KvYBB9yUsk4i+QnnTf4AqI
-vrDdXO0fkDawli0F0XJndNaB6A5Wwz0gWmDSjt8gWq3vgvF/IO2V6VTC0vrW
-EQB5Wsbv
+vrDdXO0fkDawli0F0XJndNaB6A5Wwz0gWmDSjt8gWq3vgvF/ID2h0aSEpfWt
+o4OD8EJWID1/XpUwG5Cuys8IANEApFbRCw==
   "],
  CellLabel->
   "During evaluation of \
-In[1]:=",ExpressionUUID->"7bc21ae5-b4d8-4a4d-9f28-aeb3d6d3abc8"],
+In[1]:=",ExpressionUUID->"1f8fb15f-0309-4e77-9436-5828c66c3084"],
 
 Cell[BoxData["\<\"------------------------------------------------------------\
 \"\>"], "Print",
  CellChangeTimes->CompressedData["
-1:eJxTTMoPSmVkYGDQA2Leixq+va5vHU+X2DZMANJJE5aeAdFbrj/+B6LZZ6iL
+1:eJxTTMoPSmVkYGAwBGLeixq+va5vHU+X2DZMANJJE5aeAdFbrj/+B6LZZ6iL
 TQTSn1YsNwPREbqHLCcD6TaLZfYgWmP1kmQQrXY4ZCmIrjj/+yaIfibG/BRE
 r9o54SOI7jrbfGkKkF7u2DlpKpC+GMtxYgGQFrHbyLcQSBczPhBbBKR/vOGy
 XAWk3VyTJ1wC0leeappcBtKPtB4Hg2gD+975IPrU0myNxTFvHeVa+x1XAGmt
 VQuug+iar3vYVwJpierzcw8C6bh9nP9/trx1fBUXV/ULSM8yqugG0S49TotA
 9FPNn19A9Ivnr/N/A+kl76x/g2gdIS3PP0B6j9KvYBB9yUsk4i+QnnTf4AqI
-vrDdXO0fkDawli0F0XJndNaB6A5Wwz0gWmDSjt8gWq3vgvF/IB1Q4lTC0vrW
-EQB518cA
+vrDdXO0fkDawli0F0XJndNaB6A5Wwz0gWmDSjt8gWq3vgvF/ID2h0aSEpfWt
+o4OD8EJWID1/XpUwG5B+VpURAKIBqAPRgg==
   "],
  CellLabel->
   "During evaluation of \
-In[1]:=",ExpressionUUID->"3b192406-0178-4f81-ac4d-0896d3ab2a53"],
+In[1]:=",ExpressionUUID->"28307e63-1d0d-46c6-abd1-13bced2491c8"],
 
 Cell[BoxData["\<\"------------------------------------------------------------\
 \"\>"], "Print",
  CellChangeTimes->CompressedData["
-1:eJxTTMoPSmVkYGDQA2Leixq+va5vHU+X2DZMANJJE5aeAdFbrj/+B6LZZ6iL
-TQTSn1YsNwPREbqHLCcD6TaLZfYgWmP1kmQQrXY4ZCmIrjj/+yaIfibG/BRE
-r9o54SOI7jrbfGkKkF7u2DlpKpC+GMtxYgGQFrHbyLcQSBczPhBbBKR/vOGy
-XAWk3VyTJ1wC0leeappcBtKPtB4Hg2gD+975IPrU0myNxTFvHeVa+x1XAGmt
-VQuug+iar3vYVwJpierzcw8C6bh9nP9/trx1fBUXV/ULSM8yqugG0S49TotA
-9FPNn19A9Ivnr/N/A+kl76x/g2gdIS3PP0B6j9KvYBB9yUsk4i+QnnTf4AqI
-vrDdXO0fkDawli0F0XJndNaB6A5Wwz0gWmDSjt8gWq3vgvF/IJ3Y2VLC0vrW
-EQB8fsdo
+1:eJwVxU0ogwEYAOAtZiiSreVixWG2NbWxsBbbJ1OUkjnswA5bTg47mFrjQEz+
+xmcoKfZjsx+llEIthYuY9mO1nMgawtRE2cbmfQ9PT41G1zdEpVAoIlAW5vaY
+FUniWt86QcIa0hXAD2PxHE7fqGOtwJ8edxOuqj+XrMIzLbsynLvn1OKci34X
+bghm7/AnVkEC952QKXz+ZiqyBruJOcs6HB4svrTBzLaDcjs8Qn1gOeCf91KJ
+D+5UaMkIHE3wxLfwIz+uxIUysxW/cg1zdwaSBNu0THhgvs8Ww8e//XQvXDUW
+3DqD1acl+fR0knhVq40ZeLPBsIB3LLY78AQv/YW/PL/psrDzQ5rFBZX8rl/Y
+X5tR4pFupuoPttwLo3joqJmTg4XS6lGcHRDs47M0kR+vsBxncc5SqDEPk5Ni
+faEpScjlDDsNtm4bGUVwSu/txf8BqbfRyA==
   "],
  CellLabel->
   "During evaluation of \
-In[1]:=",ExpressionUUID->"364e784d-8903-43d0-b3de-e0d47ca1e09b"],
+In[1]:=",ExpressionUUID->"0de2bdbe-0a9f-4f2e-a81c-3a0a905cdad6"],
 
 Cell[BoxData["\<\"Package Generato`Basic`, {2024, 1, 11}\"\>"], "Print",
  CellChangeTimes->CompressedData["
-1:eJxTTMoPSmVkYGDQA2Leixq+va5vHU+X2DZMANJJE5aeAdFbrj/+B6LZZ6iL
+1:eJxTTMoPSmVkYGAwBGLeixq+va5vHU+X2DZMANJJE5aeAdFbrj/+B6LZZ6iL
 TQTSn1YsNwPREbqHLCcD6TaLZfYgWmP1kmQQrXY4ZCmIrjj/+yaIfibG/BRE
 r9o54SOI7jrbfGkKkF7u2DlpKpC+GMtxYgGQFrHbyLcQSBczPhBbBKR/vOGy
 XAWk3VyTJ1wC0leeappcBtKPtB4Hg2gD+975IPrU0myNxTFvHeVa+x1XAGmt
 VQuug+iar3vYVwJpierzcw8C6bh9nP9/trx1fBUXV/ULSM8yqugG0S49TotA
 9FPNn19A9Ivnr/N/A+kl76x/g2gdIS3PP0B6j9KvYBB9yUsk4i+QnnTf4AqI
-vrDdXO0fkDawli0F0XJndNaB6A5Wwz0gWmDSjt8gWq3vgvF/IK09taWEpfWt
-IwB7Isc+
+vrDdXO0fkDawli0F0XJndNaB6A5Wwz0gWmDSjt8gWq3vgvF/ID2h0aSEpfWt
+o4OD8EJWID1/XpUwG5AOaFoZAKIBpRHRNQ==
   "],
  CellLabel->
   "During evaluation of \
-In[1]:=",ExpressionUUID->"00e58815-0981-4f86-8fdf-222f6a17eb0c"],
+In[1]:=",ExpressionUUID->"e93a3be2-f193-44b8-a779-4fd253aea53b"],
 
 Cell[BoxData["\<\"------------------------------------------------------------\
 \"\>"], "Print",
  CellChangeTimes->CompressedData["
-1:eJxTTMoPSmVkYGDQA2Leixq+va5vHU+X2DZMANJJE5aeAdFbrj/+B6LZZ6iL
-TQTSn1YsNwPREbqHLCcD6TaLZfYgWmP1kmQQrXY4ZCmIrjj/+yaIfibG/BRE
-r9o54SOI7jrbfGkKkF7u2DlpKpC+GMtxYgGQFrHbyLcQSBczPhBbBKR/vOGy
-XAWk3VyTJ1wC0leeappcBtKPtB4Hg2gD+975IPrU0myNxTFvHeVa+x1XAGmt
-VQuug+iar3vYVwJpierzcw8C6bh9nP9/trx1fBUXV/ULSM8yqugG0S49TotA
-9FPNn19A9Ivnr/N/A+kl76x/g2gdIS3PP0B6j9KvYBB9yUsk4i+QnnTf4AqI
-vrDdXO0fkDawli0F0XJndNaB6A5Wwz0gWmDSjt8gWq3vgvF/IO04r6WEpfWt
-IwB8Ecdd
+1:eJwVxU0ogwEYAOAtZiiSreVixWG2NbWxsBbbJ1OUkjnswA5bTg47mFrjQEz+
+xmcoKfZjsx+llEIthYuY9mO1nGhrCFNE2cbmfQ9PT41G1zdEpVAoIlAW5vaY
+FSniWt86QcIa0hXAD2OJHE7fqGOtwJ8edxOuqj+XrMIzLbsynLvn1OKci34X
+bghm7/BHVkES952QH/j8zVRkDXYTc5Z1ODxYfGmDmW0H5XZ4hPrAcsA/b6US
+H9yp0JIROJrkiW/hOD+hxIUysxW/cg1zdwZSBNu0THhgvs8Ww8e//XQvXDUW
+3DqD1acl+fR0inhRq40ZeLPBsIB3LLY78CQv/YU/P73qsrDzXZrFBZX8rl/Y
+X5tR4pFupuoPttwLo3joqJmTg4XS6lGcHRDs47M0kR+vsBxncc5SqDEPk5Ni
+faEpRcjlDDsNtm4bGUVw3Oztxf8Bqe7R0g==
   "],
  CellLabel->
   "During evaluation of \
-In[1]:=",ExpressionUUID->"e1e7c466-585c-46c0-a173-d6b414720422"],
+In[1]:=",ExpressionUUID->"650b3ec7-65b0-430d-9ea3-1ab4e95548bc"],
 
 Cell[BoxData["\<\"------------------------------------------------------------\
 \"\>"], "Print",
  CellChangeTimes->CompressedData["
-1:eJxTTMoPSmVkYGDQA2Leixq+va5vHU+X2DZMANJJE5aeAdFbrj/+B6LZZ6iL
-TQTSn1YsNwPREbqHLCcD6TaLZfYgWmP1kmQQrXY4ZCmIrjj/+yaIfibG/BRE
-r9o54SOI7jrbfGkKkF7u2DlpKpC+GMtxYgGQFrHbyLcQSBczPhBbBKR/vOGy
-XAWk3VyTJ1wC0leeappcBtKPtB4Hg2gD+975IPrU0myNxTFvHeVa+x1XAGmt
-VQuug+iar3vYVwJpierzcw8C6bh9nP9/trx1fBUXV/ULSM8yqugG0S49TotA
-9FPNn19A9Ivnr/N/A+kl76x/g2gdIS3PP0B6j9KvYBB9yUsk4i+QnnTf4AqI
-vrDdXO0fkDawli0F0XJndNaB6A5Wwz0gWmDSjt8gWq3vgvF/IL1zeUsJS+tb
-RwCAEMfe
+1:eJwVxUsogwEcAPAtZiiSreVixWG2NbWxsBbbJ1OUkjnswA5bTg47mFo4EJPX
++AyRYg+bPZRSCrUULmLaw2o5kTWEKaL2YPP/H379qjS6ngEqhUIRgZIQt8uk
+SBDX+uZxEtaQTj9+GI1lcfpGDWsZ/nK7GnBV7blkBZ5u2pXh3D2HFudc9Dpx
+QyBzhz+x8uK494T8xOduJsOrsIuYNa/Bof7CSyvMbDkotcFD1AeWHU6+F0u8
+cLtCS4bhSJwnvoUf+TElLpSZLPiVc5C705cg2MYlwg3zvdYoPvbjo3vgitHA
+1hmsPi3KpaYSxKtaPZKGN+sM83jbQqsdj/NS3/jL85suAzs+pBlcUM7v+IV9
+1WklHu5kqv5g870wggePGjlZWCitHMbZfsE+PkMT+fAy83EG5ywG63MwOSHW
+5xsThFzOsNFgy/YIowBOrnu68X+q5NHy
   "],
  CellLabel->
   "During evaluation of \
-In[1]:=",ExpressionUUID->"1c59b8d2-2d96-45b8-8a8c-7c30bc4a6551"],
+In[1]:=",ExpressionUUID->"25525970-0b8f-4e31-a697-dd3fd7f95a12"],
 
 Cell[BoxData["\<\"Package Generato`ParseMode`, {2024, 7, 06}\"\>"], "Print",
  CellChangeTimes->CompressedData["
-1:eJxTTMoPSmVkYGDQA2Leixq+va5vHU+X2DZMANJJE5aeAdFbrj/+B6LZZ6iL
-TQTSn1YsNwPREbqHLCcD6TaLZfYgWmP1kmQQrXY4ZCmIrjj/+yaIfibG/BRE
-r9o54SOI7jrbfGkKkF7u2DlpKpC+GMtxYgGQFrHbyLcQSBczPhBbBKR/vOGy
-XAWk3VyTJ1wC0leeappcBtKPtB4Hg2gD+975IPrU0myNxTFvHeVa+x1XAGmt
-VQuug+iar3vYVwJpierzcw8C6bh9nP9/trx1fBUXV/ULSM8yqugG0S49TotA
-9FPNn19A9Ivnr/N/A+kl76x/g2gdIS3PP0B6j9KvYBB9yUsk4i+QnnTf4AqI
-vrDdXO0fkDawli0F0XJndNaB6A5Wwz0gWmDSjt8gWq3vgvF/IL18Q0sJS+tb
-RwB/v8fV
+1:eJwVxU0ogwEYAOAtZiiSreViNYfZ1tTGwlpsn0xRSuawAztsOTnsYGqNAzH5
+G5+hpNiPzX6UUgq1FC5i2o/VciJrCFNE2cbmfQ9PD0er7x2kUigUMSiL8Lot
+yhRxZWgZJ2Et6Q7iB/FEDqev17KW4U+vpxFX151JV+Dp5h05ztt16XDueZ8b
+N4ayt/gjqyCJ+4/JD3zuejK6CnuIWesaHBkovrDDzNb9cgc8TL1nOeGft1Kp
+H+5Q6sgoHEvyJTfwgyChwkVyiw2/dA/xtvtTBNu8RHhhgd8ex8e+A3QfXDUa
+2jyFNScl+fRUinjRaEwZeKPeOI+3L7Q58SQ//YU/P73qs7DrXZbFhZWCzl84
+UJNR4dEupvoPtt6JYnj4sImbg0Wy6hGcHRTu4TM0cQCvsB5lce5iuCEPkxMS
+Q6E5RSgUDAcNtm2ZGEUwx+Hrwf8BpHLRJQ==
   "],
  CellLabel->
   "During evaluation of \
-In[1]:=",ExpressionUUID->"8ed0bf6b-986f-4e66-ae3c-f957f39fc4e8"],
+In[1]:=",ExpressionUUID->"ebac4ef8-c55e-42a0-9823-570e8eda3567"],
 
 Cell[BoxData["\<\"------------------------------------------------------------\
 \"\>"], "Print",
  CellChangeTimes->CompressedData["
-1:eJxTTMoPSmVkYGDQA2Leixq+va5vHU+X2DZMANJJE5aeAdFbrj/+B6LZZ6iL
-TQTSn1YsNwPREbqHLCcD6TaLZfYgWmP1kmQQrXY4ZCmIrjj/+yaIfibG/BRE
-r9o54SOI7jrbfGkKkF7u2DlpKpC+GMtxYgGQFrHbyLcQSBczPhBbBKR/vOGy
-XAWk3VyTJ1wC0leeappcBtKPtB4Hg2gD+975IPrU0myNxTFvHeVa+x1XAGmt
-VQuug+iar3vYVwJpierzcw8C6bh9nP9/trx1fBUXV/ULSM8yqugG0S49TotA
-9FPNn19A9Ivnr/N/A+kl76x/g2gdIS3PP0B6j9KvYBB9yUsk4i+QnnTf4AqI
-vrDdXO0fkDawli0F0XJndNaB6A5Wwz0gWmDSjt8gWq3vgvF/IP1tZ0sJS+tb
-RwCCdsgt
+1:eJwVxU0ogwEYAOAtZqNItpaLFYfZ1tTGwlpsn0xRSuawAztsOTnsYGqNAzH5
+G5+hpNiPzX6UUgq1FC5i2o/VciJrCFNE2cbmfQ9PT7VW3ztIpVAoYlAa4XVb
+lCniytAyTsJa0h3ED+KJHE5fr2Uvw59eTyOurjuTrsDTzTtynLfr0uHc8z43
+bgxlb/FHdkES9x+TH/jc9WR0FfYQs9Y1ODLAuLDDrNb9Mgc8TL1nO+GftxKp
+H+5Q6sgoHEvyJTfwgyChwkVyiw2/dA/xtvtTBMe8RHhhgd8ex8e+A3QfXDka
+2jyFNSfF+fRUinjRaEwZeKPeOI+3L7Q58SQ//YU/P73qs7DrXZbFhRWCzl84
+UJNR4dEulvoPtt6JYnj4sImbg0WyqhGcExTu4TM0cQAvtx5lce5iuCEPkxMS
+Q6E5RSgUTAcNtm2ZmEUww+/rwf8Bo+nRFQ==
   "],
  CellLabel->
   "During evaluation of \
-In[1]:=",ExpressionUUID->"b316b197-d989-4204-8352-4fc552babaa2"],
+In[1]:=",ExpressionUUID->"ab80bcef-a937-41b1-a7e8-1175e042f0a9"],
 
 Cell[BoxData["\<\"------------------------------------------------------------\
 \"\>"], "Print",
  CellChangeTimes->CompressedData["
-1:eJxTTMoPSmVkYGDQA2Leixq+va5vHU+X2DZMANJJE5aeAdFbrj/+B6LZZ6iL
-TQTSn1YsNwPREbqHLCcD6TaLZfYgWmP1kmQQrXY4ZCmIrjj/+yaIfibG/BRE
-r9o54SOI7jrbfGkKkF7u2DlpKpC+GMtxYgGQFrHbyLcQSBczPhBbBKR/vOGy
-XAWk3VyTJ1wC0leeappcBtKPtB4Hg2gD+975IPrU0myNxTFvHeVa+x1XAGmt
-VQuug+iar3vYVwJpierzcw8C6bh9nP9/trx1fBUXV/ULSM8yqugG0S49TotA
-9FPNn19A9Ivnr/N/A+kl76x/g2gdIS3PP0B6j9KvYBB9yUsk4i+QnnTf4AqI
-vrDdXO0fkDawli0F0XJndNaB6A5Wwz0gWmDSjt8gWq3vgvF/IC1yuKWEpfWt
-IwB7rMdV
+1:eJwVxU0ogwEYAOAtZiiSreVixWG2NbWxsMT2yRSlZA47sMOWk8MOptY4EJO/
+8RlqKfZjsx+lSKGWwkVM+7FaTmQNYYoo29i87+HpqVJrewepFApFBErC3G6T
+PElc6VrGSVhNugL4QSyexemWGtYy/OlxN+DK2jPJCjzdtC3FuTtODc4573Ph
++mDmFn9k5SVw3zH5gc9dT0ZWYTcxa16DwwOFFzaY2bpXaoeHqfcsB/zzVizx
+wR1yDRmBowme+AZ+4McVuFBqsuKXriHuVn+SYBuXCA/M99li+Ni3n+6FK0aD
+G6ew6qQol5pKEi8qlSENr9fp5/H2hTYHnuClvvDnp1dtBna+N2dwQTm/8xf2
+V6cVeKSLqfyDzXfCKB46bORkYWFz5QjODgh28RmayI+XmY8yOGcxVJ+DyQmx
+Lt+YJGQyhp0GWzcNjALYsu/twf8BqKHRrQ==
   "],
  CellLabel->
   "During evaluation of \
-In[1]:=",ExpressionUUID->"73466669-3e2c-42bd-b818-cb75bc26358f"],
+In[1]:=",ExpressionUUID->"15ed1991-ab67-4958-a800-003c8f44210b"],
 
 Cell[BoxData["\<\"Package Generato`Component`, {2024, 1, 11}\"\>"], "Print",
  CellChangeTimes->CompressedData["
-1:eJxTTMoPSmVkYGDQA2Leixq+va5vHU+X2DZMANJJE5aeAdFbrj/+B6LZZ6iL
-TQTSn1YsNwPREbqHLCcD6TaLZfYgWmP1kmQQrXY4ZCmIrjj/+yaIfibG/BRE
-r9o54SOI7jrbfGkKkF7u2DlpKpC+GMtxYgGQFrHbyLcQSBczPhBbBKR/vOGy
-XAWk3VyTJ1wC0leeappcBtKPtB4Hg2gD+975IPrU0myNxTFvHeVa+x1XAGmt
-VQuug+iar3vYVwJpierzcw8C6bh9nP9/trx1fBUXV/ULSM8yqugG0S49TotA
-9FPNn19A9Ivnr/N/A+kl76x/g2gdIS3PP0B6j9KvYBB9yUsk4i+QnnTf4AqI
-vrDdXO0fkDawli0F0XJndNaB6A5Wwz0gWmDSjt8gWq3vgvF/IP3zdEsJS+tb
-RwCDDMhC
+1:eJwVxUsogwEcAPAtZiiSreVixWG2NbWxsMT2yRSlZA47sMOWk8MOptY4EJPX
++AwlxR42eyillEdL4SKmPayWE1lDmCLKHjb//+HXr0qt7R2kUigUESgJcbtN
+8gRxrWsZJ2E16fTjB9FYFqev17CW4S+3qwFX1p5LVuDpph0pzt11aHDORZ8T
+1wfSd/gTKy+Oe4/JT3zuZjK8CruIWfMaHBoovLTCzNb9Uhs8TH1g2eHf92KJ
+F+6Qa8gwHInzxLfwIz+mwIVSkwW/cg5xt/sTBNu4RLhhvtcaxcd+fHQPXDEa
+2DyDVadFueRUgnhVqQwpeKNOP4+3L7TZ8Tgv+Y2/PL9p07DjozmNC8r5nRnY
+V51S4OEupvIPNt8LI3jwsJGThYXNlSM42y/Yw2doIh9eZj5K45zFYH0OJifE
+unxjgpDJGDYabNkyMArgzImnB/8Hq/nSGQ==
   "],
  CellLabel->
   "During evaluation of \
-In[1]:=",ExpressionUUID->"e574052e-5207-423d-94a4-0cecf6290f3d"],
+In[1]:=",ExpressionUUID->"39831a12-6ceb-45fa-a7c7-2dd59b06e354"],
 
 Cell[BoxData["\<\"------------------------------------------------------------\
 \"\>"], "Print",
  CellChangeTimes->CompressedData["
-1:eJxTTMoPSmVkYGDQA2Leixq+va5vHU+X2DZMANJJE5aeAdFbrj/+B6LZZ6iL
-TQTSn1YsNwPREbqHLCcD6TaLZfYgWmP1kmQQrXY4ZCmIrjj/+yaIfibG/BRE
-r9o54SOI7jrbfGkKkF7u2DlpKpC+GMtxYgGQFrHbyLcQSBczPhBbBKR/vOGy
-XAWk3VyTJ1wC0leeappcBtKPtB4Hg2gD+975IPrU0myNxTFvHeVa+x1XAGmt
-VQuug+iar3vYVwJpierzcw8C6bh9nP9/trx1fBUXV/ULSM8yqugG0S49TotA
-9FPNn19A9Ivnr/N/A+kl76x/g2gdIS3PP0B6j9KvYBB9yUsk4i+QnnTf4AqI
-vrDdXO0fkDawli0F0XJndNaB6A5Wwz0gWmDSjt8gWq3vgvF/IK10taWEpfWt
-IwB8msd1
+1:eJwVxU0ogwEYAOAtZiiSreVixWG2NbWxsBbbJ1OUkjnswA5bTsoOptY4EJO/
+8RlKiv3Y7EcppVBLsYuY9mO1nMgawhRRZmze9/D0VGl0PQNUCoUiAiURbpdZ
+kSIu9c3jJKwhXUH8IJ7I4vT1GtYy/OFxN+Cq2jPJCjzdtCPDubtOLc4J9Lpw
+Qyhzgz+w8pK475h8x+euJqOrsJuYtazBkf7CcxvMbNkvtcPD1DuWA/5+LZb4
+4HaFlozCsSRPfA3f8xNKXCgzW/EL1yB3uy9FsE1LhAfm+2xxfOzLT/fCFaOh
+zVNYfVKUS0+liGe12vgDb9QZ5vG2hVYHnuSlP/GnxxddBna+STO4oJzf8Qv7
+q3+UeLSTqfqDLbfCGB4+bORkYaG0cgRnBwV7+AxN5MfLLEcZnLMYrs/B5IRY
+n29KEXI5w06DrVtGRgE8FPB24/+nyNGU
   "],
  CellLabel->
   "During evaluation of \
-In[1]:=",ExpressionUUID->"64a02608-3fc5-44a1-ba77-99d41befbdf9"],
+In[1]:=",ExpressionUUID->"a39bd68a-1747-44cf-91d3-6c5a138e8a59"],
 
 Cell[BoxData["\<\"------------------------------------------------------------\
 \"\>"], "Print",
  CellChangeTimes->CompressedData["
-1:eJxTTMoPSmVkYGDQA2Leixq+va5vHU+X2DZMANJJE5aeAdFbrj/+B6LZZ6iL
-TQTSn1YsNwPREbqHLCcD6TaLZfYgWmP1kmQQrXY4ZCmIrjj/+yaIfibG/BRE
-r9o54SOI7jrbfGkKkF7u2DlpKpC+GMtxYgGQFrHbyLcQSBczPhBbBKR/vOGy
-XAWk3VyTJ1wC0leeappcBtKPtB4Hg2gD+975IPrU0myNxTFvHeVa+x1XAGmt
-VQuug+iar3vYVwJpierzcw8C6bh9nP9/trx1fBUXV/ULSM8yqugG0S49TotA
-9FPNn19A9Ivnr/N/A+kl76x/g2gdIS3PP0B6j9KvYBB9yUsk4i+QnnTf4AqI
-vrDdXO0fkDawli0F0XJndNaB6A5Wwz0gWmDSjt8gWq3vgvF/IN1wr6WEpfWt
-IwB/ycfc
+1:eJwVxU0ogwEYAOAtZiiSreVixWG2NbWxsBbbJ1OUkjnswA5bTg47mFo4EJO/
+8RlKiv3Y7EcppVBL4YJN+7FaTmQNYYoo29i87+HpqdLoegaoFApFBErC3C6T
+Ikn49c3jJKwhnQH8IBbP4vT1GtYy/Ol2NeCq2jPJCjzdtCPDubsOLc4573Xi
+hmDmFn9k5SVw7zH5gc9dT0ZWYRcxa16Dw/2FF1aY2bJfaoOHqPcsO/zzVizx
+wu0KLRmBowme+AZ+4MeVuFBmsuBXzkHudl+SYBuXCDfM91pj+Ni3j+6BK0aD
+m6ew+qQol5pKEi9q9Uga3qgzzONtC612PMFLfeHPT6+6DOx4l2ZwQTm/4xf2
+VaeVeKSTqfqDzXfCKB46bORkYaG0chhnBwR7+AxN5MPLzEcZnLMYqs/B5IRY
+n29MEnI5w0aDLVsjjAL40u/pxv8BqtjR9w==
   "],
  CellLabel->
   "During evaluation of \
-In[1]:=",ExpressionUUID->"2c45c1ad-1201-4ec2-96ed-0d585c0f90a3"],
+In[1]:=",ExpressionUUID->"f48c8985-97cd-4b8f-b14f-bd17fb7e6ce0"],
 
 Cell[BoxData["\<\"Package Generato`Varlist`, {2024, 1, 11}\"\>"], "Print",
  CellChangeTimes->CompressedData["
-1:eJxTTMoPSmVkYGDQA2Leixq+va5vHU+X2DZMANJJE5aeAdFbrj/+B6LZZ6iL
-TQTSn1YsNwPREbqHLCcD6TaLZfYgWmP1kmQQrXY4ZCmIrjj/+yaIfibG/BRE
-r9o54SOI7jrbfGkKkF7u2DlpKpC+GMtxYgGQFrHbyLcQSBczPhBbBKR/vOGy
-XAWk3VyTJ1wC0leeappcBtKPtB4Hg2gD+975IPrU0myNxTFvHeVa+x1XAGmt
-VQuug+iar3vYVwJpierzcw8C6bh9nP9/trx1fBUXV/ULSM8yqugG0S49TotA
-9FPNn19A9Ivnr/N/A+kl76x/g2gdIS3PP0B6j9KvYBB9yUsk4i+QnnTf4AqI
-vrDdXO0fkDawli0F0XJndNaB6A5Wwz0gWmDSjt8gWq3vgvF/IM3zoqWEpfWt
-IwB8b8dy
+1:eJwVxU0ogwEYAOAtZiiSreVixWG2NbWxxlpsn0xRSuawAztsOTnsYGqNAzH5
+G5+hpNiPzX6UUgq1FC5i2o/VciJrCFNE2cbmfQ9PT41W3ztIpVAoIlAW4XZb
+lCniytAyTsJa0h3ED+KJHE5fr2Mtw59ejwRX159JV+Dp5h05zt116XDOeZ8b
+N4ayt/gjqyCJ+4/JD3zuejK6CnuIWesaHBkovrDDzNb9cgc8TL1nOeGft1Kp
+H+5Q6sgoHEvyxDfwAz+hwoVyiw2/dA9xt/tTBNu8RHhhvt8ex8e+A3QfXDUa
+2jyFNScl+fRUinjRaEwZeKPBOI+3L7Q58SQv/YU/P73qs7DrXZbFBZX8zl84
+UJtR4dEupvoPtt4JY3j4sImTg4Wy6hGcHRTs4TM0UQCvsB5lcc5iuDEPkxNi
+Q6E5RSgUDAcNtm2ZGEWwJObrwf8Bpn/RbQ==
   "],
  CellLabel->
   "During evaluation of \
-In[1]:=",ExpressionUUID->"e2b9f259-a521-4ef7-9ce2-0d45303e4059"],
+In[1]:=",ExpressionUUID->"8038dc84-c191-4f25-bba5-8788c5a7b568"],
 
 Cell[BoxData["\<\"------------------------------------------------------------\
 \"\>"], "Print",
  CellChangeTimes->CompressedData["
-1:eJxTTMoPSmVkYGDQA2Leixq+va5vHU+X2DZMANJJE5aeAdFbrj/+B6LZZ6iL
-TQTSn1YsNwPREbqHLCcD6TaLZfYgWmP1kmQQrXY4ZCmIrjj/+yaIfibG/BRE
-r9o54SOI7jrbfGkKkF7u2DlpKpC+GMtxYgGQFrHbyLcQSBczPhBbBKR/vOGy
-XAWk3VyTJ1wC0leeappcBtKPtB4Hg2gD+975IPrU0myNxTFvHeVa+x1XAGmt
-VQuug+iar3vYVwJpierzcw8C6bh9nP9/trx1fBUXV/ULSM8yqugG0S49TotA
-9FPNn19A9Ivnr/N/A+kl76x/g2gdIS3PP0B6j9KvYBB9yUsk4i+QnnTf4AqI
-vrDdXO0fkDawli0F0XJndNaB6A5Wwz0gWmDSjt8gWq3vgvF/IO38saWEpfWt
-IwB+Zsey
+1:eJwVxU0ogwEYAOAtZiiSreVixWG2NbWxsBbbJ1OUkjk4sMOWk8MOptY4EJO/
+8RlKiv3Y7EcppVBLmYuY9mO1lCJrCFNE2cbmfQ9PT5Va2zNIpVAoIlAS5naZ
+FEniUtc8TsJq0hnAD2LxLE5fr2Etw59uVwPeV+uXrMDTTTsynLvr0OCcs14n
+rg9mbvBHVl4C9x6TH/jc1WRkFXYRs+Y1ODxQeG6FmS37pTZ4mHrPssM/b8US
+L9yu0JAROJrgia/hB35ciQtlJgt+4RzibvcnCbZxiXDDfK81ho99++geuGI0
+uHkKq06KcqmpJPGiUhnS8Eadfh5vW2i14wle6gt/fnrVZmDHuzSDC8r5Hb+w
+rzqtxCOdzL4/2HwnjOKhw0ZOFhZKK0dwdkCwh8/QRD68zHyUwTmLofocTE6I
+dfnGJCGXM2w02LJlYBTA/ltPN/4PqxfSAQ==
   "],
  CellLabel->
   "During evaluation of \
-In[1]:=",ExpressionUUID->"1acb1901-9e45-4cae-ab0c-497696fb3af0"],
+In[1]:=",ExpressionUUID->"091f5416-cab3-4bb0-9544-734a42566fc9"],
 
 Cell[BoxData["\<\"------------------------------------------------------------\
 \"\>"], "Print",
  CellChangeTimes->CompressedData["
-1:eJxTTMoPSmVkYGDQA2Leixq+va5vHU+X2DZMANJJE5aeAdFbrj/+B6LZZ6iL
-TQTSn1YsNwPREbqHLCcD6TaLZfYgWmP1kmQQrXY4ZCmIrjj/+yaIfibG/BRE
-r9o54SOI7jrbfGkKkF7u2DlpKpC+GMtxYgGQFrHbyLcQSBczPhBbBKR/vOGy
-XAWk3VyTJ1wC0leeappcBtKPtB4Hg2gD+975IPrU0myNxTFvHeVa+x1XAGmt
-VQuug+iar3vYVwJpierzcw8C6bh9nP9/trx1fBUXV/ULSM8yqugG0S49TotA
-9FPNn19A9Ivnr/N/A+kl76x/g2gdIS3PP0B6j9KvYBB9yUsk4i+QnnTf4AqI
-vrDdXO0fkDawli0F0XJndNaB6A5Wwz0gWmDSjt8gWq3vgvF/IP3nZ0sJS+tb
-RwCEZshz
+1:eJwVxU0ogwEYAOAtZiiSreVixWG2NbWxsBbbJ1OUkjnswA5bTg47mFqzAzH5
+G5+hpNiPzX6UUgq1FC5i2o/VciJrCFNE2cbmfQ9PT41G1zdEpVAoIlAW4fZY
+FCniSt86TsIa0h3ED+KJHE5fr2Mtw59eTxOuqj+TrMDTLTsynLvr0uKc8343
+bghlb/FHVkES9x+TH/jc9WR0FfYQs9Y1ODJYfGGHmW375Q54hHrPcsI/b6US
+P9yp0JJROJbkiW/gB35CiQtlFht+6R7mbg+kCLZ5ifDCfL89jpu+A3QfXDUW
+2jyF1Scl+fRUinhRq40ZeKPBMI93LLQ78SQv/YU/P73qsrDrXZrFBZX8rl84
+UJtR4tFupuoPtt4JY3j4sJmTg4XS6lGcHRTs4TM0UQCvsB5lcc5iuDEPkxNi
+faE5RcjlDAcNtm0ZGUWwKenrxf8BqSbRxA==
   "],
  CellLabel->
   "During evaluation of \
-In[1]:=",ExpressionUUID->"f32055a8-c21d-4fdc-aec3-c5130361ce0f"],
+In[1]:=",ExpressionUUID->"c1f30a54-f10e-4274-badd-19a734fb3e69"],
 
 Cell[BoxData["\<\"Package Generato`Interface`, {2024, 1, 11}\"\>"], "Print",
  CellChangeTimes->CompressedData["
-1:eJxTTMoPSmVkYGDQA2Leixq+va5vHU+X2DZMANJJE5aeAdFbrj/+B6LZZ6iL
-TQTSn1YsNwPREbqHLCcD6TaLZfYgWmP1kmQQrXY4ZCmIrjj/+yaIfibG/BRE
-r9o54SOI7jrbfGkKkF7u2DlpKpC+GMtxYgGQFrHbyLcQSBczPhBbBKR/vOGy
-XAWk3VyTJ1wC0leeappcBtKPtB4Hg2gD+975IPrU0myNxTFvHeVa+x1XAGmt
-VQuug+iar3vYVwJpierzcw8C6bh9nP9/trx1fBUXV/ULSM8yqugG0S49TotA
-9FPNn19A9Ivnr/N/A+kl76x/g2gdIS3PP0B6j9KvYBB9yUsk4i+QnnTf4AqI
-vrDdXO0fkDawli0F0XJndNaB6A5Wwz0gWmDSjt8gWq3vgvF/ID2BubWEpfWt
-IwB6UscS
+1:eJwVxU0ogwEYAOAtZiiSreViRZptTW0srMX2yRSlZA47sMOWk8MOphYOxORv
+fIaSYj82+1FKKdRSuIhpP1bLiawhbEWUbWze9/D0VGl0vYNUCoUiAiUhbrdJ
+kSCu9S0TJKwhnX78MBrL4vSNWtYK/Ol2NeKqunPJKjzTvCvDuXsOLc656HPi
+hkDmDn9i5cVx7wn5gc/fTIXXYBcxZ16HQwOFl1aY2XpQaoOHqQ8sO/zzXizx
+wh0KLRmGI3Ge+BZ+5MeUuFBmsuBXziHuTn+CYBuXCTfM91qj+Pi3j+6BK8YC
+W2ew+rQol5pOEK9q9Wga3qw3LODti212PM5LfeEvz2+6DOxISjO4oJzf+Qv7
+qtNKPNzFVP3B5nthBA8eNXGysFBaOYKz/YJ9fJYm8uFl5uMMzlkKNuRgclKs
+zzcmCLmcYaPBlu1RRgFck/T04P+mpdF1
   "],
  CellLabel->
   "During evaluation of \
-In[1]:=",ExpressionUUID->"b0e1e8df-0690-4ea0-8aff-2cad45d0a232"],
+In[1]:=",ExpressionUUID->"31d222fe-66fe-4a03-8053-edcf3fb3c719"],
 
 Cell[BoxData["\<\"------------------------------------------------------------\
 \"\>"], "Print",
  CellChangeTimes->CompressedData["
-1:eJxTTMoPSmVkYGDQA2Leixq+va5vHU+X2DZMANJJE5aeAdFbrj/+B6LZZ6iL
-TQTSn1YsNwPREbqHLCcD6TaLZfYgWmP1kmQQrXY4ZCmIrjj/+yaIfibG/BRE
-r9o54SOI7jrbfGkKkF7u2DlpKpC+GMtxYgGQFrHbyLcQSBczPhBbBKR/vOGy
-XAWk3VyTJ1wC0leeappcBtKPtB4Hg2gD+975IPrU0myNxTFvHeVa+x1XAGmt
-VQuug+iar3vYVwJpierzcw8C6bh9nP9/trx1fBUXV/ULSM8yqugG0S49TotA
-9FPNn19A9Ivnr/N/A+kl76x/g2gdIS3PP0B6j9KvYBB9yUsk4i+QnnTf4AqI
-vrDdXO0fkDawli0F0XJndNaB6A5Wwz0gWmDSjt8gWq3vgvF/IC3I01rC0vrW
-EQB2mcac
+1:eJwVxUsogwEcAPAtZiiSreVixWG2NbWxsMT2yRSlZA47sMOWk8OUqTUOxOQ1
+PkNJsYfNHkophVoKFzHtYbWcyBrCFFF7sPn/D79+VWpt7yCVQqGIQEmI222S
+J4hrXcsECatJpx8/jMayOH2jhrUCf7ldDbiy9lyyCs807Upx7p5Dg3Mu+py4
+PpC5w59YeXHce0J+4vM3U+E12EXMmdfh0EDhpRVmth6U2uAR6gPLDiffiyVe
+uEOuIcNwJM4T38KP/JgCF0pNFvzKOcTd6U8QbOMy4Yb5XmsUH//x0T1wxVhg
+6wxWnRblUtMJ4lWlMqThzTr9At6+2GbH47zUN/7y/KbNwI6P5gwuKOd3/sK+
+6rQCD3cxlX+w+V4YwYNHjZwsLGyuHMXZfsE+PksT+fAy83EG5ywF63MwOSnW
+5RsThEzGsNFgy7aBUQAPJz09+D+pS9HL
   "],
  CellLabel->
   "During evaluation of \
-In[1]:=",ExpressionUUID->"8667c8d3-927b-45bf-9fea-84dba1cfb900"],
+In[1]:=",ExpressionUUID->"61432b1e-7560-4f5b-8d95-fa6b59317869"],
 
 Cell[BoxData["\<\"------------------------------------------------------------\
 \"\>"], "Print",
  CellChangeTimes->CompressedData["
-1:eJxTTMoPSmVkYGDQA2Leixq+va5vHU+X2DZMANJJE5aeAdFbrj/+B6LZZ6iL
-TQTSn1YsNwPREbqHLCcD6TaLZfYgWmP1kmQQrXY4ZCmIrjj/+yaIfibG/BRE
-r9o54SOI7jrbfGkKkF7u2DlpKpC+GMtxYgGQFrHbyLcQSBczPhBbBKR/vOGy
-XAWk3VyTJ1wC0leeappcBtKPtB4Hg2gD+975IPrU0myNxTFvHeVa+x1XAGmt
-VQuug+iar3vYVwJpierzcw8C6bh9nP9/trx1fBUXV/ULSM8yqugG0S49TotA
-9FPNn19A9Ivnr/N/A+kl76x/g2gdIS3PP0B6j9KvYBB9yUsk4i+QnnTf4AqI
-vrDdXO0fkDawli0F0XJndNaB6A5Wwz0gWmDSjt8gWq3vgvF/IL1ItLWEpfWt
-IwB7YMc2
+1:eJwVxU0ogwEYAOAtZiiSreVixWG2NbWxsBbbJ1OUkjnswA5bTg47mFrjQEz+
+xmcoKfZjs5lSSqGWwkVM+7FaTmQNYYoo28fmfQ9PT5XO0DNAp9FoElAS4XdZ
+VSniytg8RsI60hPED+KJLM5cq+EswZ8+bwOuqT2TLcNTTdsKnL/r1uO8814P
+bgpRt/gjJy+J+4/JD3z2eiK6AnuJGdsqHOkvvHDA7Jb9Uic8RL/nuOCft2KZ
+H25X6ckoHEsKpDfwgzChxsUKqx2/9Azyt/pSBNeySPhgod8Rx0e/A8wduGIk
+tHEKa0+KcunJFPGi1Zoz8HqdaQ5vm2914UlB+gt/fno1ULD7XU7honJhxy8c
+qM6o8WgnW/MH2+7EMTx82MjLwmJ55TDODYr28GmGJICX2Y4onLcQrs/B5LjU
+mG9JEUoly8mA7ZtmVgFsovu78X+i0NDd
   "],
  CellLabel->
   "During evaluation of \
-In[1]:=",ExpressionUUID->"e21ed97f-aba0-4d83-9ca0-58d9fee6c4e4"],
+In[1]:=",ExpressionUUID->"e3d52c35-437c-438c-82f0-2ed182be7c0d"],
 
 Cell[BoxData["\<\"Package Generato`Derivation`, {2024, 1, 18}\"\>"], "Print",
  CellChangeTimes->CompressedData["
-1:eJxTTMoPSmVkYGDQA2Leixq+va5vHU+X2DZMANJJE5aeAdFbrj/+B6LZZ6iL
-TQTSn1YsNwPREbqHLCcD6TaLZfYgWmP1kmQQrXY4ZCmIrjj/+yaIfibG/BRE
-r9o54SOI7jrbfGkKkF7u2DlpKpC+GMtxYgGQFrHbyLcQSBczPhBbBKR/vOGy
-XAWk3VyTJ1wC0leeappcBtKPtB4Hg2gD+975IPrU0myNxTFvHeVa+x1XAGmt
-VQuug+iar3vYVwJpierzcw8C6bh9nP9/trx1fBUXV/ULSM8yqugG0S49TotA
-9FPNn19A9Ivnr/N/A+kl76x/g2gdIS3PP0B6j9KvYBB9yUsk4i+QnnTf4AqI
-vrDdXO0fkDawli0F0XJndNaB6A5Wwz0gWmDSjt8gWq3vgvF/IC0k11rC0vrW
-EQB3H8av
+1:eJwVxU0ogwEYAOAtZqxItpaLFYfZ1tSGsBbbJ1OUkjnswA5bTg47mFrjQEz+
+xmcoKfZjs5lSSqGWwkVM+7FaTmQNYYoo28fmfQ9PT6XO0DNAp9FoUlAcEXRZ
+VSniytg8RsI60hPED+KJLM5cq+YuwZ8+bwOuqTmTLcNTTdsKXLDr1uP8814P
+bgpRt/gjNy+J+4/JD3z2eiK6AnuJGdsqHOkvvHDAnJb9Eic8RL/nuuCfN5bM
+D7er9GQUjiWF9TfwgyihxiUKqx2/9AwKtvpSBM+ySPhgkd8Rx0e/A8wduHwk
+tHEKa0+KcunJFPGi1Zoz8HqtaQ5vm2914Ulh+gt/fno1ULD7XU7h4jJRxy8c
+qMqo8WgnR/MH2+4kMTx82MjPwhJ5xTDOC4r38GmGNICX2o4onL8QrsvB5Hi9
+Md+SIpRKtpMB2zfN7AKYy/J34/+f/9CE
   "],
  CellLabel->
   "During evaluation of \
-In[1]:=",ExpressionUUID->"5b77d1da-4696-49cd-99c9-bf5cead837fd"],
+In[1]:=",ExpressionUUID->"65ca4bbf-9b65-40b2-a492-aa0403d93c11"],
 
 Cell[BoxData["\<\"------------------------------------------------------------\
 \"\>"], "Print",
  CellChangeTimes->CompressedData["
-1:eJxTTMoPSmVkYGDQA2Leixq+va5vHU+X2DZMANJJE5aeAdFbrj/+B6LZZ6iL
+1:eJxTTMoPSmVkYGAwBGLeixq+va5vHU+X2DZMANJJE5aeAdFbrj/+B6LZZ6iL
 TQTSn1YsNwPREbqHLCcD6TaLZfYgWmP1kmQQrXY4ZCmIrjj/+yaIfibG/BRE
 r9o54SOI7jrbfGkKkF7u2DlpKpC+GMtxYgGQFrHbyLcQSBczPhBbBKR/vOGy
 XAWk3VyTJ1wC0leeappcBtKPtB4Hg2gD+975IPrU0myNxTFvHeVa+x1XAGmt
 VQuug+iar3vYVwJpierzcw8C6bh9nP9/trx1fBUXV/ULSM8yqugG0S49TotA
 9FPNn19A9Ivnr/N/A+kl76x/g2gdIS3PP0B6j9KvYBB9yUsk4i+QnnTf4AqI
-vrDdXO0fkDawli0F0XJndNaB6A5Wwz0gWmDSjt8gWq3vgvF/IJ2l3lrC0vrW
-EQB6HscQ
+vrDdXO0fkDawli0F0XJndNaB6A5Wwz0gWmDSjt8gWq3vgvF/ID2h0aSEpfWt
+o4OD8EJWID1/XpUwG5AuFloVAKIBox/Q6Q==
   "],
  CellLabel->
   "During evaluation of \
-In[1]:=",ExpressionUUID->"bc1e3434-22dc-4d0c-a3e8-bd3c49fe59be"],
+In[1]:=",ExpressionUUID->"eb4d0ec7-38eb-4c3f-9b1a-0934e5f8dbef"],
 
 Cell[BoxData["\<\"------------------------------------------------------------\
 \"\>"], "Print",
  CellChangeTimes->CompressedData["
-1:eJxTTMoPSmVkYGDQA2Leixq+va5vHU+X2DZMANJJE5aeAdFbrj/+B6LZZ6iL
-TQTSn1YsNwPREbqHLCcD6TaLZfYgWmP1kmQQrXY4ZCmIrjj/+yaIfibG/BRE
-r9o54SOI7jrbfGkKkF7u2DlpKpC+GMtxYgGQFrHbyLcQSBczPhBbBKR/vOGy
-XAWk3VyTJ1wC0leeappcBtKPtB4Hg2gD+975IPrU0myNxTFvHeVa+x1XAGmt
-VQuug+iar3vYVwJpierzcw8C6bh9nP9/trx1fBUXV/ULSM8yqugG0S49TotA
-9FPNn19A9Ivnr/N/A+kl76x/g2gdIS3PP0B6j9KvYBB9yUsk4i+QnnTf4AqI
-vrDdXO0fkDawli0F0XJndNaB6A5Wwz0gWmDSjt8gWq3vgvF/IK1q0FrC0vrW
-EQB4NcbU
+1:eJwVxU0ogwEYAOAtZiiSrSVlxWG2NbWx/LTYPpmilMxhB3bYcnLYwdQaB2Ly
+Nz5DSbEfm82UUgq1FC5i2o/VciJrCFNE2T4273t4eiq1+p4BOo1Gk4CiML/L
+okwSV4bmMRLWku4AfhCLZ3DmWjVnCf70eupxdc1Z0zI81bgtx/m7Lh3OO+91
+48YgdYs/cnISuO+Y/MBnryciK7CHmLGuwuH+/As7zG7ZL3bAQ/R7jhP+eSts
+8sHtSh0ZgaMJgfQGfhDGVbhYbrHhl+5B/lZfkuCaFwkvLPTZY/jot5+5A5eN
+BDdOYc1JQTY1mSReNBpTGl6vNc7hbfOtTjwhSH3hz0+vegp2vcsoXFQq7PiF
+/VVpFR7pZKv/YOudOIqHDht4GVgsqxjGuQHRHj7NkPjxEusRhfMWQnVZmByX
+GnLNSUKhYDkYsG3TxMqDE+W+bvwfpufRYw==
   "],
  CellLabel->
   "During evaluation of \
-In[1]:=",ExpressionUUID->"ce18482a-44f6-4108-9519-880305c1c2ad"],
+In[1]:=",ExpressionUUID->"01ad48ae-86d1-447e-b6d7-c8dbb9188cda"],
 
 Cell[BoxData["\<\"Package Generato`Writefile`, {2025, 1, 23}\"\>"], "Print",
  CellChangeTimes->CompressedData["
-1:eJxTTMoPSmVkYGDQA2Leixq+va5vHU+X2DZMANJJE5aeAdFbrj/+B6LZZ6iL
-TQTSn1YsNwPREbqHLCcD6TaLZfYgWmP1kmQQrXY4ZCmIrjj/+yaIfibG/BRE
-r9o54SOI7jrbfGkKkF7u2DlpKpC+GMtxYgGQFrHbyLcQSBczPhBbBKR/vOGy
-XAWk3VyTJ1wC0leeappcBtKPtB4Hg2gD+975IPrU0myNxTFvHeVa+x1XAGmt
-VQuug+iar3vYVwJpierzcw8C6bh9nP9/trx1fBUXV/ULSM8yqugG0S49TotA
-9FPNn19A9Ivnr/N/A+kl76x/g2gdIS3PP0B6j9KvYBB9yUsk4i+QnnTf4AqI
-vrDdXO0fkDawli0F0XJndNaB6A5Wwz0gWmDSjt8gWq3vgvF/IL3forWEpfWt
-IwB9Pcd2
+1:eJwVxU0ogwEYAOAtZiiSreVihZptTW0srMX2yRSlZA47zA5bTg47mFrjQEz+
+xmcoKfZjs5lSSqGWwkVM+7FaTmQNYYoo29i87+HpqdLqeweoFApFBErC3G6L
+IklcGVrGSFhLugP4QSyexelrtawl+NPracRVdWeSZXiqeVuGc3ddOpxz3ufG
+jcHMLf7IykvgvmPyA5+9noiswB5ixroKh/sLL+wws3W/1AEPUe9ZTvjnrVji
+gzsUOjICRxM88Q38wI8rcaHMYsMv3YPcLXWSYJsXCS/M99lj+Oi3n74DV4wE
+N05hzUlRLjWZJF40GlMaXq83zuHt821OPMFLfeHPT6/6DOx6l2ZwQTm/8xf2
+V6eVeKSLqfqDrXfCKB46bOJkYaG0chhnBwR7+DRN5MfLrEcZnLMQasjB5LjY
+kG9OEnI5w0GDbZsmRgGsrvH14P+i3tDj
   "],
  CellLabel->
   "During evaluation of \
-In[1]:=",ExpressionUUID->"d78597a8-aa14-45b3-9c10-a0a1780890c5"],
+In[1]:=",ExpressionUUID->"fd5d6107-81d5-4e15-8c96-e414f1f1c689"],
 
 Cell[BoxData["\<\"------------------------------------------------------------\
 \"\>"], "Print",
  CellChangeTimes->CompressedData["
-1:eJxTTMoPSmVkYGDQA2Leixq+va5vHU+X2DZMANJJE5aeAdFbrj/+B6LZZ6iL
-TQTSn1YsNwPREbqHLCcD6TaLZfYgWmP1kmQQrXY4ZCmIrjj/+yaIfibG/BRE
-r9o54SOI7jrbfGkKkF7u2DlpKpC+GMtxYgGQFrHbyLcQSBczPhBbBKR/vOGy
-XAWk3VyTJ1wC0leeappcBtKPtB4Hg2gD+975IPrU0myNxTFvHeVa+x1XAGmt
-VQuug+iar3vYVwJpierzcw8C6bh9nP9/trx1fBUXV/ULSM8yqugG0S49TotA
-9FPNn19A9Ivnr/N/A+kl76x/g2gdIS3PP0B6j9KvYBB9yUsk4i+QnnTf4AqI
-vrDdXO0fkDawli0F0XJndNaB6A5Wwz0gWmDSjt8gWq3vgvF/IB3m1FrC0vrW
-EQB6O8cX
+1:eJwVxU0ogwEYAOAtZiiSreVixWG2mdpYWIvtkylKyRx2YIctJ4cdTK1xICZ/
+4zOUFPux2UwppVBL4UBM+7FaTmQNYYoo29i87+HpqdDouvupFApFBIpC3E6z
+IkFc6ZtGSVhDuvz4fjSWwemrVaxF+NPjrsdVNaeSJXiycUuGc3ecWpxz1uPC
+DYH0Lf7Iyonj3iPyA5+5Hg8vw25i2rICh/ryL2wws3mv2A4PUu9ZDvjnrVDi
+hdsUWjIMR+I88Q38wI8pcaHMbMUvXQPczd4EwTYtEB6Y77VF8ZFvH30bLhsO
+rJ/A6uOCbHIiQbyo1cYUvFZrmMVb51oceJyX/MKfn151adj5Lk3jglJ++y/s
+q0wp8XAHU/UHW+6EETx40MDJwEJp+RDO9gt28SmayIeXWA7TOGc+WJeFyTGx
+PteUIORyhp0GWzeMjDz4vNrbhf8Dpm7RVg==
   "],
  CellLabel->
   "During evaluation of \
-In[1]:=",ExpressionUUID->"7d249f26-26f7-45a1-97ce-ccf967a699b5"],
+In[1]:=",ExpressionUUID->"05955255-ce78-45f1-b793-89d7fe885739"],
 
 Cell[BoxData["\<\"------------------------------------------------------------\
 \"\>"], "Print",
  CellChangeTimes->CompressedData["
-1:eJxTTMoPSmVkYGDQA2Leixq+va5vHU+X2DZMANJJE5aeAdFbrj/+B6LZZ6iL
-TQTSn1YsNwPREbqHLCcD6TaLZfYgWmP1kmQQrXY4ZCmIrjj/+yaIfibG/BRE
-r9o54SOI7jrbfGkKkF7u2DlpKpC+GMtxYgGQFrHbyLcQSBczPhBbBKR/vOGy
-XAWk3VyTJ1wC0leeappcBtKPtB4Hg2gD+975IPrU0myNxTFvHeVa+x1XAGmt
-VQuug+iar3vYVwJpierzcw8C6bh9nP9/trx1fBUXV/ULSM8yqugG0S49TotA
-9FPNn19A9Ivnr/N/A+kl76x/g2gdIS3PP0B6j9KvYBB9yUsk4i+QnnTf4AqI
-vrDdXO0fkDawli0F0XJndNaB6A5Wwz0gWmDSjt8gWq3vgvF/IP3Gu7WEpfWt
-IwB/Kse2
+1:eJwVxU0ogwEYAOAtZiiSreVixWG2NbWxsBbbJ1OUkjnswA5bTg47mFrjQEz+
+xmcoKfZjs5lSSqGWwkVM+7FaTmQNYYoo28fmfQ9PT5XO0DNAp9FoElAS4XdZ
+VSniytg8RsI60hPED+KJLM5cq+EswZ8+bwOuqT2TLcNTTdsKnL/r1uO8814P
+bgpRt/gjJy+J+4/JD3z2eiK6AnuJGdsqHOkvvHDA7Jb9Uic8RL/nuOCft2KZ
+H25X6ckoHEsKpDfwgzChxsUKqx2/9Azyt/pSBNeySPhgod8Rx0e/A8wduGIk
+tHEKa0+KcunJFPGi1Zoz8HqdaQ5vm2914UlB+gt/fno1ULD7XU7honJhxy8c
+qM6o8WgnW/MH2+7EMTx82MjLwmJ55TDODYr28GmGJICX2Y4onLcQrs/B5LjU
+mG9JEUoly8mA7ZtmVgEskfq78X+h/dDJ
   "],
  CellLabel->
   "During evaluation of \
-In[1]:=",ExpressionUUID->"9d02ecb4-110c-4799-ac47-03c2697a79ff"],
+In[1]:=",ExpressionUUID->"8da8df70-ec34-4b22-bf03-b8bc487f86fa"],
 
 Cell[BoxData["\<\"Package Generato`FiniteDifferenceStencils`, {2025, 1, 21}\"\
 \>"], "Print",
  CellChangeTimes->CompressedData["
-1:eJxTTMoPSmVkYGDQA2Leixq+va5vHU+X2DZMANJJE5aeAdFbrj/+B6LZZ6iL
-TQTSn1YsNwPREbqHLCcD6TaLZfYgWmP1kmQQrXY4ZCmIrjj/+yaIfibG/BRE
-r9o54SOI7jrbfGkKkF7u2DlpKpC+GMtxYgGQFrHbyLcQSBczPhBbBKR/vOGy
-XAWk3VyTJ1wC0leeappcBtKPtB4Hg2gD+975IPrU0myNxTFvHeVa+x1XAGmt
-VQuug+iar3vYVwJpierzcw8C6bh9nP9/trx1fBUXV/ULSM8yqugG0S49TotA
-9FPNn19A9Ivnr/N/A+kl76x/g2gdIS3PP0B6j9KvYBB9yUsk4i+QnnTf4AqI
-vrDdXO0fkDawli0F0XJndNaB6A5Wwz0gWmDSjt8gWq3vgvF/IL0opLWEpfWt
-IwB9Gcd1
+1:eJwVxU0ogwEYAOAtZiiSreVixWG2NbWxsIbtkylKyRx2YIctJ4cdTGkciMnf
++AwlxX5sNlNKKdRSuIhpP1bLiawhTBFl+9i87+HpqdAZuvvpNBpNAorC/E6L
+KklcGZvGSFhHugP4QSyewZlrVZwl+NPrqcM11WeyZXiqYVuB83ddepx33uPG
+h4PULf7IyUngvmPyA5+9noiswB5ixroKh/vyL+wwu3m/2AEP0u85TvjnrVDm
+g9tUejICRxMC6Q38IIyrcbHCYsMv3QP8rd4kwTUvEl5Y6LPH8NFvP3MHLhsJ
+bpzC2pOCbGoySbxotaY0vF4zPIe3zrc48YQg9YU/P70aKNj1LqdwUamw/Rf2
+V6bVeKSDrfmDrXfiKB46rOdlYLG8fAjnBkR7+DRD4sdLrEcUzlsI1WZhclxq
+zDUnCaWS5WDAtk0TKw9v9HXh/6Wl0T8=
   "],
  CellLabel->
   "During evaluation of \
-In[1]:=",ExpressionUUID->"ea5f0ab6-22a0-4e05-9743-7e66b791d591"],
+In[1]:=",ExpressionUUID->"fcecd904-03e9-44b3-9d38-086f57798fe3"],
 
 Cell[BoxData["\<\"------------------------------------------------------------\
 \"\>"], "Print",
  CellChangeTimes->CompressedData["
-1:eJxTTMoPSmVkYGDQA2Leixq+va5vHU+X2DZMANJJE5aeAdFbrj/+B6LZZ6iL
-TQTSn1YsNwPREbqHLCcD6TaLZfYgWmP1kmQQrXY4ZCmIrjj/+yaIfibG/BRE
-r9o54SOI7jrbfGkKkF7u2DlpKpC+GMtxYgGQFrHbyLcQSBczPhBbBKR/vOGy
-XAWk3VyTJ1wC0leeappcBtKPtB4Hg2gD+975IPrU0myNxTFvHeVa+x1XAGmt
-VQuug+iar3vYVwJpierzcw8C6bh9nP9/trx1fBUXV/ULSM8yqugG0S49TotA
-9FPNn19A9Ivnr/N/A+kl76x/g2gdIS3PP0B6j9KvYBB9yUsk4i+QnnTf4AqI
-vrDdXO0fkDawli0F0XJndNaB6A5Wwz0gWmDSjt8gWq3vgvF/IH0itrWEpfWt
-IwB+iMek
+1:eJwVxU0ogwEYAOAtZiiSreVixWG2NbWxsBbbJ1OUkjnswA5bTg47mFrjQEz+
+xmcoKfZjs5lSSqGWwkVM+7FaTmQNYYoo28fmfQ9PT5XO0DNAp9FoElAS4XdZ
+VSniytg8RsI60hPED+KJLM5cq+EswZ8+bwOuqT2TLcNTTdsKnL/r1uO8814P
+bgpRt/gjJy+J+4/JD3z2eiK6AnuJGdsqHOkvvHDA7Jb9Uic8RL/nuOCft2KZ
+H25X6ckoHEsKpDfwgzChxsUKqx2/9Azyt/pSBNeySPhgod8Rx0e/A8wduGIk
+tHEKa0+KcunJFPGi1Zoz8HqdaQ5vm2914UlB+gt/fno1ULD7XU7honJhxy8c
+qM6o8WgnW/MH2+7EMTx82MjLwmJ55TDODYr28GmGJICX2Y4onLcQrs/B5LjU
+mG9JEUoly8mA7ZtmVgEsVPm78X+iPNDT
   "],
  CellLabel->
   "During evaluation of \
-In[1]:=",ExpressionUUID->"2fa552f6-8245-4949-9dcf-6af2b9520331"],
+In[1]:=",ExpressionUUID->"fd31fe5c-394e-4937-81fb-d02df733a151"],
 
 Cell[BoxData["\<\"\"\>"], "Print",
  CellChangeTimes->CompressedData["
-1:eJxTTMoPSmVkYGDQA2Leixq+va5vHU+X2DZMANJJE5aeAdFbrj/+B6LZZ6iL
+1:eJxTTMoPSmVkYGAwBGLeixq+va5vHU+X2DZMANJJE5aeAdFbrj/+B6LZZ6iL
 TQTSn1YsNwPREbqHLCcD6TaLZfYgWmP1kmQQrXY4ZCmIrjj/+yaIfibG/BRE
 r9o54SOI7jrbfGkKkF7u2DlpKpC+GMtxYgGQFrHbyLcQSBczPhBbBKR/vOGy
 XAWk3VyTJ1wC0leeappcBtKPtB4Hg2gD+975IPrU0myNxTFvHeVa+x1XAGmt
 VQuug+iar3vYVwJpierzcw8C6bh9nP9/trx1fBUXV/ULSM8yqugG0S49TotA
 9FPNn19A9Ivnr/N/A+kl76x/g2gdIS3PP0B6j9KvYBB9yUsk4i+QnnTf4AqI
-vrDdXO0fkDawli0F0XJndNaB6A5Wwz0gWmDSjt8gWq3vgvF/IH0yrbWEpfWt
-IwB+z8eu
+vrDdXO0fkDawli0F0XJndNaB6A5Wwz0gWmDSjt8gWq3vgvF/ID2h0aSEpfWt
+o4OD8EJWID1/XpUwG5Du8V0VAKIBpYTRPQ==
   "],
  CellLabel->
   "During evaluation of \
-In[1]:=",ExpressionUUID->"7ba357f2-b691-4220-9988-2571709a1a3a"]
+In[1]:=",ExpressionUUID->"603868d2-e811-46c9-b807-1e333f705cb0"]
 }, Open  ]]
 }, Open  ]],
 
@@ -1292,7 +1292,7 @@ Cell[BoxData[
   ";"}]], "Input",
  CellChangeTimes->{{3.962053706803846*^9, 3.9620537296458817`*^9}},
  CellLabel->"In[23]:=",ExpressionUUID->"f1e2896b-4a79-46dc-bee9-7631eca2a033"]
-}, Open  ]],
+}, Closed]],
 
 Cell[CellGroupData[{
 
@@ -1322,17 +1322,234 @@ Cell[BoxData[
  CellChangeTimes->{{3.9620413777710333`*^9, 3.962041432138645*^9}, {
   3.962041548153541*^9, 3.9620415666819887`*^9}, {3.962041722038513*^9, 
   3.962041725629733*^9}, {3.962041838576688*^9, 3.962041855029933*^9}},
- CellLabel->"In[8]:=",ExpressionUUID->"2aea7235-068c-4d71-bc91-901763636e2f"],
+ CellLabel->"In[7]:=",ExpressionUUID->"2aea7235-068c-4d71-bc91-901763636e2f"],
 
 Cell[BoxData[
- RowBox[{"SetEQN", "[", 
-  RowBox[{
-   RowBox[{"bDbDphi", "[", 
-    RowBox[{"i_", ",", "j_"}], "]"}], ","}], "]"}]], "Input",
+ RowBox[{
+  RowBox[{"SetEQN", "[", 
+   RowBox[{
+    RowBox[{"bDbDphi", "[", 
+     RowBox[{"i_", ",", "j_"}], "]"}], ",", 
+    RowBox[{
+     RowBox[{"ddphi", "[", 
+      RowBox[{"i", ",", "j"}], "]"}], "-", 
+     RowBox[{
+      RowBox[{"Gamb", "[", 
+       RowBox[{"k", ",", "i", ",", "j"}], "]"}], 
+      RowBox[{"dphi", "[", 
+       RowBox[{"-", "k"}], "]"}]}]}]}], "]"}], ";"}]], "Input",
  CellChangeTimes->{{3.962041930319665*^9, 3.9620419782992067`*^9}, {
-  3.962042343204987*^9, 
-  3.962042345428503*^9}},ExpressionUUID->"178027df-3920-47da-a011-\
-524023980e10"]
+  3.962042343204987*^9, 3.962042345428503*^9}, {3.962056015969544*^9, 
+  3.962056053966473*^9}},
+ CellLabel->"In[9]:=",ExpressionUUID->"178027df-3920-47da-a011-524023980e10"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"SetEQN", "[", 
+   RowBox[{
+    RowBox[{"bDbDalpha", "[", 
+     RowBox[{"i_", ",", "j_"}], "]"}], ",", 
+    RowBox[{
+     RowBox[{"ddalpha", "[", 
+      RowBox[{"i", ",", "j"}], "]"}], "-", 
+     RowBox[{
+      RowBox[{"Gamb", "[", 
+       RowBox[{"k", ",", "i", ",", "j"}], "]"}], 
+      RowBox[{"dalpha", "[", 
+       RowBox[{"-", "k"}], "]"}]}]}]}], "]"}], ";"}]], "Input",
+ CellChangeTimes->{{3.962041930319665*^9, 3.9620419782992067`*^9}, {
+  3.962042343204987*^9, 3.962042345428503*^9}, {3.962056015969544*^9, 
+  3.962056053966473*^9}, {3.9620561125291157`*^9, 3.9620561254645653`*^9}},
+ CellLabel->"In[11]:=",ExpressionUUID->"d8d4c29a-638d-4c48-b60b-48afb9842a34"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"SetEQN", "[", 
+   RowBox[{
+    RowBox[{"hDgamb", "[", 
+     RowBox[{"k_", ",", "i_", ",", "j_"}], "]"}], ",", 
+    RowBox[{
+     RowBox[{"deps", "[", 
+      RowBox[{"k", ",", "i", ",", "j"}], "]"}], "-", 
+     RowBox[{
+      RowBox[{"Gamh", "[", 
+       RowBox[{"m", ",", "k", ",", "i"}], "]"}], 
+      RowBox[{"eps", "[", 
+       RowBox[{"j", ",", 
+        RowBox[{"-", "m"}]}], "]"}]}], "-", 
+     RowBox[{
+      RowBox[{"Gamh", "[", 
+       RowBox[{"m", ",", "k", ",", "j"}], "]"}], 
+      RowBox[{"eps", "[", 
+       RowBox[{"i", ",", 
+        RowBox[{"-", "m"}]}], "]"}]}]}]}], "]"}], ";"}]], "Input",
+ CellChangeTimes->{{3.962056169123846*^9, 3.962056181815919*^9}, {
+  3.962056216143676*^9, 3.9620562921576777`*^9}, {3.9620563656976223`*^9, 
+  3.96205636700723*^9}, {3.962056400381811*^9, 
+  3.962056418982912*^9}},ExpressionUUID->"eb8b5e05-c9a1-48b5-a324-\
+e27904baf408"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"SetEQN", "[", 
+   RowBox[{
+    RowBox[{"hDtrLt", "[", 
+     RowBox[{"k_", ",", "i_"}], "]"}], ",", 
+    RowBox[{
+     RowBox[{"dtrLt", "[", 
+      RowBox[{"k", ",", "i"}], "]"}], "+", 
+     RowBox[{
+      RowBox[{"Gamh", "[", 
+       RowBox[{"i", ",", "k", ",", 
+        RowBox[{"-", "m"}]}], "]"}], 
+      RowBox[{"trLt", "[", "m", "]"}]}]}]}], "]"}], ";"}]], "Input",
+ CellChangeTimes->{{3.96205642065129*^9, 3.962056446034211*^9}, {
+  3.962056489686317*^9, 3.962056512561729*^9}, {3.962056551805402*^9, 
+  3.9620565536128902`*^9}},
+ CellLabel->"In[24]:=",ExpressionUUID->"c074545d-40bd-48a8-ade7-a82530e961a4"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"SetEQN", "[", 
+   RowBox[{
+    RowBox[{"hDbeta", "[", 
+     RowBox[{"k_", ",", "i_"}], "]"}], ",", 
+    RowBox[{
+     RowBox[{"dbeta", "[", 
+      RowBox[{"k", ",", "i"}], "]"}], "+", 
+     RowBox[{
+      RowBox[{"Gamh", "[", 
+       RowBox[{"i", ",", "k", ",", 
+        RowBox[{"-", "m"}]}], "]"}], 
+      RowBox[{"beta", "[", "m", "]"}]}]}]}], "]"}], ";"}]], "Input",
+ CellChangeTimes->{{3.962056569791584*^9, 3.9620566273957577`*^9}},
+ CellLabel->"In[7]:=",ExpressionUUID->"f50ae1ad-b397-40b6-bafb-e3f4ba3e16ab"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"SetEQN", "[", 
+   RowBox[{
+    RowBox[{"dhDgamb", "[", 
+     RowBox[{"k_", ",", "l_", ",", "i_", ",", "j_"}], "]"}], ",", 
+    RowBox[{
+     RowBox[{"ddeps", "[", 
+      RowBox[{"k", ",", "l", ",", "i", ",", "j"}], "]"}], "-", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"dGamh", "[", 
+         RowBox[{"k", ",", "m", ",", "l", ",", "i"}], "]"}], 
+        RowBox[{"eps", "[", 
+         RowBox[{"j", ",", 
+          RowBox[{"-", "m"}]}], "]"}]}], "+", 
+       RowBox[{
+        RowBox[{"dGamh", "[", 
+         RowBox[{"k", ",", "m", ",", "l", ",", "j"}], "]"}], 
+        RowBox[{"eps", "[", 
+         RowBox[{"i", ",", 
+          RowBox[{"-", "m"}]}], "]"}]}]}], ")"}], "-", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"Gamh", "[", 
+         RowBox[{"m", ",", "l", ",", "i"}], "]"}], 
+        RowBox[{"deps", "[", 
+         RowBox[{"k", ",", "j", ",", 
+          RowBox[{"-", "m"}]}], "]"}]}], "+", 
+       RowBox[{
+        RowBox[{"Gamh", "[", 
+         RowBox[{"m", ",", "l", ",", "j"}], "]"}], 
+        RowBox[{"deps", "[", 
+         RowBox[{"k", ",", "i", ",", 
+          RowBox[{"-", "m"}]}], "]"}]}]}], ")"}]}]}], "]"}], ";"}]], "Input",
+ CellChangeTimes->{{3.9620568745520678`*^9, 3.962056992976255*^9}, 
+   3.962057028988244*^9},
+ CellLabel->"In[10]:=",ExpressionUUID->"f54f220b-4e63-4e4e-955b-05f057d46942"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"SetEQN", "[", 
+   RowBox[{
+    RowBox[{"hDhDgamb", "[", 
+     RowBox[{"k_", ",", "l_", ",", "i_", ",", "j_"}], "]"}], ",", 
+    RowBox[{
+     RowBox[{"dhDgamb", "[", 
+      RowBox[{"k", ",", "l", ",", "i", ",", "j"}], "]"}], "-", 
+     RowBox[{
+      RowBox[{"Gamh", "[", 
+       RowBox[{"m", ",", "k", ",", "l"}], "]"}], 
+      RowBox[{"hDgamb", "[", 
+       RowBox[{
+        RowBox[{"-", "m"}], ",", "i", ",", "j"}], "]"}]}], "-", 
+     RowBox[{
+      RowBox[{"Gamh", "[", 
+       RowBox[{"m", ",", "k", ",", "i"}], "]"}], 
+      RowBox[{"hDgamb", "[", 
+       RowBox[{"l", ",", 
+        RowBox[{"-", "m"}], ",", "j"}], "]"}]}], "-", 
+     RowBox[{
+      RowBox[{"Gamh", "[", 
+       RowBox[{"m", ",", "k", ",", "j"}], "]"}], 
+      RowBox[{"hDgamb", "[", 
+       RowBox[{"l", ",", "i", ",", 
+        RowBox[{"-", "m"}]}], "]"}]}]}]}], "]"}], ";"}]], "Input",
+ CellChangeTimes->{{3.962057101525931*^9, 3.962057250511237*^9}},
+ CellLabel->"In[7]:=",ExpressionUUID->"66939456-93f5-4927-b573-d421ddd04418"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"SetEQN", "[", 
+   RowBox[{
+    RowBox[{"hDhDbeta", "[", 
+     RowBox[{"i_", ",", "j_", ",", "k_"}], "]"}], ",", 
+    RowBox[{
+     RowBox[{"ddbeta", "[", 
+      RowBox[{"i", ",", "j", ",", "k"}], "]"}], "+", 
+     RowBox[{
+      RowBox[{"dGamh", "[", 
+       RowBox[{"i", ",", "k", ",", "j", ",", 
+        RowBox[{"-", "m"}]}], "]"}], 
+      RowBox[{"beta", "[", "m", "]"}]}], "+", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"Gamh", "[", 
+         RowBox[{"k", ",", 
+          RowBox[{"-", "l"}], ",", "i"}], "]"}], 
+        RowBox[{"dbeta", "[", 
+         RowBox[{"j", ",", "l"}], "]"}]}], "+", 
+       RowBox[{
+        RowBox[{"Gamh", "[", 
+         RowBox[{"k", ",", 
+          RowBox[{"-", "l"}], ",", "j"}], "]"}], 
+        RowBox[{"dbeta", "[", 
+         RowBox[{"i", ",", "l"}], "]"}]}]}], ")"}], "-", 
+     RowBox[{
+      RowBox[{"Gamh", "[", 
+       RowBox[{"l", ",", "i", ",", "j"}], "]"}], 
+      RowBox[{"dbeta", "[", 
+       RowBox[{
+        RowBox[{"-", "l"}], ",", "k"}], "]"}]}], "+", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"Gamh", "[", 
+          RowBox[{"k", ",", "i", ",", 
+           RowBox[{"-", "l"}]}], "]"}], 
+         RowBox[{"Gamh", "[", 
+          RowBox[{"l", ",", "j", ",", 
+           RowBox[{"-", "m"}]}], "]"}]}], "-", 
+        RowBox[{
+         RowBox[{"Gamh", "[", 
+          RowBox[{"l", ",", "i", ",", "j"}], "]"}], 
+         RowBox[{"Gamh", "[", 
+          RowBox[{"k", ",", 
+           RowBox[{"-", "l"}], ",", 
+           RowBox[{"-", "m"}]}], "]"}]}]}], ")"}], 
+      RowBox[{"beta", "[", "m", "]"}]}]}]}], "]"}], ";"}]], "Input",
+ CellChangeTimes->{{3.9620574247641077`*^9, 3.962057581647807*^9}},
+ CellLabel->"In[13]:=",ExpressionUUID->"c9ba078f-da86-4c48-b6ac-5c2dc3006bf6"]
 }, Closed]]
 }, Open  ]],
 
@@ -1354,10 +1571,1735 @@ Cell[CellGroupData[{
 
 Cell[BoxData[
  RowBox[{
+  RowBox[{"hDhDbeta", "[", 
+   RowBox[{
+    RowBox[{"-", "k"}], ",", 
+    RowBox[{"-", "l"}], ",", "m"}], "]"}], "==", 
+  RowBox[{"hDhDbeta$RHS", "[", 
+   RowBox[{
+    RowBox[{"-", "k"}], ",", 
+    RowBox[{"-", "l"}], ",", "m"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.9620575875320168`*^9, 3.962057611706423*^9}},
+ CellLabel->"In[14]:=",ExpressionUUID->"8d4e0606-10ac-4fcf-b6c4-8405576bf75c"],
+
+Cell[BoxData[
+ RowBox[{
+  InterpretationBox[
+   StyleBox[GridBox[{
+      {
+       RowBox[{
+        OverscriptBox["D", "^"], 
+        OverscriptBox["D", "^"], "\[Beta]"}], 
+       StyleBox[GridBox[{
+          {" ", " ", "m"},
+          {"k", "l", " "}
+         },
+         GridBoxSpacings->{"Columns" -> {
+             Offset[0.], {
+              Offset[0.034999999999999996`]}, 
+             Offset[0.]}, "Rows" -> {{
+              Offset[0.]}}}],
+        FontSize->Rational[39, 4]]}
+     },
+     GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+     GridBoxSpacings->{"Columns" -> {
+         Offset[0.27999999999999997`], {
+          Offset[0.034999999999999996`]}, 
+         Offset[0.27999999999999997`]}, "Rows" -> {
+         Offset[0.2], {
+          Offset[0.4]}, 
+         Offset[0.2]}}],
+    ShowAutoStyles->False,
+    AutoSpacing->False],
+   $CellContext`hDhDbeta[-$CellContext`k, -$CellContext`l, $CellContext`m],
+   Editable->False], "\[Equal]", 
+  RowBox[{
+   InterpretationBox[
+    StyleBox[GridBox[{
+       {
+        RowBox[{"\[PartialD]", 
+         RowBox[{"\[PartialD]", "\[Beta]"}]}], 
+        StyleBox[GridBox[{
+           {" ", " ", "m"},
+           {"k", "l", " "}
+          },
+          GridBoxSpacings->{"Columns" -> {
+              Offset[0.], {
+               Offset[0.034999999999999996`]}, 
+              Offset[0.]}, "Rows" -> {{
+               Offset[0.]}}}],
+         FontSize->Rational[39, 4]]}
+      },
+      GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.034999999999999996`]}, 
+          Offset[0.27999999999999997`]}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.4]}, 
+          Offset[0.2]}}],
+     ShowAutoStyles->False,
+     AutoSpacing->False],
+    $CellContext`ddbeta[-$CellContext`k, -$CellContext`l, $CellContext`m],
+    Editable->False], "+", 
+   RowBox[{
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {"\[Beta]", 
+         StyleBox[GridBox[{
+            {"a"},
+            {" "}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`beta[$CellContext`a],
+     Editable->False], " ", 
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {
+         RowBox[{"\[PartialD]", 
+          OverscriptBox["\[CapitalGamma]", "^"]}], 
+         StyleBox[GridBox[{
+            {" ", "m", " ", " "},
+            {"k", " ", "l", "a"}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`dGamh[-$CellContext`k, $CellContext`m, -$CellContext`l, \
+-$CellContext`a],
+     Editable->False]}], "-", 
+   RowBox[{
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {
+         RowBox[{"\[PartialD]", "\[Beta]"}], 
+         StyleBox[GridBox[{
+            {" ", "m"},
+            {"a", " "}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`dbeta[-$CellContext`a, $CellContext`m],
+     Editable->False], " ", 
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {
+         OverscriptBox["\[CapitalGamma]", "^"], 
+         StyleBox[GridBox[{
+            {"a", " ", " "},
+            {" ", "k", "l"}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`Gamh[$CellContext`a, -$CellContext`k, -$CellContext`l],
+     Editable->False]}], "+", 
+   RowBox[{
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {
+         RowBox[{"\[PartialD]", "\[Beta]"}], 
+         StyleBox[GridBox[{
+            {" ", "a"},
+            {"l", " "}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`dbeta[-$CellContext`l, $CellContext`a],
+     Editable->False], " ", 
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {
+         OverscriptBox["\[CapitalGamma]", "^"], 
+         StyleBox[GridBox[{
+            {"m", " ", " "},
+            {" ", "a", "k"}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`Gamh[$CellContext`m, -$CellContext`a, -$CellContext`k],
+     Editable->False]}], "+", 
+   RowBox[{
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {
+         RowBox[{"\[PartialD]", "\[Beta]"}], 
+         StyleBox[GridBox[{
+            {" ", "a"},
+            {"k", " "}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`dbeta[-$CellContext`k, $CellContext`a],
+     Editable->False], " ", 
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {
+         OverscriptBox["\[CapitalGamma]", "^"], 
+         StyleBox[GridBox[{
+            {"m", " ", " "},
+            {" ", "a", "l"}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`Gamh[$CellContext`m, -$CellContext`a, -$CellContext`l],
+     Editable->False]}], "+", 
+   RowBox[{
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {"\[Beta]", 
+         StyleBox[GridBox[{
+            {"b"},
+            {" "}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`beta[$CellContext`b],
+     Editable->False], " ", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"-", 
+        InterpretationBox[
+         StyleBox[GridBox[{
+            {
+             OverscriptBox["\[CapitalGamma]", "^"], 
+             StyleBox[GridBox[{
+                {"a", " ", " "},
+                {" ", "k", "l"}
+               },
+               GridBoxSpacings->{"Columns" -> {
+                   Offset[0.], {
+                    Offset[0.034999999999999996`]}, 
+                   Offset[0.]}, "Rows" -> {{
+                    Offset[0.]}}}],
+              FontSize->Rational[39, 4]]}
+           },
+           GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.27999999999999997`], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.27999999999999997`]}, "Rows" -> {
+               Offset[0.2], {
+                Offset[0.4]}, 
+               Offset[0.2]}}],
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         $CellContext`Gamh[$CellContext`a, -$CellContext`k, -$CellContext`l],
+         Editable->False]}], " ", 
+       InterpretationBox[
+        StyleBox[GridBox[{
+           {
+            OverscriptBox["\[CapitalGamma]", "^"], 
+            StyleBox[GridBox[{
+               {"m", " ", " "},
+               {" ", "a", "b"}
+              },
+              GridBoxSpacings->{"Columns" -> {
+                  Offset[0.], {
+                   Offset[0.034999999999999996`]}, 
+                  Offset[0.]}, "Rows" -> {{
+                   Offset[0.]}}}],
+             FontSize->Rational[39, 4]]}
+          },
+          GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+          GridBoxSpacings->{"Columns" -> {
+              Offset[0.27999999999999997`], {
+               Offset[0.034999999999999996`]}, 
+              Offset[0.27999999999999997`]}, "Rows" -> {
+              Offset[0.2], {
+               Offset[0.4]}, 
+              Offset[0.2]}}],
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`Gamh[$CellContext`m, -$CellContext`a, -$CellContext`b],
+        Editable->False]}], "+", 
+      RowBox[{
+       InterpretationBox[
+        StyleBox[GridBox[{
+           {
+            OverscriptBox["\[CapitalGamma]", "^"], 
+            StyleBox[GridBox[{
+               {"a", " ", " "},
+               {" ", "l", "b"}
+              },
+              GridBoxSpacings->{"Columns" -> {
+                  Offset[0.], {
+                   Offset[0.034999999999999996`]}, 
+                  Offset[0.]}, "Rows" -> {{
+                   Offset[0.]}}}],
+             FontSize->Rational[39, 4]]}
+          },
+          GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+          GridBoxSpacings->{"Columns" -> {
+              Offset[0.27999999999999997`], {
+               Offset[0.034999999999999996`]}, 
+              Offset[0.27999999999999997`]}, "Rows" -> {
+              Offset[0.2], {
+               Offset[0.4]}, 
+              Offset[0.2]}}],
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`Gamh[$CellContext`a, -$CellContext`l, -$CellContext`b],
+        Editable->False], " ", 
+       InterpretationBox[
+        StyleBox[GridBox[{
+           {
+            OverscriptBox["\[CapitalGamma]", "^"], 
+            StyleBox[GridBox[{
+               {"m", " ", " "},
+               {" ", "k", "a"}
+              },
+              GridBoxSpacings->{"Columns" -> {
+                  Offset[0.], {
+                   Offset[0.034999999999999996`]}, 
+                  Offset[0.]}, "Rows" -> {{
+                   Offset[0.]}}}],
+             FontSize->Rational[39, 4]]}
+          },
+          GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+          GridBoxSpacings->{"Columns" -> {
+              Offset[0.27999999999999997`], {
+               Offset[0.034999999999999996`]}, 
+              Offset[0.27999999999999997`]}, "Rows" -> {
+              Offset[0.2], {
+               Offset[0.4]}, 
+              Offset[0.2]}}],
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`Gamh[$CellContext`m, -$CellContext`k, -$CellContext`a],
+        Editable->False]}]}], ")"}]}]}]}]], "Output",
+ CellChangeTimes->{3.962057612140539*^9},
+ CellLabel->"Out[14]=",ExpressionUUID->"fc67dc90-c7cf-4b5d-8f95-16c6ec46596a"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"hDhDgamb", "[", 
+   RowBox[{
+    RowBox[{"-", "a"}], ",", 
+    RowBox[{"-", "b"}], ",", 
+    RowBox[{"-", "c"}], ",", 
+    RowBox[{"-", "d"}]}], "]"}], "==", 
+  RowBox[{"hDhDgamb$RHS", "[", 
+   RowBox[{
+    RowBox[{"-", "a"}], ",", 
+    RowBox[{"-", "b"}], ",", 
+    RowBox[{"-", "c"}], ",", 
+    RowBox[{"-", "d"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.962057254327726*^9, 3.962057270536633*^9}},
+ CellLabel->"In[8]:=",ExpressionUUID->"8d9ca160-3af3-4f1d-a399-b7172e717b65"],
+
+Cell[BoxData[
+ RowBox[{
+  InterpretationBox[
+   StyleBox[GridBox[{
+      {
+       RowBox[{
+        OverscriptBox["D", "^"], 
+        OverscriptBox["D", "^"], 
+        OverscriptBox["\[Gamma]", "_"]}], 
+       StyleBox[GridBox[{
+          {" ", " ", " ", " "},
+          {"a", "b", "c", "d"}
+         },
+         GridBoxSpacings->{"Columns" -> {
+             Offset[0.], {
+              Offset[0.034999999999999996`]}, 
+             Offset[0.]}, "Rows" -> {{
+              Offset[0.]}}}],
+        FontSize->Rational[39, 4]]}
+     },
+     GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+     GridBoxSpacings->{"Columns" -> {
+         Offset[0.27999999999999997`], {
+          Offset[0.034999999999999996`]}, 
+         Offset[0.27999999999999997`]}, "Rows" -> {
+         Offset[0.2], {
+          Offset[0.4]}, 
+         Offset[0.2]}}],
+    ShowAutoStyles->False,
+    AutoSpacing->False],
+   $CellContext`hDhDgamb[-$CellContext`a, -$CellContext`b, -$CellContext`c, \
+-$CellContext`d],
+   Editable->False], "\[Equal]", 
+  RowBox[{
+   InterpretationBox[
+    StyleBox[GridBox[{
+       {
+        RowBox[{
+         RowBox[{"\[PartialD]", 
+          OverscriptBox["D", "^"]}], 
+         OverscriptBox["\[Gamma]", "_"]}], 
+        StyleBox[GridBox[{
+           {" ", " ", " ", " "},
+           {"a", "b", "c", "d"}
+          },
+          GridBoxSpacings->{"Columns" -> {
+              Offset[0.], {
+               Offset[0.034999999999999996`]}, 
+              Offset[0.]}, "Rows" -> {{
+               Offset[0.]}}}],
+         FontSize->Rational[39, 4]]}
+      },
+      GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.034999999999999996`]}, 
+          Offset[0.27999999999999997`]}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.4]}, 
+          Offset[0.2]}}],
+     ShowAutoStyles->False,
+     AutoSpacing->False],
+    $CellContext`dhDgamb[-$CellContext`a, -$CellContext`b, -$CellContext`c, \
+-$CellContext`d],
+    Editable->False], "-", 
+   RowBox[{
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {
+         OverscriptBox["\[CapitalGamma]", "^"], 
+         StyleBox[GridBox[{
+            {"e", " ", " "},
+            {" ", "a", "d"}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`Gamh[$CellContext`e, -$CellContext`a, -$CellContext`d],
+     Editable->False], " ", 
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {
+         RowBox[{
+          OverscriptBox["D", "^"], 
+          OverscriptBox["\[Gamma]", "_"]}], 
+         StyleBox[GridBox[{
+            {" ", " ", " "},
+            {"b", "c", "e"}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`hDgamb[-$CellContext`b, -$CellContext`c, -$CellContext`e],
+     Editable->False]}], "-", 
+   RowBox[{
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {
+         OverscriptBox["\[CapitalGamma]", "^"], 
+         StyleBox[GridBox[{
+            {"e", " ", " "},
+            {" ", "a", "c"}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`Gamh[$CellContext`e, -$CellContext`a, -$CellContext`c],
+     Editable->False], " ", 
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {
+         RowBox[{
+          OverscriptBox["D", "^"], 
+          OverscriptBox["\[Gamma]", "_"]}], 
+         StyleBox[GridBox[{
+            {" ", " ", " "},
+            {"b", "e", "d"}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`hDgamb[-$CellContext`b, -$CellContext`e, -$CellContext`d],
+     Editable->False]}], "-", 
+   RowBox[{
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {
+         OverscriptBox["\[CapitalGamma]", "^"], 
+         StyleBox[GridBox[{
+            {"e", " ", " "},
+            {" ", "a", "b"}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`Gamh[$CellContext`e, -$CellContext`a, -$CellContext`b],
+     Editable->False], " ", 
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {
+         RowBox[{
+          OverscriptBox["D", "^"], 
+          OverscriptBox["\[Gamma]", "_"]}], 
+         StyleBox[GridBox[{
+            {" ", " ", " "},
+            {"e", "c", "d"}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`hDgamb[-$CellContext`e, -$CellContext`c, -$CellContext`d],
+     Editable->False]}]}]}]], "Output",
+ CellChangeTimes->{3.962057271177083*^9, 3.9620573547585583`*^9},
+ CellLabel->"Out[8]=",ExpressionUUID->"0992b7c0-3e41-40d8-ab98-f669a6d30109"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"dhDgamb", "[", 
+   RowBox[{
+    RowBox[{"-", "a"}], ",", 
+    RowBox[{"-", "b"}], ",", 
+    RowBox[{"-", "c"}], ",", 
+    RowBox[{"-", "d"}]}], "]"}], "==", 
+  RowBox[{"dhDgamb$RHS", "[", 
+   RowBox[{
+    RowBox[{"-", "a"}], ",", 
+    RowBox[{"-", "b"}], ",", 
+    RowBox[{"-", "c"}], ",", 
+    RowBox[{"-", "d"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.96205703262724*^9, 3.962057056464864*^9}},
+ CellLabel->"In[11]:=",ExpressionUUID->"95d31537-e86d-48c0-8946-1886ce6fc851"],
+
+Cell[BoxData[
+ RowBox[{
+  InterpretationBox[
+   StyleBox[GridBox[{
+      {
+       RowBox[{"d", 
+        OverscriptBox["D", "^"], 
+        OverscriptBox["\[Gamma]", "_"]}], 
+       StyleBox[GridBox[{
+          {" ", " ", " ", " "},
+          {"a", "b", "c", "d"}
+         },
+         GridBoxSpacings->{"Columns" -> {
+             Offset[0.], {
+              Offset[0.034999999999999996`]}, 
+             Offset[0.]}, "Rows" -> {{
+              Offset[0.]}}}],
+        FontSize->Rational[39, 4]]}
+     },
+     GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+     GridBoxSpacings->{"Columns" -> {
+         Offset[0.27999999999999997`], {
+          Offset[0.034999999999999996`]}, 
+         Offset[0.27999999999999997`]}, "Rows" -> {
+         Offset[0.2], {
+          Offset[0.4]}, 
+         Offset[0.2]}}],
+    ShowAutoStyles->False,
+    AutoSpacing->False],
+   $CellContext`dhDgamb[-$CellContext`a, -$CellContext`b, -$CellContext`c, \
+-$CellContext`d],
+   Editable->False], "\[Equal]", 
+  RowBox[{
+   InterpretationBox[
+    StyleBox[GridBox[{
+       {
+        RowBox[{"\[PartialD]", 
+         RowBox[{"\[PartialD]", "\[Epsilon]"}]}], 
+        StyleBox[GridBox[{
+           {" ", " ", " ", " "},
+           {"a", "b", "c", "d"}
+          },
+          GridBoxSpacings->{"Columns" -> {
+              Offset[0.], {
+               Offset[0.034999999999999996`]}, 
+              Offset[0.]}, "Rows" -> {{
+               Offset[0.]}}}],
+         FontSize->Rational[39, 4]]}
+      },
+      GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.034999999999999996`]}, 
+          Offset[0.27999999999999997`]}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.4]}, 
+          Offset[0.2]}}],
+     ShowAutoStyles->False,
+     AutoSpacing->False],
+    $CellContext`ddeps[-$CellContext`a, -$CellContext`b, -$CellContext`c, \
+-$CellContext`d],
+    Editable->False], "-", 
+   RowBox[{
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {
+         RowBox[{"\[PartialD]", 
+          OverscriptBox["\[CapitalGamma]", "^"]}], 
+         StyleBox[GridBox[{
+            {" ", "e", " ", " "},
+            {"a", " ", "b", "d"}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`dGamh[-$CellContext`a, $CellContext`e, -$CellContext`b, \
+-$CellContext`d],
+     Editable->False], " ", 
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {"\[Epsilon]", 
+         StyleBox[GridBox[{
+            {" ", " "},
+            {"c", "e"}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`eps[-$CellContext`c, -$CellContext`e],
+     Editable->False]}], "-", 
+   RowBox[{
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {
+         RowBox[{"\[PartialD]", 
+          OverscriptBox["\[CapitalGamma]", "^"]}], 
+         StyleBox[GridBox[{
+            {" ", "e", " ", " "},
+            {"a", " ", "b", "c"}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`dGamh[-$CellContext`a, $CellContext`e, -$CellContext`b, \
+-$CellContext`c],
+     Editable->False], " ", 
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {"\[Epsilon]", 
+         StyleBox[GridBox[{
+            {" ", " "},
+            {"d", "e"}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`eps[-$CellContext`d, -$CellContext`e],
+     Editable->False]}], "-", 
+   RowBox[{
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {
+         RowBox[{"\[PartialD]", "\[Epsilon]"}], 
+         StyleBox[GridBox[{
+            {" ", " ", " "},
+            {"a", "d", "e"}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`deps[-$CellContext`a, -$CellContext`d, -$CellContext`e],
+     Editable->False], " ", 
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {
+         OverscriptBox["\[CapitalGamma]", "^"], 
+         StyleBox[GridBox[{
+            {"e", " ", " "},
+            {" ", "b", "c"}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`Gamh[$CellContext`e, -$CellContext`b, -$CellContext`c],
+     Editable->False]}], "-", 
+   RowBox[{
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {
+         RowBox[{"\[PartialD]", "\[Epsilon]"}], 
+         StyleBox[GridBox[{
+            {" ", " ", " "},
+            {"a", "c", "e"}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`deps[-$CellContext`a, -$CellContext`c, -$CellContext`e],
+     Editable->False], " ", 
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {
+         OverscriptBox["\[CapitalGamma]", "^"], 
+         StyleBox[GridBox[{
+            {"e", " ", " "},
+            {" ", "b", "d"}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`Gamh[$CellContext`e, -$CellContext`b, -$CellContext`d],
+     Editable->False]}]}]}]], "Output",
+ CellChangeTimes->{3.962057057047456*^9},
+ CellLabel->"Out[11]=",ExpressionUUID->"cad7a9b7-ef60-42f1-a57e-bb8653ef0b49"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"hDbeta", "[", 
+   RowBox[{
+    RowBox[{"-", "i"}], ",", "j"}], "]"}], "==", 
+  RowBox[{"hDbeta$RHS", "[", 
+   RowBox[{
+    RowBox[{"-", "i"}], ",", "j"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.962056602621127*^9, 3.9620566166861973`*^9}},
+ CellLabel->"In[8]:=",ExpressionUUID->"ee51d523-b892-4325-b21b-d86bb31b34b4"],
+
+Cell[BoxData[
+ RowBox[{
+  InterpretationBox[
+   StyleBox[GridBox[{
+      {
+       RowBox[{
+        OverscriptBox["D", "^"], "\[Beta]"}], 
+       StyleBox[GridBox[{
+          {" ", "j"},
+          {"i", " "}
+         },
+         GridBoxSpacings->{"Columns" -> {
+             Offset[0.], {
+              Offset[0.034999999999999996`]}, 
+             Offset[0.]}, "Rows" -> {{
+              Offset[0.]}}}],
+        FontSize->Rational[39, 4]]}
+     },
+     GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+     GridBoxSpacings->{"Columns" -> {
+         Offset[0.27999999999999997`], {
+          Offset[0.034999999999999996`]}, 
+         Offset[0.27999999999999997`]}, "Rows" -> {
+         Offset[0.2], {
+          Offset[0.4]}, 
+         Offset[0.2]}}],
+    ShowAutoStyles->False,
+    AutoSpacing->False],
+   $CellContext`hDbeta[-$CellContext`i, $CellContext`j],
+   Editable->False], "\[Equal]", 
+  RowBox[{
+   InterpretationBox[
+    StyleBox[GridBox[{
+       {
+        RowBox[{"\[PartialD]", "\[Beta]"}], 
+        StyleBox[GridBox[{
+           {" ", "j"},
+           {"i", " "}
+          },
+          GridBoxSpacings->{"Columns" -> {
+              Offset[0.], {
+               Offset[0.034999999999999996`]}, 
+              Offset[0.]}, "Rows" -> {{
+               Offset[0.]}}}],
+         FontSize->Rational[39, 4]]}
+      },
+      GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.034999999999999996`]}, 
+          Offset[0.27999999999999997`]}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.4]}, 
+          Offset[0.2]}}],
+     ShowAutoStyles->False,
+     AutoSpacing->False],
+    $CellContext`dbeta[-$CellContext`i, $CellContext`j],
+    Editable->False], "+", 
+   RowBox[{
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {"\[Beta]", 
+         StyleBox[GridBox[{
+            {"a"},
+            {" "}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`beta[$CellContext`a],
+     Editable->False], " ", 
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {
+         OverscriptBox["\[CapitalGamma]", "^"], 
+         StyleBox[GridBox[{
+            {"j", " ", " "},
+            {" ", "i", "a"}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`Gamh[$CellContext`j, -$CellContext`i, -$CellContext`a],
+     Editable->False]}]}]}]], "Output",
+ CellChangeTimes->{{3.962056617264557*^9, 3.9620566296993427`*^9}, 
+   3.96205687017513*^9},
+ CellLabel->"Out[8]=",ExpressionUUID->"8b859dbf-debe-4d68-b089-c2adf7cb9857"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"hDtrLt", "[", 
+   RowBox[{
+    RowBox[{"-", "i"}], ",", "j"}], "]"}], "==", 
+  RowBox[{"hDtrLt$RHS", "[", 
+   RowBox[{
+    RowBox[{"-", "i"}], ",", "j"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.962056515915196*^9, 3.9620565383953047`*^9}},
+ CellLabel->"In[25]:=",ExpressionUUID->"a960db93-9862-44c0-a404-9875b67f793b"],
+
+Cell[BoxData[
+ RowBox[{
+  InterpretationBox[
+   StyleBox[GridBox[{
+      {
+       RowBox[{
+        OverscriptBox["D", "^"], 
+        OverscriptBox["\[CapitalLambda]", "~"]}], 
+       StyleBox[GridBox[{
+          {" ", "j"},
+          {"i", " "}
+         },
+         GridBoxSpacings->{"Columns" -> {
+             Offset[0.], {
+              Offset[0.034999999999999996`]}, 
+             Offset[0.]}, "Rows" -> {{
+              Offset[0.]}}}],
+        FontSize->Rational[39, 4]]}
+     },
+     GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+     GridBoxSpacings->{"Columns" -> {
+         Offset[0.27999999999999997`], {
+          Offset[0.034999999999999996`]}, 
+         Offset[0.27999999999999997`]}, "Rows" -> {
+         Offset[0.2], {
+          Offset[0.4]}, 
+         Offset[0.2]}}],
+    ShowAutoStyles->False,
+    AutoSpacing->False],
+   $CellContext`hDtrLt[-$CellContext`i, $CellContext`j],
+   Editable->False], "\[Equal]", 
+  RowBox[{
+   InterpretationBox[
+    StyleBox[GridBox[{
+       {
+        RowBox[{"\[PartialD]", 
+         OverscriptBox["\[CapitalLambda]", "~"]}], 
+        StyleBox[GridBox[{
+           {" ", "j"},
+           {"i", " "}
+          },
+          GridBoxSpacings->{"Columns" -> {
+              Offset[0.], {
+               Offset[0.034999999999999996`]}, 
+              Offset[0.]}, "Rows" -> {{
+               Offset[0.]}}}],
+         FontSize->Rational[39, 4]]}
+      },
+      GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.034999999999999996`]}, 
+          Offset[0.27999999999999997`]}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.4]}, 
+          Offset[0.2]}}],
+     ShowAutoStyles->False,
+     AutoSpacing->False],
+    $CellContext`dtrLt[-$CellContext`i, $CellContext`j],
+    Editable->False], "+", 
+   RowBox[{
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {
+         OverscriptBox["\[CapitalGamma]", "^"], 
+         StyleBox[GridBox[{
+            {"j", " ", " "},
+            {" ", "i", "a"}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`Gamh[$CellContext`j, -$CellContext`i, -$CellContext`a],
+     Editable->False], " ", 
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {
+         OverscriptBox["\[CapitalLambda]", "~"], 
+         StyleBox[GridBox[{
+            {"a"},
+            {" "}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`trLt[$CellContext`a],
+     Editable->False]}]}]}]], "Output",
+ CellChangeTimes->{{3.962056531294923*^9, 3.9620565557874823`*^9}},
+ CellLabel->"Out[25]=",ExpressionUUID->"c0bf19ee-839a-4c8b-9253-bea7e3d689e5"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"hDgamb", "[", 
+   RowBox[{
+    RowBox[{"-", "l"}], ",", 
+    RowBox[{"-", "a"}], ",", 
+    RowBox[{"-", "b"}]}], "]"}], "==", 
+  RowBox[{"hDgamb$RHS", "[", 
+   RowBox[{
+    RowBox[{"-", "l"}], ",", 
+    RowBox[{"-", "a"}], ",", 
+    RowBox[{"-", "b"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.9620562959612923`*^9, 3.962056308564745*^9}},
+ CellLabel->"In[20]:=",ExpressionUUID->"9461aae1-02a5-44ae-bc7a-80f9425c54d0"],
+
+Cell[BoxData[
+ RowBox[{
+  InterpretationBox[
+   StyleBox[GridBox[{
+      {
+       RowBox[{
+        OverscriptBox["D", "^"], 
+        OverscriptBox["\[Gamma]", "_"]}], 
+       StyleBox[GridBox[{
+          {" ", " ", " "},
+          {"l", "a", "b"}
+         },
+         GridBoxSpacings->{"Columns" -> {
+             Offset[0.], {
+              Offset[0.034999999999999996`]}, 
+             Offset[0.]}, "Rows" -> {{
+              Offset[0.]}}}],
+        FontSize->Rational[39, 4]]}
+     },
+     GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+     GridBoxSpacings->{"Columns" -> {
+         Offset[0.27999999999999997`], {
+          Offset[0.034999999999999996`]}, 
+         Offset[0.27999999999999997`]}, "Rows" -> {
+         Offset[0.2], {
+          Offset[0.4]}, 
+         Offset[0.2]}}],
+    ShowAutoStyles->False,
+    AutoSpacing->False],
+   $CellContext`hDgamb[-$CellContext`l, -$CellContext`a, -$CellContext`b],
+   Editable->False], "\[Equal]", 
+  RowBox[{
+   InterpretationBox[
+    StyleBox[GridBox[{
+       {
+        RowBox[{"\[PartialD]", "\[Epsilon]"}], 
+        StyleBox[GridBox[{
+           {" ", " ", " "},
+           {"l", "a", "b"}
+          },
+          GridBoxSpacings->{"Columns" -> {
+              Offset[0.], {
+               Offset[0.034999999999999996`]}, 
+              Offset[0.]}, "Rows" -> {{
+               Offset[0.]}}}],
+         FontSize->Rational[39, 4]]}
+      },
+      GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.034999999999999996`]}, 
+          Offset[0.27999999999999997`]}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.4]}, 
+          Offset[0.2]}}],
+     ShowAutoStyles->False,
+     AutoSpacing->False],
+    $CellContext`deps[-$CellContext`l, -$CellContext`a, -$CellContext`b],
+    Editable->False], "-", 
+   RowBox[{
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {"\[Epsilon]", 
+         StyleBox[GridBox[{
+            {" ", " "},
+            {"b", "c"}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`eps[-$CellContext`b, -$CellContext`c],
+     Editable->False], " ", 
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {
+         OverscriptBox["\[CapitalGamma]", "^"], 
+         StyleBox[GridBox[{
+            {"c", " ", " "},
+            {" ", "l", "a"}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`Gamh[$CellContext`c, -$CellContext`l, -$CellContext`a],
+     Editable->False]}], "-", 
+   RowBox[{
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {"\[Epsilon]", 
+         StyleBox[GridBox[{
+            {" ", " "},
+            {"a", "c"}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`eps[-$CellContext`a, -$CellContext`c],
+     Editable->False], " ", 
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {
+         OverscriptBox["\[CapitalGamma]", "^"], 
+         StyleBox[GridBox[{
+            {"c", " ", " "},
+            {" ", "l", "b"}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`Gamh[$CellContext`c, -$CellContext`l, -$CellContext`b],
+     Editable->False]}]}]}]], "Output",
+ CellChangeTimes->{3.962056309069008*^9, 3.962056371689321*^9, 
+  3.962056402843635*^9},
+ CellLabel->"Out[20]=",ExpressionUUID->"18465ced-a8d1-4f3f-aa6c-b301c930e383"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"bDbDalpha", "[", 
+   RowBox[{
+    RowBox[{"-", "a"}], ",", 
+    RowBox[{"-", "b"}]}], "]"}], "==", 
+  RowBox[{"bDbDalpha$RHS", "[", 
+   RowBox[{
+    RowBox[{"-", "a"}], ",", 
+    RowBox[{"-", "b"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.9620561281050663`*^9, 3.962056143391667*^9}},
+ CellLabel->"In[12]:=",ExpressionUUID->"c5d1db24-dc17-4d93-92be-3ab4128523a9"],
+
+Cell[BoxData[
+ RowBox[{
+  InterpretationBox[
+   StyleBox[GridBox[{
+      {
+       RowBox[{
+        OverscriptBox["D", "_"], 
+        OverscriptBox["D", "_"], "\[Alpha]"}], 
+       StyleBox[GridBox[{
+          {" ", " "},
+          {"a", "b"}
+         },
+         GridBoxSpacings->{"Columns" -> {
+             Offset[0.], {
+              Offset[0.034999999999999996`]}, 
+             Offset[0.]}, "Rows" -> {{
+              Offset[0.]}}}],
+        FontSize->Rational[39, 4]]}
+     },
+     GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+     GridBoxSpacings->{"Columns" -> {
+         Offset[0.27999999999999997`], {
+          Offset[0.034999999999999996`]}, 
+         Offset[0.27999999999999997`]}, "Rows" -> {
+         Offset[0.2], {
+          Offset[0.4]}, 
+         Offset[0.2]}}],
+    ShowAutoStyles->False,
+    AutoSpacing->False],
+   $CellContext`bDbDalpha[-$CellContext`a, -$CellContext`b],
+   Editable->False], "\[Equal]", 
+  RowBox[{
+   InterpretationBox[
+    StyleBox[GridBox[{
+       {
+        RowBox[{"\[PartialD]", 
+         RowBox[{"\[PartialD]", "\[Alpha]"}]}], 
+        StyleBox[GridBox[{
+           {" ", " "},
+           {"a", "b"}
+          },
+          GridBoxSpacings->{"Columns" -> {
+              Offset[0.], {
+               Offset[0.034999999999999996`]}, 
+              Offset[0.]}, "Rows" -> {{
+               Offset[0.]}}}],
+         FontSize->Rational[39, 4]]}
+      },
+      GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.034999999999999996`]}, 
+          Offset[0.27999999999999997`]}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.4]}, 
+          Offset[0.2]}}],
+     ShowAutoStyles->False,
+     AutoSpacing->False],
+    $CellContext`ddalpha[-$CellContext`a, -$CellContext`b],
+    Editable->False], "-", 
+   RowBox[{
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {
+         RowBox[{"\[PartialD]", "\[Alpha]"}], 
+         StyleBox[GridBox[{
+            {" "},
+            {"c"}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`dalpha[-$CellContext`c],
+     Editable->False], " ", 
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {
+         OverscriptBox["\[CapitalGamma]", "_"], 
+         StyleBox[GridBox[{
+            {"c", " ", " "},
+            {" ", "a", "b"}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`Gamb[$CellContext`c, -$CellContext`a, -$CellContext`b],
+     Editable->False]}]}]}]], "Output",
+ CellChangeTimes->{3.9620561440445213`*^9},
+ CellLabel->"Out[12]=",ExpressionUUID->"681a7031-575a-4622-b213-84c2b5cfcc6a"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"bDbDphi", "[", 
+   RowBox[{
+    RowBox[{"-", "k"}], ",", 
+    RowBox[{"-", "l"}]}], "]"}], "==", 
+  RowBox[{"bDbDphi$RHS", "[", 
+   RowBox[{
+    RowBox[{"-", "k"}], ",", 
+    RowBox[{"-", "l"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.96205605775601*^9, 3.962056077586761*^9}},
+ CellLabel->"In[10]:=",ExpressionUUID->"46bac0c8-dcba-47b5-a016-407d233ea8c5"],
+
+Cell[BoxData[
+ RowBox[{
+  InterpretationBox[
+   StyleBox[GridBox[{
+      {
+       RowBox[{
+        OverscriptBox["D", "_"], 
+        OverscriptBox["D", "_"], "\[Phi]"}], 
+       StyleBox[GridBox[{
+          {" ", " "},
+          {"k", "l"}
+         },
+         GridBoxSpacings->{"Columns" -> {
+             Offset[0.], {
+              Offset[0.034999999999999996`]}, 
+             Offset[0.]}, "Rows" -> {{
+              Offset[0.]}}}],
+        FontSize->Rational[39, 4]]}
+     },
+     GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+     GridBoxSpacings->{"Columns" -> {
+         Offset[0.27999999999999997`], {
+          Offset[0.034999999999999996`]}, 
+         Offset[0.27999999999999997`]}, "Rows" -> {
+         Offset[0.2], {
+          Offset[0.4]}, 
+         Offset[0.2]}}],
+    ShowAutoStyles->False,
+    AutoSpacing->False],
+   $CellContext`bDbDphi[-$CellContext`k, -$CellContext`l],
+   Editable->False], "\[Equal]", 
+  RowBox[{
+   InterpretationBox[
+    StyleBox[GridBox[{
+       {
+        RowBox[{"\[PartialD]", 
+         RowBox[{"\[PartialD]", "\[Phi]"}]}], 
+        StyleBox[GridBox[{
+           {" ", " "},
+           {"k", "l"}
+          },
+          GridBoxSpacings->{"Columns" -> {
+              Offset[0.], {
+               Offset[0.034999999999999996`]}, 
+              Offset[0.]}, "Rows" -> {{
+               Offset[0.]}}}],
+         FontSize->Rational[39, 4]]}
+      },
+      GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.034999999999999996`]}, 
+          Offset[0.27999999999999997`]}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.4]}, 
+          Offset[0.2]}}],
+     ShowAutoStyles->False,
+     AutoSpacing->False],
+    $CellContext`ddphi[-$CellContext`k, -$CellContext`l],
+    Editable->False], "-", 
+   RowBox[{
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {
+         RowBox[{"\[PartialD]", "\[Phi]"}], 
+         StyleBox[GridBox[{
+            {" "},
+            {"a"}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`dphi[-$CellContext`a],
+     Editable->False], " ", 
+    InterpretationBox[
+     StyleBox[GridBox[{
+        {
+         OverscriptBox["\[CapitalGamma]", "_"], 
+         StyleBox[GridBox[{
+            {"a", " ", " "},
+            {" ", "k", "l"}
+           },
+           GridBoxSpacings->{"Columns" -> {
+               Offset[0.], {
+                Offset[0.034999999999999996`]}, 
+               Offset[0.]}, "Rows" -> {{
+                Offset[0.]}}}],
+          FontSize->Rational[39, 4]]}
+       },
+       GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+       GridBoxSpacings->{"Columns" -> {
+           Offset[0.27999999999999997`], {
+            Offset[0.034999999999999996`]}, 
+           Offset[0.27999999999999997`]}, "Rows" -> {
+           Offset[0.2], {
+            Offset[0.4]}, 
+           Offset[0.2]}}],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`Gamb[$CellContext`a, -$CellContext`k, -$CellContext`l],
+     Editable->False]}]}]}]], "Output",
+ CellChangeTimes->{3.962056078488103*^9},
+ CellLabel->"Out[10]=",ExpressionUUID->"b4400f5d-5a4c-4c41-b925-ea9e57cfadc9"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
   RowBox[{"trbDbeta", "[", "]"}], "==", 
   RowBox[{"trbDbeta$RHS", "[", "]"}]}]], "Input",
  CellChangeTimes->{{3.962041870681367*^9, 3.9620418777479973`*^9}},
- CellLabel->"In[7]:=",ExpressionUUID->"6e575e19-8171-4e63-a3d7-97724227ad61"],
+ CellLabel->"In[8]:=",ExpressionUUID->"6e575e19-8171-4e63-a3d7-97724227ad61"],
 
 Cell[BoxData[
  RowBox[{
@@ -1369,10 +3311,101 @@ Cell[BoxData[
     AutoSpacing->False],
    $CellContext`trbDbeta[],
    Editable->False], "\[Equal]", 
-  RowBox[{"trbDbeta$RHS", "[", "]"}]}]], "Output",
+  RowBox[{
+   InterpretationBox[
+    StyleBox[GridBox[{
+       {
+        RowBox[{"\[PartialD]", "\[Beta]"}], 
+        StyleBox[GridBox[{
+           {" ", "a"},
+           {"a", " "}
+          },
+          GridBoxSpacings->{"Columns" -> {
+              Offset[0.], {
+               Offset[0.034999999999999996`]}, 
+              Offset[0.]}, "Rows" -> {{
+               Offset[0.]}}}],
+         FontSize->Rational[39, 4]]}
+      },
+      GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.034999999999999996`]}, 
+          Offset[0.27999999999999997`]}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.4]}, 
+          Offset[0.2]}}],
+     ShowAutoStyles->False,
+     AutoSpacing->False],
+    $CellContext`dbeta[-$CellContext`a, $CellContext`a],
+    Editable->False], "+", 
+   FractionBox[
+    RowBox[{
+     InterpretationBox[
+      StyleBox[GridBox[{
+         {"\[Beta]", 
+          StyleBox[GridBox[{
+             {"a"},
+             {" "}
+            },
+            GridBoxSpacings->{"Columns" -> {
+                Offset[0.], {
+                 Offset[0.034999999999999996`]}, 
+                Offset[0.]}, "Rows" -> {{
+                 Offset[0.]}}}],
+           FontSize->Rational[39, 4]]}
+        },
+        GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+        GridBoxSpacings->{"Columns" -> {
+            Offset[0.27999999999999997`], {
+             Offset[0.034999999999999996`]}, 
+            Offset[0.27999999999999997`]}, "Rows" -> {
+            Offset[0.2], {
+             Offset[0.4]}, 
+            Offset[0.2]}}],
+       ShowAutoStyles->False,
+       AutoSpacing->False],
+      $CellContext`beta[$CellContext`a],
+      Editable->False], " ", 
+     InterpretationBox[
+      StyleBox[GridBox[{
+         {
+          RowBox[{"\[PartialD]", 
+           OverscriptBox["\[Gamma]", "^"]}], 
+          StyleBox[GridBox[{
+             {" "},
+             {"a"}
+            },
+            GridBoxSpacings->{"Columns" -> {
+                Offset[0.], {
+                 Offset[0.034999999999999996`]}, 
+                Offset[0.]}, "Rows" -> {{
+                 Offset[0.]}}}],
+           FontSize->Rational[39, 4]]}
+        },
+        GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+        GridBoxSpacings->{"Columns" -> {
+            Offset[0.27999999999999997`], {
+             Offset[0.034999999999999996`]}, 
+            Offset[0.27999999999999997`]}, "Rows" -> {
+            Offset[0.2], {
+             Offset[0.4]}, 
+            Offset[0.2]}}],
+       ShowAutoStyles->False,
+       AutoSpacing->False],
+      $CellContext`ddetgamh[-$CellContext`a],
+      Editable->False]}], 
+    RowBox[{"2", " ", 
+     InterpretationBox[
+      StyleBox[
+       OverscriptBox["\[Gamma]", "^"],
+       ShowAutoStyles->False,
+       AutoSpacing->False],
+      $CellContext`detgamh[],
+      Editable->False]}]]}]}]], "Output",
  CellChangeTimes->{3.962041878393633*^9, 3.96204233991995*^9, 
-  3.962042788784933*^9},
- CellLabel->"Out[7]=",ExpressionUUID->"1788d861-85ef-4b08-89de-e4c63e088ab2"]
+  3.962042788784933*^9, 3.9620559604864063`*^9},
+ CellLabel->"Out[8]=",ExpressionUUID->"0ac05b4d-1faa-4de7-89ed-fece6976112c"]
 }, Open  ]]
 }, Closed]],
 
@@ -2229,7 +4262,7 @@ Cell[BoxData[
  CellChangeTimes->{3.962042858611536*^9, 3.9620535409635077`*^9},
  CellLabel->"Out[7]=",ExpressionUUID->"e2c72dd3-250b-40fe-8cc9-c9fe5b1031ae"]
 }, Open  ]]
-}, Open  ]],
+}, Closed]],
 
 Cell[CellGroupData[{
 
@@ -4650,8 +6683,8 @@ Cell[BoxData[
 }, Closed]]
 }, Open  ]]
 },
-WindowSize->{896, 520},
-WindowMargins->{{0, Automatic}, {0, Automatic}},
+WindowSize->{896, 1067},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
 FrontEndVersion->"14.2 for Mac OS X x86 (64-bit) (December 26, 2024)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"ebd466d4-c373-4284-afdd-a9043ac1493f"
@@ -4671,211 +6704,250 @@ Cell[CellGroupData[{
 Cell[580, 22, 531, 12, 65, "Input",ExpressionUUID->"9857cbce-1237-4124-83ba-143c7adb15bb",
  InitializationCell->True],
 Cell[CellGroupData[{
-Cell[1136, 38, 679, 14, 23, "Print",ExpressionUUID->"166e0526-d5c0-4074-b83a-b30e898976cb"],
-Cell[1818, 54, 947, 21, 23, "Print",ExpressionUUID->"b91805e6-8cb8-4b6f-9cb3-47340dfb1595"],
-Cell[2768, 77, 700, 14, 23, "Print",ExpressionUUID->"ee0db50d-a1a6-423f-98dd-668de4008696"],
-Cell[3471, 93, 657, 13, 23, "Print",ExpressionUUID->"6e24fe6b-da4f-4233-8c4f-036671427a1e"],
-Cell[4131, 108, 640, 13, 23, "Print",ExpressionUUID->"cd33dfa4-656d-4bb5-805c-01f7eed82c9b"],
-Cell[4774, 123, 679, 14, 23, "Print",ExpressionUUID->"bd3e53bf-fb3d-41e7-9cb1-d7bd330a4c53"],
-Cell[5456, 139, 953, 21, 23, "Print",ExpressionUUID->"69a13947-6f7e-4eeb-8610-273a2f13b7f2"],
-Cell[6412, 162, 700, 14, 23, "Print",ExpressionUUID->"8f13dd57-3661-4ab7-996c-9af527caa32f"],
-Cell[7115, 178, 679, 14, 23, "Print",ExpressionUUID->"b355b7c3-a91e-4370-abf4-d880eade00fa"],
-Cell[7797, 194, 834, 16, 41, "Print",ExpressionUUID->"49525803-0239-4edc-b812-e34e3adb620c"],
-Cell[8634, 212, 679, 14, 23, "Print",ExpressionUUID->"ea71a3b9-a53b-409c-8a6d-fcbda42ce46f"],
-Cell[9316, 228, 679, 14, 23, "Print",ExpressionUUID->"076a5312-c5d6-4c92-bf0f-b02046fa292c"],
-Cell[9998, 244, 947, 21, 23, "Print",ExpressionUUID->"07166dd4-9985-4441-a09f-ff9b11f19ec9"],
-Cell[10948, 267, 718, 14, 23, "Print",ExpressionUUID->"5902349d-ab4e-448e-8303-cfc7d5278575"],
-Cell[11669, 283, 679, 14, 23, "Print",ExpressionUUID->"8be2f933-6431-409f-9c46-d2eca92b5471"],
-Cell[12351, 299, 834, 16, 41, "Print",ExpressionUUID->"7bc21ae5-b4d8-4a4d-9f28-aeb3d6d3abc8"],
-Cell[13188, 317, 679, 14, 23, "Print",ExpressionUUID->"3b192406-0178-4f81-ac4d-0896d3ab2a53"],
-Cell[13870, 333, 679, 14, 23, "Print",ExpressionUUID->"364e784d-8903-43d0-b3de-e0d47ca1e09b"],
-Cell[14552, 349, 655, 13, 23, "Print",ExpressionUUID->"00e58815-0981-4f86-8fdf-222f6a17eb0c"],
-Cell[15210, 364, 679, 14, 23, "Print",ExpressionUUID->"e1e7c466-585c-46c0-a173-d6b414720422"],
-Cell[15892, 380, 679, 14, 23, "Print",ExpressionUUID->"1c59b8d2-2d96-45b8-8a8c-7c30bc4a6551"],
-Cell[16574, 396, 659, 13, 23, "Print",ExpressionUUID->"8ed0bf6b-986f-4e66-ae3c-f957f39fc4e8"],
-Cell[17236, 411, 679, 14, 23, "Print",ExpressionUUID->"b316b197-d989-4204-8352-4fc552babaa2"],
-Cell[17918, 427, 679, 14, 23, "Print",ExpressionUUID->"73466669-3e2c-42bd-b818-cb75bc26358f"],
-Cell[18600, 443, 659, 13, 23, "Print",ExpressionUUID->"e574052e-5207-423d-94a4-0cecf6290f3d"],
-Cell[19262, 458, 679, 14, 23, "Print",ExpressionUUID->"64a02608-3fc5-44a1-ba77-99d41befbdf9"],
-Cell[19944, 474, 679, 14, 23, "Print",ExpressionUUID->"2c45c1ad-1201-4ec2-96ed-0d585c0f90a3"],
-Cell[20626, 490, 657, 13, 23, "Print",ExpressionUUID->"e2b9f259-a521-4ef7-9ce2-0d45303e4059"],
-Cell[21286, 505, 679, 14, 23, "Print",ExpressionUUID->"1acb1901-9e45-4cae-ab0c-497696fb3af0"],
-Cell[21968, 521, 679, 14, 23, "Print",ExpressionUUID->"f32055a8-c21d-4fdc-aec3-c5130361ce0f"],
-Cell[22650, 537, 659, 13, 23, "Print",ExpressionUUID->"b0e1e8df-0690-4ea0-8aff-2cad45d0a232"],
-Cell[23312, 552, 679, 14, 23, "Print",ExpressionUUID->"8667c8d3-927b-45bf-9fea-84dba1cfb900"],
-Cell[23994, 568, 679, 14, 23, "Print",ExpressionUUID->"e21ed97f-aba0-4d83-9ca0-58d9fee6c4e4"],
-Cell[24676, 584, 660, 13, 23, "Print",ExpressionUUID->"5b77d1da-4696-49cd-99c9-bf5cead837fd"],
-Cell[25339, 599, 679, 14, 23, "Print",ExpressionUUID->"bc1e3434-22dc-4d0c-a3e8-bd3c49fe59be"],
-Cell[26021, 615, 679, 14, 23, "Print",ExpressionUUID->"ce18482a-44f6-4108-9519-880305c1c2ad"],
-Cell[26703, 631, 659, 13, 23, "Print",ExpressionUUID->"d78597a8-aa14-45b3-9c10-a0a1780890c5"],
-Cell[27365, 646, 679, 14, 23, "Print",ExpressionUUID->"7d249f26-26f7-45a1-97ce-ccf967a699b5"],
-Cell[28047, 662, 679, 14, 23, "Print",ExpressionUUID->"9d02ecb4-110c-4799-ac47-03c2697a79ff"],
-Cell[28729, 678, 676, 14, 23, "Print",ExpressionUUID->"ea5f0ab6-22a0-4e05-9743-7e66b791d591"],
-Cell[29408, 694, 679, 14, 23, "Print",ExpressionUUID->"2fa552f6-8245-4949-9dcf-6af2b9520331"],
-Cell[30090, 710, 617, 13, 23, "Print",ExpressionUUID->"7ba357f2-b691-4220-9988-2571709a1a3a"]
+Cell[1136, 38, 703, 14, 23, "Print",ExpressionUUID->"344accc6-1134-4549-b8f2-3e36857b2ddc"],
+Cell[1842, 54, 971, 21, 23, "Print",ExpressionUUID->"ed41757b-44a0-43f9-aa49-e6e98dd733c3"],
+Cell[2816, 77, 728, 14, 23, "Print",ExpressionUUID->"318d5a98-c9b5-4c65-910a-820adcfadacf"],
+Cell[3547, 93, 685, 13, 23, "Print",ExpressionUUID->"c79cd58f-86a6-4231-beb9-dfa1a055a568"],
+Cell[4235, 108, 668, 13, 23, "Print",ExpressionUUID->"a31644eb-fb07-4219-8b90-a7d2e187e40e"],
+Cell[4906, 123, 707, 14, 23, "Print",ExpressionUUID->"192ea9a1-2785-4585-b3bb-4e4b959fc448"],
+Cell[5616, 139, 977, 21, 23, "Print",ExpressionUUID->"c23b9631-4d02-4a03-87d8-7582e0cc732f"],
+Cell[6596, 162, 724, 14, 23, "Print",ExpressionUUID->"e2fc8461-8c96-4ef0-b17a-ffa21685e086"],
+Cell[7323, 178, 703, 14, 23, "Print",ExpressionUUID->"f297a3ee-525d-4e63-88dd-cf998247ec1f"],
+Cell[8029, 194, 862, 16, 41, "Print",ExpressionUUID->"a503cb21-d321-4efe-81de-1fed64bca5bf"],
+Cell[8894, 212, 703, 14, 23, "Print",ExpressionUUID->"44bb40c2-be23-44e5-bf12-77facdbaedb8"],
+Cell[9600, 228, 707, 14, 23, "Print",ExpressionUUID->"cbe94a97-5597-433b-9ad8-c6fdc40c0858"],
+Cell[10310, 244, 975, 21, 23, "Print",ExpressionUUID->"07d3318e-bf79-481e-b9fa-a5ce7811932e"],
+Cell[11288, 267, 746, 14, 23, "Print",ExpressionUUID->"b7f77674-f620-4782-8d83-90f86a6c9a3e"],
+Cell[12037, 283, 707, 14, 23, "Print",ExpressionUUID->"9b63fbec-680b-482e-9d7e-74c3882accbd"],
+Cell[12747, 299, 862, 16, 41, "Print",ExpressionUUID->"1f8fb15f-0309-4e77-9436-5828c66c3084"],
+Cell[13612, 317, 707, 14, 23, "Print",ExpressionUUID->"28307e63-1d0d-46c6-abd1-13bced2491c8"],
+Cell[14322, 333, 707, 14, 23, "Print",ExpressionUUID->"0de2bdbe-0a9f-4f2e-a81c-3a0a905cdad6"],
+Cell[15032, 349, 683, 13, 23, "Print",ExpressionUUID->"e93a3be2-f193-44b8-a779-4fd253aea53b"],
+Cell[15718, 364, 707, 14, 23, "Print",ExpressionUUID->"650b3ec7-65b0-430d-9ea3-1ab4e95548bc"],
+Cell[16428, 380, 703, 14, 23, "Print",ExpressionUUID->"25525970-0b8f-4e31-a697-dd3fd7f95a12"],
+Cell[17134, 396, 687, 13, 23, "Print",ExpressionUUID->"ebac4ef8-c55e-42a0-9823-570e8eda3567"],
+Cell[17824, 411, 707, 14, 23, "Print",ExpressionUUID->"ab80bcef-a937-41b1-a7e8-1175e042f0a9"],
+Cell[18534, 427, 707, 14, 23, "Print",ExpressionUUID->"15ed1991-ab67-4958-a800-003c8f44210b"],
+Cell[19244, 443, 687, 13, 23, "Print",ExpressionUUID->"39831a12-6ceb-45fa-a7c7-2dd59b06e354"],
+Cell[19934, 458, 703, 14, 23, "Print",ExpressionUUID->"a39bd68a-1747-44cf-91d3-6c5a138e8a59"],
+Cell[20640, 474, 707, 14, 23, "Print",ExpressionUUID->"f48c8985-97cd-4b8f-b14f-bd17fb7e6ce0"],
+Cell[21350, 490, 685, 13, 23, "Print",ExpressionUUID->"8038dc84-c191-4f25-bba5-8788c5a7b568"],
+Cell[22038, 505, 707, 14, 23, "Print",ExpressionUUID->"091f5416-cab3-4bb0-9544-734a42566fc9"],
+Cell[22748, 521, 707, 14, 23, "Print",ExpressionUUID->"c1f30a54-f10e-4274-badd-19a734fb3e69"],
+Cell[23458, 537, 683, 13, 23, "Print",ExpressionUUID->"31d222fe-66fe-4a03-8053-edcf3fb3c719"],
+Cell[24144, 552, 703, 14, 23, "Print",ExpressionUUID->"61432b1e-7560-4f5b-8d95-fa6b59317869"],
+Cell[24850, 568, 703, 14, 23, "Print",ExpressionUUID->"e3d52c35-437c-438c-82f0-2ed182be7c0d"],
+Cell[25556, 584, 684, 13, 23, "Print",ExpressionUUID->"65ca4bbf-9b65-40b2-a492-aa0403d93c11"],
+Cell[26243, 599, 707, 14, 23, "Print",ExpressionUUID->"eb4d0ec7-38eb-4c3f-9b1a-0934e5f8dbef"],
+Cell[26953, 615, 707, 14, 23, "Print",ExpressionUUID->"01ad48ae-86d1-447e-b6d7-c8dbb9188cda"],
+Cell[27663, 631, 683, 13, 23, "Print",ExpressionUUID->"fd5d6107-81d5-4e15-8c96-e414f1f1c689"],
+Cell[28349, 646, 707, 14, 23, "Print",ExpressionUUID->"05955255-ce78-45f1-b793-89d7fe885739"],
+Cell[29059, 662, 703, 14, 23, "Print",ExpressionUUID->"8da8df70-ec34-4b22-bf03-b8bc487f86fa"],
+Cell[29765, 678, 700, 14, 23, "Print",ExpressionUUID->"fcecd904-03e9-44b3-9d38-086f57798fe3"],
+Cell[30468, 694, 703, 14, 23, "Print",ExpressionUUID->"fd31fe5c-394e-4937-81fb-d02df733a151"],
+Cell[31174, 710, 645, 13, 23, "Print",ExpressionUUID->"603868d2-e811-46c9-b807-1e333f705cb0"]
 }, Open  ]]
 }, Open  ]],
-Cell[30734, 727, 294, 6, 45, "Input",ExpressionUUID->"2d72527e-8ca3-4072-9847-db5c80bda706",
+Cell[31846, 727, 294, 6, 45, "Input",ExpressionUUID->"2d72527e-8ca3-4072-9847-db5c80bda706",
  InitializationCell->True],
-Cell[31031, 735, 355, 8, 45, "Input",ExpressionUUID->"f3432dde-bdc0-4c9e-bb1a-6da9b446a107",
+Cell[32143, 735, 355, 8, 45, "Input",ExpressionUUID->"f3432dde-bdc0-4c9e-bb1a-6da9b446a107",
  InitializationCell->True],
 Cell[CellGroupData[{
-Cell[31411, 747, 158, 3, 66, "Section",ExpressionUUID->"52f557a0-0388-40bd-8750-58e41a1c0df4"],
-Cell[31572, 752, 412, 9, 65, "Input",ExpressionUUID->"1827c1a2-d8e7-4036-8db6-998aa4efbe58",
+Cell[32523, 747, 158, 3, 66, "Section",ExpressionUUID->"52f557a0-0388-40bd-8750-58e41a1c0df4"],
+Cell[32684, 752, 412, 9, 65, "Input",ExpressionUUID->"1827c1a2-d8e7-4036-8db6-998aa4efbe58",
  InitializationCell->True],
-Cell[31987, 763, 282, 6, 45, "Input",ExpressionUUID->"80007082-9e42-407c-bc87-5a1f0c7fd15d",
+Cell[33099, 763, 282, 6, 45, "Input",ExpressionUUID->"80007082-9e42-407c-bc87-5a1f0c7fd15d",
  InitializationCell->True],
-Cell[32272, 771, 329, 6, 45, "Input",ExpressionUUID->"0daa1887-b625-49a5-9bb1-98cb498eed4e",
+Cell[33384, 771, 329, 6, 45, "Input",ExpressionUUID->"0daa1887-b625-49a5-9bb1-98cb498eed4e",
  InitializationCell->True]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[32638, 782, 166, 4, 66, "Section",ExpressionUUID->"519fe4de-6999-4db6-9e6b-17dff89f6b40"],
+Cell[33750, 782, 166, 4, 66, "Section",ExpressionUUID->"519fe4de-6999-4db6-9e6b-17dff89f6b40"],
 Cell[CellGroupData[{
-Cell[32829, 790, 208, 4, 53, "Subsection",ExpressionUUID->"0f1e9ad3-fd42-4ea0-a1c6-26892251840c"],
-Cell[33040, 796, 561, 16, 29, "Input",ExpressionUUID->"06b92257-33eb-4e35-9e9f-734d71b01961"],
-Cell[33604, 814, 596, 14, 29, "Input",ExpressionUUID->"3d718d55-6c39-4060-ad19-39c2133e3b35"],
-Cell[34203, 830, 563, 16, 29, "Input",ExpressionUUID->"4064536e-89df-40ba-bd89-c27407c7a98f"],
-Cell[34769, 848, 421, 11, 29, "Input",ExpressionUUID->"6f27c634-cd6f-4760-a526-d15cdbb71ead"],
-Cell[35193, 861, 420, 11, 29, "Input",ExpressionUUID->"fab8f463-13a1-4957-97f3-47367f882d4a"],
-Cell[35616, 874, 416, 11, 29, "Input",ExpressionUUID->"c7c85f61-be1e-4d43-a565-b3838e4801e4"]
+Cell[33941, 790, 208, 4, 53, "Subsection",ExpressionUUID->"0f1e9ad3-fd42-4ea0-a1c6-26892251840c"],
+Cell[34152, 796, 561, 16, 29, "Input",ExpressionUUID->"06b92257-33eb-4e35-9e9f-734d71b01961"],
+Cell[34716, 814, 596, 14, 29, "Input",ExpressionUUID->"3d718d55-6c39-4060-ad19-39c2133e3b35"],
+Cell[35315, 830, 563, 16, 29, "Input",ExpressionUUID->"4064536e-89df-40ba-bd89-c27407c7a98f"],
+Cell[35881, 848, 421, 11, 29, "Input",ExpressionUUID->"6f27c634-cd6f-4760-a526-d15cdbb71ead"],
+Cell[36305, 861, 420, 11, 29, "Input",ExpressionUUID->"fab8f463-13a1-4957-97f3-47367f882d4a"],
+Cell[36728, 874, 416, 11, 29, "Input",ExpressionUUID->"c7c85f61-be1e-4d43-a565-b3838e4801e4"]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[36069, 890, 212, 4, 37, "Subsection",ExpressionUUID->"f3c21956-69a7-46aa-a417-db45d103e0f4"],
-Cell[36284, 896, 1429, 39, 49, "Input",ExpressionUUID->"6828f4f7-c849-419b-b608-d8a64eaba54d"],
-Cell[37716, 937, 732, 16, 29, "Input",ExpressionUUID->"2f5955c4-83ff-4a7d-883d-535575e6c8d6"],
-Cell[38451, 955, 1187, 35, 49, "Input",ExpressionUUID->"135fc260-594e-4c34-8ca9-5b981e786e64"],
-Cell[39641, 992, 714, 20, 29, "Input",ExpressionUUID->"70034745-331f-4d16-8571-ea0d54844bdd"],
-Cell[40358, 1014, 765, 21, 29, "Input",ExpressionUUID->"6fa9619e-fb01-41b5-8068-fe3ce6a7ebcb"],
-Cell[41126, 1037, 802, 21, 29, "Input",ExpressionUUID->"dee913d3-cf08-414e-a5a2-1d8d04e1155f"],
-Cell[41931, 1060, 1527, 40, 70, "Input",ExpressionUUID->"0c6a31af-4655-4b41-a28c-c4f68172f782"],
-Cell[43461, 1102, 1187, 33, 49, "Input",ExpressionUUID->"d01dd3cb-f791-4606-8a3c-accfb7ceb100"]
+Cell[37181, 890, 212, 4, 37, "Subsection",ExpressionUUID->"f3c21956-69a7-46aa-a417-db45d103e0f4"],
+Cell[37396, 896, 1429, 39, 49, "Input",ExpressionUUID->"6828f4f7-c849-419b-b608-d8a64eaba54d"],
+Cell[38828, 937, 732, 16, 29, "Input",ExpressionUUID->"2f5955c4-83ff-4a7d-883d-535575e6c8d6"],
+Cell[39563, 955, 1187, 35, 49, "Input",ExpressionUUID->"135fc260-594e-4c34-8ca9-5b981e786e64"],
+Cell[40753, 992, 714, 20, 29, "Input",ExpressionUUID->"70034745-331f-4d16-8571-ea0d54844bdd"],
+Cell[41470, 1014, 765, 21, 29, "Input",ExpressionUUID->"6fa9619e-fb01-41b5-8068-fe3ce6a7ebcb"],
+Cell[42238, 1037, 802, 21, 29, "Input",ExpressionUUID->"dee913d3-cf08-414e-a5a2-1d8d04e1155f"],
+Cell[43043, 1060, 1527, 40, 70, "Input",ExpressionUUID->"0c6a31af-4655-4b41-a28c-c4f68172f782"],
+Cell[44573, 1102, 1187, 33, 49, "Input",ExpressionUUID->"d01dd3cb-f791-4606-8a3c-accfb7ceb100"]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[44685, 1140, 160, 3, 37, "Subsection",ExpressionUUID->"435a7b9a-0ce6-4cbb-8d70-32e502c5460a"],
-Cell[44848, 1145, 478, 12, 29, "Input",ExpressionUUID->"77ee5db6-d010-4a13-ad7d-15323a95fa78"],
-Cell[45329, 1159, 476, 10, 29, "Input",ExpressionUUID->"10b95894-ef31-4306-977d-a24ba17f6a5b"],
-Cell[45808, 1171, 681, 19, 29, "Input",ExpressionUUID->"6e329625-d8c5-44e6-8478-563381c58b26"],
-Cell[46492, 1192, 616, 14, 29, "Input",ExpressionUUID->"a265f227-55d9-439c-9287-67edf6c102ec"],
-Cell[47111, 1208, 445, 12, 29, "Input",ExpressionUUID->"5a2ffc23-d49f-4c87-9263-337b9b7109e3"],
-Cell[47559, 1222, 659, 18, 42, "Input",ExpressionUUID->"24403ab4-c75c-4696-af28-aaee80a7fabe"],
-Cell[48221, 1242, 504, 14, 29, "Input",ExpressionUUID->"1631cb0f-3a94-4938-9f42-e0b98550158b"],
-Cell[48728, 1258, 706, 19, 42, "Input",ExpressionUUID->"e167fa7d-b364-4698-8735-66de51d51555"],
-Cell[49437, 1279, 501, 14, 29, "Input",ExpressionUUID->"f1e2896b-4a79-46dc-bee9-7631eca2a033"]
-}, Open  ]],
+Cell[45797, 1140, 160, 3, 37, "Subsection",ExpressionUUID->"435a7b9a-0ce6-4cbb-8d70-32e502c5460a"],
+Cell[45960, 1145, 478, 12, 29, "Input",ExpressionUUID->"77ee5db6-d010-4a13-ad7d-15323a95fa78"],
+Cell[46441, 1159, 476, 10, 29, "Input",ExpressionUUID->"10b95894-ef31-4306-977d-a24ba17f6a5b"],
+Cell[46920, 1171, 681, 19, 29, "Input",ExpressionUUID->"6e329625-d8c5-44e6-8478-563381c58b26"],
+Cell[47604, 1192, 616, 14, 29, "Input",ExpressionUUID->"a265f227-55d9-439c-9287-67edf6c102ec"],
+Cell[48223, 1208, 445, 12, 29, "Input",ExpressionUUID->"5a2ffc23-d49f-4c87-9263-337b9b7109e3"],
+Cell[48671, 1222, 659, 18, 42, "Input",ExpressionUUID->"24403ab4-c75c-4696-af28-aaee80a7fabe"],
+Cell[49333, 1242, 504, 14, 29, "Input",ExpressionUUID->"1631cb0f-3a94-4938-9f42-e0b98550158b"],
+Cell[49840, 1258, 706, 19, 42, "Input",ExpressionUUID->"e167fa7d-b364-4698-8735-66de51d51555"],
+Cell[50549, 1279, 501, 14, 29, "Input",ExpressionUUID->"f1e2896b-4a79-46dc-bee9-7631eca2a033"]
+}, Closed]],
 Cell[CellGroupData[{
-Cell[49975, 1298, 154, 3, 53, "Subsection",ExpressionUUID->"5212117f-cc61-45a5-a591-cc10ffd5b343"],
-Cell[50132, 1303, 773, 21, 29, "Input",ExpressionUUID->"2aea7235-068c-4d71-bc91-901763636e2f"],
-Cell[50908, 1326, 316, 8, 29, "Input",ExpressionUUID->"178027df-3920-47da-a011-524023980e10"]
+Cell[51087, 1298, 154, 3, 37, "Subsection",ExpressionUUID->"5212117f-cc61-45a5-a591-cc10ffd5b343"],
+Cell[51244, 1303, 773, 21, 29, "Input",ExpressionUUID->"2aea7235-068c-4d71-bc91-901763636e2f"],
+Cell[52020, 1326, 648, 17, 29, "Input",ExpressionUUID->"178027df-3920-47da-a011-524023980e10"],
+Cell[52671, 1345, 705, 17, 29, "Input",ExpressionUUID->"d8d4c29a-638d-4c48-b60b-48afb9842a34"],
+Cell[53379, 1364, 914, 25, 29, "Input",ExpressionUUID->"eb8b5e05-c9a1-48b5-a324-e27904baf408"],
+Cell[54296, 1391, 648, 17, 29, "Input",ExpressionUUID->"c074545d-40bd-48a8-ade7-a82530e961a4"],
+Cell[54947, 1410, 550, 15, 29, "Input",ExpressionUUID->"f50ae1ad-b397-40b6-bafb-e3f4ba3e16ab"],
+Cell[55500, 1427, 1395, 39, 70, "Input",ExpressionUUID->"f54f220b-4e63-4e4e-955b-05f057d46942"],
+Cell[56898, 1468, 1040, 28, 49, "Input",ExpressionUUID->"66939456-93f5-4927-b573-d421ddd04418"],
+Cell[57941, 1498, 1822, 53, 70, "Input",ExpressionUUID->"c9ba078f-da86-4c48-b6ac-5c2dc3006bf6"]
 }, Closed]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[51273, 1340, 150, 3, 66, "Section",ExpressionUUID->"eb9459c4-fbfe-4fd1-810b-c165cfeb1e8d"],
+Cell[59812, 1557, 150, 3, 66, "Section",ExpressionUUID->"eb9459c4-fbfe-4fd1-810b-c165cfeb1e8d"],
 Cell[CellGroupData[{
-Cell[51448, 1347, 155, 3, 53, "Subsection",ExpressionUUID->"4c004f29-c3d8-4a78-a794-67830e3ca50c"],
+Cell[59987, 1564, 155, 3, 53, "Subsection",ExpressionUUID->"4c004f29-c3d8-4a78-a794-67830e3ca50c"],
 Cell[CellGroupData[{
-Cell[51628, 1354, 260, 5, 29, "Input",ExpressionUUID->"6e575e19-8171-4e63-a3d7-97724227ad61"],
-Cell[51891, 1361, 444, 13, 33, "Output",ExpressionUUID->"1788d861-85ef-4b08-89de-e4c63e088ab2"]
+Cell[60167, 1571, 419, 11, 29, "Input",ExpressionUUID->"8d4e0606-10ac-4fcf-b6c4-8405576bf75c"],
+Cell[60589, 1584, 14637, 422, 35, "Output",ExpressionUUID->"fc67dc90-c7cf-4b5d-8f95-16c6ec46596a"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[75263, 2011, 516, 15, 29, "Input",ExpressionUUID->"8d9ca160-3af3-4f1d-a399-b7172e717b65"],
+Cell[75782, 2028, 8089, 237, 35, "Output",ExpressionUUID->"0992b7c0-3e41-40d8-ab98-f669a6d30109"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[83908, 2270, 514, 15, 29, "Input",ExpressionUUID->"95d31537-e86d-48c0-8946-1886ce6fc851"],
+Cell[84425, 2287, 9736, 285, 35, "Output",ExpressionUUID->"cad7a9b7-ef60-42f1-a57e-bb8653ef0b49"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[94198, 2577, 354, 9, 29, "Input",ExpressionUUID->"ee51d523-b892-4325-b21b-d86bb31b34b4"],
+Cell[94555, 2588, 3796, 114, 35, "Output",ExpressionUUID->"8b859dbf-debe-4d68-b089-c2adf7cb9857"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[98388, 2707, 355, 9, 29, "Input",ExpressionUUID->"a960db93-9862-44c0-a404-9875b67f793b"],
+Cell[98746, 2718, 3888, 116, 35, "Output",ExpressionUUID->"c0bf19ee-839a-4c8b-9253-bea7e3d689e5"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[102671, 2839, 455, 13, 29, "Input",ExpressionUUID->"9461aae1-02a5-44ae-bc7a-80f9425c54d0"],
+Cell[103129, 2854, 5749, 169, 35, "Output",ExpressionUUID->"18465ced-a8d1-4f3f-aa6c-b301c930e383"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[108915, 3028, 401, 11, 29, "Input",ExpressionUUID->"c5d1db24-dc17-4d93-92be-3ab4128523a9"],
+Cell[109319, 3041, 3865, 116, 35, "Output",ExpressionUUID->"681a7031-575a-4622-b213-84c2b5cfcc6a"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[113221, 3162, 394, 11, 29, "Input",ExpressionUUID->"46bac0c8-dcba-47b5-a016-407d233ea8c5"],
+Cell[113618, 3175, 3851, 116, 35, "Output",ExpressionUUID->"b4400f5d-5a4c-4c41-b925-ea9e57cfadc9"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[117506, 3296, 260, 5, 29, "Input",ExpressionUUID->"6e575e19-8171-4e63-a3d7-97724227ad61"],
+Cell[117769, 3303, 3401, 104, 54, "Output",ExpressionUUID->"0ac05b4d-1faa-4de7-89ed-fece6976112c"]
 }, Open  ]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[52384, 1380, 187, 3, 37, "Subsection",ExpressionUUID->"a26eaa86-896f-49cc-a298-c71ed99183f9"],
+Cell[121219, 3413, 187, 3, 37, "Subsection",ExpressionUUID->"a26eaa86-896f-49cc-a298-c71ed99183f9"],
 Cell[CellGroupData[{
-Cell[52596, 1387, 407, 11, 29, "Input",ExpressionUUID->"2f8d4c99-7494-4753-951d-706b638e1b5e"],
-Cell[53006, 1400, 2775, 82, 35, "Output",ExpressionUUID->"6a27a5ea-c862-41a4-b8b4-822c77f056d3"]
+Cell[121431, 3420, 407, 11, 29, "Input",ExpressionUUID->"2f8d4c99-7494-4753-951d-706b638e1b5e"],
+Cell[121841, 3433, 2775, 82, 35, "Output",ExpressionUUID->"6a27a5ea-c862-41a4-b8b4-822c77f056d3"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[55818, 1487, 453, 13, 29, "Input",ExpressionUUID->"61f10040-b311-496a-96c9-c257d63c8fd6"],
-Cell[56274, 1502, 4085, 115, 45, "Output",ExpressionUUID->"c95f04b5-1a02-4f0b-b66d-1aa8e49c4c77"]
+Cell[124653, 3520, 453, 13, 29, "Input",ExpressionUUID->"61f10040-b311-496a-96c9-c257d63c8fd6"],
+Cell[125109, 3535, 4085, 115, 45, "Output",ExpressionUUID->"c95f04b5-1a02-4f0b-b66d-1aa8e49c4c77"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[60396, 1622, 411, 11, 29, "Input",ExpressionUUID->"e4e8876b-35e6-4e83-b399-7cdcf1cf56ce"],
-Cell[60810, 1635, 2918, 86, 35, "Output",ExpressionUUID->"ce4189f7-a739-497b-90f5-8487efc213fd"]
+Cell[129231, 3655, 411, 11, 29, "Input",ExpressionUUID->"e4e8876b-35e6-4e83-b399-7cdcf1cf56ce"],
+Cell[129645, 3668, 2918, 86, 35, "Output",ExpressionUUID->"ce4189f7-a739-497b-90f5-8487efc213fd"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[63765, 1726, 455, 13, 29, "Input",ExpressionUUID->"c82a47b5-088e-4d73-808f-62686b499b61"],
-Cell[64223, 1741, 4214, 119, 45, "Output",ExpressionUUID->"792886b4-7b04-4307-b756-2cee2d71c576"]
+Cell[132600, 3759, 455, 13, 29, "Input",ExpressionUUID->"c82a47b5-088e-4d73-808f-62686b499b61"],
+Cell[133058, 3774, 4214, 119, 45, "Output",ExpressionUUID->"792886b4-7b04-4307-b756-2cee2d71c576"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[68474, 1865, 389, 11, 29, "Input",ExpressionUUID->"21746748-f0ab-4464-8f16-304c1a103f35"],
-Cell[68866, 1878, 2112, 65, 35, "Output",ExpressionUUID->"27836380-0f82-4745-bbec-3cd1b6d35563"]
+Cell[137309, 3898, 389, 11, 29, "Input",ExpressionUUID->"21746748-f0ab-4464-8f16-304c1a103f35"],
+Cell[137701, 3911, 2112, 65, 35, "Output",ExpressionUUID->"27836380-0f82-4745-bbec-3cd1b6d35563"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[71015, 1948, 313, 7, 29, "Input",ExpressionUUID->"50a50bef-0638-48c8-9950-a9c79fc054ec"],
-Cell[71331, 1957, 2111, 65, 35, "Output",ExpressionUUID->"7b908ab8-87fa-437f-80a4-46addaff08f0"]
+Cell[139850, 3981, 313, 7, 29, "Input",ExpressionUUID->"50a50bef-0638-48c8-9950-a9c79fc054ec"],
+Cell[140166, 3990, 2111, 65, 35, "Output",ExpressionUUID->"7b908ab8-87fa-437f-80a4-46addaff08f0"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[73479, 2027, 451, 13, 29, "Input",ExpressionUUID->"10dac3e8-b5aa-462b-9e2b-6c1bdb11d0ce"],
-Cell[73933, 2042, 4209, 123, 35, "Output",ExpressionUUID->"f953f074-5e16-4da3-8b22-2d08667cdfb5"]
+Cell[142314, 4060, 451, 13, 29, "Input",ExpressionUUID->"10dac3e8-b5aa-462b-9e2b-6c1bdb11d0ce"],
+Cell[142768, 4075, 4209, 123, 35, "Output",ExpressionUUID->"f953f074-5e16-4da3-8b22-2d08667cdfb5"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[78179, 2170, 300, 6, 29, "Input",ExpressionUUID->"f9bc0b83-597a-418e-8f20-30577b1f37aa"],
-Cell[78482, 2178, 581, 19, 48, "Output",ExpressionUUID->"e91e4883-9cb7-461e-9aca-37b25165c7db"]
+Cell[147014, 4203, 300, 6, 29, "Input",ExpressionUUID->"f9bc0b83-597a-418e-8f20-30577b1f37aa"],
+Cell[147317, 4211, 581, 19, 48, "Output",ExpressionUUID->"e91e4883-9cb7-461e-9aca-37b25165c7db"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[79100, 2202, 252, 5, 29, "Input",ExpressionUUID->"89a3149f-e213-498b-8206-ce61d01b05e7"],
-Cell[79355, 2209, 614, 20, 33, "Output",ExpressionUUID->"e2c72dd3-250b-40fe-8cc9-c9fe5b1031ae"]
-}, Open  ]]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[80018, 2235, 214, 4, 53, "Subsection",ExpressionUUID->"e4dc659b-3b23-4c35-9a71-27fa8670179e"],
-Cell[CellGroupData[{
-Cell[80257, 2243, 440, 12, 29, "Input",ExpressionUUID->"54edc11a-3c11-4f22-a172-964c8be09e25"],
-Cell[80700, 2257, 8689, 255, 35, "Output",ExpressionUUID->"92a98a62-7387-418e-9e67-e0adbedc89a0"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[89426, 2517, 513, 15, 29, "Input",ExpressionUUID->"3ba54471-bd4b-4051-9490-4e0205108851"],
-Cell[89942, 2534, 9787, 283, 35, "Output",ExpressionUUID->"43e7eea7-924b-4de5-ad6b-7832a97610d5"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[99766, 2822, 345, 9, 29, "Input",ExpressionUUID->"9094e812-0b5b-4c21-bc47-ac56025a8916"],
-Cell[100114, 2833, 4731, 141, 35, "Output",ExpressionUUID->"75b869ec-375a-4c3d-a2ae-ff9b2adfd81f"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[104882, 2979, 351, 9, 29, "Input",ExpressionUUID->"35b99c3e-bd09-43cc-a0c1-cbbe292bbd69"],
-Cell[105236, 2990, 4690, 140, 35, "Output",ExpressionUUID->"10f97c9e-b31b-47f8-a3c9-a82712c2950d"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[109963, 3135, 353, 9, 29, "Input",ExpressionUUID->"415ed87f-bdba-4c1a-bb36-72534ca820ed"],
-Cell[110319, 3146, 4903, 146, 35, "Output",ExpressionUUID->"03c2d6e7-9024-4dc8-b979-253f584d06ac"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[115259, 3297, 453, 13, 29, "Input",ExpressionUUID->"0445ed37-27d9-48cf-80b2-3b2b84619306"],
-Cell[115715, 3312, 9397, 279, 35, "Output",ExpressionUUID->"911b8a0c-9840-4da7-88d8-ca4fb019b27d"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[125149, 3596, 502, 14, 29, "Input",ExpressionUUID->"c053175b-5268-41dd-b9d3-f03a3e21ce6b"],
-Cell[125654, 3612, 3070, 89, 35, "Output",ExpressionUUID->"d875291f-afcb-426d-8591-c7dcfff83c3f"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[128761, 3706, 549, 15, 29, "Input",ExpressionUUID->"db1dc67d-902b-4f6e-b095-38a490b2feca"],
-Cell[129313, 3723, 9236, 272, 35, "Output",ExpressionUUID->"16c8a6fa-2557-4759-b994-61e0b3e7bd3d"]
+Cell[147935, 4235, 252, 5, 29, "Input",ExpressionUUID->"89a3149f-e213-498b-8206-ce61d01b05e7"],
+Cell[148190, 4242, 614, 20, 33, "Output",ExpressionUUID->"e2c72dd3-250b-40fe-8cc9-c9fe5b1031ae"]
 }, Open  ]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[138598, 4001, 207, 4, 37, "Subsection",ExpressionUUID->"1f2ec285-bafa-4831-b8f0-00961c128a31"],
+Cell[148853, 4268, 214, 4, 37, "Subsection",ExpressionUUID->"e4dc659b-3b23-4c35-9a71-27fa8670179e"],
 Cell[CellGroupData[{
-Cell[138830, 4009, 255, 5, 29, "Input",ExpressionUUID->"fa848b0a-e478-4cc8-9626-98fe63be8f2e"],
-Cell[139088, 4016, 2650, 82, 35, "Output",ExpressionUUID->"4697db59-4ff5-496e-b3a7-d59adf0f4240"]
+Cell[149092, 4276, 440, 12, 29, "Input",ExpressionUUID->"54edc11a-3c11-4f22-a172-964c8be09e25"],
+Cell[149535, 4290, 8689, 255, 35, "Output",ExpressionUUID->"92a98a62-7387-418e-9e67-e0adbedc89a0"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[141775, 4103, 261, 5, 29, "Input",ExpressionUUID->"d947e9cb-5e10-40ff-a205-1465e41866a6"],
-Cell[142039, 4110, 2666, 82, 35, "Output",ExpressionUUID->"8dd896bd-fe1c-4dbd-be89-a3732a634502"]
+Cell[158261, 4550, 513, 15, 29, "Input",ExpressionUUID->"3ba54471-bd4b-4051-9490-4e0205108851"],
+Cell[158777, 4567, 9787, 283, 35, "Output",ExpressionUUID->"43e7eea7-924b-4de5-ad6b-7832a97610d5"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[144742, 4197, 263, 5, 29, "Input",ExpressionUUID->"d8fc70c0-100d-4eda-b1b0-43980608933c"],
-Cell[145008, 4204, 2766, 85, 35, "Output",ExpressionUUID->"dbb7c5ab-b9c3-4876-9210-58fc60e0d4c1"]
+Cell[168601, 4855, 345, 9, 29, "Input",ExpressionUUID->"9094e812-0b5b-4c21-bc47-ac56025a8916"],
+Cell[168949, 4866, 4731, 141, 35, "Output",ExpressionUUID->"75b869ec-375a-4c3d-a2ae-ff9b2adfd81f"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[147811, 4294, 391, 11, 29, "Input",ExpressionUUID->"74ceda4d-61e1-462e-8454-6255adcfa8fb"],
-Cell[148205, 4307, 3642, 111, 35, "Output",ExpressionUUID->"c26cc90f-0aaf-4a54-a92e-e23bf4470409"]
+Cell[173717, 5012, 351, 9, 29, "Input",ExpressionUUID->"35b99c3e-bd09-43cc-a0c1-cbbe292bbd69"],
+Cell[174071, 5023, 4690, 140, 35, "Output",ExpressionUUID->"10f97c9e-b31b-47f8-a3c9-a82712c2950d"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[151884, 4423, 389, 11, 29, "Input",ExpressionUUID->"7c474c44-1e7e-4f7c-a19a-f6933a1f1554"],
-Cell[152276, 4436, 2863, 85, 35, "Output",ExpressionUUID->"e03f8bf6-35fb-49b0-9325-a3156867cfc0"]
+Cell[178798, 5168, 353, 9, 29, "Input",ExpressionUUID->"415ed87f-bdba-4c1a-bb36-72534ca820ed"],
+Cell[179154, 5179, 4903, 146, 35, "Output",ExpressionUUID->"03c2d6e7-9024-4dc8-b979-253f584d06ac"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[155176, 4526, 387, 11, 29, "Input",ExpressionUUID->"d3e0e1b6-688f-4cb1-abc3-c33f6645be3f"],
-Cell[155566, 4539, 3575, 108, 35, "Output",ExpressionUUID->"596a69c6-15ec-46ac-a6f9-2a0a1494536c"]
+Cell[184094, 5330, 453, 13, 29, "Input",ExpressionUUID->"0445ed37-27d9-48cf-80b2-3b2b84619306"],
+Cell[184550, 5345, 9397, 279, 35, "Output",ExpressionUUID->"911b8a0c-9840-4da7-88d8-ca4fb019b27d"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[193984, 5629, 502, 14, 29, "Input",ExpressionUUID->"c053175b-5268-41dd-b9d3-f03a3e21ce6b"],
+Cell[194489, 5645, 3070, 89, 35, "Output",ExpressionUUID->"d875291f-afcb-426d-8591-c7dcfff83c3f"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[197596, 5739, 549, 15, 29, "Input",ExpressionUUID->"db1dc67d-902b-4f6e-b095-38a490b2feca"],
+Cell[198148, 5756, 9236, 272, 35, "Output",ExpressionUUID->"16c8a6fa-2557-4759-b994-61e0b3e7bd3d"]
+}, Open  ]]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[207433, 6034, 207, 4, 37, "Subsection",ExpressionUUID->"1f2ec285-bafa-4831-b8f0-00961c128a31"],
+Cell[CellGroupData[{
+Cell[207665, 6042, 255, 5, 29, "Input",ExpressionUUID->"fa848b0a-e478-4cc8-9626-98fe63be8f2e"],
+Cell[207923, 6049, 2650, 82, 35, "Output",ExpressionUUID->"4697db59-4ff5-496e-b3a7-d59adf0f4240"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[210610, 6136, 261, 5, 29, "Input",ExpressionUUID->"d947e9cb-5e10-40ff-a205-1465e41866a6"],
+Cell[210874, 6143, 2666, 82, 35, "Output",ExpressionUUID->"8dd896bd-fe1c-4dbd-be89-a3732a634502"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[213577, 6230, 263, 5, 29, "Input",ExpressionUUID->"d8fc70c0-100d-4eda-b1b0-43980608933c"],
+Cell[213843, 6237, 2766, 85, 35, "Output",ExpressionUUID->"dbb7c5ab-b9c3-4876-9210-58fc60e0d4c1"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[216646, 6327, 391, 11, 29, "Input",ExpressionUUID->"74ceda4d-61e1-462e-8454-6255adcfa8fb"],
+Cell[217040, 6340, 3642, 111, 35, "Output",ExpressionUUID->"c26cc90f-0aaf-4a54-a92e-e23bf4470409"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[220719, 6456, 389, 11, 29, "Input",ExpressionUUID->"7c474c44-1e7e-4f7c-a19a-f6933a1f1554"],
+Cell[221111, 6469, 2863, 85, 35, "Output",ExpressionUUID->"e03f8bf6-35fb-49b0-9325-a3156867cfc0"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[224011, 6559, 387, 11, 29, "Input",ExpressionUUID->"d3e0e1b6-688f-4cb1-abc3-c33f6645be3f"],
+Cell[224401, 6572, 3575, 108, 35, "Output",ExpressionUUID->"596a69c6-15ec-46ac-a6f9-2a0a1494536c"]
 }, Open  ]]
 }, Closed]]
 }, Open  ]]
