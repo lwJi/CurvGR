@@ -180,6 +180,18 @@ RVarlist =
     {RalphaTF[-i, -j], Symmetric[{-i, -j}], PrintAs -> "\!\(\*SuperscriptBox[\(R\), \(\[Alpha]TF\)]\)"}
   ];
 
+LieVarlist =
+  TempTensors[
+    {Lbetaphi[],                              PrintAs -> "\!\(\*SubscriptBox[\(\[ScriptCapitalL]\), \(\[Beta]\)]\)\[Phi]"},
+    {Lbetagamb[-i, -j], Symmetric[{-i, -j}],  PrintAs -> "\!\(\*SubscriptBox[\(\[ScriptCapitalL]\), \(\[Beta]\)]\)\!\(\*OverscriptBox[\(\[Gamma]\), \(_\)]\)"},
+    {LbetatrK[],                              PrintAs -> "\!\(\*SubscriptBox[\(\[ScriptCapitalL]\), \(\[Beta]\)]\)K"},
+    {LbetaexAb[-i, -j], Symmetric[{-i, -j}],  PrintAs -> "\!\(\*SubscriptBox[\(\[ScriptCapitalL]\), \(\[Beta]\)]\)\!\(\*OverscriptBox[\(A\), \(_\)]\)"},
+    {LbetaLt[i],                              PrintAs -> "\!\(\*SubscriptBox[\(\[ScriptCapitalL]\), \(\[Beta]\)]\)\!\(\*OverscriptBox[\(\[CapitalLambda]\), \(~\)]\)"},
+    {LbetaTheta[],                            PrintAs -> "\!\(\*SubscriptBox[\(\[ScriptCapitalL]\), \(\[Beta]\)]\)\[CapitalTheta]"},
+    {Lbetaalpha[],                            PrintAs -> "\!\(\*SubscriptBox[\(\[ScriptCapitalL]\), \(\[Beta]\)]\)\[Alpha]"},
+    {LbetaB[i],                               PrintAs -> "\!\(\*SubscriptBox[\(\[ScriptCapitalL]\), \(\[Beta]\)]\)B"}
+  ];
+
 (* Matter *)
 
 MatterVarlist =

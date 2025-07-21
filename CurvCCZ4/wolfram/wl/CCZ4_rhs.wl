@@ -100,6 +100,22 @@ SetEQN[Ralpha[i_, j_], -bDbDalpha[i, j]];
 
 SetEQN[RalphaTF[i_, j_], Ralpha[i, j] - 1/3 gamb[i, j] invgamb[k, l] Ralpha[-k, -l]];
 
+SetEQN[Lbetaphi[], beta[k] dphi[-k]];
+
+SetEQN[Lbetagamb[i_, j_], beta[k] dgamb[-k, i, j] + (gamb[i, -k] dbeta[j, k] + gamb[j, -k] dbeta[i, k])];
+
+SetEQN[LbetatrK[], beta[k] dtrK[-k]];
+
+SetEQN[LbetaexAb[i_, j_], beta[k] dexAb[-k, i, j] + (exAb[i, -k] dbeta[j, k] + exAb[j, -k] dbeta[i, k])];
+
+SetEQN[LbetaLt[i_], beta[k] dLt[-k, i] - Lt[k] dbeta[-k, i]];
+
+SetEQN[LbetaTheta[], beta[k] dTheta[-k]];
+
+SetEQN[Lbetaalpha[], beta[k] dalpha[-k]];
+
+SetEQN[LbetaB[i_], beta[k] dB[-k, i] + B[k] dbeta[-k, i]];
+
 (*******)
 
 (* EOM *)
