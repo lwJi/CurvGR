@@ -58,6 +58,24 @@ SetEQN[GamDDD[k_, i_, j_], 1/2 (dgam[i, j, k] + dgam[j, k, i] - dgam[k, i, j])];
 
 SetEQN[Gam[k_, i_, j_], invgam[k, l] GamDDD[-l, i, j]];
 
+SetEQN[trbDbeta[], dbeta[-k, k] + beta[k] ddetgamh[-k] / (2 detgamh[])];
+
+SetEQN[bDbDphi[i_, j_], ddphi[i, j] - Gamb[k, i, j] dphi[-k]];
+
+SetEQN[bDbDalpha[i_, j_], ddalpha[i, j] - Gamb[k, i, j] dalpha[-k]];
+
+SetEQN[hDgamb[k_, i_, j_], deps[k, i, j] - Gamh[m, k, i] eps[j, -m] - Gamh[m, k, j] eps[i, -m]];
+
+SetEQN[hDtrLt[k_, i_], dtrLt[k, i] + Gamh[i, k, -m] trLt[m]];
+
+SetEQN[hDbeta[k_, i_], dbeta[k, i] + Gamh[i, k, -m] beta[m]];
+
+SetEQN[dhDgamb[k_, l_, i_, j_], ddeps[k, l, i, j] - (dGamh[k, m, l, i] eps[j, -m] + dGamh[k, m, l, j] eps[i, -m]) - (Gamh[m, l, i] deps[k, j, -m] + Gamh[m, l, j] deps[k, i, -m])];
+
+SetEQN[hDhDgamb[k_, l_, i_, j_], dhDgamb[k, l, i, j] - Gamh[m, k, l] hDgamb[-m, i, j] - Gamh[m, k, i] hDgamb[l, -m, j] - Gamh[m, k, j] hDgamb[l, i, -m]];
+
+SetEQN[hDhDbeta[i_, j_, k_], ddbeta[i, j, k] + dGamh[i, k, j, -m] beta[m] + (Gamh[k, -l, i] dbeta[j, l] + Gamh[k, -l, j] dbeta[i, l]) - Gamh[l, i, j] dbeta[-l, k] + (Gamh[k, i, -l] Gamh[l, j, -m] - Gamh[l, i, j] Gamh[k, -l, -m]) beta[m]];
+
 (*******)
 
 (* EOM *)
