@@ -137,6 +137,7 @@ IntermediateVarlist =
 
 bDVarlist =
   TempTensors[
+    {trexAb[],   PrintAs -> "\!\(\*OverscriptBox[\(A\), \(_\)]\)"},
     {trbDbeta[], PrintAs -> "\!\(\*OverscriptBox[\(D\), \(_\)]\)\[Beta]"}
   ];
 
