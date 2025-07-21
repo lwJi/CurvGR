@@ -82,6 +82,10 @@ SetEQN[DGam[k_, i_, j_], gamb[k, l] DGamDDD[-l, i, j]];
 
 SetEQN[trDGam[k_], gamb[i, j] DGam[k, -i, -j]];
 
+SetEQN[ZU[i_], 1/2 psim4[] (Lt[i] - trDGam[i])];
+
+SetEQN[ZD[i_], gam[i, -j] ZU[j]];
+
 (*******)
 
 (* EOM *)
