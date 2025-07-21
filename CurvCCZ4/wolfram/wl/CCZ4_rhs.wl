@@ -58,7 +58,7 @@ SetEQN[GamDDD[k_, i_, j_], 1/2 (dgam[i, j, k] + dgam[j, k, i] - dgam[k, i, j])];
 
 SetEQN[Gam[k_, i_, j_], invgam[k, l] GamDDD[-l, i, j]];
 
-SetEQN[trbDbeta[], dbeta[-k, k] + beta[k] ddetgamh[-k] / (2 detgamh[])];
+SetEQN[trbDbeta[], dbeta[-k, k] + beta[k] dgamhdet[-k] / (2 gamhdet[])];
 
 SetEQN[bDbDphi[i_, j_], ddphi[i, j] - Gamb[k, i, j] dphi[-k]];
 

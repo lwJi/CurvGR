@@ -75,7 +75,7 @@ TetradVarlist =
     {eOSvt[i, -j],                         PrintAs -> "eV"},
     {eOSco[-i, j],                         PrintAs -> "eC"},
     {gamh[-i, -j], Symmetric[{-i, -j}],    PrintAs -> "\!\(\*OverscriptBox[\(\[Gamma]\), \(^\)]\)"},
-    {detgamh[],                            PrintAs -> "\!\(\*OverscriptBox[\(\[Gamma]\), \(^\)]\)"},
+    {gamhdet[],                            PrintAs -> "\!\(\*OverscriptBox[\(\[Gamma]\), \(^\)]\)"},
     {Gamh[k, -i, -j], Symmetric[{-i, -j}], PrintAs -> "\!\(\*OverscriptBox[\(\[CapitalGamma]\), \(^\)]\)"}
   ];
 
@@ -87,7 +87,8 @@ dTetradVarlist =
     {deeOSco[-k, -i, m, -j, n],                           PrintAs -> "\[PartialD]eCeC"},
     {ddeeOSco[-k, -l, -i, m, -j, n], Symmetric[{-k, -l}], PrintAs -> "\[PartialD]\[PartialD]eCeC"},
     {dgamh[-k, -i, -j], Symmetric[{-i, -j}],              PrintAs -> "\[PartialD]\!\(\*OverscriptBox[\(\[Gamma]\), \(^\)]\)"},
-    {ddetgamh[-k],                                        PrintAs -> "\[PartialD]\!\(\*OverscriptBox[\(\[Gamma]\), \(^\)]\)"},
+    {dgamhdet[-k],                                        PrintAs -> "\[PartialD]\!\(\*OverscriptBox[\(\[Gamma]\), \(^\)]\)"},
+    {ddgamhdet[-k, -l], Symmetric[{-k, -l}],              PrintAs -> "\[PartialD]\[PartialD]\!\(\*OverscriptBox[\(\[Gamma]\), \(^\)]\)"},
     {dGamh[-k, l, -i, -j], Symmetric[{-i, -j}],           PrintAs -> "\[PartialD]\!\(\*OverscriptBox[\(\[CapitalGamma]\), \(^\)]\)"}
   ];
 
@@ -146,7 +147,8 @@ IntermediateVarlist =
 
 bDVarlist =
   TempTensors[
-    {trbDbeta[], PrintAs -> "\!\(\*OverscriptBox[\(D\), \(_\)]\)\[Beta]"}
+    {trbDbeta[],     PrintAs -> "\!\(\*OverscriptBox[\(D\), \(_\)]\)\[Beta]"},
+    {bDtrbDbeta[-i], PrintAs -> "\!\(\*OverscriptBox[\(D\), \(_\)]\)\!\(\*OverscriptBox[\(D\), \(_\)]\)\[Beta]"}
   ];
 
 bDbDVarlist =
