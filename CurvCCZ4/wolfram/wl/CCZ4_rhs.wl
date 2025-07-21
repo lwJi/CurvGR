@@ -58,6 +58,8 @@ SetEQN[GamDDD[k_, i_, j_], 1/2 (dgam[i, j, k] + dgam[j, k, i] - dgam[k, i, j])];
 
 SetEQN[Gam[k_, i_, j_], invgam[k, l] GamDDD[-l, i, j]];
 
+SetEQN[exAbUU[i_, j_], invgamb[i, k] invgamb[j, l] exAb[-k, -l]];
+
 SetEQN[trbDbeta[], dbeta[-k, k] + beta[k] dgamhdet[-k] / (2 gamhdet[])];
 
 SetEQN[bDtrbDbeta[i_], ddbeta[i, -j, j] + 1 / (2 gamhdet[]) (beta[j] ddgamhdet[i, -j] - 1 / gamhdet[] beta[j] dgamhdet[i] dgamhdet[-j] + dbeta[i, j] dgamhdet[-j])];

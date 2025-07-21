@@ -142,7 +142,8 @@ IntermediateVarlist =
     {GambDDD[-k, -i, -j], Symmetric[{-i, -j}],  PrintAs -> "\!\(\*OverscriptBox[\(\[CapitalGamma]\), \(_\)]\)"},
     {Gamb[k, -i, -j], Symmetric[{-i, -j}],      PrintAs -> "\!\(\*OverscriptBox[\(\[CapitalGamma]\), \(_\)]\)"},
     {GamDDD[-k, -i, -j], Symmetric[{-i, -j}],   PrintAs -> "\[CapitalGamma]"},
-    {Gam[k, -i, -j], Symmetric[{-i, -j}],       PrintAs -> "\[CapitalGamma]"}
+    {Gam[k, -i, -j], Symmetric[{-i, -j}],       PrintAs -> "\[CapitalGamma]"},
+    {exAbUU[i, j], Symmetric[{i, j}],           PrintAs -> "\!\(\*OverscriptBox[\(A\), \(_\)]\)"}
   ];
 
 bDVarlist =
