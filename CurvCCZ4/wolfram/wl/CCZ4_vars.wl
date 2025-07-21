@@ -137,7 +137,6 @@ IntermediateVarlist =
 
 bDVarlist =
   TempTensors[
-    {trexAb[],   PrintAs -> "\!\(\*OverscriptBox[\(A\), \(_\)]\)"},
     {trbDbeta[], PrintAs -> "\!\(\*OverscriptBox[\(D\), \(_\)]\)\[Beta]"}
   ];
 
@@ -145,6 +144,13 @@ bDbDVarlist =
   TempTensors[
     {bDbDphi[-i, -j], Symmetric[{-i, -j}],   PrintAs -> "\!\(\*OverscriptBox[\(D\), \(_\)]\)\!\(\*OverscriptBox[\(D\), \(_\)]\)\[Phi]"},
     {bDbDalpha[-i, -j], Symmetric[{-i, -j}], PrintAs -> "\!\(\*OverscriptBox[\(D\), \(_\)]\)\!\(\*OverscriptBox[\(D\), \(_\)]\)\[Alpha]"}
+  ];
+
+trVarlist =
+  TempTensors[
+    {trexAb[],       PrintAs -> "\!\(\*OverscriptBox[\(A\), \(_\)]\)"},
+    {trbDbDphi[],    PrintAs -> "\!\(\*OverscriptBox[\(D\), \(_\)]\)\!\(\*OverscriptBox[\(D\), \(_\)]\)\[Phi]"},
+    {trbDphibDphi[], PrintAs -> "\!\(\*OverscriptBox[\(D\), \(_\)]\)\[Phi]\!\(\*OverscriptBox[\(D\), \(_\)]\)\[Phi]"}
   ];
 
 hDVarlist =
