@@ -155,7 +155,7 @@ hDVarlist =
 
 hDhDVarlist =
   TempTensors[
-    {dhDgamb[-l, -m, -i, -j], GenSet[Cycles[{1, 2}], Cycles[{3, 4}]],  PrintAs -> "d\!\(\*OverscriptBox[\(D\), \(^\)]\)\!\(\*OverscriptBox[\(\[Gamma]\), \(_\)]\)"},
+    {dhDgamb[-l, -m, -i, -j], GenSet[Cycles[{1, 2}], Cycles[{3, 4}]],  PrintAs -> "\[PartialD]\!\(\*OverscriptBox[\(D\), \(^\)]\)\!\(\*OverscriptBox[\(\[Gamma]\), \(_\)]\)"},
     {hDhDgamb[-l, -m, -i, -j], GenSet[Cycles[{1, 2}], Cycles[{3, 4}]], PrintAs -> "\!\(\*OverscriptBox[\(D\), \(^\)]\)\!\(\*OverscriptBox[\(D\), \(^\)]\)\!\(\*OverscriptBox[\(\[Gamma]\), \(_\)]\)"},
     {hDhDbeta[-i, -j, k], Symmetric[{-i, -j}],                         PrintAs -> "\!\(\*OverscriptBox[\(D\), \(^\)]\)\!\(\*OverscriptBox[\(D\), \(^\)]\)\[Beta]"}
   ];
