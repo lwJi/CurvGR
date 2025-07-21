@@ -135,3 +135,13 @@ SetEQN[LbetaB[i_], beta[k] dB[-k, i] + B[k] dbeta[-k, i]];
 (* EOM *)
 
 (*******)
+
+SetEQN[dtphi[], Lbetaphi[] + 1/6 trbDbeta[] - 1/6 alpha[] trK[]];
+
+SetEQN[dteps[i_, j_], Lbetagamb[i, j] - 2/3 gamb[i, j] trbDbeta[] - 2 alpha[] exAb[i, j] + 2/3 alpha[] gamb[i, j] trexAb[]];
+
+SetEQN[dttrK[], LbetatrK[] + psim4[] (alpha[] (trRb[] - 8 trbDbDphi[] - 8 trbDphibDphi[]) - (trbDbDalpha[] + 2 invgam[k, l] dalpha[-k] dphi[-l])) + alpha[] (trK[] trK[] - 2 Theta[] trK[]) - 3 ckappa1 (1 + ckappa2) Theta[] + 4 cpi alpha[] (trSs[] - 3 rho[])];
+
+SetEQN[dtexAb[i_, j_], LbetaexAb[i, j] - 2/3 exAb[i, j] trbDbeta[] - 2 alpha[] invgamb[k, l] exAb[i, -k] exAb[j, -l] + alpha[] exAb[i, j] (trK[] - 2 Theta[]) + psim4[] (RphiTF[i, j] + RalphaTF[i, j] + alpha[] RbTF[i, j] - 8 cpi alpha[] (Ss[i, j] - 1/3 gamb[i, j] invgamb[k, l] Ss[-k, -l]))];
+
+SetEQN[dtLt[i_], LbetaLt[i] + invgamb[k, l] hDhDbeta[-k, -l, i] + 1/3 invgamb[i, j] bDtrbDbeta[-j] - 2 exAbUU[i, l] (dalpha[-l] - 6 alpha[] dphi[-l]) + 2 alpha[] exAbUU[k, l] DGam[i, -k, -l] - (4/3 alpha[] trK[] - 2 ckappa1) psi4[] ZU[i] + 2 invgamb[i, k] (alpha[] dTheta[-k] - Theta[] dalpha[-k]) - 4/3 alpha[] invgamb[i, k] dtrK[-k] - 16 cpi alpha[] invgamb[i, k] Sm[-k] + 2 ckappa3 (1/3 Lt[i] trbDbeta[] - psi4[] ZU[k] hDbeta[-k, i]) + 2/3 (1 - ckappa3) trDGam[i] trbDbeta[]];
