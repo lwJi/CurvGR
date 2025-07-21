@@ -113,6 +113,7 @@ TempdEvolVarlist =
     (* first *)
     {deps[-k, -i, -j], Symmetric[{-i, -j}],  PrintAs -> "\[PartialD]\[Epsilon]"},
     {dgamb[-k, -i, -j], Symmetric[{-i, -j}], PrintAs -> "\[PartialD]\!\(\*OverscriptBox[\(\[Gamma]\), \(_\)]\)"},
+    {dgam[-k, -i, -j], Symmetric[{-i, -j}],  PrintAs -> "\[PartialD]\[Gamma]"},
     {dexAb[-k, -i, -j], Symmetric[{-i, -j}], PrintAs -> "\[PartialD]\!\(\*OverscriptBox[\(A\), \(_\)]\)"},
     {dtrLt[-k, i],                           PrintAs -> "\[PartialD]\!\(\*OverscriptBox[\(\[CapitalLambda]\), \(~\)]\)"},
     {dbeta[-k, i],                           PrintAs -> "\[PartialD]\[Beta]"},
