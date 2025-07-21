@@ -16,7 +16,7 @@ dtEvolVarlist =
     {dtepsO[-i, -j], Symmetric[{-i, -j}],  PrintAs -> "\!\(\*SubscriptBox[\(\[PartialD]\), \(t\)]\)O\[Epsilon]"},
     {dttrK[],                              PrintAs -> "\!\(\*SubscriptBox[\(\[PartialD]\), \(t\)]\)K"},
     {dtexAbO[-i, -j], Symmetric[{-i, -j}], PrintAs -> "\!\(\*SubscriptBox[\(\[PartialD]\), \(t\)]\)O\!\(\*OverscriptBox[\(A\), \(_\)]\)"},
-    {dttrLtO[i],                           PrintAs -> "\!\(\*SubscriptBox[\(\[PartialD]\), \(t\)]\)O\!\(\*OverscriptBox[\(\[CapitalLambda]\), \(~\)]\)"},
+    {dtLtO[i],                             PrintAs -> "\!\(\*SubscriptBox[\(\[PartialD]\), \(t\)]\)O\!\(\*OverscriptBox[\(\[CapitalLambda]\), \(~\)]\)"},
     {dtTheta[],                            PrintAs -> "\!\(\*SubscriptBox[\(\[PartialD]\), \(t\)]\)\[CapitalTheta]"},
     {dtalpha[],                            PrintAs -> "\!\(\*SubscriptBox[\(\[PartialD]\), \(t\)]\)\[Alpha]"},
     {dtbetaO[i],                           PrintAs -> "\!\(\*SubscriptBox[\(\[PartialD]\), \(t\)]\)O\[Beta]"},
@@ -29,7 +29,7 @@ EvolVarlist =
     {epsO[-i, -j], Symmetric[{-i, -j}],  PrintAs -> "O\[Epsilon]"},
     {trK[],                              PrintAs -> "K"},
     {exAbO[-i, -j], Symmetric[{-i, -j}], PrintAs -> "O\!\(\*OverscriptBox[\(A\), \(_\)]\)"},
-    {trLtO[i],                           PrintAs -> "O\!\(\*OverscriptBox[\(\[CapitalLambda]\), \(~\)]\)"},
+    {LtO[i],                             PrintAs -> "O\!\(\*OverscriptBox[\(\[CapitalLambda]\), \(~\)]\)"},
     {Theta[],                            PrintAs -> "\[CapitalTheta]"},
     {alpha[],                            PrintAs -> "\[Alpha]"},
     {betaO[i],                           PrintAs -> "O\[Beta]"},
@@ -48,7 +48,7 @@ dEvolVarlist =
     {depsO[-k, -i, -j], Symmetric[{-i, -j}],  PrintAs -> "\[PartialD]O\[Epsilon]"},
     {dtrK[-k],                                PrintAs -> "\[PartialD]K"},
     {dexAbO[-k, -i, -j], Symmetric[{-i, -j}], PrintAs -> "\[PartialD]O\!\(\*OverscriptBox[\(A\), \(_\)]\)"},
-    {dtrLtO[-k, i],                           PrintAs -> "\[PartialD]O\!\(\*OverscriptBox[\(\[CapitalLambda]\), \(~\)]\)"},
+    {dLtO[-k, i],                             PrintAs -> "\[PartialD]O\!\(\*OverscriptBox[\(\[CapitalLambda]\), \(~\)]\)"},
     {dTheta[-k],                              PrintAs -> "\[PartialD]\[CapitalTheta]"},
     {dalpha[-k],                              PrintAs -> "\[PartialD]\[Alpha]"},
     {dbetaO[-k, i],                           PrintAs -> "\[PartialD]O\[Beta]"},
@@ -102,7 +102,7 @@ TempEvolVarlist =
     {eps[-i, -j], Symmetric[{-i, -j}],  PrintAs -> "\[Epsilon]"},
     {gamb[-i, -j], Symmetric[{-i, -j}], PrintAs -> "\!\(\*OverscriptBox[\(\[Gamma]\), \(_\)]\)"},
     {exAb[-i, -j], Symmetric[{-i, -j}], PrintAs -> "\!\(\*OverscriptBox[\(A\), \(_\)]\)"},
-    {trLt[i],                           PrintAs -> "\!\(\*OverscriptBox[\(\[CapitalLambda]\), \(~\)]\)"},
+    {Lt[i],                             PrintAs -> "\!\(\*OverscriptBox[\(\[CapitalLambda]\), \(~\)]\)"},
     {beta[i],                           PrintAs -> "\[Beta]"},
     {B[i],                              PrintAs -> "B"}
   ];
@@ -113,7 +113,7 @@ TempdEvolVarlist =
     {deps[-k, -i, -j], Symmetric[{-i, -j}],  PrintAs -> "\[PartialD]\[Epsilon]"},
     {dgamb[-k, -i, -j], Symmetric[{-i, -j}], PrintAs -> "\[PartialD]\!\(\*OverscriptBox[\(\[Gamma]\), \(_\)]\)"},
     {dexAb[-k, -i, -j], Symmetric[{-i, -j}], PrintAs -> "\[PartialD]\!\(\*OverscriptBox[\(A\), \(_\)]\)"},
-    {dtrLt[-k, i],                           PrintAs -> "\[PartialD]\!\(\*OverscriptBox[\(\[CapitalLambda]\), \(~\)]\)"},
+    {dLt[-k, i],                             PrintAs -> "\[PartialD]\!\(\*OverscriptBox[\(\[CapitalLambda]\), \(~\)]\)"},
     {dbeta[-k, i],                           PrintAs -> "\[PartialD]\[Beta]"},
     {dB[-k, i],                              PrintAs -> "\[PartialD]B"},
     (* second *)
@@ -149,7 +149,7 @@ bDbDVarlist =
 hDVarlist =
   TempTensors[
     {hDgamb[-k, -i, -j], Symmetric[{-i, -j}], PrintAs -> "\!\(\*OverscriptBox[\(D\), \(^\)]\)\!\(\*OverscriptBox[\(\[Gamma]\), \(_\)]\)"},
-    {hDtrLt[-k, i],                           PrintAs -> "\!\(\*OverscriptBox[\(D\), \(^\)]\)\!\(\*OverscriptBox[\(\[CapitalLambda]\), \(~\)]\)"},
+    {hDLt[-k, i],                             PrintAs -> "\!\(\*OverscriptBox[\(D\), \(^\)]\)\!\(\*OverscriptBox[\(\[CapitalLambda]\), \(~\)]\)"},
     {hDbeta[-k, i],                           PrintAs -> "\!\(\*OverscriptBox[\(D\), \(^\)]\)\[Beta]"}
   ];
 

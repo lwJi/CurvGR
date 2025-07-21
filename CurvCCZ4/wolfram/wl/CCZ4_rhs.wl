@@ -18,7 +18,7 @@ SetEQN[gamb[i_, j_], gamh[i, j] + eps[i, j]];
 
 SetEQN[exAb[i_, j_], eOSco[i, k] eOSco[j, l] exAbO[-k, -l]];
 
-SetEQN[trLt[i_], eOSvt[i, -k] trLtO[k]];
+SetEQN[Lt[i_], eOSvt[i, -k] LtO[k]];
 
 SetEQN[beta[i_], eOSvt[i, -k] betaO[k]];
 
@@ -30,7 +30,7 @@ SetEQN[dgamb[k_, i_, j_], dgamh[k, i, j] + deps[k, i, j]];
 
 SetEQN[dexAb[k_, i_, j_], eOSco[i, m] eOSco[j, n] dexAbO[k, -m, -n] + deOSco[k, i, m] eOSco[j, n] exAbO[-m, -n] + eOSco[i, m] deOSco[k, j, n] exAbO[-m, -n]];
 
-SetEQN[dtrLt[k_, i_], eOSvt[i, -m] dtrLtO[k, m] + deOSvt[k, i, -m] trLtO[m]];
+SetEQN[dLt[k_, i_], eOSvt[i, -m] dLtO[k, m] + deOSvt[k, i, -m] LtO[m]];
 
 SetEQN[dbeta[k_, i_], eOSvt[i, -m] dbetaO[k, m] + deOSvt[k, i, -m] betaO[m]];
 
@@ -66,7 +66,7 @@ SetEQN[bDbDalpha[i_, j_], ddalpha[i, j] - Gamb[k, i, j] dalpha[-k]];
 
 SetEQN[hDgamb[k_, i_, j_], deps[k, i, j] - Gamh[m, k, i] eps[j, -m] - Gamh[m, k, j] eps[i, -m]];
 
-SetEQN[hDtrLt[k_, i_], dtrLt[k, i] + Gamh[i, k, -m] trLt[m]];
+SetEQN[hDLt[k_, i_], dLt[k, i] + Gamh[i, k, -m] Lt[m]];
 
 SetEQN[hDbeta[k_, i_], dbeta[k, i] + Gamh[i, k, -m] beta[m]];
 
