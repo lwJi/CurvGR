@@ -48,7 +48,7 @@ SetOutputFile[FileNameJoin[{Directory[], "CurvCCZ4_set_rhs.hxx"}]];
 
 SetMainPrint[
   (* Initialize grid function names *)
-  PrintInitializations[{Mode -> "MainOut"}, Psi4Varlist];
+  PrintInitializations[{Mode -> "MainOut"}, dtEvolVarlist];
   pr[];
 
   (* Loops *)
@@ -62,12 +62,14 @@ SetMainPrint[
   pr["const auto coZ = p.z;"];
   pr[];
 
+  (*
   PrintInitializations[{Mode -> "Derivs", DerivsOrder -> 1},
                        dEvolVarlist];
   pr[];
 
   PrintEquations[{Mode -> "Temp"}, IntermediateVarlist];
   pr[];
+  *)
 
   pr["  });"];
   pr["});"];
