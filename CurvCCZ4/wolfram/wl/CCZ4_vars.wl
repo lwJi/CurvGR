@@ -72,8 +72,8 @@ TmunuVarlist =
 
 TetradVarlist =
   TempTensors[
-    {eOSvt[i, -j],                         PrintAs -> "eV"},
-    {eOSco[-i, j],                         PrintAs -> "eC"},
+    {eOSvt[i, -j],                         PrintAs -> "\!\(\*OverscriptBox[\(e\), \(\[RightVector]\)]\)"},
+    {eOSco[-i, j],                         PrintAs -> "\!\(\*OverscriptBox[\(e\), \(\[LeftVector]\)]\)"},
     {gamh[-i, -j], Symmetric[{-i, -j}],    PrintAs -> "\!\(\*OverscriptBox[\(\[Gamma]\), \(^\)]\)"},
     {gamhdet[],                            PrintAs -> "\!\(\*OverscriptBox[\(\[Gamma]\), \(^\)]\)"},
     {Gamh[k, -i, -j], Symmetric[{-i, -j}], PrintAs -> "\!\(\*OverscriptBox[\(\[CapitalGamma]\), \(^\)]\)"}
@@ -81,11 +81,11 @@ TetradVarlist =
 
 dTetradVarlist =
   TempTensors[
-    {deOSvt[-k, i, -j],                                   PrintAs -> "\[PartialD]eV"},
-    {deOSco[-k, -i, j],                                   PrintAs -> "\[PartialD]eC"},
-    {ddeOSvt[-k, -l, i, -j], Symmetric[{-k, -l}],         PrintAs -> "\[PartialD]\[PartialD]eV"},
-    {deeOSco[-k, -i, m, -j, n],                           PrintAs -> "\[PartialD]eCeC"},
-    {ddeeOSco[-k, -l, -i, m, -j, n], Symmetric[{-k, -l}], PrintAs -> "\[PartialD]\[PartialD]eCeC"},
+    {deOSvt[-k, i, -j],                                   PrintAs -> "\[PartialD]\!\(\*OverscriptBox[\(e\), \(\[RightVector]\)]\)"},
+    {deOSco[-k, -i, j],                                   PrintAs -> "\[PartialD]\!\(\*OverscriptBox[\(e\), \(\[LeftVector]\)]\)"},
+    {ddeOSvt[-k, -l, i, -j], Symmetric[{-k, -l}],         PrintAs -> "\[PartialD]\[PartialD]\!\(\*OverscriptBox[\(e\), \(\[RightVector]\)]\)"},
+    {deeOSco[-k, -i, m, -j, n],                           PrintAs -> "\[PartialD]\!\(\*OverscriptBox[\(e\), \(\[LeftVector]\)]\)\!\(\*OverscriptBox[\(e\), \(\[LeftVector]\)]\)"},
+    {ddeeOSco[-k, -l, -i, m, -j, n], Symmetric[{-k, -l}], PrintAs -> "\[PartialD]\[PartialD]\!\(\*OverscriptBox[\(e\), \(\[LeftVector]\)]\)\!\(\*OverscriptBox[\(e\), \(\[LeftVector]\)]\)"},
     {dgamh[-k, -i, -j], Symmetric[{-i, -j}],              PrintAs -> "\[PartialD]\!\(\*OverscriptBox[\(\[Gamma]\), \(^\)]\)"},
     {dgamhdet[-k],                                        PrintAs -> "\[PartialD]\!\(\*OverscriptBox[\(\[Gamma]\), \(^\)]\)"},
     {ddgamhdet[-k, -l], Symmetric[{-k, -l}],              PrintAs -> "\[PartialD]\[PartialD]\!\(\*OverscriptBox[\(\[Gamma]\), \(^\)]\)"},
