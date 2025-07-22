@@ -84,8 +84,11 @@ dTetradVarlist =
     {deOSvt[-k, i, -j],                                   PrintAs -> "\[PartialD]\!\(\*OverscriptBox[\(e\), \(\[RightVector]\)]\)"},
     {deOSco[-k, -i, j],                                   PrintAs -> "\[PartialD]\!\(\*OverscriptBox[\(e\), \(\[LeftVector]\)]\)"},
     {ddeOSvt[-k, -l, i, -j], Symmetric[{-k, -l}],         PrintAs -> "\[PartialD]\[PartialD]\!\(\*OverscriptBox[\(e\), \(\[RightVector]\)]\)"},
+    {ddeOSco[-k, -l, i, -j], Symmetric[{-k, -l}],         PrintAs -> "\[PartialD]\[PartialD]\!\(\*OverscriptBox[\(e\), \(\[LeftVector]\)]\)"},
+    (*
     {deeOSco[-k, -i, m, -j, n],                           PrintAs -> "\[PartialD]\!\(\*OverscriptBox[\(e\), \(\[LeftVector]\)]\)\!\(\*OverscriptBox[\(e\), \(\[LeftVector]\)]\)"},
     {ddeeOSco[-k, -l, -i, m, -j, n], Symmetric[{-k, -l}], PrintAs -> "\[PartialD]\[PartialD]\!\(\*OverscriptBox[\(e\), \(\[LeftVector]\)]\)\!\(\*OverscriptBox[\(e\), \(\[LeftVector]\)]\)"},
+    *)
     {dgamh[-k, -i, -j], Symmetric[{-i, -j}],              PrintAs -> "\[PartialD]\!\(\*OverscriptBox[\(\[Gamma]\), \(^\)]\)"},
     {dgamhdet[-k],                                        PrintAs -> "\[PartialD]\!\(\*OverscriptBox[\(\[Gamma]\), \(^\)]\)"},
     {ddgamhdet[-k, -l], Symmetric[{-k, -l}],              PrintAs -> "\[PartialD]\[PartialD]\!\(\*OverscriptBox[\(\[Gamma]\), \(^\)]\)"},
