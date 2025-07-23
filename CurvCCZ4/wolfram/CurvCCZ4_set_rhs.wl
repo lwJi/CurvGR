@@ -43,24 +43,13 @@ ComponentValue[ph[], P];
 
 <<wl/CCZ4_rhs.wl
 
-<<wl/orth_rules.wl
+<<wl/basis_trans.wl
 
 SetComponents[{ChartName -> Osph}, dtEvolVarlist];
 SetComponents[{ChartName -> Osph}, EvolVarlist];
 
 (* Basis transformation *)
-
-SetEQNDelayed[eps[i_, j_],  eps[i, j]  // SeparateBasis[Osph] // TraceBasisDummy // ToValues];
-SetEQNDelayed[exAb[i_, j_], exAb[i, j] // SeparateBasis[Osph] // TraceBasisDummy // ToValues];
-SetEQNDelayed[Lt[i_],       Lt[i]      // SeparateBasis[Osph] // TraceBasisDummy // ToValues];
-SetEQNDelayed[beta[i_],     beta[i]    // SeparateBasis[Osph] // TraceBasisDummy // ToValues];
-SetEQNDelayed[B[i_],        B[i]       // SeparateBasis[Osph] // TraceBasisDummy // ToValues];
-
-SetEQNDelayed[deps[k_, i_, j_],  PDOfBasis[sph][k][eps[i, j]  // SeparateBasis[Osph] // TraceBasisDummy // ToValues] /. dOrthRules[sph, Osph]];
-SetEQNDelayed[dexAb[k_, i_, j_], PDOfBasis[sph][k][exAb[i, j] // SeparateBasis[Osph] // TraceBasisDummy // ToValues] /. dOrthRules[sph, Osph]];
-SetEQNDelayed[dLt[k_, i_],       PDOfBasis[sph][k][Lt[i]      // SeparateBasis[Osph] // TraceBasisDummy // ToValues] /. dOrthRules[sph, Osph]];
-SetEQNDelayed[dbeta[k_, i_],     PDOfBasis[sph][k][beta[i]    // SeparateBasis[Osph] // TraceBasisDummy // ToValues] /. dOrthRules[sph, Osph]];
-SetEQNDelayed[dB[k_, i_],        PDOfBasis[sph][k][B[i]       // SeparateBasis[Osph] // TraceBasisDummy // ToValues] /. dOrthRules[sph, Osph]];
+BasisTrans[sph, Osph];
 
 (******************)
 (* Print to Files *)
