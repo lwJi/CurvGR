@@ -30,16 +30,25 @@ DefBasis[Osph, TangentM3, {1, 2, 3}, BasisColor -> Red];
 
 SetBasisChange[CTensor[{{1, 0, 0}, {0, ra[], 0}, {0, 0, ra[] Sin[th[]]}}, {-sph, Osph}], sph];
 
+DefMetric[1, gamh[-i, -j], cdh,
+  SymbolOfCovD -> {"|", "\!\(\*OverscriptBox[\(D\), \(^\)]\)"},
+  PrintAs -> "\!\(\*OverscriptBox[\(\[Gamma]\), \(^\)]\)"
+];
+
+MetricInBasis[gamh, -sph, DiagonalMatrix[{1, ra[]^2, ra[]^2 Sin[th[]]^2}]];
+
+MetricCompute[gamh, sph, All, Parallelize -> True, Verbose -> False]
+
+IndexSetDelayed[gamhdet[],             Detgamhsph[]];
+IndexSetDelayed[dgamhdet[k_],          PDOfBasis[sph][k][Detgamhsph[]] // DummyToBasis[sph] // TraceBasisDummy // ToValues];
+IndexSetDelayed[ddgamhdet[k_, l_],     PDOfBasis[sph][k][PDOfBasis[sph][l][Detgamhsph[]]] // DummyToBasis[sph] // TraceBasisDummy // ToValues];
+IndexSetDelayed[dgamh[k_, i_, j_],     PDOfBasis[sph][k][gamh[i, j]] // DummyToBasis[sph] // TraceBasisDummy // ToValues];
+IndexSetDelayed[Gamh[k_, i_, j_],      Christoffel[cdh, PDOfBasis[sph]][k, i, j]];
+IndexSetDelayed[dGamh[k_, l_, i_, j_], PDOfBasis[sph][k][Christoffel[cdh, PDOfBasis[sph]][l, i, j]]];
+
 ComponentValue[ra[], R];
 ComponentValue[th[], T];
 ComponentValue[ph[], P];
-
-trigrules = {
-  Sin[th[]] -> sinth,
-  Cos[th[]] -> costh,
-  Csc[th[]] -> cscth,
-  Cot[th[]] -> cotth
-};
 
 (**********************************)
 (* Define Variables and Equations *)
@@ -53,6 +62,13 @@ trigrules = {
 
 SetComponents[{ChartName -> Osph}, dtEvolVarlist];
 SetComponents[{ChartName -> Osph}, EvolVarlist];
+
+trigrules = {
+  Sin[th[]] -> sinth,
+  Cos[th[]] -> costh,
+  Csc[th[]] -> cscth,
+  Cot[th[]] -> cotth
+};
 
 (* Basis transformation *)
 BasisTrans[sph, Osph, trigrules];
@@ -92,6 +108,9 @@ SetMainPrint[
   PrintEquations[{Mode -> "Temp"}, dEvolVarlist[[5;;-1]]];
   pr[];
   PrintEquations[{Mode -> "Temp"}, ddEvolVarlist[[3;;-1]]];
+  pr[];
+
+  PrintEquations[{Mode -> "Temp"}, IntermediateVarlist];
   pr[];
 
   pr["  });"];

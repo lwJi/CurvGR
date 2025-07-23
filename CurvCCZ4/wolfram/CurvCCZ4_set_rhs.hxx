@@ -902,6 +902,865 @@ ddbeta333
 ;
 
 
+const auto
+gamb11
+=
+1 + eps11[ijk]
+;
+
+const auto
+gamb12
+=
+eps12[ijk]
+;
+
+const auto
+gamb13
+=
+eps13[ijk]
+;
+
+const auto
+gamb22
+=
+eps22[ijk] + Power(ra(),2)
+;
+
+const auto
+gamb23
+=
+eps23[ijk]
+;
+
+const auto
+gamb33
+=
+eps33[ijk] + Power(ra(),2)*Power(Sin(th()),2)
+;
+
+const auto
+dgamb111
+=
+deps111
+;
+
+const auto
+dgamb112
+=
+deps112
+;
+
+const auto
+dgamb113
+=
+deps113
+;
+
+const auto
+dgamb122
+=
+deps122 - 2*R
+;
+
+const auto
+dgamb123
+=
+deps123
+;
+
+const auto
+dgamb133
+=
+deps133 - 2*R*Power(Sin(T),2)
+;
+
+const auto
+dgamb211
+=
+deps211
+;
+
+const auto
+dgamb212
+=
+deps212
+;
+
+const auto
+dgamb213
+=
+deps213
+;
+
+const auto
+dgamb222
+=
+deps222
+;
+
+const auto
+dgamb223
+=
+deps223
+;
+
+const auto
+dgamb233
+=
+deps233 - 2*Power(R,2)*Cos(T)*Sin(T)
+;
+
+const auto
+dgamb311
+=
+deps311
+;
+
+const auto
+dgamb312
+=
+deps312
+;
+
+const auto
+dgamb313
+=
+deps313
+;
+
+const auto
+dgamb322
+=
+deps322
+;
+
+const auto
+dgamb323
+=
+deps323
+;
+
+const auto
+dgamb333
+=
+deps333
+;
+
+const auto
+psim4
+=
+Power(E,-4*phi[ijk])
+;
+
+const auto
+psi4
+=
+1/psim4
+;
+
+const auto
+dgam111
+=
+(dgamb111 + 4*dphi1*gamb11)*psi4
+;
+
+const auto
+dgam112
+=
+(dgamb112 + 4*dphi1*gamb12)*psi4
+;
+
+const auto
+dgam113
+=
+(dgamb113 + 4*dphi1*gamb13)*psi4
+;
+
+const auto
+dgam122
+=
+(dgamb122 + 4*dphi1*gamb22)*psi4
+;
+
+const auto
+dgam123
+=
+(dgamb123 + 4*dphi1*gamb23)*psi4
+;
+
+const auto
+dgam133
+=
+(dgamb133 + 4*dphi1*gamb33)*psi4
+;
+
+const auto
+dgam211
+=
+(dgamb211 + 4*dphi2*gamb11)*psi4
+;
+
+const auto
+dgam212
+=
+(dgamb212 + 4*dphi2*gamb12)*psi4
+;
+
+const auto
+dgam213
+=
+(dgamb213 + 4*dphi2*gamb13)*psi4
+;
+
+const auto
+dgam222
+=
+(dgamb222 + 4*dphi2*gamb22)*psi4
+;
+
+const auto
+dgam223
+=
+(dgamb223 + 4*dphi2*gamb23)*psi4
+;
+
+const auto
+dgam233
+=
+(dgamb233 + 4*dphi2*gamb33)*psi4
+;
+
+const auto
+dgam311
+=
+(dgamb311 + 4*dphi3*gamb11)*psi4
+;
+
+const auto
+dgam312
+=
+(dgamb312 + 4*dphi3*gamb12)*psi4
+;
+
+const auto
+dgam313
+=
+(dgamb313 + 4*dphi3*gamb13)*psi4
+;
+
+const auto
+dgam322
+=
+(dgamb322 + 4*dphi3*gamb22)*psi4
+;
+
+const auto
+dgam323
+=
+(dgamb323 + 4*dphi3*gamb23)*psi4
+;
+
+const auto
+dgam333
+=
+(dgamb333 + 4*dphi3*gamb33)*psi4
+;
+
+const auto
+invgamb11
+=
+invgamb$RHS(List(1,sph),List(1,sph))
+;
+
+const auto
+invgamb12
+=
+invgamb$RHS(List(1,sph),List(2,sph))
+;
+
+const auto
+invgamb13
+=
+invgamb$RHS(List(1,sph),List(3,sph))
+;
+
+const auto
+invgamb22
+=
+invgamb$RHS(List(2,sph),List(2,sph))
+;
+
+const auto
+invgamb23
+=
+invgamb$RHS(List(2,sph),List(3,sph))
+;
+
+const auto
+invgamb33
+=
+invgamb$RHS(List(3,sph),List(3,sph))
+;
+
+const auto
+invgam11
+=
+invgamb11*psim4
+;
+
+const auto
+invgam12
+=
+invgamb12*psim4
+;
+
+const auto
+invgam13
+=
+invgamb13*psim4
+;
+
+const auto
+invgam22
+=
+invgamb22*psim4
+;
+
+const auto
+invgam23
+=
+invgamb23*psim4
+;
+
+const auto
+invgam33
+=
+invgamb33*psim4
+;
+
+const auto
+gam11
+=
+gamb11*psi4
+;
+
+const auto
+gam12
+=
+gamb12*psi4
+;
+
+const auto
+gam13
+=
+gamb13*psi4
+;
+
+const auto
+gam22
+=
+gamb22*psi4
+;
+
+const auto
+gam23
+=
+gamb23*psi4
+;
+
+const auto
+gam33
+=
+gamb33*psi4
+;
+
+const auto
+GambDDD111
+=
+dgamb111/2.
+;
+
+const auto
+GambDDD112
+=
+dgamb211/2.
+;
+
+const auto
+GambDDD113
+=
+dgamb311/2.
+;
+
+const auto
+GambDDD122
+=
+-0.5*dgamb122 + dgamb212
+;
+
+const auto
+GambDDD123
+=
+(-dgamb123 + dgamb213 + dgamb312)/2.
+;
+
+const auto
+GambDDD133
+=
+-0.5*dgamb133 + dgamb313
+;
+
+const auto
+GambDDD211
+=
+dgamb112 - dgamb211/2.
+;
+
+const auto
+GambDDD212
+=
+dgamb122/2.
+;
+
+const auto
+GambDDD213
+=
+(dgamb123 - dgamb213 + dgamb312)/2.
+;
+
+const auto
+GambDDD222
+=
+dgamb222/2.
+;
+
+const auto
+GambDDD223
+=
+dgamb322/2.
+;
+
+const auto
+GambDDD233
+=
+-0.5*dgamb233 + dgamb323
+;
+
+const auto
+GambDDD311
+=
+dgamb113 - dgamb311/2.
+;
+
+const auto
+GambDDD312
+=
+(dgamb123 + dgamb213 - dgamb312)/2.
+;
+
+const auto
+GambDDD313
+=
+dgamb133/2.
+;
+
+const auto
+GambDDD322
+=
+dgamb223 - dgamb322/2.
+;
+
+const auto
+GambDDD323
+=
+dgamb233/2.
+;
+
+const auto
+GambDDD333
+=
+dgamb333/2.
+;
+
+const auto
+Gamb111
+=
+GambDDD111*invgamb11 + GambDDD211*invgamb12 + GambDDD311*invgamb13
+;
+
+const auto
+Gamb112
+=
+GambDDD112*invgamb11 + GambDDD212*invgamb12 + GambDDD312*invgamb13
+;
+
+const auto
+Gamb113
+=
+GambDDD113*invgamb11 + GambDDD213*invgamb12 + GambDDD313*invgamb13
+;
+
+const auto
+Gamb122
+=
+GambDDD122*invgamb11 + GambDDD222*invgamb12 + GambDDD322*invgamb13
+;
+
+const auto
+Gamb123
+=
+GambDDD123*invgamb11 + GambDDD223*invgamb12 + GambDDD323*invgamb13
+;
+
+const auto
+Gamb133
+=
+GambDDD133*invgamb11 + GambDDD233*invgamb12 + GambDDD333*invgamb13
+;
+
+const auto
+Gamb211
+=
+GambDDD111*invgamb12 + GambDDD211*invgamb22 + GambDDD311*invgamb23
+;
+
+const auto
+Gamb212
+=
+GambDDD112*invgamb12 + GambDDD212*invgamb22 + GambDDD312*invgamb23
+;
+
+const auto
+Gamb213
+=
+GambDDD113*invgamb12 + GambDDD213*invgamb22 + GambDDD313*invgamb23
+;
+
+const auto
+Gamb222
+=
+GambDDD122*invgamb12 + GambDDD222*invgamb22 + GambDDD322*invgamb23
+;
+
+const auto
+Gamb223
+=
+GambDDD123*invgamb12 + GambDDD223*invgamb22 + GambDDD323*invgamb23
+;
+
+const auto
+Gamb233
+=
+GambDDD133*invgamb12 + GambDDD233*invgamb22 + GambDDD333*invgamb23
+;
+
+const auto
+Gamb311
+=
+GambDDD111*invgamb13 + GambDDD211*invgamb23 + GambDDD311*invgamb33
+;
+
+const auto
+Gamb312
+=
+GambDDD112*invgamb13 + GambDDD212*invgamb23 + GambDDD312*invgamb33
+;
+
+const auto
+Gamb313
+=
+GambDDD113*invgamb13 + GambDDD213*invgamb23 + GambDDD313*invgamb33
+;
+
+const auto
+Gamb322
+=
+GambDDD122*invgamb13 + GambDDD222*invgamb23 + GambDDD322*invgamb33
+;
+
+const auto
+Gamb323
+=
+GambDDD123*invgamb13 + GambDDD223*invgamb23 + GambDDD323*invgamb33
+;
+
+const auto
+Gamb333
+=
+GambDDD133*invgamb13 + GambDDD233*invgamb23 + GambDDD333*invgamb33
+;
+
+const auto
+GamDDD111
+=
+dgam111/2.
+;
+
+const auto
+GamDDD112
+=
+dgam211/2.
+;
+
+const auto
+GamDDD113
+=
+dgam311/2.
+;
+
+const auto
+GamDDD122
+=
+-0.5*dgam122 + dgam212
+;
+
+const auto
+GamDDD123
+=
+(-dgam123 + dgam213 + dgam312)/2.
+;
+
+const auto
+GamDDD133
+=
+-0.5*dgam133 + dgam313
+;
+
+const auto
+GamDDD211
+=
+dgam112 - dgam211/2.
+;
+
+const auto
+GamDDD212
+=
+dgam122/2.
+;
+
+const auto
+GamDDD213
+=
+(dgam123 - dgam213 + dgam312)/2.
+;
+
+const auto
+GamDDD222
+=
+dgam222/2.
+;
+
+const auto
+GamDDD223
+=
+dgam322/2.
+;
+
+const auto
+GamDDD233
+=
+-0.5*dgam233 + dgam323
+;
+
+const auto
+GamDDD311
+=
+dgam113 - dgam311/2.
+;
+
+const auto
+GamDDD312
+=
+(dgam123 + dgam213 - dgam312)/2.
+;
+
+const auto
+GamDDD313
+=
+dgam133/2.
+;
+
+const auto
+GamDDD322
+=
+dgam223 - dgam322/2.
+;
+
+const auto
+GamDDD323
+=
+dgam233/2.
+;
+
+const auto
+GamDDD333
+=
+dgam333/2.
+;
+
+const auto
+Gam111
+=
+GamDDD111*invgam11 + GamDDD211*invgam12 + GamDDD311*invgam13
+;
+
+const auto
+Gam112
+=
+GamDDD112*invgam11 + GamDDD212*invgam12 + GamDDD312*invgam13
+;
+
+const auto
+Gam113
+=
+GamDDD113*invgam11 + GamDDD213*invgam12 + GamDDD313*invgam13
+;
+
+const auto
+Gam122
+=
+GamDDD122*invgam11 + GamDDD222*invgam12 + GamDDD322*invgam13
+;
+
+const auto
+Gam123
+=
+GamDDD123*invgam11 + GamDDD223*invgam12 + GamDDD323*invgam13
+;
+
+const auto
+Gam133
+=
+GamDDD133*invgam11 + GamDDD233*invgam12 + GamDDD333*invgam13
+;
+
+const auto
+Gam211
+=
+GamDDD111*invgam12 + GamDDD211*invgam22 + GamDDD311*invgam23
+;
+
+const auto
+Gam212
+=
+GamDDD112*invgam12 + GamDDD212*invgam22 + GamDDD312*invgam23
+;
+
+const auto
+Gam213
+=
+GamDDD113*invgam12 + GamDDD213*invgam22 + GamDDD313*invgam23
+;
+
+const auto
+Gam222
+=
+GamDDD122*invgam12 + GamDDD222*invgam22 + GamDDD322*invgam23
+;
+
+const auto
+Gam223
+=
+GamDDD123*invgam12 + GamDDD223*invgam22 + GamDDD323*invgam23
+;
+
+const auto
+Gam233
+=
+GamDDD133*invgam12 + GamDDD233*invgam22 + GamDDD333*invgam23
+;
+
+const auto
+Gam311
+=
+GamDDD111*invgam13 + GamDDD211*invgam23 + GamDDD311*invgam33
+;
+
+const auto
+Gam312
+=
+GamDDD112*invgam13 + GamDDD212*invgam23 + GamDDD312*invgam33
+;
+
+const auto
+Gam313
+=
+GamDDD113*invgam13 + GamDDD213*invgam23 + GamDDD313*invgam33
+;
+
+const auto
+Gam322
+=
+GamDDD122*invgam13 + GamDDD222*invgam23 + GamDDD322*invgam33
+;
+
+const auto
+Gam323
+=
+GamDDD123*invgam13 + GamDDD223*invgam23 + GamDDD323*invgam33
+;
+
+const auto
+Gam333
+=
+GamDDD133*invgam13 + GamDDD233*invgam23 + GamDDD333*invgam33
+;
+
+const auto
+exAbUU11
+=
+Power(invgamb11,2)*exAb11[ijk] + 2*invgamb11*invgamb12*exAb12[ijk] +
+  2*invgamb11*invgamb13*exAb13[ijk] + Power(invgamb12,2)*exAb22[ijk] +
+  2*invgamb12*invgamb13*exAb23[ijk] + Power(invgamb13,2)*exAb33[ijk]
+;
+
+const auto
+exAbUU12
+=
+invgamb11*invgamb12*exAb11[ijk] +
+  (Power(invgamb12,2) + invgamb11*invgamb22)*exAb12[ijk] +
+  invgamb12*invgamb13*exAb13[ijk] + invgamb11*invgamb23*exAb13[ijk] +
+  invgamb12*invgamb22*exAb22[ijk] + invgamb13*invgamb22*exAb23[ijk] +
+  invgamb12*invgamb23*exAb23[ijk] + invgamb13*invgamb23*exAb33[ijk]
+;
+
+const auto
+exAbUU13
+=
+invgamb11*invgamb13*exAb11[ijk] +
+  (invgamb12*invgamb13 + invgamb11*invgamb23)*exAb12[ijk] +
+  Power(invgamb13,2)*exAb13[ijk] + invgamb11*invgamb33*exAb13[ijk] +
+  invgamb12*invgamb23*exAb22[ijk] + invgamb13*invgamb23*exAb23[ijk] +
+  invgamb12*invgamb33*exAb23[ijk] + invgamb13*invgamb33*exAb33[ijk]
+;
+
+const auto
+exAbUU22
+=
+Power(invgamb12,2)*exAb11[ijk] + 2*invgamb12*invgamb22*exAb12[ijk] +
+  2*invgamb12*invgamb23*exAb13[ijk] + Power(invgamb22,2)*exAb22[ijk] +
+  2*invgamb22*invgamb23*exAb23[ijk] + Power(invgamb23,2)*exAb33[ijk]
+;
+
+const auto
+exAbUU23
+=
+invgamb12*invgamb13*exAb11[ijk] +
+  (invgamb13*invgamb22 + invgamb12*invgamb23)*exAb12[ijk] +
+  invgamb13*invgamb23*exAb13[ijk] + invgamb12*invgamb33*exAb13[ijk] +
+  invgamb22*invgamb23*exAb22[ijk] + Power(invgamb23,2)*exAb23[ijk] +
+  invgamb22*invgamb33*exAb23[ijk] + invgamb23*invgamb33*exAb33[ijk]
+;
+
+const auto
+exAbUU33
+=
+Power(invgamb13,2)*exAb11[ijk] + 2*invgamb13*invgamb23*exAb12[ijk] +
+  2*invgamb13*invgamb33*exAb13[ijk] + Power(invgamb23,2)*exAb22[ijk] +
+  2*invgamb23*invgamb33*exAb23[ijk] + Power(invgamb33,2)*exAb33[ijk]
+;
+
+
   });
 });
 
