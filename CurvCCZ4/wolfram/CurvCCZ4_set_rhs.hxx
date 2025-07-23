@@ -80,7 +80,7 @@ R*epsOsph12[ijk]
 const auto
 eps13[ijk]
 =
-R*epsOsph13[ijk]*Sin(T)
+R*sinth*epsOsph13[ijk]
 ;
 
 const auto
@@ -92,13 +92,13 @@ Power(R,2)*epsOsph22[ijk]
 const auto
 eps23[ijk]
 =
-Power(R,2)*epsOsph23[ijk]*Sin(T)
+Power(R,2)*sinth*epsOsph23[ijk]
 ;
 
 const auto
 eps33[ijk]
 =
-Power(R,2)*epsOsph33[ijk]*Power(Sin(T),2)
+Power(R,2)*Power(sinth,2)*epsOsph33[ijk]
 ;
 
 const auto
@@ -116,7 +116,7 @@ R*exAbOsph12[ijk]
 const auto
 exAb13[ijk]
 =
-R*exAbOsph13[ijk]*Sin(T)
+R*sinth*exAbOsph13[ijk]
 ;
 
 const auto
@@ -128,13 +128,13 @@ Power(R,2)*exAbOsph22[ijk]
 const auto
 exAb23[ijk]
 =
-Power(R,2)*exAbOsph23[ijk]*Sin(T)
+Power(R,2)*sinth*exAbOsph23[ijk]
 ;
 
 const auto
 exAb33[ijk]
 =
-Power(R,2)*exAbOsph33[ijk]*Power(Sin(T),2)
+Power(R,2)*Power(sinth,2)*exAbOsph33[ijk]
 ;
 
 const auto
@@ -152,7 +152,7 @@ LtOsph2[ijk]/R
 const auto
 Lt3[ijk]
 =
-(Csc(T)*LtOsph3[ijk])/R
+(cscth*LtOsph3[ijk])/R
 ;
 
 const auto
@@ -170,7 +170,7 @@ betaOsph2[ijk]/R
 const auto
 beta3[ijk]
 =
-(Csc(T)*betaOsph3[ijk])/R
+(cscth*betaOsph3[ijk])/R
 ;
 
 const auto
@@ -188,7 +188,7 @@ BOsph2[ijk]/R
 const auto
 B3[ijk]
 =
-(Csc(T)*BOsph3[ijk])/R
+(cscth*BOsph3[ijk])/R
 ;
 
 
