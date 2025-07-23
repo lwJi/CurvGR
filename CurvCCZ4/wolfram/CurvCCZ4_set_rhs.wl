@@ -22,8 +22,10 @@ SetTempVariableType["auto"];
 
 DefManifold[M3, 3, IndexRange[a, z]];
 
+(* Default Chart *)
 DefChart[sph, M3, {1, 2, 3}, {ra[], th[], ph[]}, ChartColor -> Blue];
 
+(* Osphonormal Basis adapted to the Default Chart. *)
 DefBasis[Osph, TangentM3, {1, 2, 3}, BasisColor -> Red];
 
 SetBasisChange[CTensor[{{1, 0, 0}, {0, ra[], 0}, {0, 0, ra[] Sin[th[]]}}, {-sph, Osph}], sph];
@@ -41,24 +43,24 @@ ComponentValue[ph[], P];
 
 <<wl/CCZ4_rhs.wl
 
-<<wl/Osph_rules.wl
+<<wl/orth_rules.wl
 
 SetComponents[{ChartName -> Osph}, dtEvolVarlist];
 SetComponents[{ChartName -> Osph}, EvolVarlist];
 
 (* Basis transformation *)
 
-SetEQNDelayed[eps[i_, j_], eps[i, j] // SeparateBasis[Osph] // TraceBasisDummy // ToValues];
+SetEQNDelayed[eps[i_, j_],  eps[i, j] // SeparateBasis[Osph] // TraceBasisDummy // ToValues];
 SetEQNDelayed[exAb[i_, j_], exAb[i, j] // SeparateBasis[Osph] // TraceBasisDummy // ToValues];
-SetEQNDelayed[Lt[i_], Lt[i] // SeparateBasis[Osph] // TraceBasisDummy // ToValues];
-SetEQNDelayed[beta[i_], beta[i] // SeparateBasis[Osph] // TraceBasisDummy // ToValues];
-SetEQNDelayed[B[i_], B[i] // SeparateBasis[Osph] // TraceBasisDummy // ToValues];
+SetEQNDelayed[Lt[i_],       Lt[i] // SeparateBasis[Osph] // TraceBasisDummy // ToValues];
+SetEQNDelayed[beta[i_],     beta[i] // SeparateBasis[Osph] // TraceBasisDummy // ToValues];
+SetEQNDelayed[B[i_],        B[i] // SeparateBasis[Osph] // TraceBasisDummy // ToValues];
 
-SetEQNDelayed[deps[k_, i_, j_], PDsph[k][eps[i, j] // SeparateBasis[Osph] // TraceBasisDummy // ToValues] /. dOsphRules];
-SetEQNDelayed[dexAb[k_, i_, j_], PDsph[k][exAb[i, j] // SeparateBasis[Osph] // TraceBasisDummy // ToValues] /. dOsphRules];
-SetEQNDelayed[dLt[k_, i_], PDsph[k][Lt[i] // SeparateBasis[Osph] // TraceBasisDummy // ToValues] /. dOsphRules];
-SetEQNDelayed[dbeta[k_, i_], PDsph[k][beta[i] // SeparateBasis[Osph] // TraceBasisDummy // ToValues] /. dOsphRules];
-SetEQNDelayed[dB[k_, i_], PDsph[k][B[i] // SeparateBasis[Osph] // TraceBasisDummy // ToValues] /. dOsphRules];
+SetEQNDelayed[deps[k_, i_, j_],  PDsph[k][eps[i, j] // SeparateBasis[Osph] // TraceBasisDummy // ToValues] /. dOrthRules[Osph]];
+SetEQNDelayed[dexAb[k_, i_, j_], PDsph[k][exAb[i, j] // SeparateBasis[Osph] // TraceBasisDummy // ToValues] /. dOrthRules[Osph]];
+SetEQNDelayed[dLt[k_, i_],       PDsph[k][Lt[i] // SeparateBasis[Osph] // TraceBasisDummy // ToValues] /. dOrthRules[Osph]];
+SetEQNDelayed[dbeta[k_, i_],     PDsph[k][beta[i] // SeparateBasis[Osph] // TraceBasisDummy // ToValues] /. dOrthRules[Osph]];
+SetEQNDelayed[dB[k_, i_],        PDsph[k][B[i] // SeparateBasis[Osph] // TraceBasisDummy // ToValues] /. dOrthRules[Osph]];
 
 (******************)
 (* Print to Files *)
