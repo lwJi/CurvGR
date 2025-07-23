@@ -923,7 +923,7 @@ eps13[ijk]
 const auto
 gamb22
 =
-eps22[ijk] + Power(ra(),2)
+Power(R,2) + eps22[ijk]
 ;
 
 const auto
@@ -935,7 +935,7 @@ eps23[ijk]
 const auto
 gamb33
 =
-eps33[ijk] + Power(ra(),2)*Power(Sin(th()),2)
+eps33[ijk] + Power(R,2)*Power(Sin(T),2)
 ;
 
 const auto
