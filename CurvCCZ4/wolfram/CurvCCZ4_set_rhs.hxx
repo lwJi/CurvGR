@@ -207,7 +207,7 @@ depsOsph112*R + epsOsph12[ijk]
 const auto
 deps113
 =
-(depsOsph113*R + epsOsph13[ijk])*Sin(T)
+sinth*(depsOsph113*R + epsOsph13[ijk])
 ;
 
 const auto
@@ -219,13 +219,13 @@ R*(depsOsph122*R + 2*epsOsph22[ijk])
 const auto
 deps123
 =
-R*(depsOsph123*R + 2*epsOsph23[ijk])*Sin(T)
+R*sinth*(depsOsph123*R + 2*epsOsph23[ijk])
 ;
 
 const auto
 deps133
 =
-R*(depsOsph133*R + 2*epsOsph33[ijk])*Power(Sin(T),2)
+R*Power(sinth,2)*(depsOsph133*R + 2*epsOsph33[ijk])
 ;
 
 const auto
@@ -243,7 +243,7 @@ depsOsph212*R
 const auto
 deps213
 =
-R*(Cos(T)*epsOsph13[ijk] + depsOsph213*Sin(T))
+R*(depsOsph213*sinth + costh*epsOsph13[ijk])
 ;
 
 const auto
@@ -255,13 +255,13 @@ depsOsph222*Power(R,2)
 const auto
 deps223
 =
-Power(R,2)*(Cos(T)*epsOsph23[ijk] + depsOsph223*Sin(T))
+Power(R,2)*(depsOsph223*sinth + costh*epsOsph23[ijk])
 ;
 
 const auto
 deps233
 =
-Power(R,2)*Sin(T)*(2*Cos(T)*epsOsph33[ijk] + depsOsph233*Sin(T))
+Power(R,2)*sinth*(depsOsph233*sinth + 2*costh*epsOsph33[ijk])
 ;
 
 const auto
@@ -279,7 +279,7 @@ depsOsph312*R
 const auto
 deps313
 =
-depsOsph313*R*Sin(T)
+depsOsph313*R*sinth
 ;
 
 const auto
@@ -291,13 +291,13 @@ depsOsph322*Power(R,2)
 const auto
 deps323
 =
-depsOsph323*Power(R,2)*Sin(T)
+depsOsph323*Power(R,2)*sinth
 ;
 
 const auto
 deps333
 =
-depsOsph333*Power(R,2)*Power(Sin(T),2)
+depsOsph333*Power(R,2)*Power(sinth,2)
 ;
 
 const auto
@@ -315,7 +315,7 @@ dexAbOsph112*R + exAbOsph12[ijk]
 const auto
 dexAb113
 =
-(dexAbOsph113*R + exAbOsph13[ijk])*Sin(T)
+sinth*(dexAbOsph113*R + exAbOsph13[ijk])
 ;
 
 const auto
@@ -327,13 +327,13 @@ R*(dexAbOsph122*R + 2*exAbOsph22[ijk])
 const auto
 dexAb123
 =
-R*(dexAbOsph123*R + 2*exAbOsph23[ijk])*Sin(T)
+R*sinth*(dexAbOsph123*R + 2*exAbOsph23[ijk])
 ;
 
 const auto
 dexAb133
 =
-R*(dexAbOsph133*R + 2*exAbOsph33[ijk])*Power(Sin(T),2)
+R*Power(sinth,2)*(dexAbOsph133*R + 2*exAbOsph33[ijk])
 ;
 
 const auto
@@ -351,7 +351,7 @@ dexAbOsph212*R
 const auto
 dexAb213
 =
-R*(Cos(T)*exAbOsph13[ijk] + dexAbOsph213*Sin(T))
+R*(dexAbOsph213*sinth + costh*exAbOsph13[ijk])
 ;
 
 const auto
@@ -363,13 +363,13 @@ dexAbOsph222*Power(R,2)
 const auto
 dexAb223
 =
-Power(R,2)*(Cos(T)*exAbOsph23[ijk] + dexAbOsph223*Sin(T))
+Power(R,2)*(dexAbOsph223*sinth + costh*exAbOsph23[ijk])
 ;
 
 const auto
 dexAb233
 =
-Power(R,2)*Sin(T)*(2*Cos(T)*exAbOsph33[ijk] + dexAbOsph233*Sin(T))
+Power(R,2)*sinth*(dexAbOsph233*sinth + 2*costh*exAbOsph33[ijk])
 ;
 
 const auto
@@ -387,7 +387,7 @@ dexAbOsph312*R
 const auto
 dexAb313
 =
-dexAbOsph313*R*Sin(T)
+dexAbOsph313*R*sinth
 ;
 
 const auto
@@ -399,13 +399,13 @@ dexAbOsph322*Power(R,2)
 const auto
 dexAb323
 =
-dexAbOsph323*Power(R,2)*Sin(T)
+dexAbOsph323*Power(R,2)*sinth
 ;
 
 const auto
 dexAb333
 =
-dexAbOsph333*Power(R,2)*Power(Sin(T),2)
+dexAbOsph333*Power(R,2)*Power(sinth,2)
 ;
 
 const auto
@@ -423,7 +423,7 @@ dLt12
 const auto
 dLt13
 =
-(Csc(T)*(dLtOsph13*R - LtOsph3[ijk]))/Power(R,2)
+(cscth*(dLtOsph13*R - LtOsph3[ijk]))/Power(R,2)
 ;
 
 const auto
@@ -441,7 +441,7 @@ dLtOsph22/R
 const auto
 dLt23
 =
-(Csc(T)*(dLtOsph23 - Cot(T)*LtOsph3[ijk]))/R
+(cscth*(dLtOsph23 - cotth*LtOsph3[ijk]))/R
 ;
 
 const auto
@@ -459,7 +459,7 @@ dLtOsph32/R
 const auto
 dLt33
 =
-(dLtOsph33*Csc(T))/R
+(cscth*dLtOsph33)/R
 ;
 
 const auto
@@ -477,7 +477,7 @@ dbeta12
 const auto
 dbeta13
 =
-(Csc(T)*(dbetaOsph13*R - betaOsph3[ijk]))/Power(R,2)
+(cscth*(dbetaOsph13*R - betaOsph3[ijk]))/Power(R,2)
 ;
 
 const auto
@@ -495,7 +495,7 @@ dbetaOsph22/R
 const auto
 dbeta23
 =
-(Csc(T)*(dbetaOsph23 - Cot(T)*betaOsph3[ijk]))/R
+(cscth*(dbetaOsph23 - cotth*betaOsph3[ijk]))/R
 ;
 
 const auto
@@ -513,7 +513,7 @@ dbetaOsph32/R
 const auto
 dbeta33
 =
-(dbetaOsph33*Csc(T))/R
+(cscth*dbetaOsph33)/R
 ;
 
 const auto
@@ -531,7 +531,7 @@ dB12
 const auto
 dB13
 =
-(Csc(T)*(dBOsph13*R - BOsph3[ijk]))/Power(R,2)
+(cscth*(dBOsph13*R - BOsph3[ijk]))/Power(R,2)
 ;
 
 const auto
@@ -549,7 +549,7 @@ dBOsph22/R
 const auto
 dB23
 =
-(Csc(T)*(dBOsph23 - Cot(T)*BOsph3[ijk]))/R
+(cscth*(dBOsph23 - cotth*BOsph3[ijk]))/R
 ;
 
 const auto
@@ -567,7 +567,7 @@ dBOsph32/R
 const auto
 dB33
 =
-(dBOsph33*Csc(T))/R
+(cscth*dBOsph33)/R
 ;
 
 

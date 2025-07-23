@@ -42,11 +42,11 @@ BasisTrans[coord_, orth_, trigrules_] :=
     SetEQNDelayed[beta[i_],     beta[i]    // SeparateBasis[orth] // TraceBasisDummy // ToValues];
     SetEQNDelayed[B[i_],        B[i]       // SeparateBasis[orth] // TraceBasisDummy // ToValues];
     (* first derivatives *)
-    SetEQNDelayed[deps[k_, i_, j_],  PDOfBasis[coord][k][eps[i, j]  // SeparateBasis[orth] // TraceBasisDummy // ToValues] /. dorthrules];
-    SetEQNDelayed[dexAb[k_, i_, j_], PDOfBasis[coord][k][exAb[i, j] // SeparateBasis[orth] // TraceBasisDummy // ToValues] /. dorthrules];
-    SetEQNDelayed[dLt[k_, i_],       PDOfBasis[coord][k][Lt[i]      // SeparateBasis[orth] // TraceBasisDummy // ToValues] /. dorthrules];
-    SetEQNDelayed[dbeta[k_, i_],     PDOfBasis[coord][k][beta[i]    // SeparateBasis[orth] // TraceBasisDummy // ToValues] /. dorthrules];
-    SetEQNDelayed[dB[k_, i_],        PDOfBasis[coord][k][B[i]       // SeparateBasis[orth] // TraceBasisDummy // ToValues] /. dorthrules];
+    SetEQNDelayed[deps[k_, i_, j_],  PDOfBasis[coord][k][eps[i, j]  // SeparateBasis[orth] // TraceBasisDummy // ToValues] /. dorthrules /. trigrules];
+    SetEQNDelayed[dexAb[k_, i_, j_], PDOfBasis[coord][k][exAb[i, j] // SeparateBasis[orth] // TraceBasisDummy // ToValues] /. dorthrules /. trigrules];
+    SetEQNDelayed[dLt[k_, i_],       PDOfBasis[coord][k][Lt[i]      // SeparateBasis[orth] // TraceBasisDummy // ToValues] /. dorthrules /. trigrules];
+    SetEQNDelayed[dbeta[k_, i_],     PDOfBasis[coord][k][beta[i]    // SeparateBasis[orth] // TraceBasisDummy // ToValues] /. dorthrules /. trigrules];
+    SetEQNDelayed[dB[k_, i_],        PDOfBasis[coord][k][B[i]       // SeparateBasis[orth] // TraceBasisDummy // ToValues] /. dorthrules /. trigrules];
     (* second derivatives *)
     SetEQNDelayed[ddeps[k_, l_, i_, j_], PDOfBasis[coord][k][PDOfBasis[coord][l][eps[i, j] // SeparateBasis[orth] // TraceBasisDummy // ToValues]] /. dorthrules /. trigrules];
     SetEQNDelayed[ddbeta[k_, l_, i_],    PDOfBasis[coord][k][PDOfBasis[coord][l][beta[i]   // SeparateBasis[orth] // TraceBasisDummy // ToValues]] /. dorthrules /. trigrules];
