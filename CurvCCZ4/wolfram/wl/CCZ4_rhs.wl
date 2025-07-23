@@ -13,15 +13,6 @@
 (****************)
 
 (*
-SetEQN[eps[i_, j_], eOSco[i, k] eOSco[j, l] epsO[-k, -l]];
-
-SetEQN[exAb[i_, j_], eOSco[i, k] eOSco[j, l] exAbO[-k, -l]];
-
-SetEQN[Lt[i_], eOSvt[i, -k] LtO[k]];
-
-SetEQN[beta[i_], eOSvt[i, -k] betaO[k]];
-
-SetEQN[B[i_], eOSvt[i, -k] BO[k]];
 
 SetEQN[deps[k_, i_, j_], eOSco[i, m] eOSco[j, n] depsO[k, -m, -n] + deOSco[k, i, m] eOSco[j, n] epsO[-m, -n] + eOSco[i, m] deOSco[k, j, n] epsO[-m, -n]];
 
