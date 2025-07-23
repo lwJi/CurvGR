@@ -12,15 +12,17 @@
 
 dtEvolVarlist =
   GridTensors[
-    {dtphi[],                              PrintAs -> "\!\(\*SubscriptBox[\(\[PartialD]\), \(t\)]\)\[Phi]"},
-    {dtepsO[-i, -j], Symmetric[{-i, -j}],  PrintAs -> "\!\(\*SubscriptBox[\(\[PartialD]\), \(t\)]\)O\[Epsilon]"},
-    {dttrK[],                              PrintAs -> "\!\(\*SubscriptBox[\(\[PartialD]\), \(t\)]\)K"},
-    {dtexAbO[-i, -j], Symmetric[{-i, -j}], PrintAs -> "\!\(\*SubscriptBox[\(\[PartialD]\), \(t\)]\)O\!\(\*OverscriptBox[\(A\), \(_\)]\)"},
-    {dtLtO[i],                             PrintAs -> "\!\(\*SubscriptBox[\(\[PartialD]\), \(t\)]\)O\!\(\*OverscriptBox[\(\[CapitalLambda]\), \(~\)]\)"},
-    {dtTheta[],                            PrintAs -> "\!\(\*SubscriptBox[\(\[PartialD]\), \(t\)]\)\[CapitalTheta]"},
-    {dtalpha[],                            PrintAs -> "\!\(\*SubscriptBox[\(\[PartialD]\), \(t\)]\)\[Alpha]"},
-    {dtbetaO[i],                           PrintAs -> "\!\(\*SubscriptBox[\(\[PartialD]\), \(t\)]\)O\[Beta]"},
-    {dtBO[i],                              PrintAs -> "\!\(\*SubscriptBox[\(\[PartialD]\), \(t\)]\)OB"}
+    (* scalars *)
+    {dtphi[],                             PrintAs -> "\!\(\*SubscriptBox[\(\[PartialD]\), \(t\)]\)\[Phi]"},
+    {dttrK[],                             PrintAs -> "\!\(\*SubscriptBox[\(\[PartialD]\), \(t\)]\)K"},
+    {dtTheta[],                           PrintAs -> "\!\(\*SubscriptBox[\(\[PartialD]\), \(t\)]\)\[CapitalTheta]"},
+    {dtalpha[],                           PrintAs -> "\!\(\*SubscriptBox[\(\[PartialD]\), \(t\)]\)\[Alpha]"},
+    (* non-scalars *)
+    {dteps[-i, -j], Symmetric[{-i, -j}],  PrintAs -> "\!\(\*SubscriptBox[\(\[PartialD]\), \(t\)]\)\[Epsilon]"},
+    {dtexAb[-i, -j], Symmetric[{-i, -j}], PrintAs -> "\!\(\*SubscriptBox[\(\[PartialD]\), \(t\)]\)\!\(\*OverscriptBox[\(A\), \(_\)]\)"},
+    {dtLt[i],                             PrintAs -> "\!\(\*SubscriptBox[\(\[PartialD]\), \(t\)]\)\!\(\*OverscriptBox[\(\[CapitalLambda]\), \(~\)]\)"},
+    {dtbeta[i],                           PrintAs -> "\!\(\*SubscriptBox[\(\[PartialD]\), \(t\)]\)\[Beta]"},
+    {dtB[i],                              PrintAs -> "\!\(\*SubscriptBox[\(\[PartialD]\), \(t\)]\)B"}
   ];
 
 EvolVarlist =
@@ -100,15 +102,6 @@ dTetradVarlist =
 (* Intermediate Variables *)
 
 (**************************)
-
-TempdtEvolVarlist =
-  TempTensors[
-    {dteps[-i, -j], Symmetric[{-i, -j}],  PrintAs -> "\!\(\*SubscriptBox[\(\[PartialD]\), \(t\)]\)\[Epsilon]"},
-    {dtexAb[-i, -j], Symmetric[{-i, -j}], PrintAs -> "\!\(\*SubscriptBox[\(\[PartialD]\), \(t\)]\)\!\(\*OverscriptBox[\(A\), \(_\)]\)"},
-    {dtLt[i],                             PrintAs -> "\!\(\*SubscriptBox[\(\[PartialD]\), \(t\)]\)\!\(\*OverscriptBox[\(\[CapitalLambda]\), \(~\)]\)"},
-    {dtbeta[i],                           PrintAs -> "\!\(\*SubscriptBox[\(\[PartialD]\), \(t\)]\)\[Beta]"},
-    {dtB[i],                              PrintAs -> "\!\(\*SubscriptBox[\(\[PartialD]\), \(t\)]\)B"}
-  ];
 
 TempEvolVarlist =
   TempTensors[
