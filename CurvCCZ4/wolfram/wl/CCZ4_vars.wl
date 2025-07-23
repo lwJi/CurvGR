@@ -27,15 +27,18 @@ dtEvolVarlist =
 
 EvolVarlist =
   GridTensors[
-    {phi[],                              PrintAs -> "\[Phi]"},
-    {epsO[-i, -j], Symmetric[{-i, -j}],  PrintAs -> "O\[Epsilon]"},
-    {trK[],                              PrintAs -> "K"},
-    {exAbO[-i, -j], Symmetric[{-i, -j}], PrintAs -> "O\!\(\*OverscriptBox[\(A\), \(_\)]\)"},
-    {LtO[i],                             PrintAs -> "O\!\(\*OverscriptBox[\(\[CapitalLambda]\), \(~\)]\)"},
-    {Theta[],                            PrintAs -> "\[CapitalTheta]"},
-    {alpha[],                            PrintAs -> "\[Alpha]"},
-    {betaO[i],                           PrintAs -> "O\[Beta]"},
-    {BO[i],                              PrintAs -> "OB"}
+    (* scalars *)
+    {phi[],                             PrintAs -> "\[Phi]"},
+    {trK[],                             PrintAs -> "K"},
+    {Theta[],                           PrintAs -> "\[CapitalTheta]"},
+    {alpha[],                           PrintAs -> "\[Alpha]"},
+    (* non-scalars *)
+    {eps[-i, -j], Symmetric[{-i, -j}],  PrintAs -> "\[Epsilon]"},
+    {gamb[-i, -j], Symmetric[{-i, -j}], PrintAs -> "\!\(\*OverscriptBox[\(\[Gamma]\), \(_\)]\)"},
+    {exAb[-i, -j], Symmetric[{-i, -j}], PrintAs -> "\!\(\*OverscriptBox[\(A\), \(_\)]\)"},
+    {Lt[i],                             PrintAs -> "\!\(\*OverscriptBox[\(\[CapitalLambda]\), \(~\)]\)"},
+    {beta[i],                           PrintAs -> "\[Beta]"},
+    {B[i],                              PrintAs -> "B"}
   ];
 
 (*************************)
@@ -102,16 +105,6 @@ dTetradVarlist =
 (* Intermediate Variables *)
 
 (**************************)
-
-TempEvolVarlist =
-  TempTensors[
-    {eps[-i, -j], Symmetric[{-i, -j}],  PrintAs -> "\[Epsilon]"},
-    {gamb[-i, -j], Symmetric[{-i, -j}], PrintAs -> "\!\(\*OverscriptBox[\(\[Gamma]\), \(_\)]\)"},
-    {exAb[-i, -j], Symmetric[{-i, -j}], PrintAs -> "\!\(\*OverscriptBox[\(A\), \(_\)]\)"},
-    {Lt[i],                             PrintAs -> "\!\(\*OverscriptBox[\(\[CapitalLambda]\), \(~\)]\)"},
-    {beta[i],                           PrintAs -> "\[Beta]"},
-    {B[i],                              PrintAs -> "B"}
-  ];
 
 TempdEvolVarlist =
   TempTensors[

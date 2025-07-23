@@ -30,6 +30,38 @@ const auto dtBOrth1 = gf_dtB[0];
 const auto dtBOrth2 = gf_dtB[1];
 const auto dtBOrth3 = gf_dtB[2];
 
+const auto phi = gf_phi;
+const auto trK = gf_trK;
+const auto Theta = gf_Theta;
+const auto alpha = gf_alpha;
+const auto epsOrth11 = gf_eps[0];
+const auto epsOrth12 = gf_eps[1];
+const auto epsOrth13 = gf_eps[2];
+const auto epsOrth22 = gf_eps[3];
+const auto epsOrth23 = gf_eps[4];
+const auto epsOrth33 = gf_eps[5];
+const auto gambOrth11 = gf_gamb[0];
+const auto gambOrth12 = gf_gamb[1];
+const auto gambOrth13 = gf_gamb[2];
+const auto gambOrth22 = gf_gamb[3];
+const auto gambOrth23 = gf_gamb[4];
+const auto gambOrth33 = gf_gamb[5];
+const auto exAbOrth11 = gf_exAb[0];
+const auto exAbOrth12 = gf_exAb[1];
+const auto exAbOrth13 = gf_exAb[2];
+const auto exAbOrth22 = gf_exAb[3];
+const auto exAbOrth23 = gf_exAb[4];
+const auto exAbOrth33 = gf_exAb[5];
+const auto LtOrth1 = gf_Lt[0];
+const auto LtOrth2 = gf_Lt[1];
+const auto LtOrth3 = gf_Lt[2];
+const auto betaOrth1 = gf_beta[0];
+const auto betaOrth2 = gf_beta[1];
+const auto betaOrth3 = gf_beta[2];
+const auto BOrth1 = gf_B[0];
+const auto BOrth2 = gf_B[1];
+const auto BOrth3 = gf_B[2];
+
 noinline([&]() __attribute__((__flatten__, __hot__)) {
 grid.loop_int_device<0, 0, 0>(
   grid.nghostzones, [=] ARITH_DEVICE(const PointDesc &p) ARITH_INLINE {

@@ -40,6 +40,7 @@ ComponentValue[ph[], coph];
 <<wl/CCZ4_rhs.wl
 
 SetComponents[{ChartName -> Orth}, dtEvolVarlist];
+SetComponents[{ChartName -> Orth}, EvolVarlist];
 
 (******************)
 (* Print to Files *)
@@ -50,6 +51,8 @@ SetOutputFile[FileNameJoin[{Directory[], "CurvCCZ4_set_rhs.hxx"}]];
 SetMainPrint[
   (* Initialize grid function names *)
   PrintInitializations[{Mode -> "MainOut", ChartName -> Orth}, dtEvolVarlist];
+  pr[];
+  PrintInitializations[{Mode -> "MainIn", ChartName -> Orth}, EvolVarlist];
   pr[];
 
   (* Loops *)
