@@ -1,6 +1,6 @@
 (* ::Package:: *)
 
-(* basis_trans.wl *)
+(* basis_transformation.wl *)
 
 (* (c) Liwei Ji, 07/2025 *)
 
@@ -32,6 +32,12 @@ dOrthRules[coord_, orth_] :=
       }
     ];
 
+(******************************************************)
+
+(* Set Basis Transformation for the evolved variables *)
+
+(******************************************************)
+
 BasisTrans[coord_, orth_, trigrules_] :=
   Module[{rules},
     rules = Join[dOrthRules[coord, orth], trigrules]; (* order matters *)
@@ -51,3 +57,4 @@ BasisTrans[coord_, orth_, trigrules_] :=
     SetEQNDelayed[ddeps[k_, l_, i_, j_], PDOfBasis[coord][k][PDOfBasis[coord][l][eps[i, j] // SeparateBasis[orth] // TraceBasisDummy // ToValues]] /. rules];
     SetEQNDelayed[ddbeta[k_, l_, i_],    PDOfBasis[coord][k][PDOfBasis[coord][l][beta[i]   // SeparateBasis[orth] // TraceBasisDummy // ToValues]] /. rules];
   ];
+

@@ -25,11 +25,16 @@ DefManifold[M3, 3, IndexRange[a, z]];
 (* Default Chart *)
 DefChart[sph, M3, {1, 2, 3}, {ra[], th[], ph[]}, ChartColor -> Blue];
 
+ComponentValue[ra[], R];
+ComponentValue[th[], T];
+ComponentValue[ph[], P];
+
 (* Osphonormal Basis adapted to the Default Chart. *)
 DefBasis[Osph, TangentM3, {1, 2, 3}, BasisColor -> Red];
 
 SetBasisChange[CTensor[{{1, 0, 0}, {0, ra[], 0}, {0, 0, ra[] Sin[th[]]}}, {-sph, Osph}], sph];
 
+(* Set Reference Metric related quantities directly *)
 DefMetric[1, gamh[-i, -j], cdh,
   SymbolOfCovD -> {"|", "\!\(\*OverscriptBox[\(D\), \(^\)]\)"},
   PrintAs -> "\!\(\*OverscriptBox[\(\[Gamma]\), \(^\)]\)"
@@ -39,16 +44,9 @@ MetricInBasis[gamh, -sph, DiagonalMatrix[{1, ra[]^2, ra[]^2 Sin[th[]]^2}]];
 
 MetricCompute[gamh, sph, All, Parallelize -> True, Verbose -> False]
 
-IndexSetDelayed[gamhdet[],             Detgamhsph[]];
-IndexSetDelayed[dgamhdet[k_],          PDOfBasis[sph][k][Detgamhsph[]] // DummyToBasis[sph] // TraceBasisDummy // ToValues];
-IndexSetDelayed[ddgamhdet[k_, l_],     PDOfBasis[sph][k][PDOfBasis[sph][l][Detgamhsph[]]] // DummyToBasis[sph] // TraceBasisDummy // ToValues];
-IndexSetDelayed[dgamh[k_, i_, j_],     PDOfBasis[sph][k][gamh[i, j]] // DummyToBasis[sph] // TraceBasisDummy // ToValues];
-IndexSetDelayed[Gamh[k_, i_, j_],      Christoffel[cdh, PDOfBasis[sph]][k, i, j]];
-IndexSetDelayed[dGamh[k_, l_, i_, j_], PDOfBasis[sph][k][Christoffel[cdh, PDOfBasis[sph]][l, i, j]]];
+<<wl/reference_metric.wl
 
-ComponentValue[ra[], R];
-ComponentValue[th[], T];
-ComponentValue[ph[], P];
+SetRefMetrics[sph];
 
 (**********************************)
 (* Define Variables and Equations *)
@@ -58,7 +56,7 @@ ComponentValue[ph[], P];
 
 <<wl/CCZ4_rhs.wl
 
-<<wl/basis_trans.wl
+<<wl/basis_transformation.wl
 
 SetComponents[{ChartName -> Osph}, dtEvolVarlist];
 SetComponents[{ChartName -> Osph}, EvolVarlist];
