@@ -43,7 +43,6 @@ ComponentValue[ph[], P];
 
 SetComponents[{ChartName -> Osph}, dtEvolVarlist];
 SetComponents[{ChartName -> Osph}, EvolVarlist];
-SetComponents[{ChartName -> Osph}, dEvolVarlist];
 
 (* Basis transformation *)
 
