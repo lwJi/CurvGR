@@ -14,16 +14,6 @@
 
 (*
 
-SetEQN[deps[k_, i_, j_], eOSco[i, m] eOSco[j, n] depsO[k, -m, -n] + deOSco[k, i, m] eOSco[j, n] epsO[-m, -n] + eOSco[i, m] deOSco[k, j, n] epsO[-m, -n]];
-
-SetEQN[dexAb[k_, i_, j_], eOSco[i, m] eOSco[j, n] dexAbO[k, -m, -n] + deOSco[k, i, m] eOSco[j, n] exAbO[-m, -n] + eOSco[i, m] deOSco[k, j, n] exAbO[-m, -n]];
-
-SetEQN[dLt[k_, i_], eOSvt[i, -m] dLtO[k, m] + deOSvt[k, i, -m] LtO[m]];
-
-SetEQN[dbeta[k_, i_], eOSvt[i, -m] dbetaO[k, m] + deOSvt[k, i, -m] betaO[m]];
-
-SetEQN[dB[k_, i_], eOSvt[i, -m] dBO[k, m] + deOSvt[k, i, -m] BO[m]];
-
 SetEQN[ddeps[k_, l_, i_, j_], eOSco[i, m] eOSco[j, n] ddepsO[k, l, -m, -n] + deOSco[k, i, m] eOSco[j, n] depsO[l, -m, -n] + eOSco[i, m] deOSco[k, j, n] depsO[l, -m, -n] + deOSco[l, i, m] eOSco[j, n] depsO[k, -m, -n] + eOSco[i, m] deOSco[l, j, n] depsO[k, -m, -n] + (ddeOSco[k, l, i, m] eOSco[j, n] + eOSco[i, m] ddeOSco[k, l, j, n] + deOSco[k, i, m] deOSco[l, j, n] + deOSco[l, i, m] deOSco[k, j, n]) epsO[-m, -n]];
 
 SetEQN[ddbeta[k_, l_, i_], eOSvt[i, -j] ddbetaO[k, l, j] + deOSvt[k, i, -j] dbetaO[l, j] + deOSvt[l, i, -j] dbetaO[k, j] + ddeOSvt[k, l, i, -j] betaO[j]];
