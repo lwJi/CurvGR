@@ -84,25 +84,6 @@ TmunuVarlist =
 
 (**************************)
 
-(*
-TetradVarlist =
-  TempTensors[
-    (*
-    {gamh[-i, -j], Symmetric[{-i, -j}],    PrintAs -> "\!\(\*OverscriptBox[\(\[Gamma]\), \(^\)]\)"},
-    *)
-    {gamhdet[],                            PrintAs -> "\!\(\*OverscriptBox[\(\[Gamma]\), \(^\)]\)"},
-    {Gamh[k, -i, -j], Symmetric[{-i, -j}], PrintAs -> "\!\(\*OverscriptBox[\(\[CapitalGamma]\), \(^\)]\)"}
-  ];
-
-dTetradVarlist =
-  TempTensors[
-    {dgamh[-k, -i, -j], Symmetric[{-i, -j}],    PrintAs -> "\[PartialD]\!\(\*OverscriptBox[\(\[Gamma]\), \(^\)]\)"},
-    {dgamhdet[-k],                              PrintAs -> "\[PartialD]\!\(\*OverscriptBox[\(\[Gamma]\), \(^\)]\)"},
-    {ddgamhdet[-k, -l], Symmetric[{-k, -l}],    PrintAs -> "\[PartialD]\[PartialD]\!\(\*OverscriptBox[\(\[Gamma]\), \(^\)]\)"},
-    {dGamh[-k, l, -i, -j], Symmetric[{-i, -j}], PrintAs -> "\[PartialD]\!\(\*OverscriptBox[\(\[CapitalGamma]\), \(^\)]\)"}
-  ];
-*)
-
 IntermediateVarlist =
   TempTensors[
     {gamb[-i, -j], Symmetric[{-i, -j}],        PrintAs -> "\!\(\*OverscriptBox[\(\[Gamma]\), \(_\)]\)"},
