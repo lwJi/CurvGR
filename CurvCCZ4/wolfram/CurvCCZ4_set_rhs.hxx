@@ -795,109 +795,111 @@ ddepsOsph3333*Power(R,2)*Power(Sin(T),2)
 const auto
 ddbeta111
 =
-ddbeta$RHS(List(1,-sph),List(1,-sph),List(1,sph))
+ddbetaOsph111
 ;
 
 const auto
 ddbeta112
 =
-ddbeta$RHS(List(1,-sph),List(1,-sph),List(2,sph))
+(R*(-2*dbetaOsph12 + ddbetaOsph112*R) + 2*betaOsph2[ijk])/Power(R,3)
 ;
 
 const auto
 ddbeta113
 =
-ddbeta$RHS(List(1,-sph),List(1,-sph),List(3,sph))
+(Csc(T)*(R*(-2*dbetaOsph13 + ddbetaOsph113*R) + 2*betaOsph3[ijk]))/Power(R,3)
 ;
 
 const auto
 ddbeta121
 =
-ddbeta$RHS(List(1,-sph),List(2,-sph),List(1,sph))
+ddbetaOsph121
 ;
 
 const auto
 ddbeta122
 =
-ddbeta$RHS(List(1,-sph),List(2,-sph),List(2,sph))
+(-dbetaOsph22 + ddbetaOsph122*R)/Power(R,2)
 ;
 
 const auto
 ddbeta123
 =
-ddbeta$RHS(List(1,-sph),List(2,-sph),List(3,sph))
+(Csc(T)*(-dbetaOsph23 + ddbetaOsph123*R - dbetaOsph13*R*Cot(T) +
+      Cot(T)*betaOsph3[ijk]))/Power(R,2)
 ;
 
 const auto
 ddbeta131
 =
-ddbeta$RHS(List(1,-sph),List(3,-sph),List(1,sph))
+ddbetaOsph131
 ;
 
 const auto
 ddbeta132
 =
-ddbeta$RHS(List(1,-sph),List(3,-sph),List(2,sph))
+(-dbetaOsph32 + ddbetaOsph132*R)/Power(R,2)
 ;
 
 const auto
 ddbeta133
 =
-ddbeta$RHS(List(1,-sph),List(3,-sph),List(3,sph))
+((-dbetaOsph33 + ddbetaOsph133*R)*Csc(T))/Power(R,2)
 ;
 
 const auto
 ddbeta221
 =
-ddbeta$RHS(List(2,-sph),List(2,-sph),List(1,sph))
+ddbetaOsph221
 ;
 
 const auto
 ddbeta222
 =
-ddbeta$RHS(List(2,-sph),List(2,-sph),List(2,sph))
+ddbetaOsph222/R
 ;
 
 const auto
 ddbeta223
 =
-ddbeta$RHS(List(2,-sph),List(2,-sph),List(3,sph))
+(Csc(T)*(ddbetaOsph223 - 2*dbetaOsph23*Cot(T) +
+      (Power(Cot(T),2) + Power(Csc(T),2))*betaOsph3[ijk]))/R
 ;
 
 const auto
 ddbeta231
 =
-ddbeta$RHS(List(2,-sph),List(3,-sph),List(1,sph))
+ddbetaOsph231
 ;
 
 const auto
 ddbeta232
 =
-ddbeta$RHS(List(2,-sph),List(3,-sph),List(2,sph))
+ddbetaOsph232/R
 ;
 
 const auto
 ddbeta233
 =
-ddbeta$RHS(List(2,-sph),List(3,-sph),List(3,sph))
+((ddbetaOsph233 - dbetaOsph33*Cot(T))*Csc(T))/R
 ;
 
 const auto
 ddbeta331
 =
-ddbeta$RHS(List(3,-sph),List(3,-sph),List(1,sph))
+ddbetaOsph331
 ;
 
 const auto
 ddbeta332
 =
-ddbeta$RHS(List(3,-sph),List(3,-sph),List(2,sph))
+ddbetaOsph332/R
 ;
 
 const auto
 ddbeta333
 =
-ddbeta$RHS(List(3,-sph),List(3,-sph),List(3,sph))
+(ddbetaOsph333*Csc(T))/R
 ;
 
 

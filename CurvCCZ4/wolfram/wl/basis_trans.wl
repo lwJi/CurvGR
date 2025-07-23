@@ -49,5 +49,5 @@ BasisTrans[coord_, orth_] :=
     SetEQNDelayed[dB[k_, i_],        PDOfBasis[coord][k][B[i]       // SeparateBasis[orth] // TraceBasisDummy // ToValues] /. rules];
     (* second derivatives *)
     SetEQNDelayed[ddeps[k_, l_, i_, j_], PDOfBasis[coord][k][PDOfBasis[coord][l][eps[i, j] // SeparateBasis[orth] // TraceBasisDummy // ToValues]] /. rules];
-    SetEQNDelayed[dbeta[k_, l_, i_],     PDOfBasis[coord][k][PDOfBasis[coord][l][beta[i]   // SeparateBasis[orth] // TraceBasisDummy // ToValues]] /. rules];
+    SetEQNDelayed[ddbeta[k_, l_, i_],    PDOfBasis[coord][k][PDOfBasis[coord][l][beta[i]   // SeparateBasis[orth] // TraceBasisDummy // ToValues]] /. rules];
   ];
