@@ -63,8 +63,10 @@ dEvolVarlist =
 
 ddEvolVarlist =
   TileTensors[
+    (* scalars *)
     {ddphi[-i, -j], Symmetric[{-i, -j}],                            PrintAs -> "\[PartialD]\[PartialD]\[Phi]"},
     {ddalpha[-i, -j], Symmetric[{-i, -j}],                          PrintAs -> "\[PartialD]\[PartialD]\[Alpha]"},
+    (* non-scalars *)
     {ddeps[-l, -m, -i, -j], GenSet[Cycles[{1, 2}], Cycles[{3, 4}]], PrintAs -> "\[PartialD]\[PartialD]\[Epsilon]"},
     {ddbeta[-i, -j, k], Symmetric[{-i, -j}],                        PrintAs -> "\[PartialD]\[PartialD]\[Beta]"}
   ];
@@ -76,10 +78,14 @@ TmunuVarlist =
     {eT[-i, -j], Symmetric[{-i, -j}], PrintAs -> "T"}
   ];
 
+(**************************)
+
+(* Intermediate Variables *)
+
+(**************************)
+
 TetradVarlist =
   TempTensors[
-    {eOSvt[i, -j],                         PrintAs -> "\!\(\*OverscriptBox[\(e\), \(\[RightVector]\)]\)"},
-    {eOSco[-i, j],                         PrintAs -> "\!\(\*OverscriptBox[\(e\), \(\[LeftVector]\)]\)"},
     {gamh[-i, -j], Symmetric[{-i, -j}],    PrintAs -> "\!\(\*OverscriptBox[\(\[Gamma]\), \(^\)]\)"},
     {gamhdet[],                            PrintAs -> "\!\(\*OverscriptBox[\(\[Gamma]\), \(^\)]\)"},
     {Gamh[k, -i, -j], Symmetric[{-i, -j}], PrintAs -> "\!\(\*OverscriptBox[\(\[CapitalGamma]\), \(^\)]\)"}
@@ -87,41 +93,27 @@ TetradVarlist =
 
 dTetradVarlist =
   TempTensors[
-    {deOSvt[-k, i, -j],                                   PrintAs -> "\[PartialD]\!\(\*OverscriptBox[\(e\), \(\[RightVector]\)]\)"},
-    {deOSco[-k, -i, j],                                   PrintAs -> "\[PartialD]\!\(\*OverscriptBox[\(e\), \(\[LeftVector]\)]\)"},
-    {ddeOSvt[-k, -l, i, -j], Symmetric[{-k, -l}],         PrintAs -> "\[PartialD]\[PartialD]\!\(\*OverscriptBox[\(e\), \(\[RightVector]\)]\)"},
-    {ddeOSco[-k, -l, i, -j], Symmetric[{-k, -l}],         PrintAs -> "\[PartialD]\[PartialD]\!\(\*OverscriptBox[\(e\), \(\[LeftVector]\)]\)"},
-    (*
-    {deeOSco[-k, -i, m, -j, n],                           PrintAs -> "\[PartialD]\!\(\*OverscriptBox[\(e\), \(\[LeftVector]\)]\)\!\(\*OverscriptBox[\(e\), \(\[LeftVector]\)]\)"},
-    {ddeeOSco[-k, -l, -i, m, -j, n], Symmetric[{-k, -l}], PrintAs -> "\[PartialD]\[PartialD]\!\(\*OverscriptBox[\(e\), \(\[LeftVector]\)]\)\!\(\*OverscriptBox[\(e\), \(\[LeftVector]\)]\)"},
-    *)
-    {dgamh[-k, -i, -j], Symmetric[{-i, -j}],              PrintAs -> "\[PartialD]\!\(\*OverscriptBox[\(\[Gamma]\), \(^\)]\)"},
-    {dgamhdet[-k],                                        PrintAs -> "\[PartialD]\!\(\*OverscriptBox[\(\[Gamma]\), \(^\)]\)"},
-    {ddgamhdet[-k, -l], Symmetric[{-k, -l}],              PrintAs -> "\[PartialD]\[PartialD]\!\(\*OverscriptBox[\(\[Gamma]\), \(^\)]\)"},
-    {dGamh[-k, l, -i, -j], Symmetric[{-i, -j}],           PrintAs -> "\[PartialD]\!\(\*OverscriptBox[\(\[CapitalGamma]\), \(^\)]\)"}
+    {dgamh[-k, -i, -j], Symmetric[{-i, -j}],    PrintAs -> "\[PartialD]\!\(\*OverscriptBox[\(\[Gamma]\), \(^\)]\)"},
+    {dgamhdet[-k],                              PrintAs -> "\[PartialD]\!\(\*OverscriptBox[\(\[Gamma]\), \(^\)]\)"},
+    {ddgamhdet[-k, -l], Symmetric[{-k, -l}],    PrintAs -> "\[PartialD]\[PartialD]\!\(\*OverscriptBox[\(\[Gamma]\), \(^\)]\)"},
+    {dGamh[-k, l, -i, -j], Symmetric[{-i, -j}], PrintAs -> "\[PartialD]\!\(\*OverscriptBox[\(\[CapitalGamma]\), \(^\)]\)"}
   ];
-
-(**************************)
-
-(* Intermediate Variables *)
-
-(**************************)
 
 IntermediateVarlist =
   TempTensors[
-    {gamb[-i, -j], Symmetric[{-i, -j}],         PrintAs -> "\!\(\*OverscriptBox[\(\[Gamma]\), \(_\)]\)"},
-    {dgamb[-k, -i, -j], Symmetric[{-i, -j}],    PrintAs -> "\[PartialD]\!\(\*OverscriptBox[\(\[Gamma]\), \(_\)]\)"},
-    {psim4[],                                   PrintAs -> "\!\(\*SuperscriptBox[\(\[Psi]\), \(-4\)]\)"},
-    {psi4[],                                    PrintAs -> "\!\(\*SuperscriptBox[\(\[Psi]\), \(4\)]\)"},
-    {dgam[-k, -i, -j], Symmetric[{-i, -j}],     PrintAs -> "\[PartialD]\[Gamma]"},
-    {invgamb[i, j], Symmetric[{i, j}],          PrintAs -> "\!\(\*OverscriptBox[\(\[Gamma]\), \(_\)]\)"},
-    {invgam[i, j], Symmetric[{i, j}],           PrintAs -> "\[Gamma]"},
-    {gam[-i, -j], Symmetric[{-i, -j}],          PrintAs -> "\[Gamma]"},
-    {GambDDD[-k, -i, -j], Symmetric[{-i, -j}],  PrintAs -> "\!\(\*OverscriptBox[\(\[CapitalGamma]\), \(_\)]\)"},
-    {Gamb[k, -i, -j], Symmetric[{-i, -j}],      PrintAs -> "\!\(\*OverscriptBox[\(\[CapitalGamma]\), \(_\)]\)"},
-    {GamDDD[-k, -i, -j], Symmetric[{-i, -j}],   PrintAs -> "\[CapitalGamma]"},
-    {Gam[k, -i, -j], Symmetric[{-i, -j}],       PrintAs -> "\[CapitalGamma]"},
-    {exAbUU[i, j], Symmetric[{i, j}],           PrintAs -> "\!\(\*OverscriptBox[\(A\), \(_\)]\)"}
+    {gamb[-i, -j], Symmetric[{-i, -j}],        PrintAs -> "\!\(\*OverscriptBox[\(\[Gamma]\), \(_\)]\)"},
+    {dgamb[-k, -i, -j], Symmetric[{-i, -j}],   PrintAs -> "\[PartialD]\!\(\*OverscriptBox[\(\[Gamma]\), \(_\)]\)"},
+    {psim4[],                                  PrintAs -> "\!\(\*SuperscriptBox[\(\[Psi]\), \(-4\)]\)"},
+    {psi4[],                                   PrintAs -> "\!\(\*SuperscriptBox[\(\[Psi]\), \(4\)]\)"},
+    {dgam[-k, -i, -j], Symmetric[{-i, -j}],    PrintAs -> "\[PartialD]\[Gamma]"},
+    {invgamb[i, j], Symmetric[{i, j}],         PrintAs -> "\!\(\*OverscriptBox[\(\[Gamma]\), \(_\)]\)"},
+    {invgam[i, j], Symmetric[{i, j}],          PrintAs -> "\[Gamma]"},
+    {gam[-i, -j], Symmetric[{-i, -j}],         PrintAs -> "\[Gamma]"},
+    {GambDDD[-k, -i, -j], Symmetric[{-i, -j}], PrintAs -> "\!\(\*OverscriptBox[\(\[CapitalGamma]\), \(_\)]\)"},
+    {Gamb[k, -i, -j], Symmetric[{-i, -j}],     PrintAs -> "\!\(\*OverscriptBox[\(\[CapitalGamma]\), \(_\)]\)"},
+    {GamDDD[-k, -i, -j], Symmetric[{-i, -j}],  PrintAs -> "\[CapitalGamma]"},
+    {Gam[k, -i, -j], Symmetric[{-i, -j}],      PrintAs -> "\[CapitalGamma]"},
+    {exAbUU[i, j], Symmetric[{i, j}],          PrintAs -> "\!\(\*OverscriptBox[\(A\), \(_\)]\)"}
   ];
 
 bDVarlist =
@@ -182,24 +174,24 @@ RVarlist =
 
 LieVarlist =
   TempTensors[
-    {Lbetaphi[],                              PrintAs -> "\!\(\*SubscriptBox[\(\[ScriptCapitalL]\), \(\[Beta]\)]\)\[Phi]"},
-    {Lbetagamb[-i, -j], Symmetric[{-i, -j}],  PrintAs -> "\!\(\*SubscriptBox[\(\[ScriptCapitalL]\), \(\[Beta]\)]\)\!\(\*OverscriptBox[\(\[Gamma]\), \(_\)]\)"},
-    {LbetatrK[],                              PrintAs -> "\!\(\*SubscriptBox[\(\[ScriptCapitalL]\), \(\[Beta]\)]\)K"},
-    {LbetaexAb[-i, -j], Symmetric[{-i, -j}],  PrintAs -> "\!\(\*SubscriptBox[\(\[ScriptCapitalL]\), \(\[Beta]\)]\)\!\(\*OverscriptBox[\(A\), \(_\)]\)"},
-    {LbetaLt[i],                              PrintAs -> "\!\(\*SubscriptBox[\(\[ScriptCapitalL]\), \(\[Beta]\)]\)\!\(\*OverscriptBox[\(\[CapitalLambda]\), \(~\)]\)"},
-    {LbetaTheta[],                            PrintAs -> "\!\(\*SubscriptBox[\(\[ScriptCapitalL]\), \(\[Beta]\)]\)\[CapitalTheta]"},
-    {Lbetaalpha[],                            PrintAs -> "\!\(\*SubscriptBox[\(\[ScriptCapitalL]\), \(\[Beta]\)]\)\[Alpha]"},
-    {LbetaB[i],                               PrintAs -> "\!\(\*SubscriptBox[\(\[ScriptCapitalL]\), \(\[Beta]\)]\)B"}
+    {Lbetaphi[],                             PrintAs -> "\!\(\*SubscriptBox[\(\[ScriptCapitalL]\), \(\[Beta]\)]\)\[Phi]"},
+    {Lbetagamb[-i, -j], Symmetric[{-i, -j}], PrintAs -> "\!\(\*SubscriptBox[\(\[ScriptCapitalL]\), \(\[Beta]\)]\)\!\(\*OverscriptBox[\(\[Gamma]\), \(_\)]\)"},
+    {LbetatrK[],                             PrintAs -> "\!\(\*SubscriptBox[\(\[ScriptCapitalL]\), \(\[Beta]\)]\)K"},
+    {LbetaexAb[-i, -j], Symmetric[{-i, -j}], PrintAs -> "\!\(\*SubscriptBox[\(\[ScriptCapitalL]\), \(\[Beta]\)]\)\!\(\*OverscriptBox[\(A\), \(_\)]\)"},
+    {LbetaLt[i],                             PrintAs -> "\!\(\*SubscriptBox[\(\[ScriptCapitalL]\), \(\[Beta]\)]\)\!\(\*OverscriptBox[\(\[CapitalLambda]\), \(~\)]\)"},
+    {LbetaTheta[],                           PrintAs -> "\!\(\*SubscriptBox[\(\[ScriptCapitalL]\), \(\[Beta]\)]\)\[CapitalTheta]"},
+    {Lbetaalpha[],                           PrintAs -> "\!\(\*SubscriptBox[\(\[ScriptCapitalL]\), \(\[Beta]\)]\)\[Alpha]"},
+    {LbetaB[i],                              PrintAs -> "\!\(\*SubscriptBox[\(\[ScriptCapitalL]\), \(\[Beta]\)]\)B"}
   ];
 
 (* Matter *)
 
 MatterVarlist =
   TempTensors[
-    {rho[], PrintAs -> "\[Rho]"},
-    {Sm[-i], PrintAs -> "S"},
+    {rho[],                           PrintAs -> "\[Rho]"},
+    {Sm[-i],                          PrintAs -> "S"},
     {Ss[-i, -j], Symmetric[{-i, -j}], PrintAs -> "S"},
-    {trSs[], PrintAs -> "S"}
+    {trSs[],                          PrintAs -> "S"}
   ];
 
 (* Constraints *)
@@ -212,7 +204,7 @@ dAtUUVarlist =
 ConstraintVarlist =
   GridTensors[
     {ZtC[i], PrintAs -> "\!\(\*OverscriptBox[\(Z\), \(~\)]\)"},
-    {HC[], PrintAs -> "H"},
+    {HC[],   PrintAs -> "H"},
     {MtC[i], PrintAs -> "\!\(\*OverscriptBox[\(M\), \(~\)]\)"}
   ];
 

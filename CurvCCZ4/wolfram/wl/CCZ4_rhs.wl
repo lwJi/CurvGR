@@ -12,13 +12,6 @@
 
 (****************)
 
-(*
-
-SetEQN[ddeps[k_, l_, i_, j_], eOSco[i, m] eOSco[j, n] ddepsO[k, l, -m, -n] + deOSco[k, i, m] eOSco[j, n] depsO[l, -m, -n] + eOSco[i, m] deOSco[k, j, n] depsO[l, -m, -n] + deOSco[l, i, m] eOSco[j, n] depsO[k, -m, -n] + eOSco[i, m] deOSco[l, j, n] depsO[k, -m, -n] + (ddeOSco[k, l, i, m] eOSco[j, n] + eOSco[i, m] ddeOSco[k, l, j, n] + deOSco[k, i, m] deOSco[l, j, n] + deOSco[l, i, m] deOSco[k, j, n]) epsO[-m, -n]];
-
-SetEQN[ddbeta[k_, l_, i_], eOSvt[i, -j] ddbetaO[k, l, j] + deOSvt[k, i, -j] dbetaO[l, j] + deOSvt[l, i, -j] dbetaO[k, j] + ddeOSvt[k, l, i, -j] betaO[j]];
-*)
-
 SetEQN[gamb[i_, j_], gamh[i, j] + eps[i, j]];
 
 SetEQN[dgamb[k_, i_, j_], dgamh[k, i, j] + deps[k, i, j]];
