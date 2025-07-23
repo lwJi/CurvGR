@@ -55,6 +55,10 @@ SetEQNDelayed[beta[i_], beta[i] // SeparateBasis[Osph] // TraceBasisDummy // ToV
 SetEQNDelayed[B[i_], B[i] // SeparateBasis[Osph] // TraceBasisDummy // ToValues];
 
 SetEQNDelayed[deps[k_, i_, j_], PDsph[k][eps[i, j] // SeparateBasis[Osph] // TraceBasisDummy // ToValues] /. dOsphRules];
+SetEQNDelayed[dexAb[k_, i_, j_], PDsph[k][exAb[i, j] // SeparateBasis[Osph] // TraceBasisDummy // ToValues] /. dOsphRules];
+SetEQNDelayed[dLt[k_, i_], PDsph[k][Lt[i] // SeparateBasis[Osph] // TraceBasisDummy // ToValues] /. dOsphRules];
+SetEQNDelayed[dbeta[k_, i_], PDsph[k][beta[i] // SeparateBasis[Osph] // TraceBasisDummy // ToValues] /. dOsphRules];
+SetEQNDelayed[dB[k_, i_], PDsph[k][B[i] // SeparateBasis[Osph] // TraceBasisDummy // ToValues] /. dOsphRules];
 
 (******************)
 (* Print to Files *)

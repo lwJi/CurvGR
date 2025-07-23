@@ -303,271 +303,271 @@ depsOsph333*Power(R,2)*Power(Sin(T),2)
 const auto
 dexAb111
 =
-dexAb$RHS(List(1,-sph),List(1,-sph),List(1,-sph))
+dexAbOsph111
 ;
 
 const auto
 dexAb112
 =
-dexAb$RHS(List(1,-sph),List(1,-sph),List(2,-sph))
+dexAbOsph112*R + exAbOsph12[ijk]
 ;
 
 const auto
 dexAb113
 =
-dexAb$RHS(List(1,-sph),List(1,-sph),List(3,-sph))
+(dexAbOsph113*R + exAbOsph13[ijk])*Sin(T)
 ;
 
 const auto
 dexAb122
 =
-dexAb$RHS(List(1,-sph),List(2,-sph),List(2,-sph))
+R*(dexAbOsph122*R + 2*exAbOsph22[ijk])
 ;
 
 const auto
 dexAb123
 =
-dexAb$RHS(List(1,-sph),List(2,-sph),List(3,-sph))
+R*(dexAbOsph123*R + 2*exAbOsph23[ijk])*Sin(T)
 ;
 
 const auto
 dexAb133
 =
-dexAb$RHS(List(1,-sph),List(3,-sph),List(3,-sph))
+R*(dexAbOsph133*R + 2*exAbOsph33[ijk])*Power(Sin(T),2)
 ;
 
 const auto
 dexAb211
 =
-dexAb$RHS(List(2,-sph),List(1,-sph),List(1,-sph))
+dexAbOsph211
 ;
 
 const auto
 dexAb212
 =
-dexAb$RHS(List(2,-sph),List(1,-sph),List(2,-sph))
+dexAbOsph212*R
 ;
 
 const auto
 dexAb213
 =
-dexAb$RHS(List(2,-sph),List(1,-sph),List(3,-sph))
+R*(Cos(T)*exAbOsph13[ijk] + dexAbOsph213*Sin(T))
 ;
 
 const auto
 dexAb222
 =
-dexAb$RHS(List(2,-sph),List(2,-sph),List(2,-sph))
+dexAbOsph222*Power(R,2)
 ;
 
 const auto
 dexAb223
 =
-dexAb$RHS(List(2,-sph),List(2,-sph),List(3,-sph))
+Power(R,2)*(Cos(T)*exAbOsph23[ijk] + dexAbOsph223*Sin(T))
 ;
 
 const auto
 dexAb233
 =
-dexAb$RHS(List(2,-sph),List(3,-sph),List(3,-sph))
+Power(R,2)*Sin(T)*(2*Cos(T)*exAbOsph33[ijk] + dexAbOsph233*Sin(T))
 ;
 
 const auto
 dexAb311
 =
-dexAb$RHS(List(3,-sph),List(1,-sph),List(1,-sph))
+dexAbOsph311
 ;
 
 const auto
 dexAb312
 =
-dexAb$RHS(List(3,-sph),List(1,-sph),List(2,-sph))
+dexAbOsph312*R
 ;
 
 const auto
 dexAb313
 =
-dexAb$RHS(List(3,-sph),List(1,-sph),List(3,-sph))
+dexAbOsph313*R*Sin(T)
 ;
 
 const auto
 dexAb322
 =
-dexAb$RHS(List(3,-sph),List(2,-sph),List(2,-sph))
+dexAbOsph322*Power(R,2)
 ;
 
 const auto
 dexAb323
 =
-dexAb$RHS(List(3,-sph),List(2,-sph),List(3,-sph))
+dexAbOsph323*Power(R,2)*Sin(T)
 ;
 
 const auto
 dexAb333
 =
-dexAb$RHS(List(3,-sph),List(3,-sph),List(3,-sph))
+dexAbOsph333*Power(R,2)*Power(Sin(T),2)
 ;
 
 const auto
 dLt11
 =
-dLt$RHS(List(1,-sph),List(1,sph))
+dLtOsph11
 ;
 
 const auto
 dLt12
 =
-dLt$RHS(List(1,-sph),List(2,sph))
+(dLtOsph12*R - LtOsph2[ijk])/Power(R,2)
 ;
 
 const auto
 dLt13
 =
-dLt$RHS(List(1,-sph),List(3,sph))
+(Csc(T)*(dLtOsph13*R - LtOsph3[ijk]))/Power(R,2)
 ;
 
 const auto
 dLt21
 =
-dLt$RHS(List(2,-sph),List(1,sph))
+dLtOsph21
 ;
 
 const auto
 dLt22
 =
-dLt$RHS(List(2,-sph),List(2,sph))
+dLtOsph22/R
 ;
 
 const auto
 dLt23
 =
-dLt$RHS(List(2,-sph),List(3,sph))
+(Csc(T)*(dLtOsph23 - Cot(T)*LtOsph3[ijk]))/R
 ;
 
 const auto
 dLt31
 =
-dLt$RHS(List(3,-sph),List(1,sph))
+dLtOsph31
 ;
 
 const auto
 dLt32
 =
-dLt$RHS(List(3,-sph),List(2,sph))
+dLtOsph32/R
 ;
 
 const auto
 dLt33
 =
-dLt$RHS(List(3,-sph),List(3,sph))
+(dLtOsph33*Csc(T))/R
 ;
 
 const auto
 dbeta11
 =
-dbeta$RHS(List(1,-sph),List(1,sph))
+dbetaOsph11
 ;
 
 const auto
 dbeta12
 =
-dbeta$RHS(List(1,-sph),List(2,sph))
+(dbetaOsph12*R - betaOsph2[ijk])/Power(R,2)
 ;
 
 const auto
 dbeta13
 =
-dbeta$RHS(List(1,-sph),List(3,sph))
+(Csc(T)*(dbetaOsph13*R - betaOsph3[ijk]))/Power(R,2)
 ;
 
 const auto
 dbeta21
 =
-dbeta$RHS(List(2,-sph),List(1,sph))
+dbetaOsph21
 ;
 
 const auto
 dbeta22
 =
-dbeta$RHS(List(2,-sph),List(2,sph))
+dbetaOsph22/R
 ;
 
 const auto
 dbeta23
 =
-dbeta$RHS(List(2,-sph),List(3,sph))
+(Csc(T)*(dbetaOsph23 - Cot(T)*betaOsph3[ijk]))/R
 ;
 
 const auto
 dbeta31
 =
-dbeta$RHS(List(3,-sph),List(1,sph))
+dbetaOsph31
 ;
 
 const auto
 dbeta32
 =
-dbeta$RHS(List(3,-sph),List(2,sph))
+dbetaOsph32/R
 ;
 
 const auto
 dbeta33
 =
-dbeta$RHS(List(3,-sph),List(3,sph))
+(dbetaOsph33*Csc(T))/R
 ;
 
 const auto
 dB11
 =
-dB$RHS(List(1,-sph),List(1,sph))
+dBOsph11
 ;
 
 const auto
 dB12
 =
-dB$RHS(List(1,-sph),List(2,sph))
+(dBOsph12*R - BOsph2[ijk])/Power(R,2)
 ;
 
 const auto
 dB13
 =
-dB$RHS(List(1,-sph),List(3,sph))
+(Csc(T)*(dBOsph13*R - BOsph3[ijk]))/Power(R,2)
 ;
 
 const auto
 dB21
 =
-dB$RHS(List(2,-sph),List(1,sph))
+dBOsph21
 ;
 
 const auto
 dB22
 =
-dB$RHS(List(2,-sph),List(2,sph))
+dBOsph22/R
 ;
 
 const auto
 dB23
 =
-dB$RHS(List(2,-sph),List(3,sph))
+(Csc(T)*(dBOsph23 - Cot(T)*BOsph3[ijk]))/R
 ;
 
 const auto
 dB31
 =
-dB$RHS(List(3,-sph),List(1,sph))
+dBOsph31
 ;
 
 const auto
 dB32
 =
-dB$RHS(List(3,-sph),List(2,sph))
+dBOsph32/R
 ;
 
 const auto
 dB33
 =
-dB$RHS(List(3,-sph),List(3,sph))
+(dBOsph33*Csc(T))/R
 ;
 
 
