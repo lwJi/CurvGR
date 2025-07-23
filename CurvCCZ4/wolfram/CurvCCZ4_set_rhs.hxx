@@ -586,7 +586,7 @@ ddeps1112
 const auto
 ddeps1113
 =
-(2*depsOsph113 + ddepsOsph1113*R)*Sin(T)
+(2*depsOsph113 + ddepsOsph1113*R)*sinth
 ;
 
 const auto
@@ -598,13 +598,13 @@ R*(4*depsOsph122 + ddepsOsph1122*R) + 2*epsOsph22[ijk]
 const auto
 ddeps1123
 =
-(R*(4*depsOsph123 + ddepsOsph1123*R) + 2*epsOsph23[ijk])*Sin(T)
+sinth*(R*(4*depsOsph123 + ddepsOsph1123*R) + 2*epsOsph23[ijk])
 ;
 
 const auto
 ddeps1133
 =
-(R*(4*depsOsph133 + ddepsOsph1133*R) + 2*epsOsph33[ijk])*Power(Sin(T),2)
+Power(sinth,2)*(R*(4*depsOsph133 + ddepsOsph1133*R) + 2*epsOsph33[ijk])
 ;
 
 const auto
@@ -622,8 +622,8 @@ depsOsph212 + ddepsOsph1212*R
 const auto
 ddeps1213
 =
-depsOsph113*R*Cos(T) + Cos(T)*epsOsph13[ijk] +
-  (depsOsph213 + ddepsOsph1213*R)*Sin(T)
+costh*depsOsph113*R + (depsOsph213 + ddepsOsph1213*R)*sinth +
+  costh*epsOsph13[ijk]
 ;
 
 const auto
@@ -635,15 +635,15 @@ R*(2*depsOsph222 + ddepsOsph1222*R)
 const auto
 ddeps1223
 =
-R*(depsOsph123*R*Cos(T) + 2*Cos(T)*epsOsph23[ijk] +
-    (2*depsOsph223 + ddepsOsph1223*R)*Sin(T))
+R*(costh*depsOsph123*R + 2*depsOsph223*sinth + ddepsOsph1223*R*sinth +
+    2*costh*epsOsph23[ijk])
 ;
 
 const auto
 ddeps1233
 =
-R*Sin(T)*(2*depsOsph133*R*Cos(T) + 4*Cos(T)*epsOsph33[ijk] +
-    (2*depsOsph233 + ddepsOsph1233*R)*Sin(T))
+R*sinth*(2*costh*depsOsph133*R + 2*depsOsph233*sinth +
+    ddepsOsph1233*R*sinth + 4*costh*epsOsph33[ijk])
 ;
 
 const auto
@@ -661,7 +661,7 @@ depsOsph312 + ddepsOsph1312*R
 const auto
 ddeps1313
 =
-(depsOsph313 + ddepsOsph1313*R)*Sin(T)
+(depsOsph313 + ddepsOsph1313*R)*sinth
 ;
 
 const auto
@@ -673,13 +673,13 @@ R*(2*depsOsph322 + ddepsOsph1322*R)
 const auto
 ddeps1323
 =
-R*(2*depsOsph323 + ddepsOsph1323*R)*Sin(T)
+R*(2*depsOsph323 + ddepsOsph1323*R)*sinth
 ;
 
 const auto
 ddeps1333
 =
-R*(2*depsOsph333 + ddepsOsph1333*R)*Power(Sin(T),2)
+R*(2*depsOsph333 + ddepsOsph1333*R)*Power(sinth,2)
 ;
 
 const auto
@@ -697,7 +697,7 @@ ddepsOsph2212*R
 const auto
 ddeps2213
 =
-R*(2*depsOsph213*Cos(T) + ddepsOsph2213*Sin(T) - epsOsph13[ijk]*Sin(T))
+R*(2*costh*depsOsph213 + ddepsOsph2213*sinth - sinth*epsOsph13[ijk])
 ;
 
 const auto
@@ -709,15 +709,14 @@ ddepsOsph2222*Power(R,2)
 const auto
 ddeps2223
 =
-Power(R,2)*(2*depsOsph223*Cos(T) + ddepsOsph2223*Sin(T) -
-    epsOsph23[ijk]*Sin(T))
+Power(R,2)*(2*costh*depsOsph223 + ddepsOsph2223*sinth - sinth*epsOsph23[ijk])
 ;
 
 const auto
 ddeps2233
 =
-Power(R,2)*(2*Cos(2*T)*epsOsph33[ijk] +
-    Sin(T)*(4*depsOsph233*Cos(T) + ddepsOsph2233*Sin(T)))
+Power(R,2)*(sinth*(4*costh*depsOsph233 + ddepsOsph2233*sinth) +
+    2*(Power(costh,2) - Power(sinth,2))*epsOsph33[ijk])
 ;
 
 const auto
@@ -735,7 +734,7 @@ ddepsOsph2312*R
 const auto
 ddeps2313
 =
-R*(depsOsph313*Cos(T) + ddepsOsph2313*Sin(T))
+R*(costh*depsOsph313 + ddepsOsph2313*sinth)
 ;
 
 const auto
@@ -747,13 +746,13 @@ ddepsOsph2322*Power(R,2)
 const auto
 ddeps2323
 =
-Power(R,2)*(depsOsph323*Cos(T) + ddepsOsph2323*Sin(T))
+Power(R,2)*(costh*depsOsph323 + ddepsOsph2323*sinth)
 ;
 
 const auto
 ddeps2333
 =
-Power(R,2)*Sin(T)*(2*depsOsph333*Cos(T) + ddepsOsph2333*Sin(T))
+Power(R,2)*sinth*(2*costh*depsOsph333 + ddepsOsph2333*sinth)
 ;
 
 const auto
@@ -771,7 +770,7 @@ ddepsOsph3312*R
 const auto
 ddeps3313
 =
-ddepsOsph3313*R*Sin(T)
+ddepsOsph3313*R*sinth
 ;
 
 const auto
@@ -783,13 +782,13 @@ ddepsOsph3322*Power(R,2)
 const auto
 ddeps3323
 =
-ddepsOsph3323*Power(R,2)*Sin(T)
+ddepsOsph3323*Power(R,2)*sinth
 ;
 
 const auto
 ddeps3333
 =
-ddepsOsph3333*Power(R,2)*Power(Sin(T),2)
+ddepsOsph3333*Power(R,2)*Power(sinth,2)
 ;
 
 const auto
@@ -807,7 +806,7 @@ ddbeta112
 const auto
 ddbeta113
 =
-(Csc(T)*(R*(-2*dbetaOsph13 + ddbetaOsph113*R) + 2*betaOsph3[ijk]))/Power(R,3)
+(cscth*(R*(-2*dbetaOsph13 + ddbetaOsph113*R) + 2*betaOsph3[ijk]))/Power(R,3)
 ;
 
 const auto
@@ -825,8 +824,8 @@ ddbeta122
 const auto
 ddbeta123
 =
-(Csc(T)*(-dbetaOsph23 + ddbetaOsph123*R - dbetaOsph13*R*Cot(T) +
-      Cot(T)*betaOsph3[ijk]))/Power(R,2)
+-((cscth*(dbetaOsph23 + cotth*dbetaOsph13*R - ddbetaOsph123*R -
+        cotth*betaOsph3[ijk]))/Power(R,2))
 ;
 
 const auto
@@ -844,7 +843,7 @@ ddbeta132
 const auto
 ddbeta133
 =
-((-dbetaOsph33 + ddbetaOsph133*R)*Csc(T))/Power(R,2)
+(cscth*(-dbetaOsph33 + ddbetaOsph133*R))/Power(R,2)
 ;
 
 const auto
@@ -862,8 +861,8 @@ ddbetaOsph222/R
 const auto
 ddbeta223
 =
-(Csc(T)*(ddbetaOsph223 - 2*dbetaOsph23*Cot(T) +
-      (Power(Cot(T),2) + Power(Csc(T),2))*betaOsph3[ijk]))/R
+(cscth*(-2*cotth*dbetaOsph23 + ddbetaOsph223 +
+      (Power(cotth,2) + Power(cscth,2))*betaOsph3[ijk]))/R
 ;
 
 const auto
@@ -881,7 +880,7 @@ ddbetaOsph232/R
 const auto
 ddbeta233
 =
-((ddbetaOsph233 - dbetaOsph33*Cot(T))*Csc(T))/R
+(cscth*(-(cotth*dbetaOsph33) + ddbetaOsph233))/R
 ;
 
 const auto
@@ -899,7 +898,7 @@ ddbetaOsph332/R
 const auto
 ddbeta333
 =
-(ddbetaOsph333*Csc(T))/R
+(cscth*ddbetaOsph333)/R
 ;
 
 

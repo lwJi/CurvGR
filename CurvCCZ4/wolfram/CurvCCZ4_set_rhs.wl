@@ -34,6 +34,12 @@ ComponentValue[ra[], R];
 ComponentValue[th[], T];
 ComponentValue[ph[], P];
 
+trigrules = {
+  Sin[th[]] -> sinth,
+  Cos[th[]] -> costh,
+  Csc[th[]] -> cscth,
+  Cot[th[]] -> cotth
+};
 
 (**********************************)
 (* Define Variables and Equations *)
@@ -49,7 +55,7 @@ SetComponents[{ChartName -> Osph}, dtEvolVarlist];
 SetComponents[{ChartName -> Osph}, EvolVarlist];
 
 (* Basis transformation *)
-BasisTrans[sph, Osph];
+BasisTrans[sph, Osph, trigrules];
 
 (******************)
 (* Print to Files *)
