@@ -84,6 +84,7 @@ TmunuVarlist =
 
 (**************************)
 
+(*
 TetradVarlist =
   TempTensors[
     (*
@@ -100,6 +101,7 @@ dTetradVarlist =
     {ddgamhdet[-k, -l], Symmetric[{-k, -l}],    PrintAs -> "\[PartialD]\[PartialD]\!\(\*OverscriptBox[\(\[Gamma]\), \(^\)]\)"},
     {dGamh[-k, l, -i, -j], Symmetric[{-i, -j}], PrintAs -> "\[PartialD]\!\(\*OverscriptBox[\(\[CapitalGamma]\), \(^\)]\)"}
   ];
+*)
 
 IntermediateVarlist =
   TempTensors[
