@@ -43,6 +43,7 @@ ComponentValue[ph[], P];
 
 SetComponents[{ChartName -> Osph}, dtEvolVarlist];
 SetComponents[{ChartName -> Osph}, EvolVarlist];
+SetComponents[{ChartName -> Osph}, dEvolVarlist];
 
 (* Basis transformation *)
 
@@ -51,6 +52,8 @@ SetEQNDelayed[exAb[i_, j_], exAb[i, j] // SeparateBasis[Osph] // TraceBasisDummy
 SetEQNDelayed[Lt[i_], Lt[i] // SeparateBasis[Osph] // TraceBasisDummy // ToValues];
 SetEQNDelayed[beta[i_], beta[i] // SeparateBasis[Osph] // TraceBasisDummy // ToValues];
 SetEQNDelayed[B[i_], B[i] // SeparateBasis[Osph] // TraceBasisDummy // ToValues];
+
+SetEQNDelayed[deps[k_, i_, j_], PDsph[k][eps[i, j] // SeparateBasis[Osph] // TraceBasisDummy // ToValues]];
 
 (******************)
 (* Print to Files *)
@@ -83,6 +86,8 @@ SetMainPrint[
   *)
 
   PrintEquations[{Mode -> "Temp"}, EvolVarlist[[5;;-1]]];
+  pr[];
+  PrintEquations[{Mode -> "Temp"}, dEvolVarlist[[5;;-1]]];
   pr[];
 
   pr["  });"];
