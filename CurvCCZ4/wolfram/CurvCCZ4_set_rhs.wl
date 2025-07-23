@@ -28,9 +28,9 @@ DefBasis[Osph, TangentM3, {1, 2, 3}, BasisColor -> Red];
 
 SetBasisChange[CTensor[{{1, 0, 0}, {0, ra[], 0}, {0, 0, ra[] Sin[th[]]}}, {-sph, Osph}], sph];
 
-ComponentValue[ra[], cora];
-ComponentValue[th[], coth];
-ComponentValue[ph[], coph];
+ComponentValue[ra[], R];
+ComponentValue[th[], T];
+ComponentValue[ph[], P];
 
 
 (**********************************)
@@ -47,6 +47,10 @@ SetComponents[{ChartName -> Osph}, EvolVarlist];
 (* Basis transformation *)
 
 SetEQNDelayed[eps[i_, j_], eps[i, j] // SeparateBasis[Osph] // TraceBasisDummy // ToValues];
+SetEQNDelayed[exAb[i_, j_], exAb[i, j] // SeparateBasis[Osph] // TraceBasisDummy // ToValues];
+SetEQNDelayed[Lt[i_], Lt[i] // SeparateBasis[Osph] // TraceBasisDummy // ToValues];
+SetEQNDelayed[beta[i_], beta[i] // SeparateBasis[Osph] // TraceBasisDummy // ToValues];
+SetEQNDelayed[B[i_], B[i] // SeparateBasis[Osph] // TraceBasisDummy // ToValues];
 
 (******************)
 (* Print to Files *)
@@ -67,9 +71,9 @@ SetMainPrint[
   pr["  grid.nghostzones, [=] ARITH_DEVICE(const PointDesc &p) ARITH_INLINE {"];
   pr["const int ijk = layout2.linear(p.i, p.j, p.k);"];
   pr[];
-  pr["const auto coX = p.x;"];
-  pr["const auto coY = p.y;"];
-  pr["const auto coZ = p.z;"];
+  pr["const auto R = p.x;"];
+  pr["const auto T = p.y;"];
+  pr["const auto P = p.z;"];
   pr[];
 
   (*
