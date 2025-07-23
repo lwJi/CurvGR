@@ -571,6 +571,340 @@ dB33
 ;
 
 
+const auto
+ddeps1111
+=
+PDsph(List(1,-sph))(depsOsph111)
+;
+
+const auto
+ddeps1112
+=
+2*depsOsph112 + R*PDsph(List(1,-sph))(depsOsph112)
+;
+
+const auto
+ddeps1113
+=
+Sin(T)*(2*depsOsph113 + R*PDsph(List(1,-sph))(depsOsph113))
+;
+
+const auto
+ddeps1122
+=
+2*epsOsph22[ijk] + R*(4*depsOsph122 + R*PDsph(List(1,-sph))(depsOsph122))
+;
+
+const auto
+ddeps1123
+=
+Sin(T)*(2*epsOsph23[ijk] + R*(4*depsOsph123 +
+       R*PDsph(List(1,-sph))(depsOsph123)))
+;
+
+const auto
+ddeps1133
+=
+Power(Sin(T),2)*(2*epsOsph33[ijk] +
+    R*(4*depsOsph133 + R*PDsph(List(1,-sph))(depsOsph133)))
+;
+
+const auto
+ddeps1211
+=
+PDsph(List(1,-sph))(depsOsph211)
+;
+
+const auto
+ddeps1212
+=
+depsOsph212 + R*PDsph(List(1,-sph))(depsOsph212)
+;
+
+const auto
+ddeps1213
+=
+Cos(T)*(depsOsph113*R + epsOsph13[ijk]) + depsOsph213*Sin(T) +
+  R*Sin(T)*PDsph(List(1,-sph))(depsOsph213)
+;
+
+const auto
+ddeps1222
+=
+R*(2*depsOsph222 + R*PDsph(List(1,-sph))(depsOsph222))
+;
+
+const auto
+ddeps1223
+=
+R*(depsOsph123*R*Cos(T) + 2*Cos(T)*epsOsph23[ijk] + 2*depsOsph223*Sin(T) +
+    R*Sin(T)*PDsph(List(1,-sph))(depsOsph223))
+;
+
+const auto
+ddeps1233
+=
+R*Sin(T)*(2*depsOsph133*R*Cos(T) + 4*Cos(T)*epsOsph33[ijk] +
+    2*depsOsph233*Sin(T) + R*Sin(T)*PDsph(List(1,-sph))(depsOsph233))
+;
+
+const auto
+ddeps1311
+=
+PDsph(List(1,-sph))(depsOsph311)
+;
+
+const auto
+ddeps1312
+=
+depsOsph312 + R*PDsph(List(1,-sph))(depsOsph312)
+;
+
+const auto
+ddeps1313
+=
+Sin(T)*(depsOsph313 + R*PDsph(List(1,-sph))(depsOsph313))
+;
+
+const auto
+ddeps1322
+=
+R*(2*depsOsph322 + R*PDsph(List(1,-sph))(depsOsph322))
+;
+
+const auto
+ddeps1323
+=
+R*Sin(T)*(2*depsOsph323 + R*PDsph(List(1,-sph))(depsOsph323))
+;
+
+const auto
+ddeps1333
+=
+R*Power(Sin(T),2)*(2*depsOsph333 + R*PDsph(List(1,-sph))(depsOsph333))
+;
+
+const auto
+ddeps2211
+=
+PDsph(List(2,-sph))(depsOsph211)
+;
+
+const auto
+ddeps2212
+=
+R*PDsph(List(2,-sph))(depsOsph212)
+;
+
+const auto
+ddeps2213
+=
+R*(2*depsOsph213*Cos(T) - epsOsph13[ijk]*Sin(T) +
+    Sin(T)*PDsph(List(2,-sph))(depsOsph213))
+;
+
+const auto
+ddeps2222
+=
+Power(R,2)*PDsph(List(2,-sph))(depsOsph222)
+;
+
+const auto
+ddeps2223
+=
+Power(R,2)*(2*depsOsph223*Cos(T) - epsOsph23[ijk]*Sin(T) +
+    Sin(T)*PDsph(List(2,-sph))(depsOsph223))
+;
+
+const auto
+ddeps2233
+=
+Power(R,2)*(2*Cos(2*T)*epsOsph33[ijk] +
+    Sin(T)*(4*depsOsph233*Cos(T) + Sin(T)*PDsph(List(2,-sph))(depsOsph233)))
+;
+
+const auto
+ddeps2311
+=
+PDsph(List(2,-sph))(depsOsph311)
+;
+
+const auto
+ddeps2312
+=
+R*PDsph(List(2,-sph))(depsOsph312)
+;
+
+const auto
+ddeps2313
+=
+R*(depsOsph313*Cos(T) + Sin(T)*PDsph(List(2,-sph))(depsOsph313))
+;
+
+const auto
+ddeps2322
+=
+Power(R,2)*PDsph(List(2,-sph))(depsOsph322)
+;
+
+const auto
+ddeps2323
+=
+Power(R,2)*(depsOsph323*Cos(T) + Sin(T)*PDsph(List(2,-sph))(depsOsph323))
+;
+
+const auto
+ddeps2333
+=
+Power(R,2)*Sin(T)*(2*depsOsph333*Cos(T) +
+    Sin(T)*PDsph(List(2,-sph))(depsOsph333))
+;
+
+const auto
+ddeps3311
+=
+PDsph(List(3,-sph))(depsOsph311)
+;
+
+const auto
+ddeps3312
+=
+R*PDsph(List(3,-sph))(depsOsph312)
+;
+
+const auto
+ddeps3313
+=
+R*Sin(T)*PDsph(List(3,-sph))(depsOsph313)
+;
+
+const auto
+ddeps3322
+=
+Power(R,2)*PDsph(List(3,-sph))(depsOsph322)
+;
+
+const auto
+ddeps3323
+=
+Power(R,2)*Sin(T)*PDsph(List(3,-sph))(depsOsph323)
+;
+
+const auto
+ddeps3333
+=
+Power(R,2)*Power(Sin(T),2)*PDsph(List(3,-sph))(depsOsph333)
+;
+
+const auto
+ddbeta111
+=
+ddbeta$RHS(List(1,-sph),List(1,-sph),List(1,sph))
+;
+
+const auto
+ddbeta112
+=
+ddbeta$RHS(List(1,-sph),List(1,-sph),List(2,sph))
+;
+
+const auto
+ddbeta113
+=
+ddbeta$RHS(List(1,-sph),List(1,-sph),List(3,sph))
+;
+
+const auto
+ddbeta121
+=
+ddbeta$RHS(List(1,-sph),List(2,-sph),List(1,sph))
+;
+
+const auto
+ddbeta122
+=
+ddbeta$RHS(List(1,-sph),List(2,-sph),List(2,sph))
+;
+
+const auto
+ddbeta123
+=
+ddbeta$RHS(List(1,-sph),List(2,-sph),List(3,sph))
+;
+
+const auto
+ddbeta131
+=
+ddbeta$RHS(List(1,-sph),List(3,-sph),List(1,sph))
+;
+
+const auto
+ddbeta132
+=
+ddbeta$RHS(List(1,-sph),List(3,-sph),List(2,sph))
+;
+
+const auto
+ddbeta133
+=
+ddbeta$RHS(List(1,-sph),List(3,-sph),List(3,sph))
+;
+
+const auto
+ddbeta221
+=
+ddbeta$RHS(List(2,-sph),List(2,-sph),List(1,sph))
+;
+
+const auto
+ddbeta222
+=
+ddbeta$RHS(List(2,-sph),List(2,-sph),List(2,sph))
+;
+
+const auto
+ddbeta223
+=
+ddbeta$RHS(List(2,-sph),List(2,-sph),List(3,sph))
+;
+
+const auto
+ddbeta231
+=
+ddbeta$RHS(List(2,-sph),List(3,-sph),List(1,sph))
+;
+
+const auto
+ddbeta232
+=
+ddbeta$RHS(List(2,-sph),List(3,-sph),List(2,sph))
+;
+
+const auto
+ddbeta233
+=
+ddbeta$RHS(List(2,-sph),List(3,-sph),List(3,sph))
+;
+
+const auto
+ddbeta331
+=
+ddbeta$RHS(List(3,-sph),List(3,-sph),List(1,sph))
+;
+
+const auto
+ddbeta332
+=
+ddbeta$RHS(List(3,-sph),List(3,-sph),List(2,sph))
+;
+
+const auto
+ddbeta333
+=
+ddbeta$RHS(List(3,-sph),List(3,-sph),List(3,sph))
+;
+
+
   });
 });
 

@@ -63,10 +63,10 @@ dEvolVarlist =
 
 ddEvolVarlist =
   TileTensors[
-    {ddphi[-i, -j], Symmetric[{-i, -j}],                              PrintAs -> "\[PartialD]\[PartialD]\[Phi]"},
-    {ddepsO[-l, -m, -i, -j], GenSet[Cycles[{1, 2}], Cycles[{3, 4}]],  PrintAs -> "\[PartialD]\[PartialD]O\[Epsilon]"},
-    {ddalpha[-i, -j], Symmetric[{-i, -j}],                            PrintAs -> "\[PartialD]\[PartialD]\[Alpha]"},
-    {ddbetaO[-i, -j, k], Symmetric[{-i, -j}],                         PrintAs -> "\[PartialD]\[PartialD]O\[Beta]"}
+    {ddphi[-i, -j], Symmetric[{-i, -j}],                            PrintAs -> "\[PartialD]\[PartialD]\[Phi]"},
+    {ddalpha[-i, -j], Symmetric[{-i, -j}],                          PrintAs -> "\[PartialD]\[PartialD]\[Alpha]"},
+    {ddeps[-l, -m, -i, -j], GenSet[Cycles[{1, 2}], Cycles[{3, 4}]], PrintAs -> "\[PartialD]\[PartialD]\[Epsilon]"},
+    {ddbeta[-i, -j, k], Symmetric[{-i, -j}],                        PrintAs -> "\[PartialD]\[PartialD]\[Beta]"}
   ];
 
 TmunuVarlist =
@@ -106,14 +106,6 @@ dTetradVarlist =
 (* Intermediate Variables *)
 
 (**************************)
-
-TempdEvolVarlist =
-  TempTensors[
-    (* first *)
-    (* second *)
-    {ddeps[-l, -m, -i, -j], GenSet[Cycles[{1, 2}], Cycles[{3, 4}]], PrintAs -> "\[PartialD]\[PartialD]\[Epsilon]"},
-    {ddbeta[-i, -j, k], Symmetric[{-i, -j}],                        PrintAs -> "\[PartialD]\[PartialD]\[Beta]"}
-  ];
 
 IntermediateVarlist =
   TempTensors[

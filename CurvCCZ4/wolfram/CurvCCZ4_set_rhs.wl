@@ -85,6 +85,8 @@ SetMainPrint[
   pr[];
   PrintEquations[{Mode -> "Temp"}, dEvolVarlist[[5;;-1]]];
   pr[];
+  PrintEquations[{Mode -> "Temp"}, ddEvolVarlist[[3;;-1]]];
+  pr[];
 
   pr["  });"];
   pr["});"];
