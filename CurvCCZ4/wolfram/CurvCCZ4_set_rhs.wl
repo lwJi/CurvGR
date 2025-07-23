@@ -41,6 +41,8 @@ ComponentValue[ph[], P];
 
 <<wl/CCZ4_rhs.wl
 
+<<wl/Osph_rules.wl
+
 SetComponents[{ChartName -> Osph}, dtEvolVarlist];
 SetComponents[{ChartName -> Osph}, EvolVarlist];
 
@@ -52,7 +54,7 @@ SetEQNDelayed[Lt[i_], Lt[i] // SeparateBasis[Osph] // TraceBasisDummy // ToValue
 SetEQNDelayed[beta[i_], beta[i] // SeparateBasis[Osph] // TraceBasisDummy // ToValues];
 SetEQNDelayed[B[i_], B[i] // SeparateBasis[Osph] // TraceBasisDummy // ToValues];
 
-SetEQNDelayed[deps[k_, i_, j_], PDsph[k][eps[i, j] // SeparateBasis[Osph] // TraceBasisDummy // ToValues]];
+SetEQNDelayed[deps[k_, i_, j_], PDsph[k][eps[i, j] // SeparateBasis[Osph] // TraceBasisDummy // ToValues] /. dOsphRules];
 
 (******************)
 (* Print to Files *)

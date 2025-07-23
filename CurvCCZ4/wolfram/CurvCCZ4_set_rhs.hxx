@@ -195,111 +195,109 @@ B3[ijk]
 const auto
 deps111
 =
-PDsph(List(1,-sph))(epsOsph11[ijk])
+depsOsph111
 ;
 
 const auto
 deps112
 =
-epsOsph12[ijk] + R*PDsph(List(1,-sph))(epsOsph12[ijk])
+depsOsph112*R + epsOsph12[ijk]
 ;
 
 const auto
 deps113
 =
-Sin(T)*(epsOsph13[ijk] + R*PDsph(List(1,-sph))(epsOsph13[ijk]))
+(depsOsph113*R + epsOsph13[ijk])*Sin(T)
 ;
 
 const auto
 deps122
 =
-R*(2*epsOsph22[ijk] + R*PDsph(List(1,-sph))(epsOsph22[ijk]))
+R*(depsOsph122*R + 2*epsOsph22[ijk])
 ;
 
 const auto
 deps123
 =
-R*Sin(T)*(2*epsOsph23[ijk] + R*PDsph(List(1,-sph))(epsOsph23[ijk]))
+R*(depsOsph123*R + 2*epsOsph23[ijk])*Sin(T)
 ;
 
 const auto
 deps133
 =
-R*Power(Sin(T),2)*(2*epsOsph33[ijk] + R*PDsph(List(1,-sph))(epsOsph33[ijk]))
+R*(depsOsph133*R + 2*epsOsph33[ijk])*Power(Sin(T),2)
 ;
 
 const auto
 deps211
 =
-PDsph(List(2,-sph))(epsOsph11[ijk])
+depsOsph211
 ;
 
 const auto
 deps212
 =
-R*PDsph(List(2,-sph))(epsOsph12[ijk])
+depsOsph212*R
 ;
 
 const auto
 deps213
 =
-R*(Cos(T)*epsOsph13[ijk] + Sin(T)*PDsph(List(2,-sph))(epsOsph13[ijk]))
+R*(Cos(T)*epsOsph13[ijk] + depsOsph213*Sin(T))
 ;
 
 const auto
 deps222
 =
-Power(R,2)*PDsph(List(2,-sph))(epsOsph22[ijk])
+depsOsph222*Power(R,2)
 ;
 
 const auto
 deps223
 =
-Power(R,2)*(Cos(T)*epsOsph23[ijk] +
-    Sin(T)*PDsph(List(2,-sph))(epsOsph23[ijk]))
+Power(R,2)*(Cos(T)*epsOsph23[ijk] + depsOsph223*Sin(T))
 ;
 
 const auto
 deps233
 =
-Power(R,2)*Sin(T)*(2*Cos(T)*epsOsph33[ijk] +
-    Sin(T)*PDsph(List(2,-sph))(epsOsph33[ijk]))
+Power(R,2)*Sin(T)*(2*Cos(T)*epsOsph33[ijk] + depsOsph233*Sin(T))
 ;
 
 const auto
 deps311
 =
-PDsph(List(3,-sph))(epsOsph11[ijk])
+depsOsph311
 ;
 
 const auto
 deps312
 =
-R*PDsph(List(3,-sph))(epsOsph12[ijk])
+depsOsph312*R
 ;
 
 const auto
 deps313
 =
-R*Sin(T)*PDsph(List(3,-sph))(epsOsph13[ijk])
+depsOsph313*R*Sin(T)
 ;
 
 const auto
 deps322
 =
-Power(R,2)*PDsph(List(3,-sph))(epsOsph22[ijk])
+depsOsph322*Power(R,2)
 ;
 
 const auto
 deps323
 =
-Power(R,2)*Sin(T)*PDsph(List(3,-sph))(epsOsph23[ijk])
+depsOsph323*Power(R,2)*Sin(T)
 ;
 
 const auto
 deps333
 =
-Power(R,2)*Power(Sin(T),2)*PDsph(List(3,-sph))(epsOsph33[ijk])
+depsOsph333*Power(R,2)*Power(Sin(T),2)
 ;
 
 const auto
