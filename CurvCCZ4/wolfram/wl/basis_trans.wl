@@ -4,26 +4,31 @@
 
 (* (c) Liwei Ji, 07/2025 *)
 
+(* Replace PD with symbols: order matters *)
 dOrthRules[coord_, orth_] :=
   Flatten @
     Module[{TDDs = {"eps", "exAb"}, VUs = {"Lt", "beta", "B"}},
       {
-        (* 2 rank tensors: d_k T_{ij} *)
-        Table[PDOfBasis[coord][{kk, -coord}][ToExpression[TDDs[[vv]] <> ToString[orth] <> ToString[ii] <> ToString[jj] <> GetGridPointIndex[]]] ->
-                                      ToExpression["d" <> TDDs[[vv]] <> ToString[orth] <> ToString[kk] <> ToString[ii] <> ToString[jj] <> GetTilePointIndex[]],
-        {vv, 1, 2}, {kk, 1, 3}, {ii, 1, 3}, {jj, ii, 3}],
-        (* 2 rank tensors: d_k dT_{lij} *)
-        Table[PDOfBasis[coord][{kk, -coord}][ToExpression["d" <> TDDs[[vv]] <> ToString[orth] <> ToString[ll] <> ToString[ii] <> ToString[jj] <> GetGridPointIndex[]]] ->
-                                            ToExpression["dd" <> TDDs[[vv]] <> ToString[orth] <> ToString[kk] <> ToString[ll] <> ToString[ii] <> ToString[jj] <> GetTilePointIndex[]],
+        (* 2 rank tensors: d_k d_l T_{ij} *)
+        Table[PDOfBasis[coord][{kk, -coord}][PDOfBasis[coord][{ll, -coord}][
+                      ToExpression[TDDs[[vv]] <> ToString[orth] <> ToString[ii] <> ToString[jj] <> GetGridPointIndex[]]]] ->
+              ToExpression["dd" <> TDDs[[vv]] <> ToString[orth] <> ToString[kk] <> ToString[ll] <> ToString[ii] <> ToString[jj] <> GetTilePointIndex[]],
         {vv, 1, 2}, {kk, 1, 3}, {ll, kk, 3}, {ii, 1, 3}, {jj, ii, 3}],
+        (* 2 rank tensors: d_k T_{ij} *)
+        Table[PDOfBasis[coord][{kk, -coord}][
+                     ToExpression[TDDs[[vv]] <> ToString[orth] <> ToString[ii] <> ToString[jj] <> GetGridPointIndex[]]] ->
+              ToExpression["d" <> TDDs[[vv]] <> ToString[orth] <> ToString[kk] <> ToString[ii] <> ToString[jj] <> GetTilePointIndex[]],
+        {vv, 1, 2}, {kk, 1, 3}, {ii, 1, 3}, {jj, ii, 3}],
+        (* 1 rank vectors: d_k d_l V_i *)
+        Table[PDOfBasis[coord][{kk, -coord}][PDOfBasis[coord][{ll, -coord}][
+                      ToExpression[VUs[[vv]] <> ToString[orth] <> ToString[ii] <> GetGridPointIndex[]]]] ->
+              ToExpression["dd" <> VUs[[vv]] <> ToString[orth] <> ToString[kk] <> ToString[ll] <> ToString[ii] <> GetTilePointIndex[]],
+        {vv, 1, 3}, {kk, 1, 3}, {ll, kk, 3}, {ii, 1, 3}],
         (* 1 rank vectors: d_k V_i *)
-        Table[PDOfBasis[coord][{kk, -coord}][ToExpression[VUs[[vv]] <> ToString[orth] <> ToString[ii] <> GetGridPointIndex[]]] ->
-                                      ToExpression["d" <> VUs[[vv]] <> ToString[orth] <> ToString[kk] <> ToString[ii] <> GetTilePointIndex[]],
-        {vv, 1, 3}, {kk, 1, 3}, {ii, 1, 3}],
-        (* 1 rank vectors: d_k dV_{li} *)
-        Table[PDOfBasis[coord][{kk, -coord}][ToExpression["d" <> VUs[[vv]] <> ToString[orth] <> ToString[ll] <> ToString[ii] <> GetGridPointIndex[]]] ->
-                                            ToExpression["dd" <> VUs[[vv]] <> ToString[orth] <> ToString[kk] <> ToString[ll] <> ToString[ii] <> GetTilePointIndex[]],
-        {vv, 1, 3}, {kk, 1, 3}, {ll, kk, 3}, {ii, 1, 3}]
+        Table[PDOfBasis[coord][{kk, -coord}][
+                     ToExpression[VUs[[vv]] <> ToString[orth] <> ToString[ii] <> GetGridPointIndex[]]] ->
+              ToExpression["d" <> VUs[[vv]] <> ToString[orth] <> ToString[kk] <> ToString[ii] <> GetTilePointIndex[]],
+        {vv, 1, 3}, {kk, 1, 3}, {ii, 1, 3}]
       }
     ];
 

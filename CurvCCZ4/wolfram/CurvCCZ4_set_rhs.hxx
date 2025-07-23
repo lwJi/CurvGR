@@ -574,226 +574,222 @@ dB33
 const auto
 ddeps1111
 =
-PDsph(List(1,-sph))(depsOsph111)
+ddepsOsph1111
 ;
 
 const auto
 ddeps1112
 =
-2*depsOsph112 + R*PDsph(List(1,-sph))(depsOsph112)
+2*depsOsph112 + ddepsOsph1112*R
 ;
 
 const auto
 ddeps1113
 =
-Sin(T)*(2*depsOsph113 + R*PDsph(List(1,-sph))(depsOsph113))
+(2*depsOsph113 + ddepsOsph1113*R)*Sin(T)
 ;
 
 const auto
 ddeps1122
 =
-2*epsOsph22[ijk] + R*(4*depsOsph122 + R*PDsph(List(1,-sph))(depsOsph122))
+R*(4*depsOsph122 + ddepsOsph1122*R) + 2*epsOsph22[ijk]
 ;
 
 const auto
 ddeps1123
 =
-Sin(T)*(2*epsOsph23[ijk] + R*(4*depsOsph123 +
-       R*PDsph(List(1,-sph))(depsOsph123)))
+(R*(4*depsOsph123 + ddepsOsph1123*R) + 2*epsOsph23[ijk])*Sin(T)
 ;
 
 const auto
 ddeps1133
 =
-Power(Sin(T),2)*(2*epsOsph33[ijk] +
-    R*(4*depsOsph133 + R*PDsph(List(1,-sph))(depsOsph133)))
+(R*(4*depsOsph133 + ddepsOsph1133*R) + 2*epsOsph33[ijk])*Power(Sin(T),2)
 ;
 
 const auto
 ddeps1211
 =
-PDsph(List(1,-sph))(depsOsph211)
+ddepsOsph1211
 ;
 
 const auto
 ddeps1212
 =
-depsOsph212 + R*PDsph(List(1,-sph))(depsOsph212)
+depsOsph212 + ddepsOsph1212*R
 ;
 
 const auto
 ddeps1213
 =
-Cos(T)*(depsOsph113*R + epsOsph13[ijk]) + depsOsph213*Sin(T) +
-  R*Sin(T)*PDsph(List(1,-sph))(depsOsph213)
+depsOsph113*R*Cos(T) + Cos(T)*epsOsph13[ijk] +
+  (depsOsph213 + ddepsOsph1213*R)*Sin(T)
 ;
 
 const auto
 ddeps1222
 =
-R*(2*depsOsph222 + R*PDsph(List(1,-sph))(depsOsph222))
+R*(2*depsOsph222 + ddepsOsph1222*R)
 ;
 
 const auto
 ddeps1223
 =
-R*(depsOsph123*R*Cos(T) + 2*Cos(T)*epsOsph23[ijk] + 2*depsOsph223*Sin(T) +
-    R*Sin(T)*PDsph(List(1,-sph))(depsOsph223))
+R*(depsOsph123*R*Cos(T) + 2*Cos(T)*epsOsph23[ijk] +
+    (2*depsOsph223 + ddepsOsph1223*R)*Sin(T))
 ;
 
 const auto
 ddeps1233
 =
 R*Sin(T)*(2*depsOsph133*R*Cos(T) + 4*Cos(T)*epsOsph33[ijk] +
-    2*depsOsph233*Sin(T) + R*Sin(T)*PDsph(List(1,-sph))(depsOsph233))
+    (2*depsOsph233 + ddepsOsph1233*R)*Sin(T))
 ;
 
 const auto
 ddeps1311
 =
-PDsph(List(1,-sph))(depsOsph311)
+ddepsOsph1311
 ;
 
 const auto
 ddeps1312
 =
-depsOsph312 + R*PDsph(List(1,-sph))(depsOsph312)
+depsOsph312 + ddepsOsph1312*R
 ;
 
 const auto
 ddeps1313
 =
-Sin(T)*(depsOsph313 + R*PDsph(List(1,-sph))(depsOsph313))
+(depsOsph313 + ddepsOsph1313*R)*Sin(T)
 ;
 
 const auto
 ddeps1322
 =
-R*(2*depsOsph322 + R*PDsph(List(1,-sph))(depsOsph322))
+R*(2*depsOsph322 + ddepsOsph1322*R)
 ;
 
 const auto
 ddeps1323
 =
-R*Sin(T)*(2*depsOsph323 + R*PDsph(List(1,-sph))(depsOsph323))
+R*(2*depsOsph323 + ddepsOsph1323*R)*Sin(T)
 ;
 
 const auto
 ddeps1333
 =
-R*Power(Sin(T),2)*(2*depsOsph333 + R*PDsph(List(1,-sph))(depsOsph333))
+R*(2*depsOsph333 + ddepsOsph1333*R)*Power(Sin(T),2)
 ;
 
 const auto
 ddeps2211
 =
-PDsph(List(2,-sph))(depsOsph211)
+ddepsOsph2211
 ;
 
 const auto
 ddeps2212
 =
-R*PDsph(List(2,-sph))(depsOsph212)
+ddepsOsph2212*R
 ;
 
 const auto
 ddeps2213
 =
-R*(2*depsOsph213*Cos(T) - epsOsph13[ijk]*Sin(T) +
-    Sin(T)*PDsph(List(2,-sph))(depsOsph213))
+R*(2*depsOsph213*Cos(T) + ddepsOsph2213*Sin(T) - epsOsph13[ijk]*Sin(T))
 ;
 
 const auto
 ddeps2222
 =
-Power(R,2)*PDsph(List(2,-sph))(depsOsph222)
+ddepsOsph2222*Power(R,2)
 ;
 
 const auto
 ddeps2223
 =
-Power(R,2)*(2*depsOsph223*Cos(T) - epsOsph23[ijk]*Sin(T) +
-    Sin(T)*PDsph(List(2,-sph))(depsOsph223))
+Power(R,2)*(2*depsOsph223*Cos(T) + ddepsOsph2223*Sin(T) -
+    epsOsph23[ijk]*Sin(T))
 ;
 
 const auto
 ddeps2233
 =
 Power(R,2)*(2*Cos(2*T)*epsOsph33[ijk] +
-    Sin(T)*(4*depsOsph233*Cos(T) + Sin(T)*PDsph(List(2,-sph))(depsOsph233)))
+    Sin(T)*(4*depsOsph233*Cos(T) + ddepsOsph2233*Sin(T)))
 ;
 
 const auto
 ddeps2311
 =
-PDsph(List(2,-sph))(depsOsph311)
+ddepsOsph2311
 ;
 
 const auto
 ddeps2312
 =
-R*PDsph(List(2,-sph))(depsOsph312)
+ddepsOsph2312*R
 ;
 
 const auto
 ddeps2313
 =
-R*(depsOsph313*Cos(T) + Sin(T)*PDsph(List(2,-sph))(depsOsph313))
+R*(depsOsph313*Cos(T) + ddepsOsph2313*Sin(T))
 ;
 
 const auto
 ddeps2322
 =
-Power(R,2)*PDsph(List(2,-sph))(depsOsph322)
+ddepsOsph2322*Power(R,2)
 ;
 
 const auto
 ddeps2323
 =
-Power(R,2)*(depsOsph323*Cos(T) + Sin(T)*PDsph(List(2,-sph))(depsOsph323))
+Power(R,2)*(depsOsph323*Cos(T) + ddepsOsph2323*Sin(T))
 ;
 
 const auto
 ddeps2333
 =
-Power(R,2)*Sin(T)*(2*depsOsph333*Cos(T) +
-    Sin(T)*PDsph(List(2,-sph))(depsOsph333))
+Power(R,2)*Sin(T)*(2*depsOsph333*Cos(T) + ddepsOsph2333*Sin(T))
 ;
 
 const auto
 ddeps3311
 =
-PDsph(List(3,-sph))(depsOsph311)
+ddepsOsph3311
 ;
 
 const auto
 ddeps3312
 =
-R*PDsph(List(3,-sph))(depsOsph312)
+ddepsOsph3312*R
 ;
 
 const auto
 ddeps3313
 =
-R*Sin(T)*PDsph(List(3,-sph))(depsOsph313)
+ddepsOsph3313*R*Sin(T)
 ;
 
 const auto
 ddeps3322
 =
-Power(R,2)*PDsph(List(3,-sph))(depsOsph322)
+ddepsOsph3322*Power(R,2)
 ;
 
 const auto
 ddeps3323
 =
-Power(R,2)*Sin(T)*PDsph(List(3,-sph))(depsOsph323)
+ddepsOsph3323*Power(R,2)*Sin(T)
 ;
 
 const auto
 ddeps3333
 =
-Power(R,2)*Power(Sin(T),2)*PDsph(List(3,-sph))(depsOsph333)
+ddepsOsph3333*Power(R,2)*Power(Sin(T),2)
 ;
 
 const auto
