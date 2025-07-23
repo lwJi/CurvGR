@@ -22,9 +22,9 @@ SetTempVariableType["auto"];
 
 DefManifold[M3, 3, IndexRange[a, z]];
 
-DefChart[Sph, M3, {1, 2, 3}, {rad[], th[], ph[]}, ChartColor -> Blue];
+DefChart[sph, M3, {1, 2, 3}, {rad[], th[], ph[]}, ChartColor -> Blue];
 
-DefChart[Orth, M3, {1, 2, 3}, {radO[], thO[], phO[]}, ChartColor -> Red];
+DefChart[Osph, M3, {1, 2, 3}, {radO[], thO[], phO[]}, ChartColor -> Red];
 
 ComponentValue[rad[], corad];
 ComponentValue[th[], coth];
@@ -39,8 +39,8 @@ ComponentValue[ph[], coph];
 
 <<wl/CCZ4_rhs.wl
 
-SetComponents[{ChartName -> Orth}, dtEvolVarlist];
-SetComponents[{ChartName -> Orth}, EvolVarlist];
+SetComponents[{ChartName -> Osph}, dtEvolVarlist];
+SetComponents[{ChartName -> Osph}, EvolVarlist];
 
 (******************)
 (* Print to Files *)
@@ -50,9 +50,9 @@ SetOutputFile[FileNameJoin[{Directory[], "CurvCCZ4_set_rhs.hxx"}]];
 
 SetMainPrint[
   (* Initialize grid function names *)
-  PrintInitializations[{Mode -> "MainOut", ChartName -> Orth}, dtEvolVarlist];
+  PrintInitializations[{Mode -> "MainOut", ChartName -> Osph}, dtEvolVarlist];
   pr[];
-  PrintInitializations[{Mode -> "MainIn", ChartName -> Orth}, EvolVarlist];
+  PrintInitializations[{Mode -> "MainIn", ChartName -> Osph}, EvolVarlist];
   pr[];
 
   (* Loops *)
