@@ -71,6 +71,169 @@ const auto coX = p.x;
 const auto coY = p.y;
 const auto coZ = p.z;
 
+const auto
+eps11[ijk]
+=
+epsOsph11[ijk]
+;
+
+const auto
+eps12[ijk]
+=
+corad*epsOsph12[ijk]
+;
+
+const auto
+eps13[ijk]
+=
+corad*epsOsph13[ijk]*Sin(coth)
+;
+
+const auto
+eps22[ijk]
+=
+Power(corad,2)*epsOsph22[ijk]
+;
+
+const auto
+eps23[ijk]
+=
+Power(corad,2)*epsOsph23[ijk]*Sin(coth)
+;
+
+const auto
+eps33[ijk]
+=
+Power(corad,2)*epsOsph33[ijk]*Power(Sin(coth),2)
+;
+
+const auto
+gamb11[ijk]
+=
+gamh11 + eps11[ijk]
+;
+
+const auto
+gamb12[ijk]
+=
+gamh12 + eps12[ijk]
+;
+
+const auto
+gamb13[ijk]
+=
+gamh13 + eps13[ijk]
+;
+
+const auto
+gamb22[ijk]
+=
+gamh22 + eps22[ijk]
+;
+
+const auto
+gamb23[ijk]
+=
+gamh23 + eps23[ijk]
+;
+
+const auto
+gamb33[ijk]
+=
+gamh33 + eps33[ijk]
+;
+
+const auto
+exAb11[ijk]
+=
+exAb$RHS(List(1,-sph),List(1,-sph))
+;
+
+const auto
+exAb12[ijk]
+=
+exAb$RHS(List(1,-sph),List(2,-sph))
+;
+
+const auto
+exAb13[ijk]
+=
+exAb$RHS(List(1,-sph),List(3,-sph))
+;
+
+const auto
+exAb22[ijk]
+=
+exAb$RHS(List(2,-sph),List(2,-sph))
+;
+
+const auto
+exAb23[ijk]
+=
+exAb$RHS(List(2,-sph),List(3,-sph))
+;
+
+const auto
+exAb33[ijk]
+=
+exAb$RHS(List(3,-sph),List(3,-sph))
+;
+
+const auto
+Lt1[ijk]
+=
+Lt$RHS(List(1,sph))
+;
+
+const auto
+Lt2[ijk]
+=
+Lt$RHS(List(2,sph))
+;
+
+const auto
+Lt3[ijk]
+=
+Lt$RHS(List(3,sph))
+;
+
+const auto
+beta1[ijk]
+=
+beta$RHS(List(1,sph))
+;
+
+const auto
+beta2[ijk]
+=
+beta$RHS(List(2,sph))
+;
+
+const auto
+beta3[ijk]
+=
+beta$RHS(List(3,sph))
+;
+
+const auto
+B1[ijk]
+=
+B$RHS(List(1,sph))
+;
+
+const auto
+B2[ijk]
+=
+B$RHS(List(2,sph))
+;
+
+const auto
+B3[ijk]
+=
+B$RHS(List(3,sph))
+;
+
+
   });
 });
 

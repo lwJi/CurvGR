@@ -34,7 +34,6 @@ EvolVarlist =
     {alpha[],                           PrintAs -> "\[Alpha]"},
     (* non-scalars *)
     {eps[-i, -j], Symmetric[{-i, -j}],  PrintAs -> "\[Epsilon]"},
-    {gamb[-i, -j], Symmetric[{-i, -j}], PrintAs -> "\!\(\*OverscriptBox[\(\[Gamma]\), \(_\)]\)"},
     {exAb[-i, -j], Symmetric[{-i, -j}], PrintAs -> "\!\(\*OverscriptBox[\(A\), \(_\)]\)"},
     {Lt[i],                             PrintAs -> "\!\(\*OverscriptBox[\(\[CapitalLambda]\), \(~\)]\)"},
     {beta[i],                           PrintAs -> "\[Beta]"},
@@ -122,6 +121,7 @@ TempdEvolVarlist =
 
 IntermediateVarlist =
   TempTensors[
+    {gamb[-i, -j], Symmetric[{-i, -j}],         PrintAs -> "\!\(\*OverscriptBox[\(\[Gamma]\), \(_\)]\)"},
     {psim4[],                                   PrintAs -> "\!\(\*SuperscriptBox[\(\[Psi]\), \(-4\)]\)"},
     {psi4[],                                    PrintAs -> "\!\(\*SuperscriptBox[\(\[Psi]\), \(4\)]\)"},
     {dgam[-k, -i, -j], Symmetric[{-i, -j}],     PrintAs -> "\[PartialD]\[Gamma]"},

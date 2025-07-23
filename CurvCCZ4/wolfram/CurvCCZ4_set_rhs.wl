@@ -22,11 +22,13 @@ SetTempVariableType["auto"];
 
 DefManifold[M3, 3, IndexRange[a, z]];
 
-DefChart[sph, M3, {1, 2, 3}, {rad[], th[], ph[]}, ChartColor -> Blue];
+DefChart[sph, M3, {1, 2, 3}, {ra[], th[], ph[]}, ChartColor -> Blue];
 
-DefChart[Osph, M3, {1, 2, 3}, {radO[], thO[], phO[]}, ChartColor -> Red];
+DefBasis[Osph, TangentM3, {1, 2, 3}, BasisColor -> Red];
 
-ComponentValue[rad[], corad];
+SetBasisChange[CTensor[{{1, 0, 0}, {0, ra[], 0}, {0, 0, ra[] Sin[th[]]}}, {-sph, Osph}], sph];
+
+ComponentValue[ra[], cora];
 ComponentValue[th[], coth];
 ComponentValue[ph[], coph];
 
@@ -41,6 +43,10 @@ ComponentValue[ph[], coph];
 
 SetComponents[{ChartName -> Osph}, dtEvolVarlist];
 SetComponents[{ChartName -> Osph}, EvolVarlist];
+
+(* Basis transformation *)
+
+SetEQNDelayed[eps[i_, j_], eps[i, j] // SeparateBasis[Osph] // TraceBasisDummy // ToValues];
 
 (******************)
 (* Print to Files *)
@@ -70,10 +76,10 @@ SetMainPrint[
   PrintInitializations[{Mode -> "Derivs", DerivsOrder -> 1},
                        dEvolVarlist];
   pr[];
-
-  PrintEquations[{Mode -> "Temp"}, IntermediateVarlist];
-  pr[];
   *)
+
+  PrintEquations[{Mode -> "Temp"}, EvolVarlist[[5;;-1]]];
+  pr[];
 
   pr["  });"];
   pr["});"];
