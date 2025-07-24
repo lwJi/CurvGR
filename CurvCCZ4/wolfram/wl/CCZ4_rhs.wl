@@ -36,6 +36,8 @@ SetEQN[Gam[k_, i_, j_], invgam[k, l] GamDDD[-l, i, j]];
 
 SetEQN[exAbUU[i_, j_], invgamb[i, k] invgamb[j, l] exAb[-k, -l]];
 
+(* \bar{D}, \bar{D}\bar{D} terms *)
+
 SetEQN[trbDbeta[], dbeta[-k, k] + beta[k] dgamhdet[-k] / (2 gamhdet[])];
 
 SetEQN[bDtrbDbeta[i_], ddbeta[i, -j, j] + 1 / (2 gamhdet[]) (beta[j] ddgamhdet[i, -j] - 1 / gamhdet[] beta[j] dgamhdet[i] dgamhdet[-j] + dbeta[i, j] dgamhdet[-j])];
@@ -43,6 +45,8 @@ SetEQN[bDtrbDbeta[i_], ddbeta[i, -j, j] + 1 / (2 gamhdet[]) (beta[j] ddgamhdet[i
 SetEQN[bDbDphi[i_, j_], ddphi[i, j] - Gamb[k, i, j] dphi[-k]];
 
 SetEQN[bDbDalpha[i_, j_], ddalpha[i, j] - Gamb[k, i, j] dalpha[-k]];
+
+(* \hat{D}, \hat{D}\hat{D} terms *)
 
 SetEQN[hDgamb[k_, i_, j_], deps[k, i, j] - Gamh[m, k, i] eps[j, -m] - Gamh[m, k, j] eps[i, -m]];
 
@@ -58,6 +62,8 @@ SetEQN[hDhDgamb[k_, l_, i_, j_], dhDgamb[k, l, i, j] - Gamh[m, k, l] hDgamb[-m, 
 
 SetEQN[hDhDbeta[i_, j_, k_], ddbeta[i, j, k] + dGamh[i, k, j, -m] beta[m] + (Gamh[k, -l, i] dbeta[j, l] + Gamh[k, -l, j] dbeta[i, l]) - Gamh[l, i, j] dbeta[-l, k] + (Gamh[k, i, -l] Gamh[l, j, -m] - Gamh[l, i, j] Gamh[k, -l, -m]) beta[m]];
 
+(* trace terms *)
+
 SetEQN[trexAb[], invgamb[k, l] exAb[-k, -l]];
 
 SetEQN[trbDbDphi[], invgamb[k, l] bDbDphi[-k, -l]];
@@ -66,15 +72,21 @@ SetEQN[trbDphibDphi[], invgamb[k, l] dphi[-k] dphi[-l]];
 
 SetEQN[trbDbDalpha[], invgamb[k, l] bDbDalpha[-k, -l]];
 
+(* \Delta\Gamma terms *)
+
 SetEQN[DGamDDD[k_, i_, j_], (hDgamb[i, j, k] + hDgamb[j, k, i] - hDgamb[k, i, j])];
 
 SetEQN[DGam[k_, i_, j_], invgamb[k, l] DGamDDD[-l, i, j]];
 
 SetEQN[trDGam[k_], invgamb[i, j] DGam[k, -i, -j]];
 
+(* Z terms *)
+
 SetEQN[ZU[i_], 1/2 psim4[] (Lt[i] - trDGam[i])];
 
 SetEQN[ZD[i_], gam[i, -j] ZU[j]];
+
+(* Ricci terms *)
 
 SetEQN[RZ[i_, j_], -4 (ZD[i] dphi[j] + ZD[j] dphi[i]) + (gam[-k, i] (Gam[k, j, -l] - Gamh[k, j, -l]) + gam[-k, j] (Gam[k, i, -l] - Gamh[k, i, -l])) ZU[l]];
 
@@ -157,3 +169,4 @@ SetEQN[dtalpha[], Lbetaalpha[] - 2 alpha[] (trK[] - 2 Theta[])];
 SetEQN[dtbeta[i_], B[i] + beta[k] hDbeta[-k, i]];
 
 SetEQN[dtB[i_], 3/4 (dtLt[i] - beta[k] hDLt[-k, i]) + beta[k] hDB[-k, i] - ceta B[i]];
+
