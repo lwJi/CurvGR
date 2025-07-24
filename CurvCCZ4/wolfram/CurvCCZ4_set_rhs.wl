@@ -142,6 +142,9 @@ SetMainPrint[
   PrintEquations[{Mode -> "Temp", ExtraReplaceRules -> trigrules}, RVarlist];
   pr[];
 
+  PrintEquations[{Mode -> "Temp", ExtraReplaceRules -> trigrules}, MatterVarlist];
+  pr[];
+
   PrintEquations[{Mode -> "Temp", ExtraReplaceRules -> trigrules}, LieVarlist];
   pr[];
 

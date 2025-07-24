@@ -3513,6 +3513,81 @@ Ralpha33 - (gamb33*(invgamb11*Ralpha11 + 2*invgamb12*Ralpha12 +
 
 
 const auto
+rho
+=
+(Power(beta1[ijk],2)*eT11[ijk] + Power(beta2[ijk],2)*eT22[ijk] +
+    Power(beta3[ijk],2)*eT33[ijk] +
+    2*beta1[ijk]*(beta2[ijk]*eT12[ijk] + beta3[ijk]*eT13[ijk] -
+       eTt1[ijk]) + 2*beta2[ijk]*(beta3[ijk]*eT23[ijk] - eTt2[ijk]) -
+    2*beta3[ijk]*eTt3[ijk] + eTtt[ijk])/Power(alpha[ijk],2)
+;
+
+const auto
+Sm1
+=
+(beta1[ijk]*eT11[ijk] + beta2[ijk]*eT12[ijk] + beta3[ijk]*eT13[ijk] -
+    eTt1[ijk])/alpha[ijk]
+;
+
+const auto
+Sm2
+=
+(beta1[ijk]*eT12[ijk] + beta2[ijk]*eT22[ijk] + beta3[ijk]*eT23[ijk] -
+    eTt2[ijk])/alpha[ijk]
+;
+
+const auto
+Sm3
+=
+(beta1[ijk]*eT13[ijk] + beta2[ijk]*eT23[ijk] + beta3[ijk]*eT33[ijk] -
+    eTt3[ijk])/alpha[ijk]
+;
+
+const auto
+Ss11
+=
+eT11[ijk]
+;
+
+const auto
+Ss12
+=
+eT12[ijk]
+;
+
+const auto
+Ss13
+=
+eT13[ijk]
+;
+
+const auto
+Ss22
+=
+eT22[ijk]
+;
+
+const auto
+Ss23
+=
+eT23[ijk]
+;
+
+const auto
+Ss33
+=
+eT33[ijk]
+;
+
+const auto
+trSs
+=
+invgam11*Ss11 + 2*invgam12*Ss12 + 2*invgam13*Ss13 + invgam22*Ss22 +
+  2*invgam23*Ss23 + invgam33*Ss33
+;
+
+
+const auto
 Lbetaphi
 =
 dphi1*beta1[ijk] + dphi2*beta2[ijk] + dphi3*beta3[ijk]

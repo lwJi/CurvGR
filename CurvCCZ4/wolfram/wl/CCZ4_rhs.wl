@@ -92,6 +92,26 @@ SetEQN[Ralpha[i_, j_], -bDbDalpha[i, j]];
 
 SetEQN[RalphaTF[i_, j_], Ralpha[i, j] - 1/3 gamb[i, j] invgamb[k, l] Ralpha[-k, -l]];
 
+(**********)
+
+(* Matter *)
+
+(**********)
+
+SetEQN[rho[], alpha[] ^ -2 (eTtt[] - 2 beta[j] eTt[-j] + beta[i] beta[j] eT[-i, -j])];
+
+SetEQN[Sm[i_], -alpha[] ^ -1 (eTt[i] - beta[k] eT[-k, i])];
+
+SetEQN[Ss[i_, j_], eT[i, j]];
+
+SetEQN[trSs[], invgam[k, l] Ss[-k, -l]];
+
+(*******************)
+
+(* Lie Derivatives *)
+
+(*******************)
+
 SetEQN[Lbetaphi[], beta[k] dphi[-k]];
 
 SetEQN[Lbetagamb[i_, j_], beta[k] dgamb[-k, i, j] + (gamb[i, -k] dbeta[j, k] + gamb[j, -k] dbeta[i, k])];
