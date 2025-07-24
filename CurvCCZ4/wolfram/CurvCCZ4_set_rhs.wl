@@ -22,8 +22,57 @@ SetTempVariableType["auto"];
 
 DefManifold[M3, 3, IndexRange[a, z]];
 
+(************************)
+(* Basis Transformation *)
+(************************)
+
 (* Default Chart *)
 DefChart[sph, M3, {1, 2, 3}, {ra[], th[], ph[]}, ChartColor -> Blue];
+
+(* Osphonormal Basis adapted to the Default Chart. *)
+DefBasis[Osph, TangentM3, {1, 2, 3}, BasisColor -> Red];
+
+SetBasisChange[CTensor[{{1, 0, 0}, {0, ra[], 0}, {0, 0, ra[] Sin[th[]]}}, {-sph, Osph}], sph];
+
+(****************************************************)
+(* Set Reference Metric related quantities directly *)
+(****************************************************)
+
+<<wl/reference_metric.wl
+
+DefMetric[1, gamh[-i, -j], cdh,
+  SymbolOfCovD -> {"|", "\!\(\*OverscriptBox[\(D\), \(^\)]\)"},
+  PrintAs -> "\!\(\*OverscriptBox[\(\[Gamma]\), \(^\)]\)"
+];
+
+MetricInBasis[gamh, -sph, DiagonalMatrix[{1, ra[]^2, ra[]^2 Sin[th[]]^2}]];
+
+MetricCompute[gamh, sph, All, Parallelize -> True, Verbose -> False]
+
+SetRefMetrics[sph];
+
+(**********************************)
+(* Define Variables and Equations *)
+(**********************************)
+
+<<wl/basis_transformation.wl
+
+<<wl/CCZ4_vars.wl
+
+(* set components in orthonormal basis, components in default basis are set automatically *)
+SetComponents[{ChartName -> Osph}, dtEvolVarlist];
+SetComponents[{ChartName -> Osph}, EvolVarlist];
+
+<<wl/CCZ4_rhs.wl
+
+(* Basis transformation *)
+BasisTrans[sph, Osph];
+
+(******************)
+(* Print to Files *)
+(******************)
+
+SetOutputFile[FileNameJoin[{Directory[], "CurvCCZ4_set_rhs.hxx"}]];
 
 ComponentValue[ra[], R];
 ComponentValue[th[], T];
@@ -36,47 +85,6 @@ trigrules = {
   Cot[T] -> cotth,
   Cos[2 T] -> cos2th
 };
-
-(* Osphonormal Basis adapted to the Default Chart. *)
-DefBasis[Osph, TangentM3, {1, 2, 3}, BasisColor -> Red];
-
-SetBasisChange[CTensor[{{1, 0, 0}, {0, ra[], 0}, {0, 0, ra[] Sin[th[]]}}, {-sph, Osph}], sph];
-
-(* Set Reference Metric related quantities directly *)
-DefMetric[1, gamh[-i, -j], cdh,
-  SymbolOfCovD -> {"|", "\!\(\*OverscriptBox[\(D\), \(^\)]\)"},
-  PrintAs -> "\!\(\*OverscriptBox[\(\[Gamma]\), \(^\)]\)"
-];
-
-MetricInBasis[gamh, -sph, DiagonalMatrix[{1, ra[]^2, ra[]^2 Sin[th[]]^2}]];
-
-MetricCompute[gamh, sph, All, Parallelize -> True, Verbose -> False]
-
-<<wl/reference_metric.wl
-
-SetRefMetrics[sph];
-
-(**********************************)
-(* Define Variables and Equations *)
-(**********************************)
-
-<<wl/CCZ4_vars.wl
-
-<<wl/CCZ4_rhs.wl
-
-<<wl/basis_transformation.wl
-
-SetComponents[{ChartName -> Osph}, dtEvolVarlist];
-SetComponents[{ChartName -> Osph}, EvolVarlist];
-
-(* Basis transformation *)
-BasisTrans[sph, Osph];
-
-(******************)
-(* Print to Files *)
-(******************)
-
-SetOutputFile[FileNameJoin[{Directory[], "CurvCCZ4_set_rhs.hxx"}]];
 
 SetMainPrint[
   (* Initialize grid function names *)

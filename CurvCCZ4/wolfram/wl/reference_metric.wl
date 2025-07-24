@@ -4,12 +4,11 @@
 
 (* (c) Liwei Ji, 07/2025 *)
 
-(****************************************************)
-
-(* Set Reference Metric related quantities directly *)
-
-(****************************************************)
-
+(**
+ * \brief Set Reference Metric related quantities directly
+ *
+ * \param coord  in which coordinate we represent the reference metric
+ *)
 SetRefMetrics[coord_] :=
   Module[{},
     IndexSetDelayed[gamhdet[],             Determinant[gamh, coord][]];

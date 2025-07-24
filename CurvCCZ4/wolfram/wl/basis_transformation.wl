@@ -4,7 +4,12 @@
 
 (* (c) Liwei Ji, 07/2025 *)
 
-(* Replace PD with symbols: order matters *)
+(**
+ * \brief Replace PD with symbols (ORDER Matters)
+ *
+ * \param coord  coordinate basis
+ * \param orth   orthonormal basis
+ *)
 dOrthRules[coord_, orth_] :=
   Flatten @
     Module[{TDDs = {"eps", "exAb"}, VUs = {"Lt", "beta", "B"}},
@@ -32,12 +37,12 @@ dOrthRules[coord_, orth_] :=
       }
     ];
 
-(******************************************************)
-
-(* Set Basis Transformation for the evolved variables *)
-
-(******************************************************)
-
+(**
+ * \brief Set Basis Transformation for the evolution variables
+ *
+ * \param coord  coordinate basis
+ * \param orth   orthonormal basis
+ *)
 BasisTrans[coord_, orth_] :=
   Module[{rules},
     rules = dOrthRules[coord, orth];
