@@ -65,8 +65,17 @@ SetComponents[{ChartName -> Osph}, EvolVarlist];
 
 <<wl/CCZ4_rhs.wl
 
-(* Basis transformation *)
+(* basis transformation *)
 BasisTrans[sph, Osph];
+
+(* set invgamb *)
+Module[{Mat, invMat},
+  Mat =
+    Table[gamb[{ii, -sph}, {jj, -sph}] // ToValues, {ii, 1, 3}, {jj, 1, 3}];
+  invMat = Inverse[Mat] /. {1 / Det[Mat] -> invgambdet[]};
+  SetEQNDelayed[invgambdet[], 1 / gamhdet[]];
+  SetEQNDelayed[invgamb[i_, j_], invMat[[i[[1]], j[[1]]]] // Simplify]
+];
 
 (******************)
 (* Print to Files *)

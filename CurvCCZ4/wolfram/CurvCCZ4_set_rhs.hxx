@@ -1167,39 +1167,45 @@ dgam333
 ;
 
 const auto
+invgambdet
+=
+Power(cscth,2)/Power(R,4)
+;
+
+const auto
 invgamb11
 =
-invgamb$RHS(List(1,sph),List(1,sph))
+(-Power(gamb23,2) + gamb22*gamb33)*invgambdet
 ;
 
 const auto
 invgamb12
 =
-invgamb$RHS(List(1,sph),List(2,sph))
+(gamb13*gamb23 - gamb12*gamb33)*invgambdet
 ;
 
 const auto
 invgamb13
 =
-invgamb$RHS(List(1,sph),List(3,sph))
+(-(gamb13*gamb22) + gamb12*gamb23)*invgambdet
 ;
 
 const auto
 invgamb22
 =
-invgamb$RHS(List(2,sph),List(2,sph))
+(-Power(gamb13,2) + gamb11*gamb33)*invgambdet
 ;
 
 const auto
 invgamb23
 =
-invgamb$RHS(List(2,sph),List(3,sph))
+(gamb12*gamb13 - gamb11*gamb23)*invgambdet
 ;
 
 const auto
 invgamb33
 =
-invgamb$RHS(List(3,sph),List(3,sph))
+(-Power(gamb12,2) + gamb11*gamb22)*invgambdet
 ;
 
 const auto
