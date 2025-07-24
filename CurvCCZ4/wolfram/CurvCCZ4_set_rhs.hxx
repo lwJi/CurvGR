@@ -66,127 +66,127 @@ const auto T = p.y;
 const auto P = p.z;
 
 const auto
-eps11[ijk]
+eps11
 =
 epsOsph11[ijk]
 ;
 
 const auto
-eps12[ijk]
+eps12
 =
 R*epsOsph12[ijk]
 ;
 
 const auto
-eps13[ijk]
+eps13
 =
 R*sinth*epsOsph13[ijk]
 ;
 
 const auto
-eps22[ijk]
+eps22
 =
 Power(R,2)*epsOsph22[ijk]
 ;
 
 const auto
-eps23[ijk]
+eps23
 =
 Power(R,2)*sinth*epsOsph23[ijk]
 ;
 
 const auto
-eps33[ijk]
+eps33
 =
 Power(R,2)*Power(sinth,2)*epsOsph33[ijk]
 ;
 
 const auto
-exAb11[ijk]
+exAb11
 =
 exAbOsph11[ijk]
 ;
 
 const auto
-exAb12[ijk]
+exAb12
 =
 R*exAbOsph12[ijk]
 ;
 
 const auto
-exAb13[ijk]
+exAb13
 =
 R*sinth*exAbOsph13[ijk]
 ;
 
 const auto
-exAb22[ijk]
+exAb22
 =
 Power(R,2)*exAbOsph22[ijk]
 ;
 
 const auto
-exAb23[ijk]
+exAb23
 =
 Power(R,2)*sinth*exAbOsph23[ijk]
 ;
 
 const auto
-exAb33[ijk]
+exAb33
 =
 Power(R,2)*Power(sinth,2)*exAbOsph33[ijk]
 ;
 
 const auto
-Lt1[ijk]
+Lt1
 =
 LtOsph1[ijk]
 ;
 
 const auto
-Lt2[ijk]
+Lt2
 =
 LtOsph2[ijk]/R
 ;
 
 const auto
-Lt3[ijk]
+Lt3
 =
 (cscth*LtOsph3[ijk])/R
 ;
 
 const auto
-beta1[ijk]
+beta1
 =
 betaOsph1[ijk]
 ;
 
 const auto
-beta2[ijk]
+beta2
 =
 betaOsph2[ijk]/R
 ;
 
 const auto
-beta3[ijk]
+beta3
 =
 (cscth*betaOsph3[ijk])/R
 ;
 
 const auto
-B1[ijk]
+B1
 =
 BOsph1[ijk]
 ;
 
 const auto
-B2[ijk]
+B2
 =
 BOsph2[ijk]/R
 ;
 
 const auto
-B3[ijk]
+B3
 =
 (cscth*BOsph3[ijk])/R
 ;
@@ -3745,13 +3745,13 @@ dbeta13*B1[ijk] + dbeta23*B2[ijk] + dbeta33*B3[ijk] + dB13*beta1[ijk] +
 
 
 const auto
-dtphi[ijk]
+dtphi
 =
 (6*Lbetaphi + trbDbeta - alpha[ijk]*trK[ijk])/6.
 ;
 
 const auto
-dttrK[ijk]
+dttrK
 =
 LbetatrK - 2*dalpha1*dphi1*invgam11*psim4 - 2*dalpha2*dphi1*invgam12*psim4 -
   2*dalpha1*dphi2*invgam12*psim4 - 2*dalpha3*dphi1*invgam13*psim4 -
@@ -3764,7 +3764,7 @@ LbetatrK - 2*dalpha1*dphi1*invgam11*psim4 - 2*dalpha2*dphi1*invgam12*psim4 -
 ;
 
 const auto
-dtTheta[ijk]
+dtTheta
 =
 LbetaTheta - dalpha1*ZU1 - dalpha2*ZU2 - dalpha3*ZU3 -
   ckappa1*(2 + ckappa2)*Theta[ijk] -
@@ -3776,55 +3776,55 @@ LbetaTheta - dalpha1*ZU1 - dalpha2*ZU2 - dalpha3*ZU3 -
 ;
 
 const auto
-dtalpha[ijk]
+dtalpha
 =
 Lbetaalpha + alpha[ijk]*(4*Theta[ijk] - 2*trK[ijk])
 ;
 
 const auto
-dteps11[ijk]
+dteps11
 =
 Lbetagamb11 - (2*gamb11*trbDbeta)/3. +
   (2*alpha[ijk]*(gamb11*trexAb - 3*exAb11[ijk]))/3.
 ;
 
 const auto
-dteps12[ijk]
+dteps12
 =
 Lbetagamb12 - (2*gamb12*trbDbeta)/3. +
   (2*alpha[ijk]*(gamb12*trexAb - 3*exAb12[ijk]))/3.
 ;
 
 const auto
-dteps13[ijk]
+dteps13
 =
 Lbetagamb13 - (2*gamb13*trbDbeta)/3. +
   (2*alpha[ijk]*(gamb13*trexAb - 3*exAb13[ijk]))/3.
 ;
 
 const auto
-dteps22[ijk]
+dteps22
 =
 Lbetagamb22 - (2*gamb22*trbDbeta)/3. +
   (2*alpha[ijk]*(gamb22*trexAb - 3*exAb22[ijk]))/3.
 ;
 
 const auto
-dteps23[ijk]
+dteps23
 =
 Lbetagamb23 - (2*gamb23*trbDbeta)/3. +
   (2*alpha[ijk]*(gamb23*trexAb - 3*exAb23[ijk]))/3.
 ;
 
 const auto
-dteps33[ijk]
+dteps33
 =
 Lbetagamb33 - (2*gamb33*trbDbeta)/3. +
   (2*alpha[ijk]*(gamb33*trexAb - 3*exAb33[ijk]))/3.
 ;
 
 const auto
-dtexAb11[ijk]
+dtexAb11
 =
 LbetaexAb11 + psim4*(RalphaTF11 + RphiTF11) - (2*trbDbeta*exAb11[ijk])/3. +
   (alpha[ijk]*(3*psim4*RbTF11 - 24*cpi*psim4*Ss11 +
@@ -3843,7 +3843,7 @@ LbetaexAb11 + psim4*(RalphaTF11 + RphiTF11) - (2*trbDbeta*exAb11[ijk])/3. +
 ;
 
 const auto
-dtexAb12[ijk]
+dtexAb12
 =
 LbetaexAb12 + psim4*(RalphaTF12 + RphiTF12) - (2*trbDbeta*exAb12[ijk])/3. +
   (alpha[ijk]*(3*psim4*RbTF12 + 8*cpi*gamb12*invgamb11*psim4*Ss11 -
@@ -3862,7 +3862,7 @@ LbetaexAb12 + psim4*(RalphaTF12 + RphiTF12) - (2*trbDbeta*exAb12[ijk])/3. +
 ;
 
 const auto
-dtexAb13[ijk]
+dtexAb13
 =
 LbetaexAb13 + psim4*(RalphaTF13 + RphiTF13) - (2*trbDbeta*exAb13[ijk])/3. +
   (alpha[ijk]*(3*psim4*RbTF13 + 8*cpi*gamb13*invgamb11*psim4*Ss11 +
@@ -3882,7 +3882,7 @@ LbetaexAb13 + psim4*(RalphaTF13 + RphiTF13) - (2*trbDbeta*exAb13[ijk])/3. +
 ;
 
 const auto
-dtexAb22[ijk]
+dtexAb22
 =
 LbetaexAb22 + psim4*(RalphaTF22 + RphiTF22) - (2*trbDbeta*exAb22[ijk])/3. +
   (alpha[ijk]*(3*psim4*RbTF22 + 8*cpi*gamb22*invgamb11*psim4*Ss11 +
@@ -3899,7 +3899,7 @@ LbetaexAb22 + psim4*(RalphaTF22 + RphiTF22) - (2*trbDbeta*exAb22[ijk])/3. +
 ;
 
 const auto
-dtexAb23[ijk]
+dtexAb23
 =
 LbetaexAb23 + psim4*(RalphaTF23 + RphiTF23) - (2*trbDbeta*exAb23[ijk])/3. +
   (alpha[ijk]*(3*psim4*RbTF23 + 8*cpi*gamb23*invgamb11*psim4*Ss11 +
@@ -3919,7 +3919,7 @@ LbetaexAb23 + psim4*(RalphaTF23 + RphiTF23) - (2*trbDbeta*exAb23[ijk])/3. +
 ;
 
 const auto
-dtexAb33[ijk]
+dtexAb33
 =
 LbetaexAb33 + psim4*(RalphaTF33 + RphiTF33) - (2*trbDbeta*exAb33[ijk])/3. +
   (alpha[ijk]*(3*psim4*RbTF33 + 8*cpi*gamb33*invgamb11*psim4*Ss11 +
@@ -3937,7 +3937,7 @@ LbetaexAb33 + psim4*(RalphaTF33 + RphiTF33) - (2*trbDbeta*exAb33[ijk])/3. +
 ;
 
 const auto
-dtLt1[ijk]
+dtLt1
 =
 (-6*dalpha1*exAbUU11 - 6*dalpha2*exAbUU12 - 6*dalpha3*exAbUU13 +
     bDtrbDbeta1*invgamb11 + 3*hDhDbeta111*invgamb11 +
@@ -3960,7 +3960,7 @@ dtLt1[ijk]
 ;
 
 const auto
-dtLt2[ijk]
+dtLt2
 =
 (-6*dalpha1*exAbUU12 - 6*dalpha2*exAbUU22 - 6*dalpha3*exAbUU23 +
     3*hDhDbeta112*invgamb11 + bDtrbDbeta1*invgamb12 +
@@ -3983,7 +3983,7 @@ dtLt2[ijk]
 ;
 
 const auto
-dtLt3[ijk]
+dtLt3
 =
 (-6*dalpha1*exAbUU13 - 6*dalpha2*exAbUU23 - 6*dalpha3*exAbUU33 +
     3*hDhDbeta113*invgamb11 + 6*hDhDbeta123*invgamb12 +
@@ -4006,25 +4006,25 @@ dtLt3[ijk]
 ;
 
 const auto
-dtbeta1[ijk]
+dtbeta1
 =
 B1[ijk] + hDbeta11*beta1[ijk] + hDbeta21*beta2[ijk] + hDbeta31*beta3[ijk]
 ;
 
 const auto
-dtbeta2[ijk]
+dtbeta2
 =
 B2[ijk] + hDbeta12*beta1[ijk] + hDbeta22*beta2[ijk] + hDbeta32*beta3[ijk]
 ;
 
 const auto
-dtbeta3[ijk]
+dtbeta3
 =
 B3[ijk] + hDbeta13*beta1[ijk] + hDbeta23*beta2[ijk] + hDbeta33*beta3[ijk]
 ;
 
 const auto
-dtB1[ijk]
+dtB1
 =
 (-4*ceta*B1[ijk] + (4*hDB11 - 3*hDLt11)*beta1[ijk] + 4*hDB21*beta2[ijk] -
     3*hDLt21*beta2[ijk] + 4*hDB31*beta3[ijk] - 3*hDLt31*beta3[ijk] +
@@ -4032,7 +4032,7 @@ dtB1[ijk]
 ;
 
 const auto
-dtB2[ijk]
+dtB2
 =
 (-4*ceta*B2[ijk] + (4*hDB12 - 3*hDLt12)*beta1[ijk] + 4*hDB22*beta2[ijk] -
     3*hDLt22*beta2[ijk] + 4*hDB32*beta3[ijk] - 3*hDLt32*beta3[ijk] +
@@ -4040,7 +4040,7 @@ dtB2[ijk]
 ;
 
 const auto
-dtB3[ijk]
+dtB3
 =
 (-4*ceta*B3[ijk] + (4*hDB13 - 3*hDLt13)*beta1[ijk] + 4*hDB23*beta2[ijk] -
     3*hDLt23*beta2[ijk] + 4*hDB33*beta3[ijk] - 3*hDLt33*beta3[ijk] +
