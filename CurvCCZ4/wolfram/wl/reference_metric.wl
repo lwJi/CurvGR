@@ -10,13 +10,13 @@
 
 (****************************************************)
 
-SetRefMetrics[coord_, trigrules_] :=
+SetRefMetrics[coord_] :=
   Module[{},
-    IndexSetDelayed[gamhdet[],             Determinant[gamh, coord][]                                            /. trigrules];
-    IndexSetDelayed[dgamhdet[k_],          (PDOfBasis[coord][k][Determinant[gamh, coord][]]                      // DummyToBasis[coord] // TraceBasisDummy // ToValues) /. trigrules];
-    IndexSetDelayed[ddgamhdet[k_, l_],     (PDOfBasis[coord][k][PDOfBasis[coord][l][Determinant[gamh, coord][]]] // DummyToBasis[coord] // TraceBasisDummy // ToValues) /. trigrules];
-    IndexSetDelayed[dgamh[k_, i_, j_],     (PDOfBasis[coord][k][gamh[i, j]]                                      // DummyToBasis[coord] // TraceBasisDummy // ToValues) /. trigrules];
-    IndexSetDelayed[Gamh[k_, i_, j_],      Christoffel[cdh, PDOfBasis[coord]][k, i, j]                           /. trigrules];
-    IndexSetDelayed[dGamh[k_, l_, i_, j_], PDOfBasis[coord][k][Christoffel[cdh, PDOfBasis[coord]][l, i, j]]      /. trigrules];
+    IndexSetDelayed[gamhdet[],             Determinant[gamh, coord][]];
+    IndexSetDelayed[dgamhdet[k_],          PDOfBasis[coord][k][Determinant[gamh, coord][]] // DummyToBasis[coord] // TraceBasisDummy // ToValues];
+    IndexSetDelayed[ddgamhdet[k_, l_],     PDOfBasis[coord][k][PDOfBasis[coord][l][Determinant[gamh, coord][]]] // DummyToBasis[coord] // TraceBasisDummy // ToValues];
+    IndexSetDelayed[dgamh[k_, i_, j_],     PDOfBasis[coord][k][gamh[i, j]] // DummyToBasis[coord] // TraceBasisDummy // ToValues];
+    IndexSetDelayed[Gamh[k_, i_, j_],      Christoffel[cdh, PDOfBasis[coord]][k, i, j]];
+    IndexSetDelayed[dGamh[k_, l_, i_, j_], PDOfBasis[coord][k][Christoffel[cdh, PDOfBasis[coord]][l, i, j]]];
   ];
 

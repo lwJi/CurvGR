@@ -38,15 +38,15 @@ dOrthRules[coord_, orth_] :=
 
 (******************************************************)
 
-BasisTrans[coord_, orth_, trigrules_] :=
+BasisTrans[coord_, orth_] :=
   Module[{rules},
-    rules = Join[dOrthRules[coord, orth], trigrules]; (* order matters *)
+    rules = dOrthRules[coord, orth];
     (* variable themselves *)
-    SetEQNDelayed[eps[i_, j_],  (eps[i, j]  // SeparateBasis[orth] // TraceBasisDummy // ToValues) /. trigrules];
-    SetEQNDelayed[exAb[i_, j_], (exAb[i, j] // SeparateBasis[orth] // TraceBasisDummy // ToValues) /. trigrules];
-    SetEQNDelayed[Lt[i_],       (Lt[i]      // SeparateBasis[orth] // TraceBasisDummy // ToValues) /. trigrules];
-    SetEQNDelayed[beta[i_],     (beta[i]    // SeparateBasis[orth] // TraceBasisDummy // ToValues) /. trigrules];
-    SetEQNDelayed[B[i_],        (B[i]       // SeparateBasis[orth] // TraceBasisDummy // ToValues) /. trigrules];
+    SetEQNDelayed[eps[i_, j_],  eps[i, j]  // SeparateBasis[orth] // TraceBasisDummy // ToValues];
+    SetEQNDelayed[exAb[i_, j_], exAb[i, j] // SeparateBasis[orth] // TraceBasisDummy // ToValues];
+    SetEQNDelayed[Lt[i_],       Lt[i]      // SeparateBasis[orth] // TraceBasisDummy // ToValues];
+    SetEQNDelayed[beta[i_],     beta[i]    // SeparateBasis[orth] // TraceBasisDummy // ToValues];
+    SetEQNDelayed[B[i_],        B[i]       // SeparateBasis[orth] // TraceBasisDummy // ToValues];
     (* first derivatives *)
     SetEQNDelayed[deps[k_, i_, j_],  PDOfBasis[coord][k][eps[i, j]  // SeparateBasis[orth] // TraceBasisDummy // ToValues] /. rules];
     SetEQNDelayed[dexAb[k_, i_, j_], PDOfBasis[coord][k][exAb[i, j] // SeparateBasis[orth] // TraceBasisDummy // ToValues] /. rules];

@@ -30,10 +30,11 @@ ComponentValue[th[], T];
 ComponentValue[ph[], P];
 
 trigrules = {
-  Sin[th[]] -> sinth,
-  Cos[th[]] -> costh,
-  Csc[th[]] -> cscth,
-  Cot[th[]] -> cotth
+  Sin[T] -> sinth,
+  Cos[T] -> costh,
+  Csc[T] -> cscth,
+  Cot[T] -> cotth,
+  Cos[2 T] -> cos2th
 };
 
 (* Osphonormal Basis adapted to the Default Chart. *)
@@ -53,7 +54,7 @@ MetricCompute[gamh, sph, All, Parallelize -> True, Verbose -> False]
 
 <<wl/reference_metric.wl
 
-SetRefMetrics[sph, trigrules];
+SetRefMetrics[sph];
 
 (**********************************)
 (* Define Variables and Equations *)
@@ -69,7 +70,7 @@ SetComponents[{ChartName -> Osph}, dtEvolVarlist];
 SetComponents[{ChartName -> Osph}, EvolVarlist];
 
 (* Basis transformation *)
-BasisTrans[sph, Osph, trigrules];
+BasisTrans[sph, Osph];
 
 (******************)
 (* Print to Files *)
@@ -101,14 +102,14 @@ SetMainPrint[
   pr[];
   *)
 
-  PrintEquations[{Mode -> "Temp"}, EvolVarlist[[5;;-1]]];
+  PrintEquations[{Mode -> "Temp", ExtraReplaceRules -> trigrules}, EvolVarlist[[5;;-1]]];
   pr[];
-  PrintEquations[{Mode -> "Temp"}, dEvolVarlist[[5;;-1]]];
+  PrintEquations[{Mode -> "Temp", ExtraReplaceRules -> trigrules}, dEvolVarlist[[5;;-1]]];
   pr[];
-  PrintEquations[{Mode -> "Temp"}, ddEvolVarlist[[3;;-1]]];
+  PrintEquations[{Mode -> "Temp", ExtraReplaceRules -> trigrules}, ddEvolVarlist[[3;;-1]]];
   pr[];
 
-  PrintEquations[{Mode -> "Temp"}, IntermediateVarlist];
+  PrintEquations[{Mode -> "Temp", ExtraReplaceRules -> trigrules}, IntermediateVarlist];
   pr[];
 
   pr["  });"];

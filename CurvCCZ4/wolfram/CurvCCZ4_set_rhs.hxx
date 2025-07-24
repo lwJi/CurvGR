@@ -635,15 +635,15 @@ R*(2*depsOsph222 + ddepsOsph1222*R)
 const auto
 ddeps1223
 =
-R*(costh*depsOsph123*R + 2*depsOsph223*sinth + ddepsOsph1223*R*sinth +
+R*(costh*depsOsph123*R + (2*depsOsph223 + ddepsOsph1223*R)*sinth +
     2*costh*epsOsph23[ijk])
 ;
 
 const auto
 ddeps1233
 =
-R*sinth*(2*costh*depsOsph133*R + 2*depsOsph233*sinth +
-    ddepsOsph1233*R*sinth + 4*costh*epsOsph33[ijk])
+R*sinth*(2*costh*depsOsph133*R + (2*depsOsph233 + ddepsOsph1233*R)*sinth +
+    4*costh*epsOsph33[ijk])
 ;
 
 const auto
@@ -716,7 +716,7 @@ const auto
 ddeps2233
 =
 Power(R,2)*(sinth*(4*costh*depsOsph233 + ddepsOsph2233*sinth) +
-    2*(Power(costh,2) - Power(sinth,2))*epsOsph33[ijk])
+    2*cos2th*epsOsph33[ijk])
 ;
 
 const auto
@@ -824,8 +824,8 @@ ddbeta122
 const auto
 ddbeta123
 =
--((cscth*(dbetaOsph23 + cotth*dbetaOsph13*R - ddbetaOsph123*R -
-        cotth*betaOsph3[ijk]))/Power(R,2))
+(cscth*(-dbetaOsph23 - cotth*dbetaOsph13*R + ddbetaOsph123*R +
+      cotth*betaOsph3[ijk]))/Power(R,2)
 ;
 
 const auto
@@ -935,7 +935,7 @@ eps23[ijk]
 const auto
 gamb33
 =
-eps33[ijk] + Power(R,2)*Power(Sin(T),2)
+Power(R,2)*Power(sinth,2) + eps33[ijk]
 ;
 
 const auto
