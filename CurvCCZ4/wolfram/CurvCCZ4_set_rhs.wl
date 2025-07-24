@@ -120,13 +120,29 @@ SetMainPrint[
   *)
 
   PrintEquations[{Mode -> "Temp", ExtraReplaceRules -> trigrules}, EvolVarlist[[5;;-1]]];
-  pr[];
   PrintEquations[{Mode -> "Temp", ExtraReplaceRules -> trigrules}, dEvolVarlist[[5;;-1]]];
-  pr[];
   PrintEquations[{Mode -> "Temp", ExtraReplaceRules -> trigrules}, ddEvolVarlist[[3;;-1]]];
   pr[];
 
   PrintEquations[{Mode -> "Temp", ExtraReplaceRules -> trigrules}, IntermediateVarlist];
+  pr[];
+
+  PrintEquations[{Mode -> "Temp", ExtraReplaceRules -> trigrules}, bDVarlist];
+  PrintEquations[{Mode -> "Temp", ExtraReplaceRules -> trigrules}, bDbDVarlist];
+  PrintEquations[{Mode -> "Temp", ExtraReplaceRules -> trigrules}, trVarlist];
+  pr[];
+
+  PrintEquations[{Mode -> "Temp", ExtraReplaceRules -> trigrules}, hDVarlist];
+  PrintEquations[{Mode -> "Temp", ExtraReplaceRules -> trigrules}, hDhDVarlist];
+  pr[];
+
+  PrintEquations[{Mode -> "Temp", ExtraReplaceRules -> trigrules}, DGamVarlist];
+  pr[];
+
+  PrintEquations[{Mode -> "Temp", ExtraReplaceRules -> trigrules}, RVarlist];
+  pr[];
+
+  PrintEquations[{Mode -> "Temp", ExtraReplaceRules -> trigrules}, LieVarlist];
   pr[];
 
   pr["  });"];
