@@ -3669,6 +3669,310 @@ dbeta13*B1[ijk] + dbeta23*B2[ijk] + dbeta33*B3[ijk] + dB13*beta1[ijk] +
 ;
 
 
+const auto
+dtphi[ijk]
+=
+(6*Lbetaphi + trbDbeta - alpha[ijk]*trK[ijk])/6.
+;
+
+const auto
+dttrK[ijk]
+=
+LbetatrK - 2*dalpha1*dphi1*invgam11*psim4 - 2*dalpha2*dphi1*invgam12*psim4 -
+  2*dalpha1*dphi2*invgam12*psim4 - 2*dalpha3*dphi1*invgam13*psim4 -
+  2*dalpha1*dphi3*invgam13*psim4 - 2*dalpha2*dphi2*invgam22*psim4 -
+  2*dalpha3*dphi2*invgam23*psim4 - 2*dalpha2*dphi3*invgam23*psim4 -
+  2*dalpha3*dphi3*invgam33*psim4 - psim4*trbDbDalpha -
+  3*ckappa1*(1 + ckappa2)*Theta[ijk] +
+  alpha[ijk]*(-12*cpi*rho - 8*psim4*trbDbDphi - 8*psim4*trbDphibDphi +
+     psim4*trRb + 4*cpi*trSs - 2*Theta[ijk]*trK[ijk] + Power(trK[ijk],2))
+;
+
+const auto
+dtTheta[ijk]
+=
+LbetaTheta - dalpha1*ZU1 - dalpha2*ZU2 - dalpha3*ZU3 -
+  ckappa1*(2 + ckappa2)*Theta[ijk] -
+  (alpha[ijk]*(48*cpi*rho + 24*psim4*trbDbDphi + 24*psim4*trbDphibDphi -
+       3*psim4*trRb + 3*exAbUU11*exAb11[ijk] + 6*exAbUU12*exAb12[ijk] +
+       6*exAbUU13*exAb13[ijk] + 3*exAbUU22*exAb22[ijk] +
+       6*exAbUU23*exAb23[ijk] + 3*exAbUU33*exAb33[ijk] +
+       6*Theta[ijk]*trK[ijk] - 2*Power(trK[ijk],2)))/6.
+;
+
+const auto
+dtalpha[ijk]
+=
+Lbetaalpha + alpha[ijk]*(4*Theta[ijk] - 2*trK[ijk])
+;
+
+const auto
+dteps11[ijk]
+=
+Lbetagamb11 - (2*gamb11*trbDbeta)/3. +
+  (2*alpha[ijk]*(gamb11*trexAb - 3*exAb11[ijk]))/3.
+;
+
+const auto
+dteps12[ijk]
+=
+Lbetagamb12 - (2*gamb12*trbDbeta)/3. +
+  (2*alpha[ijk]*(gamb12*trexAb - 3*exAb12[ijk]))/3.
+;
+
+const auto
+dteps13[ijk]
+=
+Lbetagamb13 - (2*gamb13*trbDbeta)/3. +
+  (2*alpha[ijk]*(gamb13*trexAb - 3*exAb13[ijk]))/3.
+;
+
+const auto
+dteps22[ijk]
+=
+Lbetagamb22 - (2*gamb22*trbDbeta)/3. +
+  (2*alpha[ijk]*(gamb22*trexAb - 3*exAb22[ijk]))/3.
+;
+
+const auto
+dteps23[ijk]
+=
+Lbetagamb23 - (2*gamb23*trbDbeta)/3. +
+  (2*alpha[ijk]*(gamb23*trexAb - 3*exAb23[ijk]))/3.
+;
+
+const auto
+dteps33[ijk]
+=
+Lbetagamb33 - (2*gamb33*trbDbeta)/3. +
+  (2*alpha[ijk]*(gamb33*trexAb - 3*exAb33[ijk]))/3.
+;
+
+const auto
+dtexAb11[ijk]
+=
+LbetaexAb11 + psim4*(RalphaTF11 + RphiTF11) - (2*trbDbeta*exAb11[ijk])/3. +
+  (alpha[ijk]*(3*psim4*RbTF11 - 24*cpi*psim4*Ss11 +
+       8*cpi*gamb11*invgamb11*psim4*Ss11 +
+       16*cpi*gamb11*invgamb12*psim4*Ss12 +
+       16*cpi*gamb11*invgamb13*psim4*Ss13 +
+       8*cpi*gamb11*invgamb22*psim4*Ss22 +
+       16*cpi*gamb11*invgamb23*psim4*Ss23 +
+       8*cpi*gamb11*invgamb33*psim4*Ss33 -
+       6*invgamb11*Power(exAb11[ijk],2) -
+       6*invgamb22*Power(exAb12[ijk],2) -
+       12*invgamb23*exAb12[ijk]*exAb13[ijk] -
+       6*invgamb33*Power(exAb13[ijk],2) -
+       3*exAb11[ijk]*(4*invgamb12*exAb12[ijk] + 4*invgamb13*exAb13[ijk] +
+          2*Theta[ijk] - trK[ijk])))/3.
+;
+
+const auto
+dtexAb12[ijk]
+=
+LbetaexAb12 + psim4*(RalphaTF12 + RphiTF12) - (2*trbDbeta*exAb12[ijk])/3. +
+  (alpha[ijk]*(3*psim4*RbTF12 + 8*cpi*gamb12*invgamb11*psim4*Ss11 -
+       24*cpi*psim4*Ss12 + 16*cpi*gamb12*invgamb12*psim4*Ss12 +
+       16*cpi*gamb12*invgamb13*psim4*Ss13 +
+       8*cpi*gamb12*invgamb22*psim4*Ss22 +
+       16*cpi*gamb12*invgamb23*psim4*Ss23 +
+       8*cpi*gamb12*invgamb33*psim4*Ss33 -
+       6*invgamb12*Power(exAb12[ijk],2) -
+       6*invgamb23*exAb13[ijk]*exAb22[ijk] -
+       6*invgamb33*exAb13[ijk]*exAb23[ijk] -
+       6*exAb11[ijk]*(invgamb11*exAb12[ijk] + invgamb12*exAb22[ijk] +
+          invgamb13*exAb23[ijk]) -
+       3*exAb12[ijk]*(2*invgamb13*exAb13[ijk] + 2*invgamb22*exAb22[ijk] +
+          2*invgamb23*exAb23[ijk] + 2*Theta[ijk] - trK[ijk])))/3.
+;
+
+const auto
+dtexAb13[ijk]
+=
+LbetaexAb13 + psim4*(RalphaTF13 + RphiTF13) - (2*trbDbeta*exAb13[ijk])/3. +
+  (alpha[ijk]*(3*psim4*RbTF13 + 8*cpi*gamb13*invgamb11*psim4*Ss11 +
+       16*cpi*gamb13*invgamb12*psim4*Ss12 - 24*cpi*psim4*Ss13 +
+       16*cpi*gamb13*invgamb13*psim4*Ss13 +
+       8*cpi*gamb13*invgamb22*psim4*Ss22 +
+       16*cpi*gamb13*invgamb23*psim4*Ss23 +
+       8*cpi*gamb13*invgamb33*psim4*Ss33 -
+       6*invgamb13*Power(exAb13[ijk],2) -
+       6*invgamb23*exAb13[ijk]*exAb23[ijk] -
+       6*invgamb33*exAb13[ijk]*exAb33[ijk] -
+       6*exAb11[ijk]*(invgamb11*exAb13[ijk] + invgamb12*exAb23[ijk] +
+          invgamb13*exAb33[ijk]) -
+       6*exAb12[ijk]*(invgamb12*exAb13[ijk] + invgamb22*exAb23[ijk] +
+          invgamb23*exAb33[ijk]) - 6*exAb13[ijk]*Theta[ijk] +
+       3*exAb13[ijk]*trK[ijk]))/3.
+;
+
+const auto
+dtexAb22[ijk]
+=
+LbetaexAb22 + psim4*(RalphaTF22 + RphiTF22) - (2*trbDbeta*exAb22[ijk])/3. +
+  (alpha[ijk]*(3*psim4*RbTF22 + 8*cpi*gamb22*invgamb11*psim4*Ss11 +
+       16*cpi*gamb22*invgamb12*psim4*Ss12 +
+       16*cpi*gamb22*invgamb13*psim4*Ss13 - 24*cpi*psim4*Ss22 +
+       8*cpi*gamb22*invgamb22*psim4*Ss22 +
+       16*cpi*gamb22*invgamb23*psim4*Ss23 +
+       8*cpi*gamb22*invgamb33*psim4*Ss33 -
+       6*invgamb11*Power(exAb12[ijk],2) -
+       6*invgamb22*Power(exAb22[ijk],2) -
+       6*invgamb33*Power(exAb23[ijk],2) -
+       12*exAb12[ijk]*(invgamb12*exAb22[ijk] + invgamb13*exAb23[ijk]) -
+       3*exAb22[ijk]*(4*invgamb23*exAb23[ijk] + 2*Theta[ijk] - trK[ijk])))/3.
+;
+
+const auto
+dtexAb23[ijk]
+=
+LbetaexAb23 + psim4*(RalphaTF23 + RphiTF23) - (2*trbDbeta*exAb23[ijk])/3. +
+  (alpha[ijk]*(3*psim4*RbTF23 + 8*cpi*gamb23*invgamb11*psim4*Ss11 +
+       16*cpi*gamb23*invgamb12*psim4*Ss12 +
+       16*cpi*gamb23*invgamb13*psim4*Ss13 +
+       8*cpi*gamb23*invgamb22*psim4*Ss22 - 24*cpi*psim4*Ss23 +
+       16*cpi*gamb23*invgamb23*psim4*Ss23 +
+       8*cpi*gamb23*invgamb33*psim4*Ss33 -
+       6*invgamb22*exAb22[ijk]*exAb23[ijk] -
+       6*invgamb23*Power(exAb23[ijk],2) -
+       6*exAb13[ijk]*(invgamb12*exAb22[ijk] + invgamb13*exAb23[ijk]) -
+       6*invgamb23*exAb22[ijk]*exAb33[ijk] -
+       6*invgamb33*exAb23[ijk]*exAb33[ijk] -
+       6*exAb12[ijk]*(invgamb11*exAb13[ijk] + invgamb12*exAb23[ijk] +
+          invgamb13*exAb33[ijk]) - 6*exAb23[ijk]*Theta[ijk] +
+       3*exAb23[ijk]*trK[ijk]))/3.
+;
+
+const auto
+dtexAb33[ijk]
+=
+LbetaexAb33 + psim4*(RalphaTF33 + RphiTF33) - (2*trbDbeta*exAb33[ijk])/3. +
+  (alpha[ijk]*(3*psim4*RbTF33 + 8*cpi*gamb33*invgamb11*psim4*Ss11 +
+       16*cpi*gamb33*invgamb12*psim4*Ss12 +
+       16*cpi*gamb33*invgamb13*psim4*Ss13 +
+       8*cpi*gamb33*invgamb22*psim4*Ss22 +
+       16*cpi*gamb33*invgamb23*psim4*Ss23 - 24*cpi*psim4*Ss33 +
+       8*cpi*gamb33*invgamb33*psim4*Ss33 -
+       6*invgamb11*Power(exAb13[ijk],2) -
+       6*invgamb22*Power(exAb23[ijk],2) -
+       12*invgamb23*exAb23[ijk]*exAb33[ijk] -
+       6*invgamb33*Power(exAb33[ijk],2) -
+       12*exAb13[ijk]*(invgamb12*exAb23[ijk] + invgamb13*exAb33[ijk]) -
+       6*exAb33[ijk]*Theta[ijk] + 3*exAb33[ijk]*trK[ijk]))/3.
+;
+
+const auto
+dtLt1[ijk]
+=
+(-6*dalpha1*exAbUU11 - 6*dalpha2*exAbUU12 - 6*dalpha3*exAbUU13 +
+    bDtrbDbeta1*invgamb11 + 3*hDhDbeta111*invgamb11 +
+    bDtrbDbeta2*invgamb12 + 6*hDhDbeta121*invgamb12 +
+    bDtrbDbeta3*invgamb13 + 6*hDhDbeta131*invgamb13 +
+    3*hDhDbeta221*invgamb22 + 6*hDhDbeta231*invgamb23 +
+    3*hDhDbeta331*invgamb33 + 3*LbetaLt1 + 2*trbDbeta*trDGam1 -
+    2*ckappa3*trbDbeta*trDGam1 + 6*ckappa1*psi4*ZU1 -
+    6*ckappa3*hDbeta11*psi4*ZU1 - 6*ckappa3*hDbeta21*psi4*ZU2 -
+    6*ckappa3*hDbeta31*psi4*ZU3 + 2*ckappa3*trbDbeta*Lt1[ijk] -
+    6*dalpha1*invgamb11*Theta[ijk] - 6*dalpha2*invgamb12*Theta[ijk] -
+    6*dalpha3*invgamb13*Theta[ijk] +
+    2*alpha[ijk]*(3*DGam111*exAbUU11 + 18*dphi1*exAbUU11 +
+       6*DGam112*exAbUU12 + 18*dphi2*exAbUU12 + 6*DGam113*exAbUU13 +
+       18*dphi3*exAbUU13 + 3*DGam122*exAbUU22 + 6*DGam123*exAbUU23 +
+       3*DGam133*exAbUU33 + 3*dTheta1*invgamb11 - 2*dtrK1*invgamb11 +
+       3*dTheta2*invgamb12 - 2*dtrK2*invgamb12 + 3*dTheta3*invgamb13 -
+       2*dtrK3*invgamb13 - 24*cpi*invgamb11*Sm1 - 24*cpi*invgamb12*Sm2 -
+       24*cpi*invgamb13*Sm3 - 2*psi4*ZU1*trK[ijk]))/3.
+;
+
+const auto
+dtLt2[ijk]
+=
+(-6*dalpha1*exAbUU12 - 6*dalpha2*exAbUU22 - 6*dalpha3*exAbUU23 +
+    3*hDhDbeta112*invgamb11 + bDtrbDbeta1*invgamb12 +
+    6*hDhDbeta122*invgamb12 + 6*hDhDbeta132*invgamb13 +
+    bDtrbDbeta2*invgamb22 + 3*hDhDbeta222*invgamb22 +
+    bDtrbDbeta3*invgamb23 + 6*hDhDbeta232*invgamb23 +
+    3*hDhDbeta332*invgamb33 + 3*LbetaLt2 + 2*trbDbeta*trDGam2 -
+    2*ckappa3*trbDbeta*trDGam2 - 6*ckappa3*hDbeta12*psi4*ZU1 +
+    6*ckappa1*psi4*ZU2 - 6*ckappa3*hDbeta22*psi4*ZU2 -
+    6*ckappa3*hDbeta32*psi4*ZU3 + 2*ckappa3*trbDbeta*Lt2[ijk] -
+    6*dalpha1*invgamb12*Theta[ijk] - 6*dalpha2*invgamb22*Theta[ijk] -
+    6*dalpha3*invgamb23*Theta[ijk] +
+    2*alpha[ijk]*(3*DGam211*exAbUU11 + 6*DGam212*exAbUU12 +
+       18*dphi1*exAbUU12 + 6*DGam213*exAbUU13 + 3*DGam222*exAbUU22 +
+       18*dphi2*exAbUU22 + 6*DGam223*exAbUU23 + 18*dphi3*exAbUU23 +
+       3*DGam233*exAbUU33 + 3*dTheta1*invgamb12 - 2*dtrK1*invgamb12 +
+       3*dTheta2*invgamb22 - 2*dtrK2*invgamb22 + 3*dTheta3*invgamb23 -
+       2*dtrK3*invgamb23 - 24*cpi*invgamb12*Sm1 - 24*cpi*invgamb22*Sm2 -
+       24*cpi*invgamb23*Sm3 - 2*psi4*ZU2*trK[ijk]))/3.
+;
+
+const auto
+dtLt3[ijk]
+=
+(-6*dalpha1*exAbUU13 - 6*dalpha2*exAbUU23 - 6*dalpha3*exAbUU33 +
+    3*hDhDbeta113*invgamb11 + 6*hDhDbeta123*invgamb12 +
+    bDtrbDbeta1*invgamb13 + 6*hDhDbeta133*invgamb13 +
+    3*hDhDbeta223*invgamb22 + bDtrbDbeta2*invgamb23 +
+    6*hDhDbeta233*invgamb23 + bDtrbDbeta3*invgamb33 +
+    3*hDhDbeta333*invgamb33 + 3*LbetaLt3 + 2*trbDbeta*trDGam3 -
+    2*ckappa3*trbDbeta*trDGam3 - 6*ckappa3*hDbeta13*psi4*ZU1 -
+    6*ckappa3*hDbeta23*psi4*ZU2 + 6*ckappa1*psi4*ZU3 -
+    6*ckappa3*hDbeta33*psi4*ZU3 + 2*ckappa3*trbDbeta*Lt3[ijk] -
+    6*dalpha1*invgamb13*Theta[ijk] - 6*dalpha2*invgamb23*Theta[ijk] -
+    6*dalpha3*invgamb33*Theta[ijk] +
+    2*alpha[ijk]*(3*DGam311*exAbUU11 + 6*DGam312*exAbUU12 +
+       6*DGam313*exAbUU13 + 18*dphi1*exAbUU13 + 3*DGam322*exAbUU22 +
+       6*DGam323*exAbUU23 + 18*dphi2*exAbUU23 + 3*DGam333*exAbUU33 +
+       18*dphi3*exAbUU33 + 3*dTheta1*invgamb13 - 2*dtrK1*invgamb13 +
+       3*dTheta2*invgamb23 - 2*dtrK2*invgamb23 + 3*dTheta3*invgamb33 -
+       2*dtrK3*invgamb33 - 24*cpi*invgamb13*Sm1 - 24*cpi*invgamb23*Sm2 -
+       24*cpi*invgamb33*Sm3 - 2*psi4*ZU3*trK[ijk]))/3.
+;
+
+const auto
+dtbeta1[ijk]
+=
+B1[ijk] + hDbeta11*beta1[ijk] + hDbeta21*beta2[ijk] + hDbeta31*beta3[ijk]
+;
+
+const auto
+dtbeta2[ijk]
+=
+B2[ijk] + hDbeta12*beta1[ijk] + hDbeta22*beta2[ijk] + hDbeta32*beta3[ijk]
+;
+
+const auto
+dtbeta3[ijk]
+=
+B3[ijk] + hDbeta13*beta1[ijk] + hDbeta23*beta2[ijk] + hDbeta33*beta3[ijk]
+;
+
+const auto
+dtB1[ijk]
+=
+(-4*ceta*B1[ijk] + (4*hDB11 - 3*hDLt11)*beta1[ijk] + 4*hDB21*beta2[ijk] -
+    3*hDLt21*beta2[ijk] + 4*hDB31*beta3[ijk] - 3*hDLt31*beta3[ijk] +
+    3*dtLt1[ijk])/4.
+;
+
+const auto
+dtB2[ijk]
+=
+(-4*ceta*B2[ijk] + (4*hDB12 - 3*hDLt12)*beta1[ijk] + 4*hDB22*beta2[ijk] -
+    3*hDLt22*beta2[ijk] + 4*hDB32*beta3[ijk] - 3*hDLt32*beta3[ijk] +
+    3*dtLt2[ijk])/4.
+;
+
+const auto
+dtB3[ijk]
+=
+(-4*ceta*B3[ijk] + (4*hDB13 - 3*hDLt13)*beta1[ijk] + 4*hDB23*beta2[ijk] -
+    3*hDLt23*beta2[ijk] + 4*hDB33*beta3[ijk] - 3*hDLt33*beta3[ijk] +
+    3*dtLt3[ijk])/4.
+;
+
+
   });
 });
 

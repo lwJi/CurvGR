@@ -145,6 +145,9 @@ SetMainPrint[
   PrintEquations[{Mode -> "Temp", ExtraReplaceRules -> trigrules}, LieVarlist];
   pr[];
 
+  PrintEquations[{Mode -> "Temp", ExtraReplaceRules -> trigrules}, dtEvolVarlist];
+  pr[];
+
   pr["  });"];
   pr["});"];
 ];
