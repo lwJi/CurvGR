@@ -29,6 +29,13 @@ ComponentValue[ra[], R];
 ComponentValue[th[], T];
 ComponentValue[ph[], P];
 
+trigrules = {
+  Sin[th[]] -> sinth,
+  Cos[th[]] -> costh,
+  Csc[th[]] -> cscth,
+  Cot[th[]] -> cotth
+};
+
 (* Osphonormal Basis adapted to the Default Chart. *)
 DefBasis[Osph, TangentM3, {1, 2, 3}, BasisColor -> Red];
 
@@ -46,7 +53,7 @@ MetricCompute[gamh, sph, All, Parallelize -> True, Verbose -> False]
 
 <<wl/reference_metric.wl
 
-SetRefMetrics[sph];
+SetRefMetrics[sph, trigrules];
 
 (**********************************)
 (* Define Variables and Equations *)
@@ -60,13 +67,6 @@ SetRefMetrics[sph];
 
 SetComponents[{ChartName -> Osph}, dtEvolVarlist];
 SetComponents[{ChartName -> Osph}, EvolVarlist];
-
-trigrules = {
-  Sin[th[]] -> sinth,
-  Cos[th[]] -> costh,
-  Csc[th[]] -> cscth,
-  Cot[th[]] -> cotth
-};
 
 (* Basis transformation *)
 BasisTrans[sph, Osph, trigrules];

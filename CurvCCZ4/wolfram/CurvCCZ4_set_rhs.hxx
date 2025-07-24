@@ -971,7 +971,7 @@ deps123
 const auto
 dgamb133
 =
-deps133 - 2*R*Power(Sin(T),2)
+deps133 - 2*R*Power(sinth,2)
 ;
 
 const auto
@@ -1007,7 +1007,7 @@ deps223
 const auto
 dgamb233
 =
-deps233 - 2*Power(R,2)*Cos(T)*Sin(T)
+deps233 - 2*costh*Power(R,2)*sinth
 ;
 
 const auto
