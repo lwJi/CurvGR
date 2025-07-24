@@ -216,13 +216,3 @@ DefConstantSymbol[cmuS, PrintAs -> "\!\(\*SubscriptBox[\(\[Mu]\), \(S\)]\)"];
 
 DefConstantSymbol[ceta, PrintAs -> "\[Eta]"];
 
-(* Constant Symbol to make TensorQ True or IsDefined. Don't differenciate them *)
-
-DefConstantSymbol[sinth, PrintAs -> "sin(\[Theta])"];
-
-DefConstantSymbol[costh, PrintAs -> "cos(\[Theta])"];
-
-DefConstantSymbol[cscth, PrintAs -> "csc(\[Theta])"];
-
-DefConstantSymbol[cotth, PrintAs -> "cot(\[Theta])"];
-
