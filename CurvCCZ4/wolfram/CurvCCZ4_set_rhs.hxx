@@ -4,31 +4,31 @@
 #ifndef CURVCCZ4_SET_RHS_HXX
 #define CURVCCZ4_SET_RHS_HXX
 
-const auto dtphi = gf_dtphi;
-const auto dttrK = gf_dttrK;
-const auto dtTheta = gf_dtTheta;
-const auto dtalpha = gf_dtalpha;
-const auto dtepsOsph11 = gf_dteps[0];
-const auto dtepsOsph12 = gf_dteps[1];
-const auto dtepsOsph13 = gf_dteps[2];
-const auto dtepsOsph22 = gf_dteps[3];
-const auto dtepsOsph23 = gf_dteps[4];
-const auto dtepsOsph33 = gf_dteps[5];
-const auto dtexAbOsph11 = gf_dtexAb[0];
-const auto dtexAbOsph12 = gf_dtexAb[1];
-const auto dtexAbOsph13 = gf_dtexAb[2];
-const auto dtexAbOsph22 = gf_dtexAb[3];
-const auto dtexAbOsph23 = gf_dtexAb[4];
-const auto dtexAbOsph33 = gf_dtexAb[5];
-const auto dtLtOsph1 = gf_dtLt[0];
-const auto dtLtOsph2 = gf_dtLt[1];
-const auto dtLtOsph3 = gf_dtLt[2];
-const auto dtbetaOsph1 = gf_dtbeta[0];
-const auto dtbetaOsph2 = gf_dtbeta[1];
-const auto dtbetaOsph3 = gf_dtbeta[2];
-const auto dtBOsph1 = gf_dtB[0];
-const auto dtBOsph2 = gf_dtB[1];
-const auto dtBOsph3 = gf_dtB[2];
+const auto Odtphi = gf_Odtphi;
+const auto OdttrK = gf_OdttrK;
+const auto OdtTheta = gf_OdtTheta;
+const auto Odtalpha = gf_Odtalpha;
+const auto OdtepsOsph11 = gf_Odteps[0];
+const auto OdtepsOsph12 = gf_Odteps[1];
+const auto OdtepsOsph13 = gf_Odteps[2];
+const auto OdtepsOsph22 = gf_Odteps[3];
+const auto OdtepsOsph23 = gf_Odteps[4];
+const auto OdtepsOsph33 = gf_Odteps[5];
+const auto OdtexAbOsph11 = gf_OdtexAb[0];
+const auto OdtexAbOsph12 = gf_OdtexAb[1];
+const auto OdtexAbOsph13 = gf_OdtexAb[2];
+const auto OdtexAbOsph22 = gf_OdtexAb[3];
+const auto OdtexAbOsph23 = gf_OdtexAb[4];
+const auto OdtexAbOsph33 = gf_OdtexAb[5];
+const auto OdtLtOsph1 = gf_OdtLt[0];
+const auto OdtLtOsph2 = gf_OdtLt[1];
+const auto OdtLtOsph3 = gf_OdtLt[2];
+const auto OdtbetaOsph1 = gf_Odtbeta[0];
+const auto OdtbetaOsph2 = gf_Odtbeta[1];
+const auto OdtbetaOsph3 = gf_Odtbeta[2];
+const auto OdtBOsph1 = gf_OdtB[0];
+const auto OdtBOsph2 = gf_OdtB[1];
+const auto OdtBOsph3 = gf_OdtB[2];
 
 const auto phi = gf_phi;
 const auto trK = gf_trK;
@@ -4026,25 +4026,176 @@ B3[ijk] + hDbeta13*beta1[ijk] + hDbeta23*beta2[ijk] + hDbeta33*beta3[ijk]
 const auto
 dtB1
 =
-(-4*ceta*B1[ijk] + (4*hDB11 - 3*hDLt11)*beta1[ijk] + 4*hDB21*beta2[ijk] -
-    3*hDLt21*beta2[ijk] + 4*hDB31*beta3[ijk] - 3*hDLt31*beta3[ijk] +
-    3*dtLt1[ijk])/4.
+(3*dtLt1 - 4*ceta*B1[ijk] + (4*hDB11 - 3*hDLt11)*beta1[ijk] +
+    4*hDB21*beta2[ijk] - 3*hDLt21*beta2[ijk] + 4*hDB31*beta3[ijk] -
+    3*hDLt31*beta3[ijk])/4.
 ;
 
 const auto
 dtB2
 =
-(-4*ceta*B2[ijk] + (4*hDB12 - 3*hDLt12)*beta1[ijk] + 4*hDB22*beta2[ijk] -
-    3*hDLt22*beta2[ijk] + 4*hDB32*beta3[ijk] - 3*hDLt32*beta3[ijk] +
-    3*dtLt2[ijk])/4.
+(3*dtLt2 - 4*ceta*B2[ijk] + (4*hDB12 - 3*hDLt12)*beta1[ijk] +
+    4*hDB22*beta2[ijk] - 3*hDLt22*beta2[ijk] + 4*hDB32*beta3[ijk] -
+    3*hDLt32*beta3[ijk])/4.
 ;
 
 const auto
 dtB3
 =
-(-4*ceta*B3[ijk] + (4*hDB13 - 3*hDLt13)*beta1[ijk] + 4*hDB23*beta2[ijk] -
-    3*hDLt23*beta2[ijk] + 4*hDB33*beta3[ijk] - 3*hDLt33*beta3[ijk] +
-    3*dtLt3[ijk])/4.
+(3*dtLt3 - 4*ceta*B3[ijk] + (4*hDB13 - 3*hDLt13)*beta1[ijk] +
+    4*hDB23*beta2[ijk] - 3*hDLt23*beta2[ijk] + 4*hDB33*beta3[ijk] -
+    3*hDLt33*beta3[ijk])/4.
+;
+
+
+const auto
+Odtphi
+=
+dtphi
+;
+
+const auto
+OdttrK
+=
+dttrK
+;
+
+const auto
+OdtTheta
+=
+dtTheta
+;
+
+const auto
+Odtalpha
+=
+dtalpha
+;
+
+const auto
+OdtepsOsph11
+=
+dteps11
+;
+
+const auto
+OdtepsOsph12
+=
+dteps12/R
+;
+
+const auto
+OdtepsOsph13
+=
+(cscth*dteps13)/R
+;
+
+const auto
+OdtepsOsph22
+=
+dteps22/Power(R,2)
+;
+
+const auto
+OdtepsOsph23
+=
+(cscth*dteps23)/Power(R,2)
+;
+
+const auto
+OdtepsOsph33
+=
+(Power(cscth,2)*dteps33)/Power(R,2)
+;
+
+const auto
+OdtexAbOsph11
+=
+dtexAb11
+;
+
+const auto
+OdtexAbOsph12
+=
+dtexAb12/R
+;
+
+const auto
+OdtexAbOsph13
+=
+(cscth*dtexAb13)/R
+;
+
+const auto
+OdtexAbOsph22
+=
+dtexAb22/Power(R,2)
+;
+
+const auto
+OdtexAbOsph23
+=
+(cscth*dtexAb23)/Power(R,2)
+;
+
+const auto
+OdtexAbOsph33
+=
+(Power(cscth,2)*dtexAb33)/Power(R,2)
+;
+
+const auto
+OdtLtOsph1
+=
+dtLt1
+;
+
+const auto
+OdtLtOsph2
+=
+dtLt2*R
+;
+
+const auto
+OdtLtOsph3
+=
+dtLt3*R*sinth
+;
+
+const auto
+OdtbetaOsph1
+=
+dtbeta1
+;
+
+const auto
+OdtbetaOsph2
+=
+dtbeta2*R
+;
+
+const auto
+OdtbetaOsph3
+=
+dtbeta3*R*sinth
+;
+
+const auto
+OdtBOsph1
+=
+dtB1
+;
+
+const auto
+OdtBOsph2
+=
+dtB2*R
+;
+
+const auto
+OdtBOsph3
+=
+dtB3*R*sinth
 ;
 
 

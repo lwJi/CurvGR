@@ -38,12 +38,12 @@ dOrthRules[coord_, orth_] :=
     ];
 
 (**
- * \brief Set Basis Transformation for the evolution variables
+ * \brief Apply basis transformation from orthonormal basis to coordinate basis for the evolution variables and its coordinate derivatives
  *
  * \param coord  coordinate basis
  * \param orth   orthonormal basis
  *)
-BasisTrans[coord_, orth_] :=
+TransEvolOrthToCoord[orth_, coord_] :=
   Module[{rules},
     rules = dOrthRules[coord, orth];
     (* variable themselves *)
@@ -61,5 +61,26 @@ BasisTrans[coord_, orth_] :=
     (* second derivatives *)
     SetEQNDelayed[ddeps[k_, l_, i_, j_], PDOfBasis[coord][k][PDOfBasis[coord][l][eps[i, j] // SeparateBasis[orth] // TraceBasisDummy // ToValues]] /. rules];
     SetEQNDelayed[ddbeta[k_, l_, i_],    PDOfBasis[coord][k][PDOfBasis[coord][l][beta[i]   // SeparateBasis[orth] // TraceBasisDummy // ToValues]] /. rules];
+  ];
+
+(**
+ * \brief Apply basis transformation from coordinate basis to orthonormal basis for the RHS of evolution variables
+ *
+ * \param coord  coordinate basis
+ * \param orth   orthonormal basis
+ *)
+TransEvolRHSCoordToOrth[coord_, orth_] :=
+  Module[{},
+    (* scalars *)
+    SetEQNDelayed[Odtphi[],   dtphi[]];
+    SetEQNDelayed[OdttrK[],   dttrK[]];
+    SetEQNDelayed[OdtTheta[], dtTheta[]];
+    SetEQNDelayed[Odtalpha[], dtalpha[]];
+    (* non-scalars *)
+    SetEQNDelayed[Odteps[i_, j_],  dteps[i, j]  // SeparateBasis[coord] // TraceBasisDummy // ToValues];
+    SetEQNDelayed[OdtexAb[i_, j_], dtexAb[i, j] // SeparateBasis[coord] // TraceBasisDummy // ToValues];
+    SetEQNDelayed[OdtLt[i_],       dtLt[i]      // SeparateBasis[coord] // TraceBasisDummy // ToValues];
+    SetEQNDelayed[Odtbeta[i_],     dtbeta[i]    // SeparateBasis[coord] // TraceBasisDummy // ToValues];
+    SetEQNDelayed[OdtB[i_],        dtB[i]       // SeparateBasis[coord] // TraceBasisDummy // ToValues];
   ];
 

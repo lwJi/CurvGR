@@ -10,34 +10,43 @@
 
 (***********************)
 
-dtEvolVarlist =
-  GridTensors[
-    (* scalars *)
-    {dtphi[],                             PrintAs -> "\!\(\*SubscriptBox[\(\[PartialD]\), \(t\)]\)\[Phi]"},
-    {dttrK[],                             PrintAs -> "\!\(\*SubscriptBox[\(\[PartialD]\), \(t\)]\)K"},
-    {dtTheta[],                           PrintAs -> "\!\(\*SubscriptBox[\(\[PartialD]\), \(t\)]\)\[CapitalTheta]"},
-    {dtalpha[],                           PrintAs -> "\!\(\*SubscriptBox[\(\[PartialD]\), \(t\)]\)\[Alpha]"},
-    (* non-scalars *)
-    {dteps[-i, -j], Symmetric[{-i, -j}],  PrintAs -> "\!\(\*SubscriptBox[\(\[PartialD]\), \(t\)]\)\[Epsilon]"},
-    {dtexAb[-i, -j], Symmetric[{-i, -j}], PrintAs -> "\!\(\*SubscriptBox[\(\[PartialD]\), \(t\)]\)\!\(\*OverscriptBox[\(A\), \(_\)]\)"},
-    {dtLt[i],                             PrintAs -> "\!\(\*SubscriptBox[\(\[PartialD]\), \(t\)]\)\!\(\*OverscriptBox[\(\[CapitalLambda]\), \(~\)]\)"},
-    {dtbeta[i],                           PrintAs -> "\!\(\*SubscriptBox[\(\[PartialD]\), \(t\)]\)\[Beta]"},
-    {dtB[i],                              PrintAs -> "\!\(\*SubscriptBox[\(\[PartialD]\), \(t\)]\)B"}
-  ];
-
 EvolVarlist =
   GridTensors[
-    (* scalars *)
     {phi[],                             PrintAs -> "\[Phi]"},
     {trK[],                             PrintAs -> "K"},
     {Theta[],                           PrintAs -> "\[CapitalTheta]"},
     {alpha[],                           PrintAs -> "\[Alpha]"},
-    (* non-scalars *)
     {eps[-i, -j], Symmetric[{-i, -j}],  PrintAs -> "\[Epsilon]"},
     {exAb[-i, -j], Symmetric[{-i, -j}], PrintAs -> "\!\(\*OverscriptBox[\(A\), \(_\)]\)"},
     {Lt[i],                             PrintAs -> "\!\(\*OverscriptBox[\(\[CapitalLambda]\), \(~\)]\)"},
     {beta[i],                           PrintAs -> "\[Beta]"},
     {B[i],                              PrintAs -> "B"}
+  ];
+
+dtEvolVarlistOrth =
+  GridTensors[
+    {Odtphi[],                             PrintAs -> "\!\(\*SubscriptBox[\(\[PartialD]\), \(t\)]\)\[Phi]"},
+    {OdttrK[],                             PrintAs -> "\!\(\*SubscriptBox[\(\[PartialD]\), \(t\)]\)K"},
+    {OdtTheta[],                           PrintAs -> "\!\(\*SubscriptBox[\(\[PartialD]\), \(t\)]\)\[CapitalTheta]"},
+    {Odtalpha[],                           PrintAs -> "\!\(\*SubscriptBox[\(\[PartialD]\), \(t\)]\)\[Alpha]"},
+    {Odteps[-i, -j], Symmetric[{-i, -j}],  PrintAs -> "\!\(\*SubscriptBox[\(\[PartialD]\), \(t\)]\)\[Epsilon]"},
+    {OdtexAb[-i, -j], Symmetric[{-i, -j}], PrintAs -> "\!\(\*SubscriptBox[\(\[PartialD]\), \(t\)]\)\!\(\*OverscriptBox[\(A\), \(_\)]\)"},
+    {OdtLt[i],                             PrintAs -> "\!\(\*SubscriptBox[\(\[PartialD]\), \(t\)]\)\!\(\*OverscriptBox[\(\[CapitalLambda]\), \(~\)]\)"},
+    {Odtbeta[i],                           PrintAs -> "\!\(\*SubscriptBox[\(\[PartialD]\), \(t\)]\)\[Beta]"},
+    {OdtB[i],                              PrintAs -> "\!\(\*SubscriptBox[\(\[PartialD]\), \(t\)]\)B"}
+  ];
+
+dtEvolVarlist =
+  TempTensors[
+    {dtphi[],                             PrintAs -> "\!\(\*SubscriptBox[\(\[PartialD]\), \(t\)]\)\[Phi]"},
+    {dttrK[],                             PrintAs -> "\!\(\*SubscriptBox[\(\[PartialD]\), \(t\)]\)K"},
+    {dtTheta[],                           PrintAs -> "\!\(\*SubscriptBox[\(\[PartialD]\), \(t\)]\)\[CapitalTheta]"},
+    {dtalpha[],                           PrintAs -> "\!\(\*SubscriptBox[\(\[PartialD]\), \(t\)]\)\[Alpha]"},
+    {dteps[-i, -j], Symmetric[{-i, -j}],  PrintAs -> "\!\(\*SubscriptBox[\(\[PartialD]\), \(t\)]\)\[Epsilon]"},
+    {dtexAb[-i, -j], Symmetric[{-i, -j}], PrintAs -> "\!\(\*SubscriptBox[\(\[PartialD]\), \(t\)]\)\!\(\*OverscriptBox[\(A\), \(_\)]\)"},
+    {dtLt[i],                             PrintAs -> "\!\(\*SubscriptBox[\(\[PartialD]\), \(t\)]\)\!\(\*OverscriptBox[\(\[CapitalLambda]\), \(~\)]\)"},
+    {dtbeta[i],                           PrintAs -> "\!\(\*SubscriptBox[\(\[PartialD]\), \(t\)]\)\[Beta]"},
+    {dtB[i],                              PrintAs -> "\!\(\*SubscriptBox[\(\[PartialD]\), \(t\)]\)B"}
   ];
 
 (*************************)
