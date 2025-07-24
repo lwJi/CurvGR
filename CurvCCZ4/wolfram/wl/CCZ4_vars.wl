@@ -91,7 +91,7 @@ IntermediateVarlist =
     {psim4[],                                  PrintAs -> "\!\(\*SuperscriptBox[\(\[Psi]\), \(-4\)]\)"},
     {psi4[],                                   PrintAs -> "\!\(\*SuperscriptBox[\(\[Psi]\), \(4\)]\)"},
     {dgam[-k, -i, -j], Symmetric[{-i, -j}],    PrintAs -> "\[PartialD]\[Gamma]"},
-    {invgambdet[],                             PrintAs -> "\!\(\*OverscriptBox[\(\[Gamma]\), \(_\)]\)"},
+    {invgambdet[],                             PrintAs -> "1/\!\(\*OverscriptBox[\(\[Gamma]\), \(_\)]\)"},
     {invgamb[i, j], Symmetric[{i, j}],         PrintAs -> "\!\(\*OverscriptBox[\(\[Gamma]\), \(_\)]\)"},
     {invgam[i, j], Symmetric[{i, j}],          PrintAs -> "\[Gamma]"},
     {gam[-i, -j], Symmetric[{-i, -j}],         PrintAs -> "\[Gamma]"},
