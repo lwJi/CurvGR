@@ -60,7 +60,7 @@ SetRefMetrics[sph];
 <<wl/CCZ4_vars.wl
 
 (* set components in orthonormal basis, components in default basis are set automatically *)
-SetComponents[{ChartName -> Osph}, dtEvolVarlistOrth];
+SetComponents[{ChartName -> Osph}, dtEvolVarlist];
 SetComponents[{ChartName -> Osph}, EvolVarlist];
 
 <<wl/CCZ4_rhs.wl
@@ -98,7 +98,7 @@ trigrules = {
 
 SetMainPrint[
   (* Initialize grid function names *)
-  PrintInitializations[{Mode -> "MainOut", ChartName -> Osph}, dtEvolVarlistOrth];
+  PrintInitializations[{Mode -> "MainOut", ChartName -> Osph}, dtEvolVarlist];
   pr[];
   PrintInitializations[{Mode -> "MainIn", ChartName -> Osph}, EvolVarlist];
   pr[];
@@ -152,7 +152,7 @@ SetMainPrint[
   PrintEquations[{Mode -> "Temp", ExtraReplaceRules -> trigrules}, dtEvolVarlist];
   pr[];
 
-  PrintEquations[{Mode -> "Temp", ExtraReplaceRules -> trigrules, ChartName -> Osph}, dtEvolVarlistOrth];
+  PrintEquations[{Mode -> "Main", ExtraReplaceRules -> trigrules, ChartName -> Osph, SuffixName -> "Orth"}, dtEvolVarlist[[5;;-1]]];
   pr[];
 
   pr["  });"];

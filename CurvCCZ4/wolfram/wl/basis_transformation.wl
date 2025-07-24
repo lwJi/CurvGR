@@ -71,16 +71,10 @@ TransEvolOrthToCoord[orth_, coord_] :=
  *)
 TransEvolRHSCoordToOrth[coord_, orth_] :=
   Module[{},
-    (* scalars *)
-    SetEQNDelayed[Odtphi[],   dtphi[]];
-    SetEQNDelayed[OdttrK[],   dttrK[]];
-    SetEQNDelayed[OdtTheta[], dtTheta[]];
-    SetEQNDelayed[Odtalpha[], dtalpha[]];
-    (* non-scalars *)
-    SetEQNDelayed[Odteps[i_, j_],  dteps[i, j]  // SeparateBasis[coord] // TraceBasisDummy // ToValues];
-    SetEQNDelayed[OdtexAb[i_, j_], dtexAb[i, j] // SeparateBasis[coord] // TraceBasisDummy // ToValues];
-    SetEQNDelayed[OdtLt[i_],       dtLt[i]      // SeparateBasis[coord] // TraceBasisDummy // ToValues];
-    SetEQNDelayed[Odtbeta[i_],     dtbeta[i]    // SeparateBasis[coord] // TraceBasisDummy // ToValues];
-    SetEQNDelayed[OdtB[i_],        dtB[i]       // SeparateBasis[coord] // TraceBasisDummy // ToValues];
+    SetEQNDelayed[{SuffixName -> "Orth"}, dteps[i_, j_],  dteps[i, j]  // SeparateBasis[coord] // TraceBasisDummy // ToValues];
+    SetEQNDelayed[{SuffixName -> "Orth"}, dtexAb[i_, j_], dtexAb[i, j] // SeparateBasis[coord] // TraceBasisDummy // ToValues];
+    SetEQNDelayed[{SuffixName -> "Orth"}, dtLt[i_],       dtLt[i]      // SeparateBasis[coord] // TraceBasisDummy // ToValues];
+    SetEQNDelayed[{SuffixName -> "Orth"}, dtbeta[i_],     dtbeta[i]    // SeparateBasis[coord] // TraceBasisDummy // ToValues];
+    SetEQNDelayed[{SuffixName -> "Orth"}, dtB[i_],        dtB[i]       // SeparateBasis[coord] // TraceBasisDummy // ToValues];
   ];
 
