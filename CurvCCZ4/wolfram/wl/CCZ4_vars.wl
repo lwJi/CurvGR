@@ -12,10 +12,12 @@
 
 EvolVarlist =
   GridTensors[
+    (* scalars *)
     {phi[],                             PrintAs -> "\[Phi]"},
     {trK[],                             PrintAs -> "K"},
     {Theta[],                           PrintAs -> "\[CapitalTheta]"},
     {alpha[],                           PrintAs -> "\[Alpha]"},
+    (* non-scalars *)
     {eps[-i, -j], Symmetric[{-i, -j}],  PrintAs -> "\[Epsilon]"},
     {exAb[-i, -j], Symmetric[{-i, -j}], PrintAs -> "\!\(\*OverscriptBox[\(A\), \(_\)]\)"},
     {Lt[i],                             PrintAs -> "\!\(\*OverscriptBox[\(\[CapitalLambda]\), \(~\)]\)"},
@@ -25,10 +27,12 @@ EvolVarlist =
 
 dtEvolVarlist =
   GridTensors[
+    (* scalars *)
     {dtphi[],                             PrintAs -> "\!\(\*SubscriptBox[\(\[PartialD]\), \(t\)]\)\[Phi]"},
     {dttrK[],                             PrintAs -> "\!\(\*SubscriptBox[\(\[PartialD]\), \(t\)]\)K"},
     {dtTheta[],                           PrintAs -> "\!\(\*SubscriptBox[\(\[PartialD]\), \(t\)]\)\[CapitalTheta]"},
     {dtalpha[],                           PrintAs -> "\!\(\*SubscriptBox[\(\[PartialD]\), \(t\)]\)\[Alpha]"},
+    (* non-scalars *)
     {dteps[-i, -j], Symmetric[{-i, -j}],  PrintAs -> "\!\(\*SubscriptBox[\(\[PartialD]\), \(t\)]\)\[Epsilon]"},
     {dtexAb[-i, -j], Symmetric[{-i, -j}], PrintAs -> "\!\(\*SubscriptBox[\(\[PartialD]\), \(t\)]\)\!\(\*OverscriptBox[\(A\), \(_\)]\)"},
     {dtLt[i],                             PrintAs -> "\!\(\*SubscriptBox[\(\[PartialD]\), \(t\)]\)\!\(\*OverscriptBox[\(\[CapitalLambda]\), \(~\)]\)"},
@@ -126,10 +130,15 @@ hDVarlist =
     {hDB[-k, i],                              PrintAs -> "\!\(\*OverscriptBox[\(D\), \(^\)]\)B"}
   ];
 
+(**
+ * Here dhDgamb is not symmetric in the first two index. However, hDhDgamb is,
+ * so in the calculation it only require 'half' of the components of dhDgamb.
+ * So here we can effectively define dhDgamb as symmetric in {k, l}.
+ *)
 hDhDVarlist =
   TempTensors[
-    {dhDgamb[-l, -m, -i, -j], GenSet[Cycles[{1, 2}], Cycles[{3, 4}]],  PrintAs -> "\[PartialD]\!\(\*OverscriptBox[\(D\), \(^\)]\)\!\(\*OverscriptBox[\(\[Gamma]\), \(_\)]\)"},
-    {hDhDgamb[-l, -m, -i, -j], GenSet[Cycles[{1, 2}], Cycles[{3, 4}]], PrintAs -> "\!\(\*OverscriptBox[\(D\), \(^\)]\)\!\(\*OverscriptBox[\(D\), \(^\)]\)\!\(\*OverscriptBox[\(\[Gamma]\), \(_\)]\)"},
+    {dhDgamb[-k, -l, -i, -j], GenSet[Cycles[{1, 2}], Cycles[{3, 4}]],  PrintAs -> "\[PartialD]\!\(\*OverscriptBox[\(D\), \(^\)]\)\!\(\*OverscriptBox[\(\[Gamma]\), \(_\)]\)"},
+    {hDhDgamb[-k, -l, -i, -j], GenSet[Cycles[{1, 2}], Cycles[{3, 4}]], PrintAs -> "\!\(\*OverscriptBox[\(D\), \(^\)]\)\!\(\*OverscriptBox[\(D\), \(^\)]\)\!\(\*OverscriptBox[\(\[Gamma]\), \(_\)]\)"},
     {hDhDbeta[-i, -j, k], Symmetric[{-i, -j}],                         PrintAs -> "\!\(\*OverscriptBox[\(D\), \(^\)]\)\!\(\*OverscriptBox[\(D\), \(^\)]\)\[Beta]"}
   ];
 
@@ -156,13 +165,15 @@ RVarlist =
 
 LieVarlist =
   TempTensors[
+    (* scalars *)
     {Lbetaphi[],                             PrintAs -> "\!\(\*SubscriptBox[\(\[ScriptCapitalL]\), \(\[Beta]\)]\)\[Phi]"},
-    {Lbetagamb[-i, -j], Symmetric[{-i, -j}], PrintAs -> "\!\(\*SubscriptBox[\(\[ScriptCapitalL]\), \(\[Beta]\)]\)\!\(\*OverscriptBox[\(\[Gamma]\), \(_\)]\)"},
     {LbetatrK[],                             PrintAs -> "\!\(\*SubscriptBox[\(\[ScriptCapitalL]\), \(\[Beta]\)]\)K"},
-    {LbetaexAb[-i, -j], Symmetric[{-i, -j}], PrintAs -> "\!\(\*SubscriptBox[\(\[ScriptCapitalL]\), \(\[Beta]\)]\)\!\(\*OverscriptBox[\(A\), \(_\)]\)"},
-    {LbetaLt[i],                             PrintAs -> "\!\(\*SubscriptBox[\(\[ScriptCapitalL]\), \(\[Beta]\)]\)\!\(\*OverscriptBox[\(\[CapitalLambda]\), \(~\)]\)"},
     {LbetaTheta[],                           PrintAs -> "\!\(\*SubscriptBox[\(\[ScriptCapitalL]\), \(\[Beta]\)]\)\[CapitalTheta]"},
     {Lbetaalpha[],                           PrintAs -> "\!\(\*SubscriptBox[\(\[ScriptCapitalL]\), \(\[Beta]\)]\)\[Alpha]"},
+    (* non-scalars *)
+    {Lbetagamb[-i, -j], Symmetric[{-i, -j}], PrintAs -> "\!\(\*SubscriptBox[\(\[ScriptCapitalL]\), \(\[Beta]\)]\)\!\(\*OverscriptBox[\(\[Gamma]\), \(_\)]\)"},
+    {LbetaexAb[-i, -j], Symmetric[{-i, -j}], PrintAs -> "\!\(\*SubscriptBox[\(\[ScriptCapitalL]\), \(\[Beta]\)]\)\!\(\*OverscriptBox[\(A\), \(_\)]\)"},
+    {LbetaLt[i],                             PrintAs -> "\!\(\*SubscriptBox[\(\[ScriptCapitalL]\), \(\[Beta]\)]\)\!\(\*OverscriptBox[\(\[CapitalLambda]\), \(~\)]\)"},
     {LbetaB[i],                              PrintAs -> "\!\(\*SubscriptBox[\(\[ScriptCapitalL]\), \(\[Beta]\)]\)B"}
   ];
 
@@ -177,11 +188,6 @@ MatterVarlist =
   ];
 
 (* Constraints *)
-
-dAtUUVarlist =
-  TempTensors[
-    {trdexAtUU[i], PrintAs -> "\[PartialD]\!\(\*OverscriptBox[\(A\), \(~\)]\)"}
-  ];
 
 ConstraintVarlist =
   GridTensors[

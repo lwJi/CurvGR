@@ -3587,6 +3587,24 @@ beta1*dphi1 + beta2*dphi2 + beta3*dphi3
 ;
 
 const auto
+LbetatrK
+=
+beta1*dtrK1 + beta2*dtrK2 + beta3*dtrK3
+;
+
+const auto
+LbetaTheta
+=
+beta1*dTheta1 + beta2*dTheta2 + beta3*dTheta3
+;
+
+const auto
+Lbetaalpha
+=
+beta1*dalpha1 + beta2*dalpha2 + beta3*dalpha3
+;
+
+const auto
 Lbetagamb11
 =
 beta1*dgamb111 + beta2*dgamb211 + beta3*dgamb311 + 2*dbeta11*gamb11 +
@@ -3629,12 +3647,6 @@ Lbetagamb33
 =
 beta1*dgamb133 + beta2*dgamb233 + beta3*dgamb333 + 2*dbeta31*gamb13 +
   2*dbeta32*gamb23 + 2*dbeta33*gamb33
-;
-
-const auto
-LbetatrK
-=
-beta1*dtrK1 + beta2*dtrK2 + beta3*dtrK3
 ;
 
 const auto
@@ -3701,18 +3713,6 @@ LbetaLt3
 =
 beta1*dLt13 + beta2*dLt23 + beta3*dLt33 - dbeta13*Lt1 - dbeta23*Lt2 -
   dbeta33*Lt3
-;
-
-const auto
-LbetaTheta
-=
-beta1*dTheta1 + beta2*dTheta2 + beta3*dTheta3
-;
-
-const auto
-Lbetaalpha
-=
-beta1*dalpha1 + beta2*dalpha2 + beta3*dalpha3
 ;
 
 const auto
