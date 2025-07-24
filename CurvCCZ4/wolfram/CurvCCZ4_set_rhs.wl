@@ -20,6 +20,8 @@ SetGridPointIndex["[[ijk]]"];
 
 SetTempVariableType["auto"];
 
+SetInterfaceWithNonCoordBasis[True];
+
 DefManifold[M3, 3, IndexRange[a, z]];
 
 (************************)
@@ -149,7 +151,8 @@ SetMainPrint[
   PrintEquations[{Mode -> "Temp", ExtraReplaceRules -> trigrules}, LieVarlist];
   pr[];
 
-  PrintEquations[{Mode -> "Temp", ExtraReplaceRules -> trigrules}, dtEvolVarlist];
+  PrintEquations[{Mode -> "Main", ExtraReplaceRules -> trigrules}, dtEvolVarlist[[1;;4]]];
+  PrintEquations[{Mode -> "Temp", ExtraReplaceRules -> trigrules}, dtEvolVarlist[[5;;-1]]];
   pr[];
 
   PrintEquations[{Mode -> "Main", ExtraReplaceRules -> trigrules, ChartName -> Osph, SuffixName -> "Orth"}, dtEvolVarlist[[5;;-1]]];

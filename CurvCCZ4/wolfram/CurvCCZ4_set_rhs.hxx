@@ -903,37 +903,37 @@ ddbeta333
 const auto
 gamb11
 =
-1 + eps11[ijk]
+1 + eps11
 ;
 
 const auto
 gamb12
 =
-eps12[ijk]
+eps12
 ;
 
 const auto
 gamb13
 =
-eps13[ijk]
+eps13
 ;
 
 const auto
 gamb22
 =
-Power(R,2) + eps22[ijk]
+eps22 + Power(R,2)
 ;
 
 const auto
 gamb23
 =
-eps23[ijk]
+eps23
 ;
 
 const auto
 gamb33
 =
-Power(R,2)*Power(sinth,2) + eps33[ijk]
+eps33 + Power(R,2)*Power(sinth,2)
 ;
 
 const auto
@@ -1713,76 +1713,76 @@ GamDDD133*invgam13 + GamDDD233*invgam23 + GamDDD333*invgam33
 const auto
 exAbUU11
 =
-Power(invgamb11,2)*exAb11[ijk] + 2*invgamb11*invgamb12*exAb12[ijk] +
-  2*invgamb11*invgamb13*exAb13[ijk] + Power(invgamb12,2)*exAb22[ijk] +
-  2*invgamb12*invgamb13*exAb23[ijk] + Power(invgamb13,2)*exAb33[ijk]
+exAb11*Power(invgamb11,2) + 2*exAb12*invgamb11*invgamb12 +
+  exAb22*Power(invgamb12,2) + 2*exAb13*invgamb11*invgamb13 +
+  2*exAb23*invgamb12*invgamb13 + exAb33*Power(invgamb13,2)
 ;
 
 const auto
 exAbUU12
 =
-invgamb11*invgamb12*exAb11[ijk] +
-  (Power(invgamb12,2) + invgamb11*invgamb22)*exAb12[ijk] +
-  invgamb12*invgamb13*exAb13[ijk] + invgamb11*invgamb23*exAb13[ijk] +
-  invgamb12*invgamb22*exAb22[ijk] + invgamb13*invgamb22*exAb23[ijk] +
-  invgamb12*invgamb23*exAb23[ijk] + invgamb13*invgamb23*exAb33[ijk]
+exAb11*invgamb11*invgamb12 + exAb13*invgamb12*invgamb13 +
+  exAb22*invgamb12*invgamb22 + exAb23*invgamb13*invgamb22 +
+  exAb12*(Power(invgamb12,2) + invgamb11*invgamb22) +
+  exAb13*invgamb11*invgamb23 + exAb23*invgamb12*invgamb23 +
+  exAb33*invgamb13*invgamb23
 ;
 
 const auto
 exAbUU13
 =
-invgamb11*invgamb13*exAb11[ijk] +
-  (invgamb12*invgamb13 + invgamb11*invgamb23)*exAb12[ijk] +
-  Power(invgamb13,2)*exAb13[ijk] + invgamb11*invgamb33*exAb13[ijk] +
-  invgamb12*invgamb23*exAb22[ijk] + invgamb13*invgamb23*exAb23[ijk] +
-  invgamb12*invgamb33*exAb23[ijk] + invgamb13*invgamb33*exAb33[ijk]
+exAb11*invgamb11*invgamb13 + exAb12*invgamb12*invgamb13 +
+  exAb13*Power(invgamb13,2) + exAb12*invgamb11*invgamb23 +
+  exAb22*invgamb12*invgamb23 + exAb23*invgamb13*invgamb23 +
+  exAb13*invgamb11*invgamb33 + exAb23*invgamb12*invgamb33 +
+  exAb33*invgamb13*invgamb33
 ;
 
 const auto
 exAbUU22
 =
-Power(invgamb12,2)*exAb11[ijk] + 2*invgamb12*invgamb22*exAb12[ijk] +
-  2*invgamb12*invgamb23*exAb13[ijk] + Power(invgamb22,2)*exAb22[ijk] +
-  2*invgamb22*invgamb23*exAb23[ijk] + Power(invgamb23,2)*exAb33[ijk]
+exAb11*Power(invgamb12,2) + 2*exAb12*invgamb12*invgamb22 +
+  exAb22*Power(invgamb22,2) + 2*exAb13*invgamb12*invgamb23 +
+  2*exAb23*invgamb22*invgamb23 + exAb33*Power(invgamb23,2)
 ;
 
 const auto
 exAbUU23
 =
-invgamb12*invgamb13*exAb11[ijk] +
-  (invgamb13*invgamb22 + invgamb12*invgamb23)*exAb12[ijk] +
-  invgamb13*invgamb23*exAb13[ijk] + invgamb12*invgamb33*exAb13[ijk] +
-  invgamb22*invgamb23*exAb22[ijk] + Power(invgamb23,2)*exAb23[ijk] +
-  invgamb22*invgamb33*exAb23[ijk] + invgamb23*invgamb33*exAb33[ijk]
+exAb11*invgamb12*invgamb13 + exAb12*invgamb13*invgamb22 +
+  exAb12*invgamb12*invgamb23 + exAb13*invgamb13*invgamb23 +
+  exAb22*invgamb22*invgamb23 + exAb23*Power(invgamb23,2) +
+  exAb13*invgamb12*invgamb33 + exAb23*invgamb22*invgamb33 +
+  exAb33*invgamb23*invgamb33
 ;
 
 const auto
 exAbUU33
 =
-Power(invgamb13,2)*exAb11[ijk] + 2*invgamb13*invgamb23*exAb12[ijk] +
-  2*invgamb13*invgamb33*exAb13[ijk] + Power(invgamb23,2)*exAb22[ijk] +
-  2*invgamb23*invgamb33*exAb23[ijk] + Power(invgamb33,2)*exAb33[ijk]
+exAb11*Power(invgamb13,2) + 2*exAb12*invgamb13*invgamb23 +
+  exAb22*Power(invgamb23,2) + 2*exAb13*invgamb13*invgamb33 +
+  2*exAb23*invgamb23*invgamb33 + exAb33*Power(invgamb33,2)
 ;
 
 
 const auto
 trbDbeta
 =
-dbeta11 + dbeta22 + dbeta33 + (2*beta1[ijk])/R + cotth*beta2[ijk]
+beta2*cotth + dbeta11 + dbeta22 + dbeta33 + (2*beta1)/R
 ;
 
 const auto
 bDtrbDbeta1
 =
-cotth*dbeta12 + ddbeta111 + ddbeta122 + ddbeta133 + (2*dbeta11)/R -
-  (2*beta1[ijk])/Power(R,2)
+cotth*dbeta12 + ddbeta111 + ddbeta122 + ddbeta133 - (2*beta1)/Power(R,2) +
+  (2*dbeta11)/R
 ;
 
 const auto
 bDtrbDbeta2
 =
-cotth*dbeta22 + ddbeta121 + ddbeta222 + ddbeta233 + (2*dbeta21)/R -
-  Power(cscth,2)*beta2[ijk]
+-beta2 - beta2*Power(cotth,2) + cotth*dbeta22 + ddbeta121 + ddbeta222 +
+  ddbeta233 + (2*dbeta21)/R
 ;
 
 const auto
@@ -1866,8 +1866,8 @@ ddalpha33 - dalpha1*Gamb133 - dalpha2*Gamb233 - dalpha3*Gamb333
 const auto
 trexAb
 =
-invgamb11*exAb11[ijk] + 2*invgamb12*exAb12[ijk] + 2*invgamb13*exAb13[ijk] +
-  invgamb22*exAb22[ijk] + 2*invgamb23*exAb23[ijk] + invgamb33*exAb33[ijk]
+exAb11*invgamb11 + 2*exAb12*invgamb12 + 2*exAb13*invgamb13 +
+  exAb22*invgamb22 + 2*exAb23*invgamb23 + exAb33*invgamb33
 ;
 
 const auto
@@ -1902,104 +1902,103 @@ deps111
 const auto
 hDgamb112
 =
-deps112 - eps12[ijk]/R
+deps112 - eps12/R
 ;
 
 const auto
 hDgamb113
 =
-deps113 - eps13[ijk]/R
+deps113 - eps13/R
 ;
 
 const auto
 hDgamb122
 =
-deps122 - (2*eps22[ijk])/R
+deps122 - (2*eps22)/R
 ;
 
 const auto
 hDgamb123
 =
-deps123 - (2*eps23[ijk])/R
+deps123 - (2*eps23)/R
 ;
 
 const auto
 hDgamb133
 =
-deps133 - (2*eps33[ijk])/R
+deps133 - (2*eps33)/R
 ;
 
 const auto
 hDgamb211
 =
-deps211 - (2*eps12[ijk])/R
+deps211 - (2*eps12)/R
 ;
 
 const auto
 hDgamb212
 =
-deps212 + R*eps11[ijk] - eps22[ijk]/R
+deps212 - eps22/R + eps11*R
 ;
 
 const auto
 hDgamb213
 =
-deps213 - cotth*eps13[ijk] - eps23[ijk]/R
+deps213 - cotth*eps13 - eps23/R
 ;
 
 const auto
 hDgamb222
 =
-deps222 + 2*R*eps12[ijk]
+deps222 + 2*eps12*R
 ;
 
 const auto
 hDgamb223
 =
-deps223 + R*eps13[ijk] - cotth*eps23[ijk]
+deps223 - cotth*eps23 + eps13*R
 ;
 
 const auto
 hDgamb233
 =
-deps233 - 2*cotth*eps33[ijk]
+deps233 - 2*cotth*eps33
 ;
 
 const auto
 hDgamb311
 =
-deps311 - (2*eps13[ijk])/R
+deps311 - (2*eps13)/R
 ;
 
 const auto
 hDgamb312
 =
-deps312 - cotth*eps13[ijk] - eps23[ijk]/R
+deps312 - cotth*eps13 - eps23/R
 ;
 
 const auto
 hDgamb313
 =
-deps313 + R*Power(sinth,2)*eps11[ijk] + costh*sinth*eps12[ijk] - eps33[ijk]/R
+deps313 - eps33/R + costh*eps12*sinth + eps11*R*Power(sinth,2)
 ;
 
 const auto
 hDgamb322
 =
-deps322 - 2*cotth*eps23[ijk]
+deps322 - 2*cotth*eps23
 ;
 
 const auto
 hDgamb323
 =
-deps323 + R*Power(sinth,2)*eps12[ijk] + costh*sinth*eps22[ijk] -
-  cotth*eps33[ijk]
+deps323 - cotth*eps33 + costh*eps22*sinth + eps12*R*Power(sinth,2)
 ;
 
 const auto
 hDgamb333
 =
-deps333 + 2*R*Power(sinth,2)*eps13[ijk] + eps23[ijk]*Sin(2*T)
+deps333 + 2*eps13*R*Power(sinth,2) + eps23*Sin(2*T)
 ;
 
 const auto
@@ -2011,49 +2010,49 @@ dLt11
 const auto
 hDLt12
 =
-dLt12 + Lt2[ijk]/R
+dLt12 + Lt2/R
 ;
 
 const auto
 hDLt13
 =
-dLt13 + Lt3[ijk]/R
+dLt13 + Lt3/R
 ;
 
 const auto
 hDLt21
 =
-dLt21 - R*Lt2[ijk]
+dLt21 - Lt2*R
 ;
 
 const auto
 hDLt22
 =
-dLt22 + Lt1[ijk]/R
+dLt22 + Lt1/R
 ;
 
 const auto
 hDLt23
 =
-dLt23 + cotth*Lt3[ijk]
+dLt23 + cotth*Lt3
 ;
 
 const auto
 hDLt31
 =
-dLt31 - R*Power(sinth,2)*Lt3[ijk]
+dLt31 - Lt3*R*Power(sinth,2)
 ;
 
 const auto
 hDLt32
 =
-dLt32 - costh*sinth*Lt3[ijk]
+dLt32 - costh*Lt3*sinth
 ;
 
 const auto
 hDLt33
 =
-dLt33 + Lt1[ijk]/R + cotth*Lt2[ijk]
+dLt33 + cotth*Lt2 + Lt1/R
 ;
 
 const auto
@@ -2065,49 +2064,49 @@ dbeta11
 const auto
 hDbeta12
 =
-dbeta12 + beta2[ijk]/R
+dbeta12 + beta2/R
 ;
 
 const auto
 hDbeta13
 =
-dbeta13 + beta3[ijk]/R
+dbeta13 + beta3/R
 ;
 
 const auto
 hDbeta21
 =
-dbeta21 - R*beta2[ijk]
+dbeta21 - beta2*R
 ;
 
 const auto
 hDbeta22
 =
-dbeta22 + beta1[ijk]/R
+dbeta22 + beta1/R
 ;
 
 const auto
 hDbeta23
 =
-dbeta23 + cotth*beta3[ijk]
+beta3*cotth + dbeta23
 ;
 
 const auto
 hDbeta31
 =
-dbeta31 - R*Power(sinth,2)*beta3[ijk]
+dbeta31 - beta3*R*Power(sinth,2)
 ;
 
 const auto
 hDbeta32
 =
-dbeta32 - costh*sinth*beta3[ijk]
+dbeta32 - beta3*costh*sinth
 ;
 
 const auto
 hDbeta33
 =
-dbeta33 + beta1[ijk]/R + cotth*beta2[ijk]
+beta2*cotth + dbeta33 + beta1/R
 ;
 
 const auto
@@ -2119,49 +2118,49 @@ dB11
 const auto
 hDB12
 =
-dB12 + B2[ijk]/R
+dB12 + B2/R
 ;
 
 const auto
 hDB13
 =
-dB13 + B3[ijk]/R
+dB13 + B3/R
 ;
 
 const auto
 hDB21
 =
-dB21 - R*B2[ijk]
+dB21 - B2*R
 ;
 
 const auto
 hDB22
 =
-dB22 + B1[ijk]/R
+dB22 + B1/R
 ;
 
 const auto
 hDB23
 =
-dB23 + cotth*B3[ijk]
+B3*cotth + dB23
 ;
 
 const auto
 hDB31
 =
-dB31 - R*Power(sinth,2)*B3[ijk]
+dB31 - B3*R*Power(sinth,2)
 ;
 
 const auto
 hDB32
 =
-dB32 - costh*sinth*B3[ijk]
+dB32 - B3*costh*sinth
 ;
 
 const auto
 hDB33
 =
-dB33 + B1[ijk]/R + cotth*B2[ijk]
+B2*cotth + dB33 + B1/R
 ;
 
 const auto
@@ -2173,61 +2172,61 @@ ddeps1111
 const auto
 dhDgamb1112
 =
-ddeps1112 - deps112/R + eps12[ijk]/Power(R,2)
+ddeps1112 + (eps12 - deps112*R)/Power(R,2)
 ;
 
 const auto
 dhDgamb1113
 =
-ddeps1113 - deps113/R + eps13[ijk]/Power(R,2)
+ddeps1113 + (eps13 - deps113*R)/Power(R,2)
 ;
 
 const auto
 dhDgamb1122
 =
-ddeps1122 - (2*deps122)/R + (2*eps22[ijk])/Power(R,2)
+ddeps1122 + (2*(eps22 - deps122*R))/Power(R,2)
 ;
 
 const auto
 dhDgamb1123
 =
-ddeps1123 - (2*deps123)/R + (2*eps23[ijk])/Power(R,2)
+ddeps1123 + (2*(eps23 - deps123*R))/Power(R,2)
 ;
 
 const auto
 dhDgamb1133
 =
-ddeps1133 - (2*deps133)/R + (2*eps33[ijk])/Power(R,2)
+ddeps1133 + (2*(eps33 - deps133*R))/Power(R,2)
 ;
 
 const auto
 dhDgamb1211
 =
-ddeps1211 - (2*deps112)/R + (2*eps12[ijk])/Power(R,2)
+ddeps1211 + (2*(eps12 - deps112*R))/Power(R,2)
 ;
 
 const auto
 dhDgamb1212
 =
-ddeps1212 - deps122/R + deps111*R + eps11[ijk] + eps22[ijk]/Power(R,2)
+ddeps1212 + eps11 + (eps22 - deps122*R + deps111*Power(R,3))/Power(R,2)
 ;
 
 const auto
 dhDgamb1213
 =
-ddeps1213 - cotth*deps113 - deps123/R + eps23[ijk]/Power(R,2)
+ddeps1213 - cotth*deps113 + (eps23 - deps123*R)/Power(R,2)
 ;
 
 const auto
 dhDgamb1222
 =
-ddeps1222 + 2*deps112*R + 2*eps12[ijk]
+ddeps1222 + 2*(eps12 + deps112*R)
 ;
 
 const auto
 dhDgamb1223
 =
-ddeps1223 - cotth*deps123 + deps113*R + eps13[ijk]
+ddeps1223 - cotth*deps123 + eps13 + deps113*R
 ;
 
 const auto
@@ -2239,20 +2238,20 @@ ddeps1233 - 2*cotth*deps133
 const auto
 dhDgamb1311
 =
-ddeps1311 - (2*deps113)/R + (2*eps13[ijk])/Power(R,2)
+ddeps1311 + (2*(eps13 - deps113*R))/Power(R,2)
 ;
 
 const auto
 dhDgamb1312
 =
-ddeps1312 - cotth*deps113 - deps123/R + eps23[ijk]/Power(R,2)
+ddeps1312 - cotth*deps113 + (eps23 - deps123*R)/Power(R,2)
 ;
 
 const auto
 dhDgamb1313
 =
-ddeps1313 - deps133/R + costh*deps112*sinth + deps111*R*Power(sinth,2) +
-  Power(sinth,2)*eps11[ijk] + eps33[ijk]/Power(R,2)
+ddeps1313 + eps33/Power(R,2) - deps133/R + costh*deps112*sinth +
+  (eps11 + deps111*R)*Power(sinth,2)
 ;
 
 const auto
@@ -2264,15 +2263,14 @@ ddeps1322 - 2*cotth*deps123
 const auto
 dhDgamb1323
 =
-ddeps1323 - cotth*deps133 + costh*deps122*sinth + deps112*R*Power(sinth,2) +
-  Power(sinth,2)*eps12[ijk]
+ddeps1323 - cotth*deps133 + costh*deps122*sinth + eps12*Power(sinth,2) +
+  deps112*R*Power(sinth,2)
 ;
 
 const auto
 dhDgamb1333
 =
-ddeps1333 + 2*deps113*R*Power(sinth,2) + 2*Power(sinth,2)*eps13[ijk] +
-  deps123*Sin(2*T)
+ddeps1333 + 2*(eps13 + deps113*R)*Power(sinth,2) + deps123*Sin(2*T)
 ;
 
 const auto
@@ -2290,7 +2288,7 @@ ddeps2212 - deps222/R + deps211*R
 const auto
 dhDgamb2213
 =
-ddeps2213 - cotth*deps213 - deps223/R + Power(cscth,2)*eps13[ijk]
+ddeps2213 - cotth*deps213 + Power(cscth,2)*eps13 - deps223/R
 ;
 
 const auto
@@ -2302,13 +2300,13 @@ ddeps2222 + 2*deps212*R
 const auto
 dhDgamb2223
 =
-ddeps2223 - cotth*deps223 + deps213*R + Power(cscth,2)*eps23[ijk]
+ddeps2223 - cotth*deps223 + Power(cscth,2)*eps23 + deps213*R
 ;
 
 const auto
 dhDgamb2233
 =
-ddeps2233 - 2*cotth*deps233 + 2*Power(cscth,2)*eps33[ijk]
+ddeps2233 - 2*cotth*deps233 + 2*Power(cscth,2)*eps33
 ;
 
 const auto
@@ -2320,34 +2318,35 @@ ddeps2311 - (2*deps213)/R
 const auto
 dhDgamb2312
 =
-ddeps2312 - cotth*deps213 - deps223/R + Power(cscth,2)*eps13[ijk]
+ddeps2312 - cotth*deps213 + Power(cscth,2)*eps13 - deps223/R
 ;
 
 const auto
 dhDgamb2313
 =
-ddeps2313 - deps233/R + costh*deps212*sinth + deps211*R*Power(sinth,2) +
-  cos2th*eps12[ijk] + R*eps11[ijk]*Sin(2*T)
+ddeps2313 + Power(costh,2)*eps12 - deps233/R + costh*deps212*sinth +
+  (-eps12 + deps211*R)*Power(sinth,2) + eps11*R*Sin(2*T)
 ;
 
 const auto
 dhDgamb2322
 =
-ddeps2322 - 2*cotth*deps223 + 2*Power(cscth,2)*eps23[ijk]
+ddeps2322 - 2*cotth*deps223 + 2*Power(cscth,2)*eps23
 ;
 
 const auto
 dhDgamb2323
 =
-ddeps2323 - cotth*deps233 + costh*deps222*sinth + deps212*R*Power(sinth,2) +
-  cos2th*eps22[ijk] + Power(cscth,2)*eps33[ijk] + R*eps12[ijk]*Sin(2*T)
+ddeps2323 - cotth*deps233 + Power(costh,2)*eps22 + Power(cscth,2)*eps33 +
+  costh*deps222*sinth - eps22*Power(sinth,2) + deps212*R*Power(sinth,2) +
+  eps12*R*Sin(2*T)
 ;
 
 const auto
 dhDgamb2333
 =
-ddeps2333 + deps213*R - cos2th*deps213*R + 2*cos2th*eps23[ijk] +
-  deps223*Sin(2*T) + 2*R*eps13[ijk]*Sin(2*T)
+ddeps2333 + deps213*R + cos2th*(2*eps23 - deps213*R) +
+  (deps223 + 2*eps13*R)*Sin(2*T)
 ;
 
 const auto
@@ -2635,7 +2634,7 @@ ddbeta121 - dbeta21/R - dbeta12*R
 const auto
 hDhDbeta122
 =
-ddbeta122 + dbeta11/R - beta1[ijk]/Power(R,2)
+ddbeta122 + (-beta1 + dbeta11*R)/Power(R,2)
 ;
 
 const auto
@@ -2659,13 +2658,13 @@ ddbeta132 - costh*dbeta13*sinth
 const auto
 hDhDbeta133
 =
-cotth*dbeta12 + ddbeta133 + dbeta11/R - beta1[ijk]/Power(R,2)
+cotth*dbeta12 + ddbeta133 + (-beta1 + dbeta11*R)/Power(R,2)
 ;
 
 const auto
 hDhDbeta221
 =
-ddbeta221 + (dbeta11 - 2*dbeta22)*R - beta1[ijk]
+-beta1 + ddbeta221 + (dbeta11 - 2*dbeta22)*R
 ;
 
 const auto
@@ -2695,22 +2694,21 @@ hDhDbeta232
 const auto
 hDhDbeta233
 =
-cotth*dbeta22 + ddbeta233 + dbeta21/R - Power(cscth,2)*beta2[ijk]
+-(beta2*Power(cscth,2)) + cotth*dbeta22 + ddbeta233 + dbeta21/R
 ;
 
 const auto
 hDhDbeta331
 =
-ddbeta331 + costh*dbeta21*sinth + dbeta11*R*Power(sinth,2) -
-  2*dbeta33*R*Power(sinth,2) - Power(sinth,2)*beta1[ijk] -
-  2*costh*R*sinth*beta2[ijk]
+ddbeta331 + costh*(dbeta21 - 2*beta2*R)*sinth -
+  (beta1 - dbeta11*R + 2*dbeta33*R)*Power(sinth,2)
 ;
 
 const auto
 hDhDbeta332
 =
-ddbeta332 + costh*(dbeta22 - 2*dbeta33)*sinth + dbeta12*R*Power(sinth,2) -
-  cos2th*beta2[ijk]
+-(beta2*Power(costh,2)) + ddbeta332 + costh*(dbeta22 - 2*dbeta33)*sinth +
+  (beta2 + dbeta12*R)*Power(sinth,2)
 ;
 
 const auto
@@ -2961,19 +2959,19 @@ DGam311*invgamb11 + 2*DGam312*invgamb12 + 2*DGam313*invgamb13 +
 const auto
 ZU1
 =
-(psim4*(-trDGam1 + Lt1[ijk]))/2.
+(psim4*(Lt1 - trDGam1))/2.
 ;
 
 const auto
 ZU2
 =
-(psim4*(-trDGam2 + Lt2[ijk]))/2.
+(psim4*(Lt2 - trDGam2))/2.
 ;
 
 const auto
 ZU3
 =
-(psim4*(-trDGam3 + Lt3[ijk]))/2.
+(psim4*(Lt3 - trDGam3))/2.
 ;
 
 const auto
@@ -3515,68 +3513,63 @@ Ralpha33 - (gamb33*(invgamb11*Ralpha11 + 2*invgamb12*Ralpha12 +
 const auto
 rho
 =
-(Power(beta1[ijk],2)*eT11[ijk] + Power(beta2[ijk],2)*eT22[ijk] +
-    Power(beta3[ijk],2)*eT33[ijk] +
-    2*beta1[ijk]*(beta2[ijk]*eT12[ijk] + beta3[ijk]*eT13[ijk] -
-       eTt1[ijk]) + 2*beta2[ijk]*(beta3[ijk]*eT23[ijk] - eTt2[ijk]) -
-    2*beta3[ijk]*eTt3[ijk] + eTtt[ijk])/Power(alpha[ijk],2)
+(Power(beta1,2)*eT11 + Power(beta2,2)*eT22 + 2*beta2*beta3*eT23 +
+    Power(beta3,2)*eT33 + 2*beta1*(beta2*eT12 + beta3*eT13 - eTt1) -
+    2*beta2*eTt2 - 2*beta3*eTt3 + eTtt)/Power(alpha[ijk],2)
 ;
 
 const auto
 Sm1
 =
-(beta1[ijk]*eT11[ijk] + beta2[ijk]*eT12[ijk] + beta3[ijk]*eT13[ijk] -
-    eTt1[ijk])/alpha[ijk]
+(beta1*eT11 + beta2*eT12 + beta3*eT13 - eTt1)/alpha[ijk]
 ;
 
 const auto
 Sm2
 =
-(beta1[ijk]*eT12[ijk] + beta2[ijk]*eT22[ijk] + beta3[ijk]*eT23[ijk] -
-    eTt2[ijk])/alpha[ijk]
+(beta1*eT12 + beta2*eT22 + beta3*eT23 - eTt2)/alpha[ijk]
 ;
 
 const auto
 Sm3
 =
-(beta1[ijk]*eT13[ijk] + beta2[ijk]*eT23[ijk] + beta3[ijk]*eT33[ijk] -
-    eTt3[ijk])/alpha[ijk]
+(beta1*eT13 + beta2*eT23 + beta3*eT33 - eTt3)/alpha[ijk]
 ;
 
 const auto
 Ss11
 =
-eT11[ijk]
+eT11
 ;
 
 const auto
 Ss12
 =
-eT12[ijk]
+eT12
 ;
 
 const auto
 Ss13
 =
-eT13[ijk]
+eT13
 ;
 
 const auto
 Ss22
 =
-eT22[ijk]
+eT22
 ;
 
 const auto
 Ss23
 =
-eT23[ijk]
+eT23
 ;
 
 const auto
 Ss33
 =
-eT33[ijk]
+eT33
 ;
 
 const auto
@@ -3590,168 +3583,163 @@ invgam11*Ss11 + 2*invgam12*Ss12 + 2*invgam13*Ss13 + invgam22*Ss22 +
 const auto
 Lbetaphi
 =
-dphi1*beta1[ijk] + dphi2*beta2[ijk] + dphi3*beta3[ijk]
+beta1*dphi1 + beta2*dphi2 + beta3*dphi3
 ;
 
 const auto
 Lbetagamb11
 =
-2*dbeta11*gamb11 + 2*dbeta12*gamb12 + 2*dbeta13*gamb13 +
-  dgamb111*beta1[ijk] + dgamb211*beta2[ijk] + dgamb311*beta3[ijk]
+beta1*dgamb111 + beta2*dgamb211 + beta3*dgamb311 + 2*dbeta11*gamb11 +
+  2*dbeta12*gamb12 + 2*dbeta13*gamb13
 ;
 
 const auto
 Lbetagamb12
 =
-dbeta21*gamb11 + dbeta11*gamb12 + dbeta22*gamb12 + dbeta23*gamb13 +
-  dbeta12*gamb22 + dbeta13*gamb23 + dgamb112*beta1[ijk] +
-  dgamb212*beta2[ijk] + dgamb312*beta3[ijk]
+beta1*dgamb112 + beta2*dgamb212 + beta3*dgamb312 + dbeta21*gamb11 +
+  dbeta11*gamb12 + dbeta22*gamb12 + dbeta23*gamb13 + dbeta12*gamb22 +
+  dbeta13*gamb23
 ;
 
 const auto
 Lbetagamb13
 =
-dbeta31*gamb11 + dbeta32*gamb12 + dbeta11*gamb13 + dbeta33*gamb13 +
-  dbeta12*gamb23 + dbeta13*gamb33 + dgamb113*beta1[ijk] +
-  dgamb213*beta2[ijk] + dgamb313*beta3[ijk]
+beta1*dgamb113 + beta2*dgamb213 + beta3*dgamb313 + dbeta31*gamb11 +
+  dbeta32*gamb12 + dbeta11*gamb13 + dbeta33*gamb13 + dbeta12*gamb23 +
+  dbeta13*gamb33
 ;
 
 const auto
 Lbetagamb22
 =
-2*dbeta21*gamb12 + 2*dbeta22*gamb22 + 2*dbeta23*gamb23 +
-  dgamb122*beta1[ijk] + dgamb222*beta2[ijk] + dgamb322*beta3[ijk]
+beta1*dgamb122 + beta2*dgamb222 + beta3*dgamb322 + 2*dbeta21*gamb12 +
+  2*dbeta22*gamb22 + 2*dbeta23*gamb23
 ;
 
 const auto
 Lbetagamb23
 =
-dbeta31*gamb12 + dbeta21*gamb13 + dbeta32*gamb22 + dbeta22*gamb23 +
-  dbeta33*gamb23 + dbeta23*gamb33 + dgamb123*beta1[ijk] +
-  dgamb223*beta2[ijk] + dgamb323*beta3[ijk]
+beta1*dgamb123 + beta2*dgamb223 + beta3*dgamb323 + dbeta31*gamb12 +
+  dbeta21*gamb13 + dbeta32*gamb22 + dbeta22*gamb23 + dbeta33*gamb23 +
+  dbeta23*gamb33
 ;
 
 const auto
 Lbetagamb33
 =
-2*dbeta31*gamb13 + 2*dbeta32*gamb23 + 2*dbeta33*gamb33 +
-  dgamb133*beta1[ijk] + dgamb233*beta2[ijk] + dgamb333*beta3[ijk]
+beta1*dgamb133 + beta2*dgamb233 + beta3*dgamb333 + 2*dbeta31*gamb13 +
+  2*dbeta32*gamb23 + 2*dbeta33*gamb33
 ;
 
 const auto
 LbetatrK
 =
-dtrK1*beta1[ijk] + dtrK2*beta2[ijk] + dtrK3*beta3[ijk]
+beta1*dtrK1 + beta2*dtrK2 + beta3*dtrK3
 ;
 
 const auto
 LbetaexAb11
 =
-dexAb111*beta1[ijk] + dexAb211*beta2[ijk] + dexAb311*beta3[ijk] +
-  2*dbeta11*exAb11[ijk] + 2*dbeta12*exAb12[ijk] + 2*dbeta13*exAb13[ijk]
+beta1*dexAb111 + beta2*dexAb211 + beta3*dexAb311 + 2*dbeta11*exAb11 +
+  2*dbeta12*exAb12 + 2*dbeta13*exAb13
 ;
 
 const auto
 LbetaexAb12
 =
-dexAb112*beta1[ijk] + dexAb212*beta2[ijk] + dexAb312*beta3[ijk] +
-  dbeta21*exAb11[ijk] + dbeta11*exAb12[ijk] + dbeta22*exAb12[ijk] +
-  dbeta23*exAb13[ijk] + dbeta12*exAb22[ijk] + dbeta13*exAb23[ijk]
+beta1*dexAb112 + beta2*dexAb212 + beta3*dexAb312 + dbeta21*exAb11 +
+  dbeta11*exAb12 + dbeta22*exAb12 + dbeta23*exAb13 + dbeta12*exAb22 +
+  dbeta13*exAb23
 ;
 
 const auto
 LbetaexAb13
 =
-dexAb113*beta1[ijk] + dexAb213*beta2[ijk] + dexAb313*beta3[ijk] +
-  dbeta31*exAb11[ijk] + dbeta32*exAb12[ijk] + dbeta11*exAb13[ijk] +
-  dbeta33*exAb13[ijk] + dbeta12*exAb23[ijk] + dbeta13*exAb33[ijk]
+beta1*dexAb113 + beta2*dexAb213 + beta3*dexAb313 + dbeta31*exAb11 +
+  dbeta32*exAb12 + dbeta11*exAb13 + dbeta33*exAb13 + dbeta12*exAb23 +
+  dbeta13*exAb33
 ;
 
 const auto
 LbetaexAb22
 =
-dexAb122*beta1[ijk] + dexAb222*beta2[ijk] + dexAb322*beta3[ijk] +
-  2*dbeta21*exAb12[ijk] + 2*dbeta22*exAb22[ijk] + 2*dbeta23*exAb23[ijk]
+beta1*dexAb122 + beta2*dexAb222 + beta3*dexAb322 + 2*dbeta21*exAb12 +
+  2*dbeta22*exAb22 + 2*dbeta23*exAb23
 ;
 
 const auto
 LbetaexAb23
 =
-dexAb123*beta1[ijk] + dexAb223*beta2[ijk] + dexAb323*beta3[ijk] +
-  dbeta31*exAb12[ijk] + dbeta21*exAb13[ijk] + dbeta32*exAb22[ijk] +
-  dbeta22*exAb23[ijk] + dbeta33*exAb23[ijk] + dbeta23*exAb33[ijk]
+beta1*dexAb123 + beta2*dexAb223 + beta3*dexAb323 + dbeta31*exAb12 +
+  dbeta21*exAb13 + dbeta32*exAb22 + dbeta22*exAb23 + dbeta33*exAb23 +
+  dbeta23*exAb33
 ;
 
 const auto
 LbetaexAb33
 =
-dexAb133*beta1[ijk] + dexAb233*beta2[ijk] + dexAb333*beta3[ijk] +
-  2*dbeta31*exAb13[ijk] + 2*dbeta32*exAb23[ijk] + 2*dbeta33*exAb33[ijk]
+beta1*dexAb133 + beta2*dexAb233 + beta3*dexAb333 + 2*dbeta31*exAb13 +
+  2*dbeta32*exAb23 + 2*dbeta33*exAb33
 ;
 
 const auto
 LbetaLt1
 =
-dLt11*beta1[ijk] + dLt21*beta2[ijk] + dLt31*beta3[ijk] - dbeta11*Lt1[ijk] -
-  dbeta21*Lt2[ijk] - dbeta31*Lt3[ijk]
+beta1*dLt11 + beta2*dLt21 + beta3*dLt31 - dbeta11*Lt1 - dbeta21*Lt2 -
+  dbeta31*Lt3
 ;
 
 const auto
 LbetaLt2
 =
-dLt12*beta1[ijk] + dLt22*beta2[ijk] + dLt32*beta3[ijk] - dbeta12*Lt1[ijk] -
-  dbeta22*Lt2[ijk] - dbeta32*Lt3[ijk]
+beta1*dLt12 + beta2*dLt22 + beta3*dLt32 - dbeta12*Lt1 - dbeta22*Lt2 -
+  dbeta32*Lt3
 ;
 
 const auto
 LbetaLt3
 =
-dLt13*beta1[ijk] + dLt23*beta2[ijk] + dLt33*beta3[ijk] - dbeta13*Lt1[ijk] -
-  dbeta23*Lt2[ijk] - dbeta33*Lt3[ijk]
+beta1*dLt13 + beta2*dLt23 + beta3*dLt33 - dbeta13*Lt1 - dbeta23*Lt2 -
+  dbeta33*Lt3
 ;
 
 const auto
 LbetaTheta
 =
-dTheta1*beta1[ijk] + dTheta2*beta2[ijk] + dTheta3*beta3[ijk]
+beta1*dTheta1 + beta2*dTheta2 + beta3*dTheta3
 ;
 
 const auto
 Lbetaalpha
 =
-dalpha1*beta1[ijk] + dalpha2*beta2[ijk] + dalpha3*beta3[ijk]
+beta1*dalpha1 + beta2*dalpha2 + beta3*dalpha3
 ;
 
 const auto
 LbetaB1
 =
-dbeta11*B1[ijk] + dbeta21*B2[ijk] + dbeta31*B3[ijk] + dB11*beta1[ijk] +
-  dB21*beta2[ijk] + dB31*beta3[ijk]
+beta1*dB11 + beta2*dB21 + beta3*dB31 + B1*dbeta11 + B2*dbeta21 + B3*dbeta31
 ;
 
 const auto
 LbetaB2
 =
-dbeta12*B1[ijk] + dbeta22*B2[ijk] + dbeta32*B3[ijk] + dB12*beta1[ijk] +
-  dB22*beta2[ijk] + dB32*beta3[ijk]
+beta1*dB12 + beta2*dB22 + beta3*dB32 + B1*dbeta12 + B2*dbeta22 + B3*dbeta32
 ;
 
 const auto
 LbetaB3
 =
-dbeta13*B1[ijk] + dbeta23*B2[ijk] + dbeta33*B3[ijk] + dB13*beta1[ijk] +
-  dB23*beta2[ijk] + dB33*beta3[ijk]
+beta1*dB13 + beta2*dB23 + beta3*dB33 + B1*dbeta13 + B2*dbeta23 + B3*dbeta33
 ;
 
 
-const auto
-dtphi
+dtphi[ijk]
 =
 (6*Lbetaphi + trbDbeta - alpha[ijk]*trK[ijk])/6.
 ;
 
-const auto
-dttrK
+dttrK[ijk]
 =
 LbetatrK - 2*dalpha1*dphi1*invgam11*psim4 - 2*dalpha2*dphi1*invgam12*psim4 -
   2*dalpha1*dphi2*invgam12*psim4 - 2*dalpha3*dphi1*invgam13*psim4 -
@@ -3763,20 +3751,18 @@ LbetatrK - 2*dalpha1*dphi1*invgam11*psim4 - 2*dalpha2*dphi1*invgam12*psim4 -
      psim4*trRb + 4*cpi*trSs - 2*Theta[ijk]*trK[ijk] + Power(trK[ijk],2))
 ;
 
-const auto
-dtTheta
+dtTheta[ijk]
 =
 LbetaTheta - dalpha1*ZU1 - dalpha2*ZU2 - dalpha3*ZU3 -
   ckappa1*(2 + ckappa2)*Theta[ijk] -
-  (alpha[ijk]*(48*cpi*rho + 24*psim4*trbDbDphi + 24*psim4*trbDphibDphi -
-       3*psim4*trRb + 3*exAbUU11*exAb11[ijk] + 6*exAbUU12*exAb12[ijk] +
-       6*exAbUU13*exAb13[ijk] + 3*exAbUU22*exAb22[ijk] +
-       6*exAbUU23*exAb23[ijk] + 3*exAbUU33*exAb33[ijk] +
-       6*Theta[ijk]*trK[ijk] - 2*Power(trK[ijk],2)))/6.
+  (alpha[ijk]*(3*(exAb11*exAbUU11 + 2*exAb12*exAbUU12 +
+          2*exAb13*exAbUU13 + exAb22*exAbUU22 + 2*exAb23*exAbUU23 +
+          exAb33*exAbUU33 + 16*cpi*rho + 8*psim4*trbDbDphi +
+          8*psim4*trbDphibDphi - psim4*trRb) + 6*Theta[ijk]*trK[ijk] -
+       2*Power(trK[ijk],2)))/6.
 ;
 
-const auto
-dtalpha
+dtalpha[ijk]
 =
 Lbetaalpha + alpha[ijk]*(4*Theta[ijk] - 2*trK[ijk])
 ;
@@ -3785,155 +3771,145 @@ const auto
 dteps11
 =
 Lbetagamb11 - (2*gamb11*trbDbeta)/3. +
-  (2*alpha[ijk]*(gamb11*trexAb - 3*exAb11[ijk]))/3.
+  (-2*exAb11 + (2*gamb11*trexAb)/3.)*alpha[ijk]
 ;
 
 const auto
 dteps12
 =
 Lbetagamb12 - (2*gamb12*trbDbeta)/3. +
-  (2*alpha[ijk]*(gamb12*trexAb - 3*exAb12[ijk]))/3.
+  (-2*exAb12 + (2*gamb12*trexAb)/3.)*alpha[ijk]
 ;
 
 const auto
 dteps13
 =
 Lbetagamb13 - (2*gamb13*trbDbeta)/3. +
-  (2*alpha[ijk]*(gamb13*trexAb - 3*exAb13[ijk]))/3.
+  (-2*exAb13 + (2*gamb13*trexAb)/3.)*alpha[ijk]
 ;
 
 const auto
 dteps22
 =
 Lbetagamb22 - (2*gamb22*trbDbeta)/3. +
-  (2*alpha[ijk]*(gamb22*trexAb - 3*exAb22[ijk]))/3.
+  (-2*exAb22 + (2*gamb22*trexAb)/3.)*alpha[ijk]
 ;
 
 const auto
 dteps23
 =
 Lbetagamb23 - (2*gamb23*trbDbeta)/3. +
-  (2*alpha[ijk]*(gamb23*trexAb - 3*exAb23[ijk]))/3.
+  (-2*exAb23 + (2*gamb23*trexAb)/3.)*alpha[ijk]
 ;
 
 const auto
 dteps33
 =
 Lbetagamb33 - (2*gamb33*trbDbeta)/3. +
-  (2*alpha[ijk]*(gamb33*trexAb - 3*exAb33[ijk]))/3.
+  (-2*exAb33 + (2*gamb33*trexAb)/3.)*alpha[ijk]
 ;
 
 const auto
 dtexAb11
 =
-LbetaexAb11 + psim4*(RalphaTF11 + RphiTF11) - (2*trbDbeta*exAb11[ijk])/3. +
-  (alpha[ijk]*(3*psim4*RbTF11 - 24*cpi*psim4*Ss11 +
+LbetaexAb11 + psim4*RalphaTF11 + psim4*RphiTF11 - (2*exAb11*trbDbeta)/3. +
+  (alpha[ijk]*(-6*Power(exAb11,2)*invgamb11 - 12*exAb11*exAb12*invgamb12 -
+       12*exAb11*exAb13*invgamb13 - 6*Power(exAb12,2)*invgamb22 -
+       12*exAb12*exAb13*invgamb23 - 6*Power(exAb13,2)*invgamb33 +
+       3*psim4*RbTF11 - 24*cpi*psim4*Ss11 +
        8*cpi*gamb11*invgamb11*psim4*Ss11 +
        16*cpi*gamb11*invgamb12*psim4*Ss12 +
        16*cpi*gamb11*invgamb13*psim4*Ss13 +
        8*cpi*gamb11*invgamb22*psim4*Ss22 +
        16*cpi*gamb11*invgamb23*psim4*Ss23 +
-       8*cpi*gamb11*invgamb33*psim4*Ss33 -
-       6*invgamb11*Power(exAb11[ijk],2) -
-       6*invgamb22*Power(exAb12[ijk],2) -
-       12*invgamb23*exAb12[ijk]*exAb13[ijk] -
-       6*invgamb33*Power(exAb13[ijk],2) -
-       3*exAb11[ijk]*(4*invgamb12*exAb12[ijk] + 4*invgamb13*exAb13[ijk] +
-          2*Theta[ijk] - trK[ijk])))/3.
+       8*cpi*gamb11*invgamb33*psim4*Ss33 - 6*exAb11*Theta[ijk] +
+       3*exAb11*trK[ijk]))/3.
 ;
 
 const auto
 dtexAb12
 =
-LbetaexAb12 + psim4*(RalphaTF12 + RphiTF12) - (2*trbDbeta*exAb12[ijk])/3. +
-  (alpha[ijk]*(3*psim4*RbTF12 + 8*cpi*gamb12*invgamb11*psim4*Ss11 -
-       24*cpi*psim4*Ss12 + 16*cpi*gamb12*invgamb12*psim4*Ss12 +
-       16*cpi*gamb12*invgamb13*psim4*Ss13 +
-       8*cpi*gamb12*invgamb22*psim4*Ss22 +
-       16*cpi*gamb12*invgamb23*psim4*Ss23 +
-       8*cpi*gamb12*invgamb33*psim4*Ss33 -
-       6*invgamb12*Power(exAb12[ijk],2) -
-       6*invgamb23*exAb13[ijk]*exAb22[ijk] -
-       6*invgamb33*exAb13[ijk]*exAb23[ijk] -
-       6*exAb11[ijk]*(invgamb11*exAb12[ijk] + invgamb12*exAb22[ijk] +
-          invgamb13*exAb23[ijk]) -
-       3*exAb12[ijk]*(2*invgamb13*exAb13[ijk] + 2*invgamb22*exAb22[ijk] +
-          2*invgamb23*exAb23[ijk] + 2*Theta[ijk] - trK[ijk])))/3.
+LbetaexAb12 + psim4*RalphaTF12 + psim4*RphiTF12 - (2*exAb12*trbDbeta)/3. -
+  (alpha[ijk]*(6*exAb11*exAb12*invgamb11 + 6*Power(exAb12,2)*invgamb12 +
+       6*exAb11*exAb22*invgamb12 + 6*exAb12*exAb13*invgamb13 +
+       6*exAb11*exAb23*invgamb13 + 6*exAb12*exAb22*invgamb22 +
+       6*exAb13*exAb22*invgamb23 + 6*exAb12*exAb23*invgamb23 +
+       6*exAb13*exAb23*invgamb33 - 3*psim4*RbTF12 -
+       8*cpi*gamb12*invgamb11*psim4*Ss11 + 24*cpi*psim4*Ss12 -
+       16*cpi*gamb12*invgamb12*psim4*Ss12 -
+       16*cpi*gamb12*invgamb13*psim4*Ss13 -
+       8*cpi*gamb12*invgamb22*psim4*Ss22 -
+       16*cpi*gamb12*invgamb23*psim4*Ss23 -
+       8*cpi*gamb12*invgamb33*psim4*Ss33 + 6*exAb12*Theta[ijk] -
+       3*exAb12*trK[ijk]))/3.
 ;
 
 const auto
 dtexAb13
 =
-LbetaexAb13 + psim4*(RalphaTF13 + RphiTF13) - (2*trbDbeta*exAb13[ijk])/3. +
-  (alpha[ijk]*(3*psim4*RbTF13 + 8*cpi*gamb13*invgamb11*psim4*Ss11 +
-       16*cpi*gamb13*invgamb12*psim4*Ss12 - 24*cpi*psim4*Ss13 +
-       16*cpi*gamb13*invgamb13*psim4*Ss13 +
-       8*cpi*gamb13*invgamb22*psim4*Ss22 +
-       16*cpi*gamb13*invgamb23*psim4*Ss23 +
-       8*cpi*gamb13*invgamb33*psim4*Ss33 -
-       6*invgamb13*Power(exAb13[ijk],2) -
-       6*invgamb23*exAb13[ijk]*exAb23[ijk] -
-       6*invgamb33*exAb13[ijk]*exAb33[ijk] -
-       6*exAb11[ijk]*(invgamb11*exAb13[ijk] + invgamb12*exAb23[ijk] +
-          invgamb13*exAb33[ijk]) -
-       6*exAb12[ijk]*(invgamb12*exAb13[ijk] + invgamb22*exAb23[ijk] +
-          invgamb23*exAb33[ijk]) - 6*exAb13[ijk]*Theta[ijk] +
-       3*exAb13[ijk]*trK[ijk]))/3.
+LbetaexAb13 + psim4*RalphaTF13 + psim4*RphiTF13 - (2*exAb13*trbDbeta)/3. -
+  (alpha[ijk]*(6*exAb11*exAb13*invgamb11 + 6*exAb12*exAb13*invgamb12 +
+       6*exAb11*exAb23*invgamb12 + 6*Power(exAb13,2)*invgamb13 +
+       6*exAb11*exAb33*invgamb13 + 6*exAb12*exAb23*invgamb22 +
+       6*exAb13*exAb23*invgamb23 + 6*exAb12*exAb33*invgamb23 +
+       6*exAb13*exAb33*invgamb33 - 3*psim4*RbTF13 -
+       8*cpi*gamb13*invgamb11*psim4*Ss11 -
+       16*cpi*gamb13*invgamb12*psim4*Ss12 + 24*cpi*psim4*Ss13 -
+       16*cpi*gamb13*invgamb13*psim4*Ss13 -
+       8*cpi*gamb13*invgamb22*psim4*Ss22 -
+       16*cpi*gamb13*invgamb23*psim4*Ss23 -
+       8*cpi*gamb13*invgamb33*psim4*Ss33 + 6*exAb13*Theta[ijk] -
+       3*exAb13*trK[ijk]))/3.
 ;
 
 const auto
 dtexAb22
 =
-LbetaexAb22 + psim4*(RalphaTF22 + RphiTF22) - (2*trbDbeta*exAb22[ijk])/3. +
-  (alpha[ijk]*(3*psim4*RbTF22 + 8*cpi*gamb22*invgamb11*psim4*Ss11 +
+LbetaexAb22 + psim4*RalphaTF22 + psim4*RphiTF22 - (2*exAb22*trbDbeta)/3. +
+  (alpha[ijk]*(-6*Power(exAb12,2)*invgamb11 - 12*exAb12*exAb22*invgamb12 -
+       12*exAb12*exAb23*invgamb13 - 6*Power(exAb22,2)*invgamb22 -
+       12*exAb22*exAb23*invgamb23 - 6*Power(exAb23,2)*invgamb33 +
+       3*psim4*RbTF22 + 8*cpi*gamb22*invgamb11*psim4*Ss11 +
        16*cpi*gamb22*invgamb12*psim4*Ss12 +
        16*cpi*gamb22*invgamb13*psim4*Ss13 - 24*cpi*psim4*Ss22 +
        8*cpi*gamb22*invgamb22*psim4*Ss22 +
        16*cpi*gamb22*invgamb23*psim4*Ss23 +
-       8*cpi*gamb22*invgamb33*psim4*Ss33 -
-       6*invgamb11*Power(exAb12[ijk],2) -
-       6*invgamb22*Power(exAb22[ijk],2) -
-       6*invgamb33*Power(exAb23[ijk],2) -
-       12*exAb12[ijk]*(invgamb12*exAb22[ijk] + invgamb13*exAb23[ijk]) -
-       3*exAb22[ijk]*(4*invgamb23*exAb23[ijk] + 2*Theta[ijk] - trK[ijk])))/3.
+       8*cpi*gamb22*invgamb33*psim4*Ss33 - 6*exAb22*Theta[ijk] +
+       3*exAb22*trK[ijk]))/3.
 ;
 
 const auto
 dtexAb23
 =
-LbetaexAb23 + psim4*(RalphaTF23 + RphiTF23) - (2*trbDbeta*exAb23[ijk])/3. +
-  (alpha[ijk]*(3*psim4*RbTF23 + 8*cpi*gamb23*invgamb11*psim4*Ss11 +
-       16*cpi*gamb23*invgamb12*psim4*Ss12 +
-       16*cpi*gamb23*invgamb13*psim4*Ss13 +
-       8*cpi*gamb23*invgamb22*psim4*Ss22 - 24*cpi*psim4*Ss23 +
-       16*cpi*gamb23*invgamb23*psim4*Ss23 +
-       8*cpi*gamb23*invgamb33*psim4*Ss33 -
-       6*invgamb22*exAb22[ijk]*exAb23[ijk] -
-       6*invgamb23*Power(exAb23[ijk],2) -
-       6*exAb13[ijk]*(invgamb12*exAb22[ijk] + invgamb13*exAb23[ijk]) -
-       6*invgamb23*exAb22[ijk]*exAb33[ijk] -
-       6*invgamb33*exAb23[ijk]*exAb33[ijk] -
-       6*exAb12[ijk]*(invgamb11*exAb13[ijk] + invgamb12*exAb23[ijk] +
-          invgamb13*exAb33[ijk]) - 6*exAb23[ijk]*Theta[ijk] +
-       3*exAb23[ijk]*trK[ijk]))/3.
+LbetaexAb23 + psim4*RalphaTF23 + psim4*RphiTF23 - (2*exAb23*trbDbeta)/3. -
+  (alpha[ijk]*(6*exAb12*exAb13*invgamb11 + 6*exAb13*exAb22*invgamb12 +
+       6*exAb12*exAb23*invgamb12 + 6*exAb13*exAb23*invgamb13 +
+       6*exAb12*exAb33*invgamb13 + 6*exAb22*exAb23*invgamb22 +
+       6*Power(exAb23,2)*invgamb23 + 6*exAb22*exAb33*invgamb23 +
+       6*exAb23*exAb33*invgamb33 - 3*psim4*RbTF23 -
+       8*cpi*gamb23*invgamb11*psim4*Ss11 -
+       16*cpi*gamb23*invgamb12*psim4*Ss12 -
+       16*cpi*gamb23*invgamb13*psim4*Ss13 -
+       8*cpi*gamb23*invgamb22*psim4*Ss22 + 24*cpi*psim4*Ss23 -
+       16*cpi*gamb23*invgamb23*psim4*Ss23 -
+       8*cpi*gamb23*invgamb33*psim4*Ss33 + 6*exAb23*Theta[ijk] -
+       3*exAb23*trK[ijk]))/3.
 ;
 
 const auto
 dtexAb33
 =
-LbetaexAb33 + psim4*(RalphaTF33 + RphiTF33) - (2*trbDbeta*exAb33[ijk])/3. +
-  (alpha[ijk]*(3*psim4*RbTF33 + 8*cpi*gamb33*invgamb11*psim4*Ss11 +
+LbetaexAb33 + psim4*RalphaTF33 + psim4*RphiTF33 - (2*exAb33*trbDbeta)/3. +
+  (alpha[ijk]*(-6*Power(exAb13,2)*invgamb11 - 12*exAb13*exAb23*invgamb12 -
+       12*exAb13*exAb33*invgamb13 - 6*Power(exAb23,2)*invgamb22 -
+       12*exAb23*exAb33*invgamb23 - 6*Power(exAb33,2)*invgamb33 +
+       3*psim4*RbTF33 + 8*cpi*gamb33*invgamb11*psim4*Ss11 +
        16*cpi*gamb33*invgamb12*psim4*Ss12 +
        16*cpi*gamb33*invgamb13*psim4*Ss13 +
        8*cpi*gamb33*invgamb22*psim4*Ss22 +
        16*cpi*gamb33*invgamb23*psim4*Ss23 - 24*cpi*psim4*Ss33 +
-       8*cpi*gamb33*invgamb33*psim4*Ss33 -
-       6*invgamb11*Power(exAb13[ijk],2) -
-       6*invgamb22*Power(exAb23[ijk],2) -
-       12*invgamb23*exAb23[ijk]*exAb33[ijk] -
-       6*invgamb33*Power(exAb33[ijk],2) -
-       12*exAb13[ijk]*(invgamb12*exAb23[ijk] + invgamb13*exAb33[ijk]) -
-       6*exAb33[ijk]*Theta[ijk] + 3*exAb33[ijk]*trK[ijk]))/3.
+       8*cpi*gamb33*invgamb33*psim4*Ss33 - 6*exAb33*Theta[ijk] +
+       3*exAb33*trK[ijk]))/3.
 ;
 
 const auto
@@ -3944,19 +3920,19 @@ dtLt1
     bDtrbDbeta2*invgamb12 + 6*hDhDbeta121*invgamb12 +
     bDtrbDbeta3*invgamb13 + 6*hDhDbeta131*invgamb13 +
     3*hDhDbeta221*invgamb22 + 6*hDhDbeta231*invgamb23 +
-    3*hDhDbeta331*invgamb33 + 3*LbetaLt1 + 2*trbDbeta*trDGam1 -
-    2*ckappa3*trbDbeta*trDGam1 + 6*ckappa1*psi4*ZU1 -
+    3*hDhDbeta331*invgamb33 + 3*LbetaLt1 + 2*ckappa3*Lt1*trbDbeta +
+    2*trbDbeta*trDGam1 - 2*ckappa3*trbDbeta*trDGam1 + 6*ckappa1*psi4*ZU1 -
     6*ckappa3*hDbeta11*psi4*ZU1 - 6*ckappa3*hDbeta21*psi4*ZU2 -
-    6*ckappa3*hDbeta31*psi4*ZU3 + 2*ckappa3*trbDbeta*Lt1[ijk] -
-    6*dalpha1*invgamb11*Theta[ijk] - 6*dalpha2*invgamb12*Theta[ijk] -
-    6*dalpha3*invgamb13*Theta[ijk] +
-    2*alpha[ijk]*(3*DGam111*exAbUU11 + 18*dphi1*exAbUU11 +
-       6*DGam112*exAbUU12 + 18*dphi2*exAbUU12 + 6*DGam113*exAbUU13 +
-       18*dphi3*exAbUU13 + 3*DGam122*exAbUU22 + 6*DGam123*exAbUU23 +
-       3*DGam133*exAbUU33 + 3*dTheta1*invgamb11 - 2*dtrK1*invgamb11 +
-       3*dTheta2*invgamb12 - 2*dtrK2*invgamb12 + 3*dTheta3*invgamb13 -
-       2*dtrK3*invgamb13 - 24*cpi*invgamb11*Sm1 - 24*cpi*invgamb12*Sm2 -
-       24*cpi*invgamb13*Sm3 - 2*psi4*ZU1*trK[ijk]))/3.
+    6*ckappa3*hDbeta31*psi4*ZU3 -
+    6*(dalpha1*invgamb11 + dalpha2*invgamb12 + dalpha3*invgamb13)*
+     Theta[ijk] + 2*alpha[ijk]*
+     (3*DGam111*exAbUU11 + 18*dphi1*exAbUU11 + 6*DGam112*exAbUU12 +
+       18*dphi2*exAbUU12 + 6*DGam113*exAbUU13 + 18*dphi3*exAbUU13 +
+       3*DGam122*exAbUU22 + 6*DGam123*exAbUU23 + 3*DGam133*exAbUU33 +
+       3*dTheta1*invgamb11 - 2*dtrK1*invgamb11 + 3*dTheta2*invgamb12 -
+       2*dtrK2*invgamb12 + 3*dTheta3*invgamb13 - 2*dtrK3*invgamb13 -
+       24*cpi*invgamb11*Sm1 - 24*cpi*invgamb12*Sm2 - 24*cpi*invgamb13*Sm3 -
+       2*psi4*ZU1*trK[ijk]))/3.
 ;
 
 const auto
@@ -3967,19 +3943,19 @@ dtLt2
     6*hDhDbeta122*invgamb12 + 6*hDhDbeta132*invgamb13 +
     bDtrbDbeta2*invgamb22 + 3*hDhDbeta222*invgamb22 +
     bDtrbDbeta3*invgamb23 + 6*hDhDbeta232*invgamb23 +
-    3*hDhDbeta332*invgamb33 + 3*LbetaLt2 + 2*trbDbeta*trDGam2 -
-    2*ckappa3*trbDbeta*trDGam2 - 6*ckappa3*hDbeta12*psi4*ZU1 +
-    6*ckappa1*psi4*ZU2 - 6*ckappa3*hDbeta22*psi4*ZU2 -
-    6*ckappa3*hDbeta32*psi4*ZU3 + 2*ckappa3*trbDbeta*Lt2[ijk] -
-    6*dalpha1*invgamb12*Theta[ijk] - 6*dalpha2*invgamb22*Theta[ijk] -
-    6*dalpha3*invgamb23*Theta[ijk] +
-    2*alpha[ijk]*(3*DGam211*exAbUU11 + 6*DGam212*exAbUU12 +
-       18*dphi1*exAbUU12 + 6*DGam213*exAbUU13 + 3*DGam222*exAbUU22 +
-       18*dphi2*exAbUU22 + 6*DGam223*exAbUU23 + 18*dphi3*exAbUU23 +
-       3*DGam233*exAbUU33 + 3*dTheta1*invgamb12 - 2*dtrK1*invgamb12 +
-       3*dTheta2*invgamb22 - 2*dtrK2*invgamb22 + 3*dTheta3*invgamb23 -
-       2*dtrK3*invgamb23 - 24*cpi*invgamb12*Sm1 - 24*cpi*invgamb22*Sm2 -
-       24*cpi*invgamb23*Sm3 - 2*psi4*ZU2*trK[ijk]))/3.
+    3*hDhDbeta332*invgamb33 + 3*LbetaLt2 + 2*ckappa3*Lt2*trbDbeta +
+    2*trbDbeta*trDGam2 - 2*ckappa3*trbDbeta*trDGam2 -
+    6*ckappa3*hDbeta12*psi4*ZU1 + 6*ckappa1*psi4*ZU2 -
+    6*ckappa3*hDbeta22*psi4*ZU2 - 6*ckappa3*hDbeta32*psi4*ZU3 -
+    6*(dalpha1*invgamb12 + dalpha2*invgamb22 + dalpha3*invgamb23)*
+     Theta[ijk] + 2*alpha[ijk]*
+     (3*DGam211*exAbUU11 + 6*DGam212*exAbUU12 + 18*dphi1*exAbUU12 +
+       6*DGam213*exAbUU13 + 3*DGam222*exAbUU22 + 18*dphi2*exAbUU22 +
+       6*DGam223*exAbUU23 + 18*dphi3*exAbUU23 + 3*DGam233*exAbUU33 +
+       3*dTheta1*invgamb12 - 2*dtrK1*invgamb12 + 3*dTheta2*invgamb22 -
+       2*dtrK2*invgamb22 + 3*dTheta3*invgamb23 - 2*dtrK3*invgamb23 -
+       24*cpi*invgamb12*Sm1 - 24*cpi*invgamb22*Sm2 - 24*cpi*invgamb23*Sm3 -
+       2*psi4*ZU2*trK[ijk]))/3.
 ;
 
 const auto
@@ -3990,167 +3966,164 @@ dtLt3
     bDtrbDbeta1*invgamb13 + 6*hDhDbeta133*invgamb13 +
     3*hDhDbeta223*invgamb22 + bDtrbDbeta2*invgamb23 +
     6*hDhDbeta233*invgamb23 + bDtrbDbeta3*invgamb33 +
-    3*hDhDbeta333*invgamb33 + 3*LbetaLt3 + 2*trbDbeta*trDGam3 -
-    2*ckappa3*trbDbeta*trDGam3 - 6*ckappa3*hDbeta13*psi4*ZU1 -
-    6*ckappa3*hDbeta23*psi4*ZU2 + 6*ckappa1*psi4*ZU3 -
-    6*ckappa3*hDbeta33*psi4*ZU3 + 2*ckappa3*trbDbeta*Lt3[ijk] -
-    6*dalpha1*invgamb13*Theta[ijk] - 6*dalpha2*invgamb23*Theta[ijk] -
-    6*dalpha3*invgamb33*Theta[ijk] +
-    2*alpha[ijk]*(3*DGam311*exAbUU11 + 6*DGam312*exAbUU12 +
-       6*DGam313*exAbUU13 + 18*dphi1*exAbUU13 + 3*DGam322*exAbUU22 +
-       6*DGam323*exAbUU23 + 18*dphi2*exAbUU23 + 3*DGam333*exAbUU33 +
-       18*dphi3*exAbUU33 + 3*dTheta1*invgamb13 - 2*dtrK1*invgamb13 +
-       3*dTheta2*invgamb23 - 2*dtrK2*invgamb23 + 3*dTheta3*invgamb33 -
-       2*dtrK3*invgamb33 - 24*cpi*invgamb13*Sm1 - 24*cpi*invgamb23*Sm2 -
-       24*cpi*invgamb33*Sm3 - 2*psi4*ZU3*trK[ijk]))/3.
+    3*hDhDbeta333*invgamb33 + 3*LbetaLt3 + 2*ckappa3*Lt3*trbDbeta +
+    2*trbDbeta*trDGam3 - 2*ckappa3*trbDbeta*trDGam3 -
+    6*ckappa3*hDbeta13*psi4*ZU1 - 6*ckappa3*hDbeta23*psi4*ZU2 +
+    6*ckappa1*psi4*ZU3 - 6*ckappa3*hDbeta33*psi4*ZU3 -
+    6*(dalpha1*invgamb13 + dalpha2*invgamb23 + dalpha3*invgamb33)*
+     Theta[ijk] + 2*alpha[ijk]*
+     (3*DGam311*exAbUU11 + 6*DGam312*exAbUU12 + 6*DGam313*exAbUU13 +
+       18*dphi1*exAbUU13 + 3*DGam322*exAbUU22 + 6*DGam323*exAbUU23 +
+       18*dphi2*exAbUU23 + 3*DGam333*exAbUU33 + 18*dphi3*exAbUU33 +
+       3*dTheta1*invgamb13 - 2*dtrK1*invgamb13 + 3*dTheta2*invgamb23 -
+       2*dtrK2*invgamb23 + 3*dTheta3*invgamb33 - 2*dtrK3*invgamb33 -
+       24*cpi*invgamb13*Sm1 - 24*cpi*invgamb23*Sm2 - 24*cpi*invgamb33*Sm3 -
+       2*psi4*ZU3*trK[ijk]))/3.
 ;
 
 const auto
 dtbeta1
 =
-B1[ijk] + hDbeta11*beta1[ijk] + hDbeta21*beta2[ijk] + hDbeta31*beta3[ijk]
+B1 + beta1*hDbeta11 + beta2*hDbeta21 + beta3*hDbeta31
 ;
 
 const auto
 dtbeta2
 =
-B2[ijk] + hDbeta12*beta1[ijk] + hDbeta22*beta2[ijk] + hDbeta32*beta3[ijk]
+B2 + beta1*hDbeta12 + beta2*hDbeta22 + beta3*hDbeta32
 ;
 
 const auto
 dtbeta3
 =
-B3[ijk] + hDbeta13*beta1[ijk] + hDbeta23*beta2[ijk] + hDbeta33*beta3[ijk]
+B3 + beta1*hDbeta13 + beta2*hDbeta23 + beta3*hDbeta33
 ;
 
 const auto
 dtB1
 =
-(-4*ceta*B1[ijk] + (4*hDB11 - 3*hDLt11)*beta1[ijk] + 4*hDB21*beta2[ijk] -
-    3*hDLt21*beta2[ijk] + 4*hDB31*beta3[ijk] - 3*hDLt31*beta3[ijk] +
-    3*dtLt1[ijk])/4.
+(-4*B1*ceta + 3*dtLt1 + 4*beta1*hDB11 + 4*beta2*hDB21 + 4*beta3*hDB31 -
+    3*beta1*hDLt11 - 3*beta2*hDLt21 - 3*beta3*hDLt31)/4.
 ;
 
 const auto
 dtB2
 =
-(-4*ceta*B2[ijk] + (4*hDB12 - 3*hDLt12)*beta1[ijk] + 4*hDB22*beta2[ijk] -
-    3*hDLt22*beta2[ijk] + 4*hDB32*beta3[ijk] - 3*hDLt32*beta3[ijk] +
-    3*dtLt2[ijk])/4.
+(-4*B2*ceta + 3*dtLt2 + 4*beta1*hDB12 + 4*beta2*hDB22 + 4*beta3*hDB32 -
+    3*beta1*hDLt12 - 3*beta2*hDLt22 - 3*beta3*hDLt32)/4.
 ;
 
 const auto
 dtB3
 =
-(-4*ceta*B3[ijk] + (4*hDB13 - 3*hDLt13)*beta1[ijk] + 4*hDB23*beta2[ijk] -
-    3*hDLt23*beta2[ijk] + 4*hDB33*beta3[ijk] - 3*hDLt33*beta3[ijk] +
-    3*dtLt3[ijk])/4.
+(-4*B3*ceta + 3*dtLt3 + 4*beta1*hDB13 + 4*beta2*hDB23 + 4*beta3*hDB33 -
+    3*beta1*hDLt13 - 3*beta2*hDLt23 - 3*beta3*hDLt33)/4.
 ;
 
 
 dtepsOsph11[ijk]
 =
-dteps11[ijk]
+dteps11
 ;
 
 dtepsOsph12[ijk]
 =
-dteps12[ijk]/R
+dteps12/R
 ;
 
 dtepsOsph13[ijk]
 =
-(cscth*dteps13[ijk])/R
+(cscth*dteps13)/R
 ;
 
 dtepsOsph22[ijk]
 =
-dteps22[ijk]/Power(R,2)
+dteps22/Power(R,2)
 ;
 
 dtepsOsph23[ijk]
 =
-(cscth*dteps23[ijk])/Power(R,2)
+(cscth*dteps23)/Power(R,2)
 ;
 
 dtepsOsph33[ijk]
 =
-(Power(cscth,2)*dteps33[ijk])/Power(R,2)
+(Power(cscth,2)*dteps33)/Power(R,2)
 ;
 
 dtexAbOsph11[ijk]
 =
-dtexAb11[ijk]
+dtexAb11
 ;
 
 dtexAbOsph12[ijk]
 =
-dtexAb12[ijk]/R
+dtexAb12/R
 ;
 
 dtexAbOsph13[ijk]
 =
-(cscth*dtexAb13[ijk])/R
+(cscth*dtexAb13)/R
 ;
 
 dtexAbOsph22[ijk]
 =
-dtexAb22[ijk]/Power(R,2)
+dtexAb22/Power(R,2)
 ;
 
 dtexAbOsph23[ijk]
 =
-(cscth*dtexAb23[ijk])/Power(R,2)
+(cscth*dtexAb23)/Power(R,2)
 ;
 
 dtexAbOsph33[ijk]
 =
-(Power(cscth,2)*dtexAb33[ijk])/Power(R,2)
+(Power(cscth,2)*dtexAb33)/Power(R,2)
 ;
 
 dtLtOsph1[ijk]
 =
-dtLt1[ijk]
+dtLt1
 ;
 
 dtLtOsph2[ijk]
 =
-R*dtLt2[ijk]
+dtLt2*R
 ;
 
 dtLtOsph3[ijk]
 =
-R*sinth*dtLt3[ijk]
+dtLt3*R*sinth
 ;
 
 dtbetaOsph1[ijk]
 =
-dtbeta1[ijk]
+dtbeta1
 ;
 
 dtbetaOsph2[ijk]
 =
-R*dtbeta2[ijk]
+dtbeta2*R
 ;
 
 dtbetaOsph3[ijk]
 =
-R*sinth*dtbeta3[ijk]
+dtbeta3*R*sinth
 ;
 
 dtBOsph1[ijk]
 =
-dtB1[ijk]
+dtB1
 ;
 
 dtBOsph2[ijk]
 =
-R*dtB2[ijk]
+dtB2*R
 ;
 
 dtBOsph3[ijk]
 =
-R*sinth*dtB3[ijk]
+dtB3*R*sinth
 ;
 
 
