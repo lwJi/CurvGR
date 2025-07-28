@@ -1,0 +1,102 @@
+# Parameter definitions for thorn CurvCCZ4
+
+BOOLEAN calc_ADM_vars "Calculate ADM variables" STEERABLE=recover
+{
+} yes
+
+BOOLEAN calc_ADMRHS_vars "Calculate RHS of ADM variables" STEERABLE=recover
+{
+} no
+
+BOOLEAN calc_constraints "Calculate constraints" STEERABLE=recover
+{
+} yes
+
+BOOLEAN set_Theta_zero "set Theta to zero, which converts CCZ4 to BSSN"
+{
+} no
+
+CCTK_REAL kappa1 "kappa1" STEERABLE=always
+{
+  *:* :: ""
+} 0.02
+
+CCTK_REAL kappa2 "kappa2" STEERABLE=always
+{
+  *:* :: ""
+} 0.0
+
+CCTK_REAL kappa3 "kappa3" STEERABLE=always
+{
+  *:* :: ""
+} 0.0
+
+CCTK_REAL f_mu_L "mu_L = f_mu_L / alpha" STEERABLE=always
+{
+  *:* :: ""
+} 2.0
+
+CCTK_REAL f_mu_S "mu_S = f_mu_S / alpha^2" STEERABLE=always
+{
+  *:* :: ""
+} 1.0
+
+CCTK_REAL eta "eta" STEERABLE=always
+{
+  *:* :: ""
+} 2.0
+
+CCTK_REAL veta_width "" STEERABLE=always
+{
+  (0:* :: ""
+} 50.0
+
+CCTK_REAL veta_central "" STEERABLE=always
+{
+  (0:* :: ""
+} 2.0
+
+CCTK_REAL veta_outer "" STEERABLE=always
+{
+  (0:* :: ""
+} 0.25
+
+CCTK_REAL W_floor "Floor for W" STEERABLE=always
+{
+  (0:* :: ""
+} 1.0e-10
+
+CCTK_REAL alphaG_floor "Floor for alphaG" STEERABLE=always
+{
+  (0:* :: ""
+} 1.0e-10
+
+CCTK_REAL epsdiss "Dissipation coefficient <arXiv:gr-qc/0610128>" STEERABLE=always
+{
+  0.0:* :: ""
+} 0.32
+
+CCTK_INT diss_order "Order of Kreiss-Oliger dissipation" STEERABLE=never
+{
+  3 :: "Third order KO dissipation"
+  5 :: "Fifth order KO dissipation"
+  7 :: "Seventh order KO dissipation"
+  9 :: "Ninth order KO dissipation"
+} 5
+
+CCTK_INT deriv_order "Order of spatial finite differencing" STEERABLE=never
+{
+  2 :: "Second order finite difference"
+  4 :: "Fourth order finite difference"
+  6 :: "Sixth order finite difference"
+  8 :: "Eighth order finite difference"
+} 4
+
+BOOLEAN calc_derivs_live "Calculate FD derivstives on the fly instead of storing to temporary variables"
+{
+} yes
+
+KEYWORD boundary_conditions "boundary conditions"{
+  "NewRadX" :: "radiative boundary conditions using NewRadX"
+  "CarpetX" :: "use CarpetX default boundary conditions"
+} "CarpetX"

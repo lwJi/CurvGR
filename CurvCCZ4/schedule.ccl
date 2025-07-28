@@ -1,0 +1,205 @@
+# Schedule definitions for thorn CurvCCZ4
+
+STORAGE: W eps K A_bar Lam_tilde Theta alphaG betaG
+STORAGE: ZC HC MC allC
+STORAGE: W_rhs eps_rhs K_rhs A_bar_rhs Lam_tilde_rhs Theta_rhs alphaG_rhs betaG_rhs
+
+
+################################################################################
+# We have 4 schedule groups:
+# 1. initial: set up core CCZ4 variables from ADM variables
+# 2. poststep: post-process core CCZ4 variables and calculate other variables
+# 3. analysis: calculate constraints etc.
+# 4. rhs: calculate RHS of CCZ4 variables
+
+SCHEDULE GROUP CurvCCZ4_InitialGroup AT initial AFTER CurvADM_PostInitial
+{
+} "Convert ADM to CCZ4 variables"
+
+SCHEDULE GROUP CurvCCZ4_PostStepGroup AT initial AFTER CurvCCZ4_InitialGroup BEFORE CurvADM_SetADMVars
+{
+} "Post-process CCZ4 variables"
+
+SCHEDULE GROUP CurvCCZ4_PostStepGroup2 AT initial AFTER (CurvTmunu_SetTmunuVars, CurvCCZ4_PostStepGroup) BEFORE CurvADM_SetADMRHS
+{
+} "Post-process CCZ4 variables, part 2"
+
+SCHEDULE GROUP CurvCCZ4_PostStepGroup AT postregrid BEFORE CurvADM_SetADMVars
+{
+} "Post-process CCZ4 variables"
+
+SCHEDULE GROUP CurvCCZ4_PostStepGroup2 AT postregrid AFTER (CurvTmunu_SetTmunuVars, CurvCCZ4_PostStepGroup) BEFORE CurvADM_SetADMRHS
+{
+} "Post-process CCZ4 variables, part 2"
+
+SCHEDULE GROUP CurvCCZ4_PostStepGroup IN ODESolvers_PostStep BEFORE CurvADM_SetADMVars
+{
+} "Post-process CCZ4 variables"
+
+SCHEDULE GROUP CurvCCZ4_PostStepGroup2 IN ODESolvers_PostStep AFTER (CurvTmunu_SetTmunuVars, CurvCCZ4_PostStepGroup) BEFORE CurvADM_SetADMRHS
+{
+} "Post-process CCZ4 variables, part 2"
+
+SCHEDULE GROUP CurvCCZ4_AnalysisGroup AT analysis
+{
+} "Analyse CCZ4 variables"
+
+SCHEDULE GROUP CurvCCZ4_RHSGroup IN ODESolvers_RHS
+{
+} "Calculate CCZ4 RHS"
+
+################################################################################
+
+
+SCHEDULE CurvCCZ4_Initial1 IN CurvCCZ4_InitialGroup
+{
+  LANG: C
+  READS: CurvADM::metric(interior)
+  READS: CurvADM::excurv(interior)
+  READS: CurvADM::lapse(interior)
+  READS: CurvADM::shift(interior)
+  WRITES: W(interior)
+  WRITES: eps(interior)
+  WRITES: K(interior)
+  WRITES: A_bar(interior)
+  WRITES: Theta(interior)
+  WRITES: alphaG(interior)
+  WRITES: betaG(interior)
+  SYNC: eps
+} "Convert ADM to CCZ4 variables, part 1"
+
+SCHEDULE CurvCCZ4_Initial2 IN CurvCCZ4_InitialGroup AFTER CurvCCZ4_Initial1
+{
+  LANG: C
+  READS: eps(everywhere)
+  WRITES: Lam_tilde(interior)
+} "Convert ADM to CCZ4 variables, part 2"
+
+SCHEDULE CurvCCZ4_InitialLapse IN CurvCCZ4_InitialGroup AFTER CurvCCZ4_Initial2
+{
+  LANG: C
+  READS: W(interior)
+  WRITES: alphaG(interior)
+  SYNC: alphaG
+} "Set initial lapse"
+
+SCHEDULE CurvCCZ4_Sync IN CurvCCZ4_PostStepGroup
+{
+  LANG: C
+  OPTIONS: global
+  SYNC: W
+  SYNC: eps
+  SYNC: K
+  SYNC: A_bar
+  SYNC: Lam_tilde
+  SYNC: Theta
+  SYNC: alphaG
+  SYNC: betaG
+} "Synchronize"
+
+SCHEDULE CurvCCZ4_Enforce IN CurvCCZ4_PostStepGroup AFTER CurvCCZ4_Sync
+{
+  LANG: C
+  READS: W(everywhere)
+  READS: eps(everywhere)
+  READS: A_bar(everywhere)
+  READS: alphaG(everywhere)
+  WRITES: W(everywhere)
+  WRITES: eps(everywhere)
+  WRITES: A_bar(everywhere)
+  WRITES: alphaG(everywhere)
+} "Enforce algebraic CCZ4 constraints"
+
+if (calc_ADM_vars) {
+  SCHEDULE CurvCCZ4_ADM IN CurvCCZ4_PostStepGroup AFTER CurvCCZ4_Enforce
+  {
+    LANG: C
+    READS: W(everywhere)
+    READS: eps(everywhere)
+    READS: K(everywhere)
+    READS: A_bar(everywhere)
+    READS: Theta(everywhere)
+    READS: alphaG(everywhere)
+    READS: betaG(everywhere)
+    WRITES: CurvADM::metric(everywhere)
+    WRITES: CurvADM::excurv(everywhere)
+    WRITES: CurvADM::lapse(everywhere)
+    WRITES: CurvADM::shift(everywhere)
+  } "Convert CCZ4 to ADM variables"
+}
+
+if (calc_constraints) {
+  SCHEDULE CurvCCZ4_Constraints IN CurvCCZ4_AnalysisGroup
+  {
+    LANG: C
+    READS: W(everywhere)
+    READS: eps(everywhere)
+    READS: K(everywhere)
+    READS: A_bar(everywhere)
+    READS: Lam_tilde(everywhere)
+    READS: Theta(everywhere)
+    READS: alphaG(everywhere)
+    READS: betaG(everywhere)
+    READS: CurvTmunu::eTtt(interior)
+    READS: CurvTmunu::eTti(interior)
+    READS: CurvTmunu::eTij(interior)
+    WRITES: ZC(interior)
+    WRITES: HC(interior)
+    WRITES: MC(interior)
+  } "Calculate CCZ4 Constraints"
+}
+
+SCHEDULE CurvCCZ4_RHS IN CurvCCZ4_RHSGroup
+{
+  LANG: C
+  READS: W(everywhere)
+  READS: eps(everywhere)
+  READS: K(everywhere)
+  READS: A_bar(everywhere)
+  READS: Lam_tilde(everywhere)
+  READS: Theta(everywhere)
+  READS: alphaG(everywhere)
+  READS: betaG(everywhere)
+  READS: CurvTmunu::eTtt(interior)
+  READS: CurvTmunu::eTti(interior)
+  READS: CurvTmunu::eTij(interior)
+  WRITES: W_rhs(interior)
+  WRITES: eps_rhs(interior)
+  WRITES: K_rhs(interior)
+  WRITES: A_bar_rhs(interior)
+  WRITES: Lam_tilde_rhs(interior)
+  WRITES: Theta_rhs(interior)
+  WRITES: alphaG_rhs(interior)
+  WRITES: betaG_rhs(interior)
+} "Calculate CCZ4 RHS"
+
+if (CCTK_Equals(boundary_conditions, "NewRadX")) {
+  SCHEDULE CurvCCZ4_Apply_NewRadX_BC IN CurvCCZ4_RHSGroup AFTER CurvCCZ4_RHS
+  {
+    LANG: C
+    READS: W(everywhere)
+    READS: eps(everywhere)
+    READS: K(everywhere)
+    READS: A_bar(everywhere)
+    READS: Lam_tilde(everywhere)
+    READS: Theta(everywhere)
+    READS: alphaG(everywhere)
+    READS: betaG(everywhere)
+    READS: W_rhs(interior)
+    READS: eps_rhs(interior)
+    READS: K_rhs(interior)
+    READS: A_bar_rhs(interior)
+    READS: Lam_tilde_rhs(interior)
+    READS: Theta_rhs(interior)
+    READS: alphaG_rhs(interior)
+    READS: betaG_rhs(interior)
+    WRITES: W_rhs(interior)
+    WRITES: eps_rhs(interior)
+    WRITES: K_rhs(interior)
+    WRITES: A_bar_rhs(interior)
+    WRITES: Lam_tilde_rhs(interior)
+    WRITES: Theta_rhs(interior)
+    WRITES: alphaG_rhs(interior)
+    WRITES: betaG_rhs(interior)
+  } "Apply radiative boundary conditions to CCZ4 RHS variables using NewRadX"
+}

@@ -1,0 +1,42 @@
+# Interface definition for thorn CurvCCZ4
+
+IMPLEMENTS: CurvCCZ4
+
+INHERITS: CurvADM CurvTmunu
+
+USES INCLUDE HEADER: loop_device.hxx
+USES INCLUDE HEADER: newradx.hxx
+USES INCLUDE HEADER: cx_utils.hxx
+USES INCLUDE HEADER: cx_derivsGF3D5.hxx
+USES INCLUDE HEADER: cx_derivsinline.hxx
+USES INCLUDE HEADER: cx_dissinline.hxx
+USES INCLUDE HEADER: cx_powerinline.hxx
+
+CCTK_INT FUNCTION GetCallFunctionCount()
+REQUIRES FUNCTION GetCallFunctionCount
+
+
+CCTK_REAL W         TYPE=gf CENTERING={ccc} TAGS='rhs="W_rhs"      dependents="CurvADM::metric"' "W"
+CCTK_REAL eps       TYPE=gf CENTERING={ccc} TAGS='rhs="eps_rhs"    dependents="CurvADM::metric"' { epxx epxy epxz epyy epyz epzz } "epsilon"
+CCTK_REAL K         TYPE=gf CENTERING={ccc} TAGS='rhs="K_rhs"      dependents="CurvADM::excurv"' "K"
+CCTK_REAL A_bar     TYPE=gf CENTERING={ccc} TAGS='rhs="A_bar_rhs"  dependents="CurvADM::excurv"' { Abxx Abxy Abxz Abyy Abyz Abzz } "A-bar"
+CCTK_REAL Lam_tilde TYPE=gf CENTERING={ccc} TAGS='rhs="Lam_tilde_rhs"' { Lamtx Lamty Lamtz } "Lambda-tilde"
+CCTK_REAL Theta     TYPE=gf CENTERING={ccc} TAGS='rhs="Theta_rhs"  dependents="CurvADM::excurv"' "Theta"
+CCTK_REAL alphaG    TYPE=gf CENTERING={ccc} TAGS='rhs="alphaG_rhs" dependents="CurvADM::lapse"' "alpha"
+CCTK_REAL betaG     TYPE=gf CENTERING={ccc} TAGS='rhs="betaG_rhs"  dependents="CurvADM::shift"' { betaGx betaGy betaGz } "beta"
+
+
+CCTK_REAL ZC   TYPE=gf CENTERING={ccc} TAGS='checkpoint="no"' { ZCx ZCy ZCz } "Z"
+CCTK_REAL HC   TYPE=gf CENTERING={ccc} TAGS='checkpoint="no"' "H"
+CCTK_REAL MC   TYPE=gf CENTERING={ccc} TAGS='checkpoint="no"' { MCx MCy MCz } "M"
+#CCTK_REAL allC TYPE=gf CENTERING={ccc} TAGS='checkpoint="no"' "constraint monitor"
+
+
+CCTK_REAL W_rhs         TYPE=gf CENTERING={ccc} TAGS='checkpoint="no"' "W"
+CCTK_REAL eps_rhs       TYPE=gf CENTERING={ccc} TAGS='checkpoint="no"' { epxx_rhs epxy_rhs epxz_rhs epyy_rhs epyz_rhs epzz_rhs } "epsilon"
+CCTK_REAL K_rhs         TYPE=gf CENTERING={ccc} TAGS='checkpoint="no"' "K"
+CCTK_REAL A_bar_rhs     TYPE=gf CENTERING={ccc} TAGS='checkpoint="no"' { Abxx_rhs Abxy_rhs Abxz_rhs Abyy_rhs Abyz_rhs Abzz_rhs } "A-bar"
+CCTK_REAL Lam_tilde_rhs TYPE=gf CENTERING={ccc} TAGS='checkpoint="no"' { Lamtx_rhs Lamty_rhs Lamtz_rhs } "Lambda-tilde"
+CCTK_REAL Theta_rhs     TYPE=gf CENTERING={ccc} TAGS='checkpoint="no"' "Theta"
+CCTK_REAL alphaG_rhs    TYPE=gf CENTERING={ccc} TAGS='checkpoint="no"' "alpha"
+CCTK_REAL betaG_rhs     TYPE=gf CENTERING={ccc} TAGS='checkpoint="no"' { betaGx_rhs betaGy_rhs betaGz_rhs } "beta"
