@@ -103,4 +103,3 @@ if (CCTK_EQUALS(initial_dtshift, "zero")) {
     WRITES: dtshift(everywhere)
   } "Set dtshift to zero"
 }
-

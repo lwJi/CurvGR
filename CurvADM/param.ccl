@@ -45,4 +45,3 @@ CCTK_REAL linear_wave_wavelength "Linear wave wavelength"
 {
   0.0:* :: ""
 } 1.0
-
