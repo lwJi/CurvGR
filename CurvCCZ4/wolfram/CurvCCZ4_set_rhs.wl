@@ -151,11 +151,11 @@ SetMainPrint[
   PrintEquations[{Mode -> "Temp", ExtraReplaceRules -> trigrules}, LieVarlist];
   pr[];
 
-  PrintEquations[{Mode -> "Main", ExtraReplaceRules -> trigrules}, dtEvolVarlist[[1;;4]]];
+  PrintEquations[{Mode -> "MainOut", ExtraReplaceRules -> trigrules}, dtEvolVarlist[[1;;4]]];
   PrintEquations[{Mode -> "Temp", ExtraReplaceRules -> trigrules}, dtEvolVarlist[[5;;-1]]];
   pr[];
 
-  PrintEquations[{Mode -> "Main", ExtraReplaceRules -> trigrules, ChartName -> Osph, SuffixName -> "Orth"}, dtEvolVarlist[[5;;-1]]];
+  PrintEquations[{Mode -> "MainOut", ExtraReplaceRules -> trigrules, ChartName -> Osph, SuffixName -> "Orth"}, dtEvolVarlist[[5;;-1]]];
   pr[];
 
   pr["  });"];
